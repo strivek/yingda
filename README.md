@@ -1,8 +1,11 @@
 应大web开发
 ====
 
-### web端
+### PC端
 
 ### 手机端
-##PC端
-#拉链
+
+
+### 项目参与人
+
+> @lisongyu @strivek @chengyuan
