@@ -6,6 +6,6 @@ require.config({
 });
 
 
-require(['jquery','slider'],function($,slider){
-	console.log(slider);
-})
+require(['jquery', 'bootstrap'], function($) {
+
+});
