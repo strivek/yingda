@@ -221,10 +221,10 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-src/css/main.css
+
 
 src/css/main.css.map
-
 src/css/main.css
+.idea/workspace.xml
 
-src/css/main.css.map
+src/javascript/main.js
