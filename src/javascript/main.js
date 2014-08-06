@@ -4,7 +4,7 @@ require.config({
 		jquery:"lib/jquery.min"
 	}
 
-
+});
 
 require(['jquery', 'bootstrap','nav'], function($,nav) {
     $('.nav>li').hover(function(){
