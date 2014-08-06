@@ -7,18 +7,19 @@ body {
   padding-bottom: 42px;
   border-bottom: 1px solid #ffe3cd;
   text-align: center;
-  font-family: "宋体";
   font-size: 24px;
   color: #ffe3cd;
+  font-family: "宋体";
   font-weight: normal; }
 
 .m-main-cy .prompt {
   position: relative;
   margin-top: 7px;
   padding-left: 12px;
-  font-family: "宋体";
   font-size: 16px;
-  color: #ffe3cd; }
+  color: #ffe3cd;
+  font-family: "宋体";
+  font-weight: normal; }
   .m-main-cy .prompt span {
     display: inline-block;
     position: absolute;
@@ -32,8 +33,8 @@ body {
     .m-main-cy .register-form .form-group label {
       position: relative;
       font-size: 16px;
-      font-family: "宋体";
       color: #ffe3cd;
+      font-family: "宋体";
       font-weight: normal; }
       .m-main-cy .register-form .form-group label span {
         display: inline-block;
@@ -46,14 +47,26 @@ body {
       border: 1px solid #ffe3cd;
       border-radius: 0;
       color: #ffe3cd; }
+    .m-main-cy .register-form .form-group .warning-message {
+      display: none; }
+  .m-main-cy .register-form .warning .form-control {
+    border: 1px solid #ff0000; }
+  .m-main-cy .register-form .warning .warning-message {
+    margin-top: 4px;
+    display: block;
+    margin-bottom: -10px;
+    text-align: right;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #e60012; }
   .m-main-cy .register-form .form-check {
     padding-bottom: 13px;
     padding-top: 13px;
     border-bottom: 1px solid #ffe3cd; }
     .m-main-cy .register-form .form-check label {
       font-size: 16px;
-      font-family: "宋体";
       color: #ffe3cd;
+      font-family: "宋体";
       font-weight: normal; }
       .m-main-cy .register-form .form-check label input[type="checkbox"] {
         display: inline-block;

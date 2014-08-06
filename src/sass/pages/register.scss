@@ -5,24 +5,25 @@ body {
   background: url("../images/register-bg.png") center center no-repeat;
 }
 
+@mixin font($font-size: 16px) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  font-weight: normal;
+}
 .m-main-cy .title {
   margin-top: 35px;
   padding-bottom: 42px;
   border-bottom: 1px solid $color;
   text-align: center;
-  font-family: $font-family;
-  font-size: 24px;
-  color: $color;
-  font-weight: normal;
+@include font(24px);
 }
 
 .m-main-cy .prompt {
   position: relative;
   margin-top: 7px;
   padding-left: 12px;
-  font-family: $font-family;
-  font-size: 16px;
-  color: $color;
+@include font();
   span {
     display: inline-block;
     position: absolute;
@@ -37,10 +38,7 @@ body {
     margin-bottom: 25px;
     label {
       position: relative;
-      font-size: 16px;
-      font-family: $font-family;
-      color: $color;
-      font-weight: normal;
+    @include font();
       span{display: inline-block;
         position: absolute;
        top:-6px;
@@ -54,18 +52,25 @@ body {
       border: 1px solid $color;
       border-radius: 0;
       color:$color;
-    }
-
+      }
+    .warning-message{display: none;}
+  }
+  .warning{
+    .form-control{border:1px solid #ff0000;}
+    .warning-message{  margin-top: 4px;
+      display: block;
+      margin-bottom: -10px;
+      text-align: right;
+      font-family: "宋体";
+      font-size:12px;
+      color:#e60012;}
   }
   .form-check {
     padding-bottom: 13px;
     padding-top: 13px;
     border-bottom: 1px solid $color;
     label {
-      font-size: 16px;
-      font-family: $font-family;
-      color: $color;
-      font-weight: normal;
+      @include font();
       input[type="checkbox"]  {
         display: inline-block;
         margin-right:5px;

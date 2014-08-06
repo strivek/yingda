@@ -16,7 +16,8 @@ body {
     .m-main1-cy .login-form .form-group label {
       font-size: 16px;
       color: #ffe3cd;
-      font-family: "宋体"; }
+      font-family: "宋体";
+      font-weight: normal; }
     .m-main1-cy .login-form .form-group .form-control {
       height: 38px;
       background: none;
@@ -47,7 +48,8 @@ body {
     margin-bottom: 13px;
     font-size: 16px;
     color: #ffe3cd;
-    font-family: "宋体"; }
+    font-family: "宋体";
+    font-weight: normal; }
   .m-main1-cy .create .button .btn {
     width: 100%;
     background: #44332c;
@@ -66,18 +68,13 @@ body {
       border-bottom: 1px solid #ffe3cd; }
     .m-main1-cy .create .tryLogin .tu {
       margin-top: 20px; }
-      .m-main1-cy .create .tryLogin .tu span {
+      .m-main1-cy .create .tryLogin .tu a {
         display: inline-block; }
-        .m-main1-cy .create .tryLogin .tu span a {
-          padding-right: 40px;
+        .m-main1-cy .create .tryLogin .tu a span {
+          padding-right: 30px;
           display: inline-block;
-          background: url("../images/login-icon.png") no-repeat;
-          width: 74px;
-          height: 30px;
-          text-indent: -9999px; }
-      .m-main1-cy .create .tryLogin .tu .sina a {
-        background-position: 0% 0; }
-      .m-main1-cy .create .tryLogin .tu .teng a {
-        background-position: 0% 50%; }
-      .m-main1-cy .create .tryLogin .tu .tao a {
-        background-position: 0% 100%; }
+          font-size: 30px;
+          color: #ffe3cd;
+          font-family: iconfont; }
+      .m-main1-cy .create .tryLogin .tu a:hover span {
+        color: #44332c; }

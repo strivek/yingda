@@ -5,6 +5,12 @@ body {
   background: url("../images/register-bg.png")  center center no-repeat;
 }
 
+@mixin font($font-size: 16px) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  font-weight: normal;
+}
 .text {
   margin-top: 83px;
   background: #251f20;
@@ -12,18 +18,89 @@ body {
   position: relative;
   .close{position:absolute; top:24px;right:24px;}
   .title {
-    font-size: 20px;
-    font-family: $font-family;
-    color: $color;
-    font-weight: none;
+    @include font(20px);
   }
-  .con {margin-top: 26px; padding-right: 30px; overflow-y: scroll; height:700px;
-    p {
-      margin-bottom: 34px;
-      font-size: 12px;
-      font-family: $font-family;
-      color: $color;
+  .overview {margin-top: 26px;
+    p{
+      margin-bottom: 30px;
+      @include font(12px);
       line-height: 2.2;
+      span{display:block;}
     }
   }
+}
+
+#scrollbar1
+{
+  position: relative;
+  margin-top: 30px;
+}
+
+#scrollbar1 .viewport
+{
+  height: 600px;
+  overflow:hidden;
+  position:relative;
+}
+
+#scrollbar1 .overview
+{
+  list-style:none;
+  position:absolute;
+  left:0;
+  top:0;
+  margin:0;
+  padding: 0px 10px 40px 10px;
+}
+
+#scrollbar1 .scrollbar
+{
+background-color:#000;
+  position:absolute;
+  right: -2px;
+  top:0;
+  width:2px;
+}
+
+#scrollbar1 .track
+{
+background-color:#000;
+  height:100%;
+  width:2px;
+  position:relative;
+  padding:0 1px;
+}
+
+#scrollbar1 .thumb
+{
+  background: url("../images/article-scroll.png") no-repeat center top;
+  cursor: pointer;
+  width: 14px;
+  height:20px;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:-6px;
+}
+
+#scrollbar1 .thumb .end
+{
+  background:transparent url("../images/article-scroll.png") no-repeat center top;
+ overflow:hidden;
+ height:5px;
+ width:14px;
+}
+
+#scrollbar1 .disable
+{
+ display:none;
+}
+
+.noSelect
+{
+ user-select:none;
+ -o-user-select:none;
+ -moz-user-select:none;
+ -khtml-user-select:none;
+ -webkit-user-select:none;
 }

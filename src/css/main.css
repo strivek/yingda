@@ -5499,6 +5499,44 @@ a, a:hover {
 .pt-10 {
   padding-top: 10px; }
 
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot");
+  /* IE9*/
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-taobao:before {
+  content: "\e64f"; }
+
+.icon-yingdaicon09:before {
+  content: "\e648"; }
+
+.icon-yingdaicon10:before {
+  content: "\e649"; }
+
+.icon-yingdaicon07:before {
+  content: "\e646"; }
+
+.icon-yingdaicon08:before {
+  content: "\e647"; }
+
+.icon-yingdaicon05:before {
+  content: "\e644"; }
+
+.icon-yingdaicon03:before {
+  content: "\e642"; }
+
+.icon-yingdaicon04:before {
+  content: "\e643"; }
+
 .u-img {
   display: block;
   position: relative;
@@ -5633,18 +5671,19 @@ body {
   padding-bottom: 42px;
   border-bottom: 1px solid #ffe3cd;
   text-align: center;
-  font-family: "宋体";
   font-size: 24px;
   color: #ffe3cd;
+  font-family: "宋体";
   font-weight: normal; }
 
 .m-main-cy .prompt {
   position: relative;
   margin-top: 7px;
   padding-left: 12px;
-  font-family: "宋体";
   font-size: 16px;
-  color: #ffe3cd; }
+  color: #ffe3cd;
+  font-family: "宋体";
+  font-weight: normal; }
   .m-main-cy .prompt span {
     display: inline-block;
     position: absolute;
@@ -5658,8 +5697,8 @@ body {
     .m-main-cy .register-form .form-group label {
       position: relative;
       font-size: 16px;
-      font-family: "宋体";
       color: #ffe3cd;
+      font-family: "宋体";
       font-weight: normal; }
       .m-main-cy .register-form .form-group label span {
         display: inline-block;
@@ -5672,14 +5711,26 @@ body {
       border: 1px solid #ffe3cd;
       border-radius: 0;
       color: #ffe3cd; }
+    .m-main-cy .register-form .form-group .warning-message {
+      display: none; }
+  .m-main-cy .register-form .warning .form-control {
+    border: 1px solid #ff0000; }
+  .m-main-cy .register-form .warning .warning-message {
+    margin-top: 4px;
+    display: block;
+    margin-bottom: -10px;
+    text-align: right;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #e60012; }
   .m-main-cy .register-form .form-check {
     padding-bottom: 13px;
     padding-top: 13px;
     border-bottom: 1px solid #ffe3cd; }
     .m-main-cy .register-form .form-check label {
       font-size: 16px;
-      font-family: "宋体";
       color: #ffe3cd;
+      font-family: "宋体";
       font-weight: normal; }
       .m-main-cy .register-form .form-check label input[type="checkbox"] {
         display: inline-block;
@@ -5716,7 +5767,8 @@ body {
     .m-main1-cy .login-form .form-group label {
       font-size: 16px;
       color: #ffe3cd;
-      font-family: "宋体"; }
+      font-family: "宋体";
+      font-weight: normal; }
     .m-main1-cy .login-form .form-group .form-control {
       height: 38px;
       background: none;
@@ -5747,7 +5799,8 @@ body {
     margin-bottom: 13px;
     font-size: 16px;
     color: #ffe3cd;
-    font-family: "宋体"; }
+    font-family: "宋体";
+    font-weight: normal; }
   .m-main1-cy .create .button .btn {
     width: 100%;
     background: #44332c;
@@ -5766,21 +5819,16 @@ body {
       border-bottom: 1px solid #ffe3cd; }
     .m-main1-cy .create .tryLogin .tu {
       margin-top: 20px; }
-      .m-main1-cy .create .tryLogin .tu span {
+      .m-main1-cy .create .tryLogin .tu a {
         display: inline-block; }
-        .m-main1-cy .create .tryLogin .tu span a {
-          padding-right: 40px;
+        .m-main1-cy .create .tryLogin .tu a span {
+          padding-right: 30px;
           display: inline-block;
-          background: url("../images/login-icon.png") no-repeat;
-          width: 74px;
-          height: 30px;
-          text-indent: -9999px; }
-      .m-main1-cy .create .tryLogin .tu .sina a {
-        background-position: 0% 0; }
-      .m-main1-cy .create .tryLogin .tu .teng a {
-        background-position: 0% 50%; }
-      .m-main1-cy .create .tryLogin .tu .tao a {
-        background-position: 0% 100%; }
+          font-size: 30px;
+          color: #ffe3cd;
+          font-family: iconfont; }
+      .m-main1-cy .create .tryLogin .tu a:hover span {
+        color: #44332c; }
 
 body {
   background: url("../images/register-bg.png") center center no-repeat; }
@@ -5796,19 +5844,76 @@ body {
     right: 24px; }
   .text .title {
     font-size: 20px;
-    font-family: "宋体";
     color: #ffe3cd;
-    font-weight: none; }
-  .text .con {
-    margin-top: 26px;
-    padding-right: 30px;
-    overflow-y: scroll;
-    height: 700px; }
-    .text .con p {
-      margin-bottom: 34px;
+    font-family: "宋体";
+    font-weight: normal; }
+  .text .overview {
+    margin-top: 26px; }
+    .text .overview p {
+      margin-bottom: 30px;
       font-size: 12px;
-      font-family: "宋体";
       color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal;
       line-height: 2.2; }
+      .text .overview p span {
+        display: block; }
+
+#scrollbar1 {
+  position: relative;
+  margin-top: 30px; }
+
+#scrollbar1 .viewport {
+  height: 600px;
+  overflow: hidden;
+  position: relative; }
+
+#scrollbar1 .overview {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0px 10px 40px 10px; }
+
+#scrollbar1 .scrollbar {
+  background-color: #000;
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 2px; }
+
+#scrollbar1 .track {
+  background-color: #000;
+  height: 100%;
+  width: 2px;
+  position: relative;
+  padding: 0 1px; }
+
+#scrollbar1 .thumb {
+  background: url("../images/article-scroll.png") no-repeat center top;
+  cursor: pointer;
+  width: 14px;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -6px; }
+
+#scrollbar1 .thumb .end {
+  background: transparent url("../images/article-scroll.png") no-repeat center top;
+  overflow: hidden;
+  height: 5px;
+  width: 14px; }
+
+#scrollbar1 .disable {
+  display: none; }
+
+.noSelect {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none; }
 
 /*# sourceMappingURL=main.css.map */
