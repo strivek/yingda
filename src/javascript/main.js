@@ -1,11 +1,11 @@
 require.config({
-	baseUrl:"javascript",
+	baseUrl:"src/javascript",
 	paths:{
 		jquery:"lib/jquery.min"
 	}
 });
-
-
-require(['jquery', 'bootstrap'], function($) {
-
+require(['jquery', 'bootstrap','nav'], function($,nav) {
+    $('.nav>li').hover(function(){
+        $(this).navshow('.m-menu','.m-nav-list-bg');
+    })
 });
