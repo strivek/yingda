@@ -1,11 +1,9 @@
 require.config({
-	baseUrl:"javascript",
+	baseUrl:"src/javascript",
 	paths:{
 		jquery:"lib/jquery.min"
 	}
 });
-
-
 require(['jquery', 'bootstrap'], function($) {
 
 });
