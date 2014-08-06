@@ -5785,6 +5785,9 @@ html, body {
 .m-nav .navbar-default .navbar-nav > li:last-child > a {
   padding-right: 0; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .m-nav .navbar-default .navbar-nav > li:nth-child(5) > a {
+    padding: 15px 16px; } }
 .m-nav .navbar-default .navbar-nav > li > a {
   padding: 15px 30px;
   color: #9b9b9e;
@@ -5892,5 +5895,15 @@ html, body {
     bottom: 0; }
     .m-product .other-colth img {
       margin-left: -228px; }
+
+.m-pic-center {
+  position: relative;
+  height: 40%;
+  overflow: hidden; }
+  .m-pic-center img {
+    position: absolute;
+    left: 50%;
+    margin-left: -384px;
+    top: 0; }
 
 /*# sourceMappingURL=main.css.map */
