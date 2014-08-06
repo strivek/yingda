@@ -1,3 +1,4 @@
+@charset "utf-8";
 // When true, asset path helpers are used, otherwise regular url() is used
 // When there no function is defined, `fn('')` is parsed as string that equals the right hand side
 // NB: in Sass 3.3 there is a native function: function-exists(twbs-font-path)
@@ -850,5 +851,14 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+
+//当季风采
+$clothing-pic-wid-sm:23.75%;
+$clothing-pic-wid-md:38.125%;
+$clothing-pic-height-sm:24.375%;
+$clothing-pic-height-md:37.8125%;
+$clothing-pic-height-lg:62.1875%;
+
 
 
