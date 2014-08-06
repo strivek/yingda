@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+  background: url("../images/register-bg.png") center center no-repeat; }
+
+.text {
+  margin-top: 83px;
+  background: #251f20;
+  padding: 30px;
+  position: relative; }
+  .text .close {
+    position: absolute;
+    top: 24px;
+    right: 24px; }
+  .text .title {
+    font-size: 20px;
+    font-family: "宋体";
+    color: #ffe3cd;
+    font-weight: none; }
+  .text .con {
+    margin-top: 26px;
+    padding-right: 30px;
+    overflow-y: scroll;
+    height: 700px; }
+    .text .con p {
+      margin-bottom: 34px;
+      font-size: 12px;
+      font-family: "宋体";
+      color: #ffe3cd;
+      line-height: 2.2; }

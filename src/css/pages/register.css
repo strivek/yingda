@@ -1,0 +1,74 @@
+@charset "UTF-8";
+body {
+  background: url("../images/register-bg.png") center center no-repeat; }
+
+.m-main-cy .title {
+  margin-top: 35px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #ffe3cd;
+  text-align: center;
+  font-family: "宋体";
+  font-size: 24px;
+  color: #ffe3cd;
+  font-weight: normal; }
+
+.m-main-cy .prompt {
+  position: relative;
+  margin-top: 7px;
+  padding-left: 12px;
+  font-family: "宋体";
+  font-size: 16px;
+  color: #ffe3cd; }
+  .m-main-cy .prompt span {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 0; }
+
+.m-main-cy .register-form {
+  padding-top: 43px; }
+  .m-main-cy .register-form .form-group {
+    margin-bottom: 25px; }
+    .m-main-cy .register-form .form-group label {
+      position: relative;
+      font-size: 16px;
+      font-family: "宋体";
+      color: #ffe3cd;
+      font-weight: normal; }
+      .m-main-cy .register-form .form-group label span {
+        display: inline-block;
+        position: absolute;
+        top: -6px;
+        right: -8px; }
+    .m-main-cy .register-form .form-group .form-control {
+      height: 38px;
+      background: none;
+      border: 1px solid #ffe3cd;
+      border-radius: 0;
+      color: #ffe3cd; }
+  .m-main-cy .register-form .form-check {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    border-bottom: 1px solid #ffe3cd; }
+    .m-main-cy .register-form .form-check label {
+      font-size: 16px;
+      font-family: "宋体";
+      color: #ffe3cd;
+      font-weight: normal; }
+      .m-main-cy .register-form .form-check label input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+        background: none;
+        border-bottom: 1px solid #ffe3cd;
+        border-radius: 0; }
+  .m-main-cy .register-form p.button {
+    margin-top: 43px;
+    text-align: center;
+    padding-bottom: 48px; }
+    .m-main-cy .register-form p.button .btn {
+      padding: 10px 45px;
+      background: #44332c;
+      border-radius: 0px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      outline: none; }

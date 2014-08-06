@@ -5626,7 +5626,7 @@ a, a:hover {
     height: 120px; }
 
 body {
-  background: url("../images/register-bg.png") center center no-repeat; }
+  background: url("../images/register-bg.png") center center repeat; }
 
 .m-main-cy .title {
   margin-top: 35px;
@@ -5700,7 +5700,7 @@ body {
       outline: none; }
 
 body {
-  background: url("../images/register-bg.png") center center no-repeat; }
+  background: url("../images/register-bg.png") center center repeat; }
 
 .m-main1-cy .title {
   padding-top: 122px;
@@ -5783,7 +5783,7 @@ body {
         background-position: 0% 100%; }
 
 body {
-  background: url("../images/register-bg.png") center center no-repeat; }
+  background: url("../images/register-bg.png") center center repeat; }
 
 .text {
   margin-top: 83px;

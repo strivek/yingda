@@ -1,30 +1,33 @@
 @charset "utf-8";
 //框架
-@import "vendor/bootstrap/bootstrap";
+@import "sass/vendor/bootstrap/bootstrap";
 
 //方法
-@import "helper/reset";
-@import "helper/mixin";
-@import "helper/function";
-@import "helper/margin";
-@import "helper/padding";
+@import "sass/helper/reset";
+@import "sass/helper/mixin";
+@import "sass/helper/function";
+@import "sass/helper/margin";
+@import "sass/helper/padding";
 
 
 //元件
-@import "unit/u-img";
+@import "sass/unit/u-img";
 
 
 //模块
-@import "modules/m-list";
-@import "modules/m-list1";
-@import "modules/m-list2";
+@import "sass/modules/m-list";
+@import "sass/modules/m-list1";
+@import "sass/modules/m-list2";
 
 //通用部分
-@import "partials/footer";
+@import "sass/partials/footer";
 
 
 //单独页面
-@import "pages/index"
+@import "sass/pages/index";
+@import "sass/pages/register";
+@import "sass/pages/login";
+@import "sass/pages/article";
 
 
 

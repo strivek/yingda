@@ -1,0 +1,29 @@
+@charset "utf-8";
+$font-family: '宋体';
+$color: #ffe3cd;
+body {
+  background: url("../images/register-bg.png")  center center no-repeat;
+}
+
+.text {
+  margin-top: 83px;
+  background: #251f20;
+  padding: 30px;
+  position: relative;
+  .close{position:absolute; top:24px;right:24px;}
+  .title {
+    font-size: 20px;
+    font-family: $font-family;
+    color: $color;
+    font-weight: none;
+  }
+  .con {margin-top: 26px; padding-right: 30px; overflow-y: scroll; height:700px;
+    p {
+      margin-bottom: 34px;
+      font-size: 12px;
+      font-family: $font-family;
+      color: $color;
+      line-height: 2.2;
+    }
+  }
+}
