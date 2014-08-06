@@ -8,6 +8,7 @@
 @import "helper/function";
 @import "helper/margin";
 @import "helper/padding";
+@import "helper/iconfont";
 
 
 //元件
@@ -26,6 +27,10 @@
 
 //单独页面
 @import "pages/index";
+@import "pages/article";
+@import "pages/login";
+@import "pages/register";
+
 
 
 

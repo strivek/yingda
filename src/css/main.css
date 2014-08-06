@@ -5122,6 +5122,12 @@ button.close {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+@font-face {
+  font-family: 'myfont';
+  src: url("../font/Didot.eot");
+  src: url("../font/Didot.eot?#iefix") format("embedded-opentype"), url("../font/Didot.woff") format("woff"), url("../font/Didot.ttf") format("truetype"), url("../font/Didot.svg#FontName") format("svg");
+  font-style: 14px;
+  font-weight: normal; }
 @-ms-viewport {
   width: device-width; }
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
@@ -5663,172 +5669,267 @@ a, a:hover {
     width: auto;
     height: 120px; }
 
-body {
-  background: url("../images/register-bg.png") center center no-repeat; }
+.g-footer {
+  border-top: 1px solid #ffe3cd;
+  font-family: '宋体'; }
 
-.m-main-cy .title {
-  margin-top: 35px;
-  padding-bottom: 42px;
-  border-bottom: 1px solid #ffe3cd;
-  text-align: center;
-  font-size: 24px;
-  color: #ffe3cd;
-  font-family: "宋体";
-  font-weight: normal; }
+.m-footer-bg {
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; }
 
-.m-main-cy .prompt {
+.m-footer {
   position: relative;
-  margin-top: 7px;
-  padding-left: 12px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #9b9b9e;
+  padding: 0 30px; }
+
+.m-footer p {
+  line-height: 42px;
   font-size: 16px;
-  color: #ffe3cd;
-  font-family: "宋体";
-  font-weight: normal; }
-  .m-main-cy .prompt span {
-    display: inline-block;
+  height: 42px;
+  margin: 0; }
+
+.m-footer ul {
+  margin: 0;
+  line-height: 42px;
+  height: 42px; }
+
+.m-footer .footer-nav a {
+  color: #9b9b9e;
+  text-decoration: none; }
+
+.m-footer .footer-nav a:hover {
+  color: #ccc;
+  text-decoration: none; }
+
+.m-footer > .row > div {
+  float: left;
+  position: relative;
+  min-height: 1px; }
+
+.m-footer .versions {
+  width: 21%; }
+
+.m-footer-nav {
+  width: 43%; }
+
+.m-footer-icon {
+  width: 13%; }
+
+.m-footer .from {
+  width: 23%; }
+
+.m-footer .versions1 {
+  width: 40%;
+  display: none; }
+
+.m-footer .versions2 {
+  width: 100%;
+  display: none; }
+
+@media (min-width: 1270px) and (max-width: 1440px) {
+  .m-footer p {
+    font-size: 14px; } }
+@media (min-width: 1140px) and (max-width: 1269px) {
+  .m-footer p {
+    font-size: 12px; }
+
+  .m-footer .footer-nav a {
+    font-size: 12px; } }
+@media (min-width: 1000px) and (max-width: 1139px) {
+  .m-footer .versions {
+    display: none; }
+
+  .m-footer-nav {
+    width: 100%; }
+
+  .m-footer-icon {
+    width: 20%; }
+
+  .m-footer .from {
+    width: 40%; }
+
+  .m-footer .from p {
+    text-align: left; }
+
+  .m-footer .versions1 {
+    display: block; }
+
+  .m-footer p {
+    font-size: 14px; } }
+@media (max-width: 999px) {
+  .m-footer ul {
+    line-height: 30px;
+    height: 30px; }
+
+  .m-footer .versions {
+    display: none; }
+
+  .m-footer-nav {
+    width: 100%; }
+
+  .m-footer-icon {
+    width: 100%; }
+
+  .m-footer .from {
+    width: 100%; }
+
+  .m-footer .from p {
+    text-align: center; }
+
+  .m-footer .versions2 {
+    display: block; }
+
+  .m-footer p {
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px; } }
+html, body {
+  height: 100%; }
+
+.g-header {
+  width: 100%;
+  z-index: 10;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 52px;
+  font-family: '宋体'; }
+
+.m-nav-list-bg {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  height: 120px;
+  background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  width: 100%;
+  z-index: 2;
+  display: none; }
+
+.m-nav .navbar-default .navbar-nav > li:last-child > a {
+  padding-right: 0; }
+
+.m-nav .navbar-default .navbar-nav > li > a {
+  padding: 15px 30px;
+  color: #9b9b9e;
+  font-size: 16px; }
+  .m-nav .navbar-default .navbar-nav > li > a:hover {
+    color: #f6d2b9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .m-nav .navbar-default .navbar-nav > li > a:nth-child(5) > a {
+    padding: 15px 34px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .m-nav .navbar-default .navbar-nav > li > a {
+      padding: 15px 12px;
+      font-size: 14px; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .m-nav .navbar-default .navbar-nav > li > a {
+      padding: 15px 20px; } }
+
+.myfont {
+  font-family: 'myfont'; }
+
+.m-nav a {
+  color: #9b9b9e;
+  font-size: 14px;
+  font-family: 'myfont'; }
+  .m-nav a:hover {
+    color: #f6d2b9;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .m-nav a {
+      font-size: 12px; } }
+
+.m-menu {
+  padding-bottom: 10px;
+  display: none; }
+  .m-menu > li {
+    line-height: 30px; }
+
+.m-nav .navbar {
+  border: none;
+  margin: 0; }
+
+.m-nav .navbar-default {
+  background: none; }
+
+.m-product {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
+  .m-product div {
     position: absolute;
-    top: -2px;
+    overflow: hidden; }
+  .m-product img {
+    position: absolute;
+    left: 50%;
+    margin-left: -366px; }
+  .m-product .fashion {
+    width: 23.75%;
+    height: 37.8125%;
+    top: 0;
     left: 0; }
-
-.m-main-cy .register-form {
-  padding-top: 43px; }
-  .m-main-cy .register-form .form-group {
-    margin-bottom: 25px; }
-    .m-main-cy .register-form .form-group label {
-      position: relative;
-      font-size: 16px;
-      color: #ffe3cd;
-      font-family: "宋体";
-      font-weight: normal; }
-      .m-main-cy .register-form .form-group label span {
-        display: inline-block;
-        position: absolute;
-        top: -6px;
-        right: -8px; }
-    .m-main-cy .register-form .form-group .form-control {
-      height: 38px;
-      background: none;
-      border: 1px solid #ffe3cd;
-      border-radius: 0;
-      color: #ffe3cd; }
-    .m-main-cy .register-form .form-group .warning-message {
-      display: none; }
-  .m-main-cy .register-form .warning .form-control {
-    border: 1px solid #ff0000; }
-  .m-main-cy .register-form .warning .warning-message {
-    margin-top: 4px;
-    display: block;
-    margin-bottom: -10px;
-    text-align: right;
-    font-family: "宋体";
-    font-size: 12px;
-    color: #e60012; }
-  .m-main-cy .register-form .form-check {
-    padding-bottom: 13px;
-    padding-top: 13px;
-    border-bottom: 1px solid #ffe3cd; }
-    .m-main-cy .register-form .form-check label {
-      font-size: 16px;
-      color: #ffe3cd;
-      font-family: "宋体";
-      font-weight: normal; }
-      .m-main-cy .register-form .form-check label input[type="checkbox"] {
-        display: inline-block;
-        margin-right: 5px;
-        background: none;
-        border-bottom: 1px solid #ffe3cd;
-        border-radius: 0; }
-  .m-main-cy .register-form p.button {
-    margin-top: 43px;
-    text-align: center;
-    padding-bottom: 48px; }
-    .m-main-cy .register-form p.button .btn {
-      padding: 10px 45px;
-      background: #44332c;
-      border-radius: 0px;
-      color: #ffe3cd;
-      font-family: "宋体";
-      outline: none; }
-
-body {
-  background: url("../images/register-bg.png") center center no-repeat; }
-
-.m-main1-cy .title {
-  padding-top: 122px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #ffe3cd;
-  text-align: center; }
-  .m-main1-cy .title img {
-    max-width: 100%; }
-.m-main1-cy .login-form {
-  padding-top: 61px; }
-  .m-main1-cy .login-form .form-group {
-    margin-bottom: 25px; }
-    .m-main1-cy .login-form .form-group label {
-      font-size: 16px;
-      color: #ffe3cd;
-      font-family: "宋体";
-      font-weight: normal; }
-    .m-main1-cy .login-form .form-group .form-control {
-      height: 38px;
-      background: none;
-      border: 1px solid #ffe3cd;
-      border-radius: 0;
-      color: #ffe3cd; }
-  .m-main1-cy .login-form .fpwd a {
-    display: block;
-    padding-bottom: 7px;
-    border-bottom: 1px solid #ffe3cd;
-    font-size: 16px;
-    color: #ffe3cd;
-    font-family: "宋体"; }
-  .m-main1-cy .login-form .fpwd a:hover {
-    color: #44332c; }
-  .m-main1-cy .login-form .button {
-    margin-top: 13px; }
-    .m-main1-cy .login-form .button button {
-      width: 100%;
-      background: #44332c;
-      border-radius: 0;
-      color: #ffe3cd;
-      font-size: 18px;
-      outline: none; }
-.m-main1-cy .create {
-  padding-top: 32px; }
-  .m-main1-cy .create .joinme {
-    margin-bottom: 13px;
-    font-size: 16px;
-    color: #ffe3cd;
-    font-family: "宋体";
-    font-weight: normal; }
-  .m-main1-cy .create .button .btn {
-    width: 100%;
-    background: #44332c;
-    border-radius: 0;
-    color: #ffe3cd;
-    font-size: 18px;
-    outline: none; }
-  .m-main1-cy .create .tryLogin {
-    padding-top: 32px; }
-    .m-main1-cy .create .tryLogin h3 {
-      padding-bottom: 7px;
-      font-size: 16px;
-      color: #ffe3cd;
-      font-family: "宋体";
-      font-weight: normal;
-      border-bottom: 1px solid #ffe3cd; }
-    .m-main1-cy .create .tryLogin .tu {
-      margin-top: 20px; }
-      .m-main1-cy .create .tryLogin .tu a {
-        display: inline-block; }
-        .m-main1-cy .create .tryLogin .tu a span {
-          padding-right: 30px;
-          display: inline-block;
-          font-size: 30px;
-          color: #ffe3cd;
-          font-family: iconfont; }
-      .m-main1-cy .create .tryLogin .tu a:hover span {
-        color: #44332c; }
+    .m-product .fashion img {
+      margin-left: -228px; }
+  .m-product .bally {
+    width: 38.125%;
+    height: 37.8125%;
+    top: 0;
+    left: 23.75%;
+    background-size: 100% 100%; }
+  .m-product .hot-first {
+    width: 38.125%;
+    height: 62.1875%;
+    right: 0;
+    top: 0; }
+  .m-product .hot-product {
+    width: 23.75%;
+    height: 24.375%;
+    right: 38.125%;
+    top: 37.8125%; }
+    .m-product .hot-product img {
+      margin-left: -228px; }
+  .m-product .av {
+    width: 38.125%;
+    height: 62.1875%;
+    left: 0;
+    bottom: 0; }
+  .m-product .sns {
+    width: 38.125%;
+    height: 37.8125%;
+    left: 38.125%;
+    bottom: 0; }
+  .m-product .other-colth {
+    width: 23.75%;
+    height: 37.8125%;
+    right: 0;
+    bottom: 0; }
+    .m-product .other-colth img {
+      margin-left: -228px; }
 
 body {
   background: url("../images/register-bg.png") center center no-repeat; }
@@ -5915,5 +6016,172 @@ body {
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none; }
+
+body {
+  background: url("../images/register-bg.png") center center no-repeat; }
+
+.m-main1-cy .title {
+  padding-top: 122px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ffe3cd;
+  text-align: center; }
+  .m-main1-cy .title img {
+    max-width: 100%; }
+.m-main1-cy .login-form {
+  padding-top: 61px; }
+  .m-main1-cy .login-form .form-group {
+    margin-bottom: 25px; }
+    .m-main1-cy .login-form .form-group label {
+      font-size: 16px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal; }
+    .m-main1-cy .login-form .form-group .form-control {
+      height: 38px;
+      background: none;
+      border: 1px solid #ffe3cd;
+      border-radius: 0;
+      color: #ffe3cd; }
+  .m-main1-cy .login-form .fpwd a {
+    display: block;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ffe3cd;
+    font-size: 16px;
+    color: #ffe3cd;
+    font-family: "宋体"; }
+  .m-main1-cy .login-form .fpwd a:hover {
+    color: #44332c; }
+  .m-main1-cy .login-form .button {
+    margin-top: 13px; }
+    .m-main1-cy .login-form .button button {
+      width: 100%;
+      background: #44332c;
+      border-radius: 0;
+      color: #ffe3cd;
+      font-size: 18px;
+      outline: none; }
+.m-main1-cy .create {
+  padding-top: 32px; }
+  .m-main1-cy .create .joinme {
+    margin-bottom: 13px;
+    font-size: 16px;
+    color: #ffe3cd;
+    font-family: "宋体";
+    font-weight: normal; }
+  .m-main1-cy .create .button .btn {
+    width: 100%;
+    background: #44332c;
+    border-radius: 0;
+    color: #ffe3cd;
+    font-size: 18px;
+    outline: none; }
+  .m-main1-cy .create .tryLogin {
+    padding-top: 32px; }
+    .m-main1-cy .create .tryLogin h3 {
+      padding-bottom: 7px;
+      font-size: 16px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal;
+      border-bottom: 1px solid #ffe3cd; }
+    .m-main1-cy .create .tryLogin .tu {
+      margin-top: 20px; }
+      .m-main1-cy .create .tryLogin .tu a {
+        display: inline-block; }
+        .m-main1-cy .create .tryLogin .tu a span {
+          padding-right: 30px;
+          display: inline-block;
+          font-size: 30px;
+          color: #ffe3cd;
+          font-family: iconfont; }
+      .m-main1-cy .create .tryLogin .tu a:hover span {
+        color: #44332c; }
+
+body {
+  background: url("../images/register-bg.png") center center no-repeat; }
+
+.m-main-cy .title {
+  margin-top: 35px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #ffe3cd;
+  text-align: center;
+  font-size: 24px;
+  color: #ffe3cd;
+  font-family: "宋体";
+  font-weight: normal; }
+
+.m-main-cy .prompt {
+  position: relative;
+  margin-top: 7px;
+  padding-left: 12px;
+  font-size: 16px;
+  color: #ffe3cd;
+  font-family: "宋体";
+  font-weight: normal; }
+  .m-main-cy .prompt span {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 0; }
+
+.m-main-cy .register-form {
+  padding-top: 43px; }
+  .m-main-cy .register-form .form-group {
+    margin-bottom: 25px; }
+    .m-main-cy .register-form .form-group label {
+      position: relative;
+      font-size: 16px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal; }
+      .m-main-cy .register-form .form-group label span {
+        display: inline-block;
+        position: absolute;
+        top: -6px;
+        right: -8px; }
+    .m-main-cy .register-form .form-group .form-control {
+      height: 38px;
+      background: none;
+      border: 1px solid #ffe3cd;
+      border-radius: 0;
+      color: #ffe3cd; }
+    .m-main-cy .register-form .form-group .warning-message {
+      display: none; }
+  .m-main-cy .register-form .warning .form-control {
+    border: 1px solid #ff0000; }
+  .m-main-cy .register-form .warning .warning-message {
+    margin-top: 4px;
+    display: block;
+    margin-bottom: -10px;
+    text-align: right;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #e60012; }
+  .m-main-cy .register-form .form-check {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    border-bottom: 1px solid #ffe3cd; }
+    .m-main-cy .register-form .form-check label {
+      font-size: 16px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal; }
+      .m-main-cy .register-form .form-check label input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+        background: none;
+        border-bottom: 1px solid #ffe3cd;
+        border-radius: 0; }
+  .m-main-cy .register-form p.button {
+    margin-top: 43px;
+    text-align: center;
+    padding-bottom: 48px; }
+    .m-main-cy .register-form p.button .btn {
+      padding: 10px 45px;
+      background: #44332c;
+      border-radius: 0px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      outline: none; }
 
 /*# sourceMappingURL=main.css.map */
