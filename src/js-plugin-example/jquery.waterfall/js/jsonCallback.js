@@ -1,4 +1,3 @@
-
 wf_callback(
 [
 	{
@@ -805,5 +804,3 @@ wf_callback(
 	}
 ]
 );
-
-
