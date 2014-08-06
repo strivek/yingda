@@ -1,0 +1,98 @@
+@charset "utf-8";
+$font-family: '宋体';
+$color: #ffe3cd;
+body {
+  background: url("../images/register-bg.png") center center no-repeat;
+}
+
+@mixin font($font-size: 16px) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  font-weight: normal;
+}
+.m-main-cy .title {
+  margin-top: 35px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid $color;
+  text-align: center;
+@include font(24px);
+}
+
+.m-main-cy .prompt {
+  position: relative;
+  margin-top: 7px;
+  padding-left: 12px;
+@include font();
+  span {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+  }
+}
+
+.m-main-cy .register-form {
+  padding-top: 43px;
+  .form-group {
+    margin-bottom: 25px;
+    label {
+      position: relative;
+    @include font();
+      span{display: inline-block;
+        position: absolute;
+       top:-6px;
+        right:-8px;
+      }
+
+    }
+    .form-control {
+      height: 38px;
+      background: none;
+      border: 1px solid $color;
+      border-radius: 0;
+      color:$color;
+      }
+    .warning-message{display: none;}
+  }
+  .warning{
+    .form-control{border:1px solid #ff0000;}
+    .warning-message{  margin-top: 4px;
+      display: block;
+      margin-bottom: -10px;
+      text-align: right;
+      font-family: "宋体";
+      font-size:12px;
+      color:#e60012;}
+  }
+  .form-check {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    border-bottom: 1px solid $color;
+    label {
+      @include font();
+      input[type="checkbox"]  {
+        display: inline-block;
+        margin-right:5px;
+        background:none;
+        border-bottom: 1px solid $color;
+        border-radius: 0;
+
+      }
+    }
+  }
+  p.button {
+    margin-top: 43px;
+    text-align: center;
+    padding-bottom: 48px;
+
+    .btn {
+      padding: 10px 45px;
+      background: #44332c;
+      border-radius: 0px;
+      color: $color;
+      font-family: $font-family;
+      outline: none;
+    }
+  }
+}

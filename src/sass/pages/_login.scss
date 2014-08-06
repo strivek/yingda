@@ -1,0 +1,108 @@
+@charset "utf-8";
+$font-family: '宋体';
+$color: #ffe3cd;
+
+@mixin font($font-size: 16px) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+body {
+  background: url("../images/register-bg.png") center center no-repeat;
+}
+
+.m-main1-cy {
+  .title {
+    padding-top: 122px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $color;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .login-form {
+    padding-top: 61px;
+    .form-group {
+      margin-bottom: 25px;
+      label {
+        @include font();
+      }
+      .form-control {
+        height: 38px;
+        background: none;
+        border: 1px solid $color;
+        border-radius: 0;
+        color: $color;
+      }
+    }
+    .fpwd {
+      a {
+        display: block;
+        padding-bottom: 7px;
+        border-bottom: 1px solid $color;
+        font-size: 16px;
+        color: $color;
+        font-family: $font-family;
+      }
+      a:hover {
+        color: #44332c;
+      }
+    }
+    .button {
+      margin-top: 13px;
+      button {
+        width: 100%;
+        background: #44332c;
+        border-radius: 0;
+        color: $color;
+        font-size: 18px;
+        outline: none;
+      }
+    }
+  }
+  .create {
+    padding-top: 32px;
+    .joinme {
+      margin-bottom: 13px;
+      @include font();
+    }
+    .button .btn {
+      width: 100%;
+      background: #44332c;
+      border-radius: 0;
+      color: $color;
+      font-size: 18px;
+      outline: none;
+    }
+    .tryLogin {
+      padding-top: 32px;
+      h3 {
+        padding-bottom: 7px;
+        @include font();
+        border-bottom: 1px solid $color;
+      }
+      .tu {
+        margin-top: 20px;
+        a {
+          display: inline-block;
+
+          span {
+            padding-right: 30px;
+            display: inline-block;
+            font-size: 30px;
+            color: $color;
+            font-family: iconfont;
+          }
+        }
+        a:hover span {
+          color: #44332c;
+        }
+
+      }
+
+    }
+  }
+}
