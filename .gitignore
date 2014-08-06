@@ -1,7 +1,10 @@
+
+
 #################
 ## Eclipse
 #################
-
+.idea/
+>>>>>>> 9f40a9beb3ebda37861c5b3826c5ad89d155402a
 *.pydevproject
 .project
 .metadata
