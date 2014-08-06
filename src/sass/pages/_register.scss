@@ -1,15 +1,16 @@
 @charset "utf-8";
 $font-family: '宋体';
 $color: #ffe3cd;
-body {
- 
-}
 
 @mixin font($font-size: 16px) {
   font-size: $font-size;
   color: $color;
   font-family: $font-family;
   font-weight: normal;
+}
+.m-main-cy{
+  position: relative;
+  z-index: 10;
 }
 .m-main-cy .title {
   margin-top: 35px;
@@ -44,7 +45,6 @@ body {
        top:-6px;
         right:-8px;
       }
-
     }
     .form-control {
       height: 38px;
