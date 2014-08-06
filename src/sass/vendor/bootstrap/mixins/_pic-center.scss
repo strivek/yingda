@@ -1,0 +1,9 @@
+@mixin pic-center($height,$ml){
+  position: relative;
+  height:$height ;
+  overflow: hidden;
+  img{
+    position: absolute;left: 50%;margin-left: $ml; top: 0;
+  }
+
+}

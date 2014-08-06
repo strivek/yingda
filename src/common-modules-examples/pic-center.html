@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-EN">
+<head>
+    <meta charset="UTF-8">
+    <title>图片居中</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <script data-main="javascript/main" src="../javascript/require.js"></script>
+    <style>
+        html,body{height: 100%;}
+        *{margin: 0;padding: 0;}
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="m-pic-center" >
+    <img src="../images/pic.jpg"  alt="图片居中" style=""/>
+</div>
+
+.m-pic-center{
+width: 40%;margin: 50px auto;  //父级的宽度在栅格中不必设置 margin为了
+@include pic-center(40%,-384px);// 40%为高度 ，-384px 为margin-left；
+}
+</body>
