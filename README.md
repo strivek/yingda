@@ -7,6 +7,10 @@
 ### 项目参与人
 @lisongyu @strivek @chengyuan
 
+###注意事项
+
+'git rebase'命令方便整合提交 
+
 
 
 
