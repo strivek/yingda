@@ -1,5 +1,8 @@
 /* 瀑布流样式 */
 .waterfall{overflow:hidden;zoom:1;width:90%; margin: 0 auto; margin-top:52px; }
+@media (min-width: 1610px) {
+    .waterfall{width: 72%;}
+}
 .wf_inner{margin:15px auto;}
 .wf_col{position:relative;min-height:473px;_height:473px;margin: 0 auto;}
 .wf_item{
