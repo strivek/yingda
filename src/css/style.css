@@ -10,8 +10,16 @@
    box-shadow:5px 3px 3px rgba(221,221,221,.32);color:#565656;
     float:left;overflow:hidden;zoom:1;
     position:absolute;
+    cursor: pointer;
 }
 .wf_item_inner{margin:0px; background: #f8f6f5;}
+.wf_item:hover {
+
+    -webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.35);
+    -moz-box-shadow:  0 0 3px 3px rgba(0,0,0,0.35);
+    box-shadow:  0 0 3px 3px rgba(0,0,0,0.35);
+}
+
 .waterfall-content{padding: 15px;}
 
 .waterfall-content p{font-size: 12px; line-height: 18px; color: #242222;}

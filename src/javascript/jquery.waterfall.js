@@ -286,7 +286,7 @@ define(["jquery"],function($){
 			
 			fixedPosition($backTop[0], {
 				left: backTop_left,
-				bottom: 0
+				bottom: 150
 			});
 			
 		}
