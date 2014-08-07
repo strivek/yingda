@@ -1,10 +1,6 @@
 @charset "utf-8";
 $font-family: '宋体';
 $color: #ffe3cd;
-body {
- 
-}
-
 @mixin font($font-size: 16px) {
   font-size: $font-size;
   color: $color;

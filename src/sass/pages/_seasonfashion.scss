@@ -1,0 +1,120 @@
+@charset "utf-8";
+body {
+  background: url("../images/seasonfashion-bg.png") repeat;
+}
+
+$font-family: '宋体';
+@mixin font($font-size: 14px, $font-color: #564b47) {
+  font-size: $font-size;
+  font-family: $font-family;
+  color: #564b47;
+  font-weight: normal;
+}
+
+/*所有屏的公共样式*/
+.m-content-cy {
+  margin-top: 60px;
+  .title {
+    text-align: center;
+    @include font(30px);
+  }
+  .subtitle {
+    line-height: 40px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #564b47;
+    text-align: center;
+  }
+  .images{
+    border: 4px solid #fff;
+  }
+  .paragraph {
+    margin-top: 34px;
+    @include font(16px, #32251f);
+    line-height: 24px;
+  }
+}
+
+.m-content3-cy .img img{max-width: 100%;}
+.m-content4-cy .vedio img{max-width: 100%;}
+/*第五屏图片滚动展示*/
+.m-imgList {
+  margin-top: 178px;
+  .top {
+    padding-bottom: 10px;
+    border-bottom: 1px #564b47 solid;
+    .icon {
+      float: left;
+      a {
+        display: inline-block;
+        margin-right: 15px;
+        span {
+          display: inline-block;
+          font-size: 20px;
+          color: #160b0a;
+        }
+        &:hover span {
+          color: #6f4d38;
+        }
+      }
+
+    }
+    .paging {
+      float: right;
+      a {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 14px;
+        color: #333333;
+        font-family: "宋体";
+        &:hover {
+          color: #714e38;
+        }
+      }
+    }
+  }
+  .title {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #564b47;
+    font-family: "宋体";
+  }
+  .img-slide {margin-bottom: 70px;
+
+      a {
+        position: relative;
+        display: block;
+        padding-right: 1px;
+        img{ display:block; margin-left:auto; margin-right:auto;width: 100%; }
+        .filt-bg {
+          display:none;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 30px;
+          width: 100%;
+          background: #000;
+          opacity: 0.3;
+          filter: alpha(opacity=30);
+          z-index: 10;
+        }
+        .descript {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 30px;
+          width: 100%;
+          line-height: 30px;
+          text-align: center;
+          font-size: 12px;
+          font-family: "宋体";
+          color: #999;
+          z-index: 11;
+        }
+        &:hover .descript,&:hover .filt-bg{display: block;}
+      }
+
+    }
+  }
