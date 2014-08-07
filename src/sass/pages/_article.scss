@@ -1,7 +1,9 @@
 @charset "utf-8";
 $font-family: '宋体';
 $color: #ffe3cd;
-
+body {
+  
+}
 
 @mixin font($font-size: 16px) {
   font-size: $font-size;
@@ -9,11 +11,6 @@ $color: #ffe3cd;
   font-family: $font-family;
   font-weight: normal;
 }
-.m-main2-cy{
-  position:relative;
-  z-index: 10;
-}
-
 .text {
   margin-top: 83px;
   background: #251f20;
