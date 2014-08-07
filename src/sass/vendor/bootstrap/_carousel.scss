@@ -82,12 +82,12 @@
 
   // Set gradients for backgrounds
   &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+    /*@include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));*/
   }
   &.right {
     left: auto;
     right: 0;
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+/*    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));*/
   }
 
   // Hover/focus state
@@ -214,10 +214,10 @@
     .glyphicon-chevron-right,
     .icon-prev,
     .icon-next {
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       margin-top: -15px;
-      font-size: 30px;
+      font-size: 40px;
     }
     .glyphicon-chevron-left,
     .icon-prev {
