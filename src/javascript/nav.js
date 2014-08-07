@@ -53,8 +53,11 @@ define(['jquery'],function($){
         $(this).siblings().find(b).hide();
         $(this).find(b).toggle();
 
-        $(c).toggle();
-
+        if($(this).find(b).css('display')=='none'){
+            $(c).hide();
+        }else{
+            $(c).show();
+        }
 
     }
 

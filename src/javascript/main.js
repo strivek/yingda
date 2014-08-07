@@ -20,11 +20,13 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
 
     obj.on('click',function(){
 
-       $(this).attr('num',parseInt($(this).attr('num'))+1);
-        $(this).siblings().attr('num',0);
-          var _that=$(this).attr('num');
+        if($(window).width()<1000) {
+            $(this).attr('num', parseInt($(this).attr('num')) + 1);
+            $(this).siblings().attr('num', 0);
+            var _that = $(this).attr('num');
 
-        $(this).navshow('.m-menu','.m-nav-list-bg',_that);
+            $(this).navshow('.m-menu', '.m-nav-list-bg', _that);
+        }
 
 
     });
