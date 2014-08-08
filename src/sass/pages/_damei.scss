@@ -28,7 +28,7 @@ body {
     }
     .m-product1 {
       padding-top: 238px;
-      .m-lcon {
+      .m-lcon-1 {
         position: relative;
         .z-plus {
           position: absolute;
@@ -48,9 +48,8 @@ body {
       }
     }
     .m-product2 {
-      overflow: hidden;
       padding-top: 48px;
-      .m-lcon {
+      .m-lcon-2{
         position: relative;
         .z-plus {
           position: absolute;
@@ -77,4 +76,10 @@ body {
     padding-top: 0 !important;
     margin-top: 20px;
   }
+}
+.m-lcon-1{
+  @include pic-center(365px,-144px)
+}
+.m-lcon-2{
+  @include pic-center(365px,-183px)
 }
