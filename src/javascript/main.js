@@ -43,3 +43,10 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
 //    })
 
 });
+require(['jquery','jquery.waterfall'],function($){
+    $('#waterfall').waterfall({
+        url: 'json/json.js',
+        perNum: 5,			// 每次显示五个
+        ajaxTimes: 1 		// 只发送一次请求
+    });
+});

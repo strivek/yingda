@@ -81,9 +81,12 @@ define(["jquery"],function($){
 								  '<a href="'+ data.href +'" class="thumb" target="_blank">' +
 									'<img class="'+opts.imgClass+'"  src="'+ data.imgSrc +'" />' +
 								  '</a>' +
+                            '<div class="waterfall-content">' +
 								  '<h3 class="title"><a href="'+ data.href +'" target="_blank">'+ data.title +'</a></h3>' +
+                            '<p class="time-line"><span class="time">'+data.time+'</span></p>' +
 								  '<p class="desc">'+ data.describe +'</p>' +
-							  '</div>';
+                            '<p class="text-right" style="text-align: right"><a href="'+ data.href +'" target="_blank">'+ '详情>' +'</a></p>' +
+							  '</div></div>';
 					};
 		
 		
@@ -283,7 +286,7 @@ define(["jquery"],function($){
 			
 			fixedPosition($backTop[0], {
 				left: backTop_left,
-				bottom: 0
+				bottom: 150
 			});
 			
 		}
@@ -352,9 +355,9 @@ define(["jquery"],function($){
 	$.fn.waterfall.defaults = {
 		itemClass: 'wf_item',	// 砖块类名
 		imgClass: 'thumb_img',	// 图片类名
-		colWidth: 235,			// 列宽(int)
-		marginLeft: 15,			// 每列的左间宽(int)
-		marginTop: 15,			// 每列的上间宽(int)
+		colWidth: 280,			// 列宽(int)
+		marginLeft: 10,			// 每列的左间宽(int)
+		marginTop: 10,			// 每列的上间宽(int)
 		perNum: 'auto',			// 每次下拉时显示多少个(默认是列数)
 		isAnimation: true,		// 是否使用动画效果
 		ajaxTimes: 'infinite',	// 限制异步请求的次数(int) 字符串'infinite'表示无限加载
