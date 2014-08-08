@@ -13,11 +13,14 @@ $font-family: '宋体';
 
 /*所有屏的公共样式*/
 .m-content-cy {
-  margin-top: 60px;
+  margin-top: 70px;
+
   .title {
     text-align: center;
     @include font(30px);
   }
+  .yiheng{ height: 2px;width: 14px;margin:8px auto 0;background:#908885;}
+
   .subtitle {
     line-height: 40px;
     padding-bottom: 20px;
@@ -35,9 +38,10 @@ $font-family: '宋体';
   }
 }
 
-.m-content3-cy .img img{max-width: 100%;}
-.m-content4-cy .vedio img{max-width: 100%;}
-/*第五屏图片滚动展示*/
+.m-content1-cy .images a span.glyphicon,.m-content2-cy .images a span.glyphicon{background: #392e24; color:#cdb398; font-size:50px;}
+.m-content3-cy .img img,.m-content4-cy .vedio img{max-width: 100%;}
+/*第五屏图片列表展示*/
+
 .m-imgList {
   margin-top: 178px;
   .top {
