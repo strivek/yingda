@@ -1,0 +1,85 @@
+@charset "utf-8";
+$fontStack: '宋体';
+$primaryColor: #f6d2b9;
+body {
+  background: url("../images/damei-bg.png") repeat-y;
+}
+
+.m-main-zt {
+  margin: 155px 0;
+  .m-bd {
+    .m-hd {
+      margin-top: 55px;
+      h3 {
+        font-family: $fontStack;
+        font-size: 40px;
+        color: $primaryColor;
+        font-weight: normal;
+      }
+      p {
+        font-size: 14px;
+        padding-top: 20px;
+        @extend h3;
+        span {
+          line-height: 1.8em;
+          padding-left: 20px;
+        }
+      }
+    }
+    .m-product1 {
+      padding-top: 238px;
+      .m-lcon-1 {
+        position: relative;
+        .z-plus {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
+      }
+      p {
+        font: {
+          family: $fontStack;
+          size: 14px;
+          weight: normal;
+        }
+        color: $primaryColor;
+        padding-top: 13px;
+        line-height: 1.8em;
+      }
+    }
+    .m-product2 {
+      padding-top: 48px;
+      .m-lcon-2{
+        position: relative;
+        .z-plus {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
+      }
+      p {
+        font: {
+          family: $fontStack;
+          size: 14px;
+          weight: normal;
+        }
+        color: $primaryColor;
+        padding-top: 13px;
+        line-height: 1.8em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .m-product1, .m-product2 {
+    padding-top: 0 !important;
+    margin-top: 20px;
+  }
+}
+.m-lcon-1{
+  @include pic-center(365px,-144px)
+}
+.m-lcon-2{
+  @include pic-center(365px,-183px)
+}
