@@ -50,3 +50,4 @@ require(['jquery','jquery.waterfall'],function($){
         ajaxTimes: 1 		// 只发送一次请求
     });
 });
+
