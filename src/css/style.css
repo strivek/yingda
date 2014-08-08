@@ -21,14 +21,16 @@
 }
 
 .waterfall-content{padding: 15px;}
-
+.waterfall-content a{color:#242222}
 .waterfall-content p{font-size: 12px; line-height: 18px; color: #242222;}
 .waterfall-content .time-line{ border-bottom: 1px solid #9a9391;line-height: 32px; margin-bottom: 10px; background: url("../images/time.png") left center no-repeat;}
 .waterfall-content .time{padding-left: 16px;color: #242222; font-size: 12px; }
 .wf_item .thumb{background:#E9E9E9;position:relative;display:block;overflow:hidden;font-size:0;}
 .wf_item .thumb_img{width:100%;max-width:100%;-ms-interpolation-mode:bicubic;/*解决IE7缩放图片会失真*/}
 .wf_item .title{height:27px;margin:7px 0 0;color:#538700;font-size:17px;font-family:\5FAE\8F6F\96C5\9ED1;}
-.wf_item .title a{color:#242222; font-size: 18px; font-weight: normal;}
+
+.wf_item .title a{ font-size: 18px; font-weight: normal;}
+.wf_item a:hover{color:#d7bca0;}
 .wf_item .desc{word-wrap:break-word;word-break:break-all;color:#888;}
 .wf_result{height:32px;line-height:32px;margin-top:15px;text-align:center;color:#666;}
 .wf_loading{background:url(../images/loading.gif) center center no-repeat;}

@@ -5,7 +5,6 @@ require.config({
 	}
 
 });
-
 require(['jquery', 'bootstrap','nav'], function($,nav) {
 //    $('.nav>li:not(:last):not(:first)').hover(function(){
 //        $(this).navshow('.m-menu','.m-nav-list-bg');
@@ -16,10 +15,7 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
     var obj1=$('.nav>li:not(:last)');
     var number=0;
     obj.attr('num',number);
-
-
     obj.on('click',function(){
-
         if($(window).width()<1000) {
             $(this).attr('num', parseInt($(this).attr('num')) + 1);
             $(this).siblings().attr('num', 0);
@@ -27,14 +23,11 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
 
             $(this).navshow('.m-menu', '.m-nav-list-bg', _that);
         }
-
-
     });
     obj1.hover(function(){
         if($(window).width()>1000){
             $(this).navshow1('.m-menu','.m-nav-list-bg');
         }
-
     });
 //    obj1.mouseout(function(){
 //        if($(window).width()>1024){
@@ -43,6 +36,7 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
 //    })
 
 });
+//瀑布流调用
 require(['jquery','jquery.waterfall'],function($){
     $('#waterfall').waterfall({
         url: 'json/json.js',
