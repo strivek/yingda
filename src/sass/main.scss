@@ -14,12 +14,14 @@
 //元件
 @import "unit/u-img";
 @import "unit/u-fullscreen";
+@import "unit/u-share";
 
 
 //模块
 @import "modules/m-list";
 @import "modules/m-list1";
 @import "modules/m-list2";
+@import "modules/m-list3";
 
 //通用部分
 @import "partials/footer";
@@ -32,6 +34,7 @@
 @import "pages/login";
 @import "pages/register";
 @import "pages/seasonfashion";
+@import "pages/newsdetails";
 
 
 
