@@ -18,19 +18,14 @@ $font-family: '宋体';
     text-align: center;
     @include font(30px);
   }
-< < < < < < < HEAD . yiheng {
+
+  .yiheng {
   height: 2px;
   width: 14px;
   margin: 8px auto 0;
   background: #908885;
 }
-  . yiheng {
-  height: 2px;
-  width: 14px;
-  margin: 8px auto 0;
-  background: #908885;
-}
-  . subtitle {
+  .subtitle {
   line-height: 40px;
   padding-bottom: 20px;
   font-size: 14px;
