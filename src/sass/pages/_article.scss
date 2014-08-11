@@ -1,17 +1,13 @@
 @charset "utf-8";
 $font-family: '宋体';
 $color: #ffe3cd;
-body {
-
-}
-
 @mixin font($font-size: 16px) {
   font-size: $font-size;
   color: $color;
   font-family: $font-family;
   font-weight: normal;
 }
-
+.m-main2-cy{
 .text {
   margin-top: 83px;
   background: #251f20;
@@ -110,4 +106,4 @@ user-select:none;
 -khtml-user-select:none;
 -webkit-user-select:none;
 
-}
+}}
