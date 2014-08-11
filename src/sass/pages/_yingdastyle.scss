@@ -1,11 +1,9 @@
-
 .g-carousel-cy {
   height: 100%;
   width: 100%;
   display: table;
   text-align: center;
 }
-
 .m-carousel-cy {
   display: table-cell;
   vertical-align: middle;
@@ -48,22 +46,23 @@
 
     }
   }
-  .carousel-control{ width: 5%;}
+  .carousel-control {
+    width: 5%;
+  }
   .carousel .left {
     text-align: left;
     span.glyphicon-chevron-left {
       left: 8%;
-      color:#ffe3cd;
-
+      color: #ffe3cd;
     }
   }
   .carousel .right {
     text-align: right;
     span.glyphicon-chevron-right {
       right: 8%;
-      color:#ffe3cd;
-margin-right:0px;
-}
-}
+      color: #ffe3cd;
+      margin-right: 0px;
+    }
+  }
 }
 
