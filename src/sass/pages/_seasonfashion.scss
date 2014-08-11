@@ -1,8 +1,4 @@
 @charset "utf-8";
-body {
-  background: url("../images/seasonfashion-bg.png") repeat;
-}
-
 $font-family: '宋体';
 @mixin font($font-size: 14px, $font-color: #564b47) {
   font-size: $font-size;
