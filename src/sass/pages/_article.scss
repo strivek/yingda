@@ -43,7 +43,7 @@ body {
 
 #scrollbar1 {
   position: relative;
-  margin-top: 30px;
+
 }
 
 #scrollbar1 .viewport {
@@ -88,21 +88,26 @@ body {
   left: -6px;
 }
 
-#scrollbar1 .thumb .end {
-  background: transparent url("../images/article-scroll.png") no-repeat center top;
-  overflow: hidden;
-  height: 5px;
-  width: 14px;
+
+#scrollbar1 .thumb .end
+{
+  background:transparent url("../images/article-scroll.png") no-repeat center top;
+overflow:hidden;
+height:5px;
+width:14px;
 }
 
-#scrollbar1 .disable {
-  display: none;
+#scrollbar1 .disable
+{
+display:none;
 }
 
-.noSelect {
-  user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
+.noSelect
+{
+user-select:none;
+-o-user-select:none;
+-moz-user-select:none;
+-khtml-user-select:none;
+-webkit-user-select:none;
+
 }

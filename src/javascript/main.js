@@ -45,3 +45,17 @@ require(['jquery','jquery.waterfall'],function($){
     });
 });
 
+require(['jquery', 'bootstrap'], function($) {
+
+    $('.carousel').carousel({
+        interval: 2000
+    })
+})
+require(['jquery', 'jquery.tinyscrollbar'], function($) {
+
+    var $scrollbar = $("#scrollbar1");
+
+
+    $scrollbar.tinyscrollbar();
+})
+
