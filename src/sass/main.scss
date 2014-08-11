@@ -1,7 +1,6 @@
 @charset "utf-8";
 //框架
 @import "vendor/bootstrap/bootstrap";
-
 //方法
 @import "helper/reset";
 @import "helper/mixin";
@@ -9,25 +8,18 @@
 @import "helper/margin";
 @import "helper/padding";
 @import "helper/iconfont";
-
-
 //元件
 @import "unit/u-img";
 @import "unit/u-fullscreen";
 @import "unit/u-share";
-
-
 //模块
 @import "modules/m-list";
 @import "modules/m-list1";
 @import "modules/m-list2";
 @import "modules/m-list3";
-
 //通用部分
 @import "partials/footer";
 @import "partials/head";
-
-
 //单独页面
 @import "pages/index";
 @import "pages/article";

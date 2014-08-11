@@ -1,4 +1,8 @@
 @charset "utf-8";
+body {
+  background: url("../images/seasonfashion-bg.png") repeat;
+}
+
 $font-family: '宋体';
 @mixin font($font-size: 14px, $font-color: #564b47) {
   font-size: $font-size;
@@ -14,19 +18,23 @@ $font-family: '宋体';
     text-align: center;
     @include font(30px);
   }
-  .yiheng {
-    height: 2px;
-    width: 14px;
-    margin: 8px auto 0;
-    background: #908885;
-  }
-  .subtitle {
-    line-height: 40px;
-    padding-bottom: 20px;
-    font-size: 14px;
-    color: #564b47;
-    text-align: center;
-  }
+< < < < < < < HEAD . yiheng {
+  height: 2px;
+  width: 14px;
+  margin: 8px auto 0;
+  background: #908885;
+} == == == = . yiheng {
+  height: 2px;
+  width: 14px;
+  margin: 8px auto 0;
+  background: #908885;
+} > > > > > > > pr / 27 . subtitle {
+  line-height: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #564b47;
+  text-align: center;
+}
   .images {
     border: 4px solid #fff;
   }
@@ -50,4 +58,5 @@ $font-family: '宋体';
 /*第五屏图片列表展示*/
 .m-imgList {
   margin-top: 178px;
+
 }

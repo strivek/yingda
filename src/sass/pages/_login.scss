@@ -2,14 +2,12 @@
 $font-family: '宋体';
 $color: #ffe3cd;
 
-
-@mixin font($font-size:16px) {
+@mixin font($font-size: 16px) {
   font-size: $font-size;
   color: $color;
   font-family: $font-family;
   font-weight: normal;
 }
-
 
 .m-main1-cy {
   position: relative;
@@ -64,9 +62,9 @@ $color: #ffe3cd;
     }
   }
   //注册新用户
-  .reg{
+  .reg {
     padding-top: 32px;
-    .reg-label{
+    .reg-label {
       margin-bottom: 13px;
       @include font();
     }

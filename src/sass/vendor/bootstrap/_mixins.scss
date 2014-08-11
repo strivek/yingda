@@ -1,6 +1,5 @@
 // Mixins
 // --------------------------------------------------
-
 // Utilities
 @import "mixins/hide-text";
 @import "mixins/opacity";
@@ -27,12 +26,10 @@
 @import "mixins/forms";
 @import "mixins/progress-bar";
 @import "mixins/table-row";
-
 // Skins
 @import "mixins/background-variant";
 @import "mixins/border-radius";
 @import "mixins/gradients";
-
 // Layout
 @import "mixins/clearfix";
 @import "mixins/center-block";

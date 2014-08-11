@@ -49,7 +49,7 @@ body {
     }
     .m-product2 {
       padding-top: 48px;
-      .m-lcon-2{
+      .m-lcon-2 {
         position: relative;
         .z-plus {
           position: absolute;
@@ -77,9 +77,11 @@ body {
     margin-top: 20px;
   }
 }
-.m-lcon-1{
-  @include pic-center(365px,-144px)
+
+.m-lcon-1 {
+  @include pic-center(365px, -144px)
 }
-.m-lcon-2{
-  @include pic-center(365px,-183px)
+
+.m-lcon-2 {
+  @include pic-center(365px, -183px)
 }

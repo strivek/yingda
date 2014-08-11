@@ -8,19 +8,20 @@ $color: #ffe3cd;
   font-family: $font-family;
   font-weight: normal;
 }
+
 .m-main-cy .title {
   margin-top: 35px;
   padding-bottom: 42px;
   border-bottom: 1px solid $color;
   text-align: center;
-@include font(24px);
+  @include font(24px);
 }
 
 .m-main-cy .prompt {
   position: relative;
   margin-top: 7px;
   padding-left: 12px;
-@include font();
+  @include font();
   span {
     display: inline-block;
     position: absolute;
@@ -35,11 +36,12 @@ $color: #ffe3cd;
     margin-bottom: 25px;
     label {
       position: relative;
-    @include font();
-      span{display: inline-block;
+      @include font();
+      span {
+        display: inline-block;
         position: absolute;
-       top:-6px;
-        right:-8px;
+        top: -6px;
+        right: -8px;
       }
 
     }
@@ -48,19 +50,25 @@ $color: #ffe3cd;
       background: none;
       border: 1px solid $color;
       border-radius: 0;
-      color:$color;
-      }
-    .warning-message{display: none;}
+      color: $color;
+    }
+    .warning-message {
+      display: none;
+    }
   }
-  .warning{
-    .form-control{border:1px solid #ff0000;}
-    .warning-message{  margin-top: 4px;
+  .warning {
+    .form-control {
+      border: 1px solid #ff0000;
+    }
+    .warning-message {
+      margin-top: 4px;
       display: block;
       margin-bottom: -10px;
       text-align: right;
       font-family: "宋体";
-      font-size:12px;
-      color:#e60012;}
+      font-size: 12px;
+      color: #e60012;
+    }
   }
   .form-check {
     padding-bottom: 13px;
@@ -68,10 +76,10 @@ $color: #ffe3cd;
     border-bottom: 1px solid $color;
     label {
       @include font();
-      input[type="checkbox"]  {
+      input[type="checkbox"] {
         display: inline-block;
-        margin-right:5px;
-        background:none;
+        margin-right: 5px;
+        background: none;
         border-bottom: 1px solid $color;
         border-radius: 0;
 
