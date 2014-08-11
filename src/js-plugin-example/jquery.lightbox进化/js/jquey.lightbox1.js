@@ -1,17 +1,4 @@
 define(['jquery'], function ($) {
-    /**
-     * Lightbox v2.7.1
-     * by Lokesh Dhakar - http://lokeshdhakar.com/projects/lightbox2/
-     *
-     * @license http://creativecommons.org/licenses/by/2.5/
-     * - Free for use in both personal and commercial projects
-     * - Attribution requires leaving author name, author link, and the license info intact
-     */
-
-
-    // Use local alias
-    var $ = jQuery;
-
     var LightboxOptions = (function () {
         function LightboxOptions() {
             this.fadeDuration = 500;
@@ -32,23 +19,21 @@ define(['jquery'], function ($) {
         return LightboxOptions;
     })();
 
-
     var Lightbox = (function () {
         function Lightbox(options) {
-            this.options = options;
-            this.album = [];
+            this.options           = options;
+            this.album             = [];
             this.currentImageIndex = void 0;
-            this.init();
-        }
+            this.init();//实例化后直接运行init方法
+        };
 
         Lightbox.prototype.init = function () {
             this.enable();
             this.build();
         };
 
-        // Loop through anchors and areamaps looking for either data-lightbox attributes or rel attributes
-        // that contain 'lightbox'. When these are clicked, start lightbox.
-        Lightbox.prototype.enable = function () {
+        //根据data-lightbox 绑定点击事件
+        Lightbox.protype.enable = function () {
             var self = this;
             $('body').on('click', 'a[rel^=lightbox], area[rel^=lightbox], a[data-lightbox], area[data-lightbox]', function (event) {
                 self.start($(event.currentTarget));
@@ -56,25 +41,26 @@ define(['jquery'], function ($) {
             });
         };
 
-        // Build html for the lightbox and the overlay.
-        // Attach event handlers to the new DOM elements. click click click
-        Lightbox.prototype.build = function () {
+        Lightbox.protype.build = function () {
             var self = this;
+            //生成html模板
+            //TODO-JEFF:从html页面获取模板
             $("<div id='lightboxOverlay' class='lightboxOverlay'></div><div id='lightbox' class='lightbox'><div class='lb-outerContainer'><div class='lb-container'><img class='lb-image' src='' /><div class='lb-nav'><a class='lb-prev' href='' ></a><a class='lb-next' href='' ></a></div><div class='lb-loader'><a class='lb-cancel'></a></div></div></div><div class='lb-dataContainer'><div class='lb-data'><div class='lb-details'><span class='lb-caption'></span><span class='lb-number'></span></div><div class='lb-closeContainer'><a class='lb-close'></a></div></div></div></div>").appendTo($('body'));
 
-            // Cache jQuery objects
-            this.$lightbox = $('#lightbox');
+            //缓存Jquery对象
+            this.$lightbox = $('#lightbox');//遮罩
             this.$overlay = $('#lightboxOverlay');
-            this.$outerContainer = this.$lightbox.find('.lb-outerContainer');
-            this.$container = this.$lightbox.find('.lb-container');
+            this.$outerContainer = this.$lightbox.find('.lb-outerContainer');//图片区
+            this.$container = this.$lightbox.find('.lb-container');//数据区
 
-            // Store css values for future lookup
+            //存储css值
+            //TODO-JEFF:此处css的用处
             this.containerTopPadding = parseInt(this.$container.css('padding-top'), 10);
             this.containerRightPadding = parseInt(this.$container.css('padding-right'), 10);
             this.containerBottomPadding = parseInt(this.$container.css('padding-bottom'), 10);
             this.containerLeftPadding = parseInt(this.$container.css('padding-left'), 10);
 
-            // Attach event handlers to the newly minted DOM elements
+            //绑定事件
             this.$overlay.hide().on('click', function () {
                 self.end();
                 return false;
@@ -118,8 +104,7 @@ define(['jquery'], function ($) {
             });
         };
 
-        // Show overlay and lightbox. If the image is part of a set, add siblings to album array.
-        Lightbox.prototype.start = function ($link) {
+        Lightbox.prototype.start = function ($link /*触发事件的元素,event.currentTarget*/) {
             var self = this;
             var $window = $(window);
 
@@ -129,10 +114,9 @@ define(['jquery'], function ($) {
                 visibility: "hidden"
             });
 
-            this.sizeOverlay();
-
-            this.album = [];
-            var imageNumber = 0;
+            this.sizeOverlay();//打开遮罩
+            this.album = []; //数组清零
+            var imageNumber = 0;//图片数量清零
 
             function addToAlbum($link) {
                 self.album.push({
@@ -144,12 +128,14 @@ define(['jquery'], function ($) {
             // Support both data-lightbox attribute and rel attribute implementations
             var dataLightboxValue = $link.attr('data-lightbox');
             var $links;
+
             if (dataLightboxValue) {
+                //查询所有带有相同data-lightbox值的链接
                 $links = $($link.prop("tagName") + '[data-lightbox="' + dataLightboxValue + '"]');
                 for (var i = 0; i < $links.length; i = ++i) {
                     addToAlbum($($links[i]));
                     if ($links[i] === $link[0]) {
-                        imageNumber = i;
+                        imageNumber = i; //当前图片处于第几张
                     }
                 }
             } else {
@@ -162,7 +148,7 @@ define(['jquery'], function ($) {
                     for (var j = 0; j < $links.length; j = ++j) {
                         addToAlbum($($links[j]));
                         if ($links[j] === $link[0]) {
-                            imageNumber = j;
+                            imageNumber = j; //当前图片处于第几张
                         }
                     }
                 }
@@ -178,7 +164,6 @@ define(['jquery'], function ($) {
             this.changeImage(imageNumber);
         };
 
-        // Hide most UI elements in preparation for the animated resizing of the lightbox.
         Lightbox.prototype.changeImage = function (imageNumber) {
             var self = this;
 
@@ -234,20 +219,29 @@ define(['jquery'], function ($) {
             this.currentImageIndex = imageNumber;
         };
 
-        // Stretch overlay to fit the viewport
-        Lightbox.prototype.sizeOverlay = function () {
+        Lightbox.prototype.end = function () {
+            this.disableKeyboardNav();
+            $(window).off("resize", this.sizeOverlay);
+            this.$lightbox.fadeOut(this.options.fadeDuration);
+            this.$overlay.fadeOut(this.options.fadeDuration);
+            $('select, object, embed').css({
+                visibility: "visible"
+            });
+        };
+        //屏幕的width()和height();
+        Lightbox.prototype.sizeOverlay = function() {
             this.$overlay
                 .width($(window).width())
                 .height($(document).height());
         };
 
-        // Animate the size of the lightbox to fit the image we are showing
-        Lightbox.prototype.sizeContainer = function (imageWidth, imageHeight) {
+        //更改container去匹配图片的大小
+        Lightbox.prototype.sizeContainer = function(imageWidth, imageHeight) {
             var self = this;
 
-            var oldWidth = this.$outerContainer.outerWidth();
+            var oldWidth  = this.$outerContainer.outerWidth();
             var oldHeight = this.$outerContainer.outerHeight();
-            var newWidth = imageWidth + this.containerLeftPadding + this.containerRightPadding;
+            var newWidth  = imageWidth + this.containerLeftPadding + this.containerRightPadding;
             var newHeight = imageHeight + this.containerTopPadding + this.containerBottomPadding;
 
             function postResize() {
@@ -261,16 +255,15 @@ define(['jquery'], function ($) {
                 this.$outerContainer.animate({
                     width: newWidth,
                     height: newHeight
-                }, this.options.resizeDuration, 'swing', function () {
+                }, this.options.resizeDuration, 'swing', function() {
                     postResize();
                 });
             } else {
                 postResize();
             }
         };
-
-        // Display the image and it's details and begin preload neighboring images.
-        Lightbox.prototype.showImage = function () {
+        //显示图片并且预加载下一张图片
+        Lightbox.prototype.showImage = function() {
             this.$lightbox.find('.lb-loader').hide();
             this.$lightbox.find('.lb-image').fadeIn('slow');
 
@@ -280,17 +273,14 @@ define(['jquery'], function ($) {
             this.enableKeyboardNav();
         };
 
-        // Display previous and next navigation if appropriate.
-        Lightbox.prototype.updateNav = function () {
-            // Check to see if the browser supports touch events. If so, we take the conservative approach
-            // and assume that mouse hover events are not supported and always show prev/next navigation
-            // arrows in image sets.
+        //当为一个显示集合时显示上一页和下一页
+        Lightbox.prototype.updateNav = function() {
+            //检测浏览器是否支持touch事件，假如支持，我们设置鼠标hover事件失效，一直显示上一页下一页导航条按钮
             var alwaysShowNav = false;
             try {
                 document.createEvent("TouchEvent");
-                alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices) ? true : false;
-            } catch (e) {
-            }
+                alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices)? true: false;
+            } catch (e) {}
 
             this.$lightbox.find('.lb-nav').show();
 
@@ -317,8 +307,8 @@ define(['jquery'], function ($) {
             }
         };
 
-        // Display caption, image number, and closing button.
-        Lightbox.prototype.updateDetails = function () {
+        // 显示标题和页数和关闭按钮
+        Lightbox.prototype.updateDetails = function() {
             var self = this;
 
             // Enable anchor clicks in the injected caption html.
@@ -327,7 +317,7 @@ define(['jquery'], function ($) {
                 this.$lightbox.find('.lb-caption')
                     .html(this.album[this.currentImageIndex].title)
                     .fadeIn('fast')
-                    .find('a').on('click', function (event) {
+                    .find('a').on('click', function(event){
                         location.href = $(this).attr('href');
                     });
             }
@@ -340,13 +330,12 @@ define(['jquery'], function ($) {
 
             this.$outerContainer.removeClass('animating');
 
-            this.$lightbox.find('.lb-dataContainer').fadeIn(this.options.resizeDuration, function () {
+            this.$lightbox.find('.lb-dataContainer').fadeIn(this.options.resizeDuration, function() {
                 return self.sizeOverlay();
             });
         };
 
-        // Preload previous and next images in set.
-        Lightbox.prototype.preloadNeighboringImages = function () {
+        Lightbox.prototype.preloadNeighboringImages = function() {
             if (this.album.length > this.currentImageIndex + 1) {
                 var preloadNext = new Image();
                 preloadNext.src = this.album[this.currentImageIndex + 1].link;
@@ -357,21 +346,21 @@ define(['jquery'], function ($) {
             }
         };
 
-        Lightbox.prototype.enableKeyboardNav = function () {
+        Lightbox.prototype.enableKeyboardNav = function() {
             $(document).on('keyup.keyboard', $.proxy(this.keyboardAction, this));
         };
 
-        Lightbox.prototype.disableKeyboardNav = function () {
+        Lightbox.prototype.disableKeyboardNav = function() {
             $(document).off('.keyboard');
         };
 
-        Lightbox.prototype.keyboardAction = function (event) {
-            var KEYCODE_ESC = 27;
-            var KEYCODE_LEFTARROW = 37;
+        Lightbox.prototype.keyboardAction = function(event) {
+            var KEYCODE_ESC        = 27;
+            var KEYCODE_LEFTARROW  = 37;
             var KEYCODE_RIGHTARROW = 39;
 
             var keycode = event.keyCode;
-            var key = String.fromCharCode(keycode).toLowerCase();
+            var key     = String.fromCharCode(keycode).toLowerCase();
             if (keycode === KEYCODE_ESC || key.match(/x|o|c/)) {
                 this.end();
             } else if (key === 'p' || keycode === KEYCODE_LEFTARROW) {
@@ -389,22 +378,12 @@ define(['jquery'], function ($) {
             }
         };
 
-        // Closing time. :-(
-        Lightbox.prototype.end = function () {
-            this.disableKeyboardNav();
-            $(window).off("resize", this.sizeOverlay);
-            this.$lightbox.fadeOut(this.options.fadeDuration);
-            this.$overlay.fadeOut(this.options.fadeDuration);
-            $('select, object, embed').css({
-                visibility: "visible"
-            });
-        };
-
         return Lightbox;
 
     })();
-    $(function () {
-        var options = new LightboxOptions();
+    $(function() {
+        var options  = new LightboxOptions();
         var lightbox = new Lightbox(options);
     });
-})
+
+});
