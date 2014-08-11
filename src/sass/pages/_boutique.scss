@@ -1,0 +1,52 @@
+.boutique_bg{background: url("../images/boutique_bg.jpg")  center center no-repeat;}
+
+.m-boutique-search{
+  margin-bottom: 58px;
+  color: #ffe3cd;
+  font-size: 16px;  line-height: 26px;
+  h3{font-weight: normal;}
+  input{border: none; background:none; color:#ffe3cd; padding: 0 20%; font-size: 16px; background: #32251f; line-height: 26px; }
+
+}
+.m-shop-pic{
+
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 0px;
+  float:left;
+//  width:817px;
+  width: 69.82906%;
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 100%;float: left;
+  }
+  .u-arrow{position: absolute;  width:35px; height:35px; display: inline-block; font-size: 32px; color: #cbb3a0; background:#382a1f; top:50%; left: 30%; }
+}
+
+
+.m-shop-detail{ position: relative;
+//  width:353px;
+  width: 30.17094%; padding-right: 0; padding-left: 0;
+  @media (max-width: 991px) {
+    padding-left: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    width: 100%; float: left;
+  }
+  .shop_bg{background: #17100c; opacity: 0.8; width: 100%;height: 100%; position: absolute;top: 0; left: 0; padding: 26px; }
+  dl{border-top: 1px solid #7c5e50; padding-bottom: 16px; margin-left: 15px; padding-top: 10px;}
+
+  dt{ font-size: 14px; line-height: 32px; color:#ffe3cd; padding-left: 36px;position: relative; font-weight: normal;
+    span{position:absolute; top:center; left:0;}
+  }
+  dd{
+    padding-left: 36px;
+    p{
+      font-size: 14px; line-height: 22px;color: #7c5e50;
+      a{font-size: 12px; line-height: 20px; color:#7c5e50; }
+    }
+  }
+}
+.m-shop-detail dl.no-border{border-top: none; padding-top:0;}
+
