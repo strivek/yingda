@@ -1,0 +1,31 @@
+.m-select{position: relative;}
+.select1,.select2{
+    width:100%;
+    height: 26px;
+    line-height: 26px;
+    color:#32251f;
+    padding-left: 10px;;
+    background: #ffe3cd;
+    position: relative;
+}
+.choose{
+
+
+    width: 100%;
+    background: #000;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 26px;
+    z-index: 100;
+}
+.choose li{
+    padding-left: 10px;
+    height: 26px;
+    line-height: 26px;
+}
+.choose li:hover,.choose1 li:hover{
+    background: #ccc;
+}
