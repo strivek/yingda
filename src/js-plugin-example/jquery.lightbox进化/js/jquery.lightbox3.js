@@ -15,6 +15,7 @@ define(['jquery', 'bootstrap'], function ($) {
             this.wrapAround = false;
             this.fireName = ".water-modal"
         }
+
         return LightModalOptions;
     })();
 
@@ -25,6 +26,7 @@ define(['jquery', 'bootstrap'], function ($) {
             this.currentIndex = void 0;
             this.init();
         }
+
         Lightmodalbox.prototype.init = function () {
             this.start();
         };
@@ -34,9 +36,10 @@ define(['jquery', 'bootstrap'], function ($) {
         };
         //TODO-jeff:1.接收事件，2.获取数据，3.和模板融合，4，弹出
         Lightmodalbox.prototype.start = function () {
-               $(window).on("click",this.options.fireName,function(e){
-                    $(this).
-               });
+            $(window).on("click", this.options.fireName, function (e) {
+                $(this).modal("show");
+                s
+            });
         };
         //TODO-jeff:1.检测是否已经存在,2.根据ID获取json数据
         Lightmodalbox.prototype.getnextData = function (id) {
@@ -49,8 +52,8 @@ define(['jquery', 'bootstrap'], function ($) {
         };
         return lightmodalbox;
     })();
-    (function(){
-        var  options = new LightModalOptions();
+    (function () {
+        var options = new LightModalOptions();
         var lightmodalbox = new Lightmodalbox(options);
     })()
 });
