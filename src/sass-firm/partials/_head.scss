@@ -6,7 +6,6 @@
   position: relative;
   border-bottom: 1px solid #afa28d;
 }
-
 .m-nav {
   margin: 0 auto;
   padding-bottom: 30px;
@@ -29,13 +28,12 @@
   .select {
     float: right;
     margin-top: 70px;
-    h4{padding-left: 160px;
+    h4{
       line-height: 22px;
       height: 24px;
-      background: url("../images/firm-choose.png") no-repeat;
-    font-size: 14px;
-    color: #83654c;
-    font-weight: nomal;
+      font-size: 14px;
+      color: #83654c;
+      font-weight: nomal;
       font-family: "宋体";
     }
   }
