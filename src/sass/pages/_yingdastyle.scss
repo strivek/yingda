@@ -1,3 +1,5 @@
+@charset "utf-8";
+//垂直居中
 .g-carousel-cy {
   height: 100%;
   width: 100%;
@@ -7,7 +9,6 @@
 .m-carousel-cy {
   display: table-cell;
   vertical-align: middle;
-
   .carousel-inner .item {
     img {
       width: 100%;
@@ -46,9 +47,11 @@
 
     }
   }
+  //左右箭头点击区域
   .carousel-control {
     width: 5%;
   }
+  //左箭头位置设置
   .carousel .left {
     text-align: left;
     span.glyphicon-chevron-left {
@@ -56,6 +59,7 @@
       color: #ffe3cd;
     }
   }
+  //右箭头位置设置
   .carousel .right {
     text-align: right;
     span.glyphicon-chevron-right {
