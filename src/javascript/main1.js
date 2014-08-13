@@ -2,7 +2,7 @@
  * Created by Administrator on 2014/8/8.
  */
 require.config({
-    baseUrl:"javascript",
+    baseUrl:"../javascript",
     paths:{
         jquery:"lib/jquery.min"
     }
