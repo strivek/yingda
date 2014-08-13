@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>demo</title>
+    <link rel="stylesheet" href="../../css/main.css"/>
     <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
@@ -11,13 +11,28 @@
 <!-- 单张图片放大 -->
 <!-- data-lightbox 起到分组的作用 -->
 <!-- data-title 页面底部标题内容-->
-<div class="demo">
-	<h2>分组1</h2>
-    <a href="img/demopage/image-1.jpg" data-lightbox="term1" data-title="标题1">分组1</a>
-    <a href="img/demopage/image-1.jpg" data-lightbox="term1" data-title="标题2">分组1</a>
-    <a href="img/demopage/image-1.jpgq" data-lightbox="term1" data-title="标题3">分组1</a>
-</div>
-<script data-main="js/main" src="../../javascript/require.js"></script>
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                 <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+             </div>
+             <div class="modal-body">
+                 ...
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Save changes</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Button trigger modal -->
+ <button class="btn btn-primary btn-lg"  data-target="#myModal">
+     Launch demo modal
+ </button>
+ <script data-main="js/main" src="../../javascript/require.js"></script>
 </body>
 
 </html>

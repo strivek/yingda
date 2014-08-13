@@ -5,6 +5,6 @@ require.config({
     }
 
 });
-require(['jquery','jquery.lightbox'],function($){
+require(['jquery','bootstrap','jquery.lightbox3'],function($){
 
-})
+});

@@ -1,7 +1,4 @@
 @charset "utf-8";
-body {
-  background: url("../images/seasonfashion-bg.png") repeat;
-}
 
 $font-family: '宋体';
 @mixin font($font-size: 14px, $font-color: #564b47) {
@@ -18,45 +15,40 @@ $font-family: '宋体';
     text-align: center;
     @include font(30px);
   }
-< < < < < < < HEAD . yiheng {
-  height: 2px;
-  width: 14px;
-  margin: 8px auto 0;
-  background: #908885;
-} == == == = . yiheng {
-  height: 2px;
-  width: 14px;
-  margin: 8px auto 0;
-  background: #908885;
-} > > > > > > > pr / 27 . subtitle {
-  line-height: 40px;
-  padding-bottom: 20px;
-  font-size: 14px;
-  color: #564b47;
-  text-align: center;
-}
-  .images {
-    border: 4px solid #fff;
+  .yiheng {
+    height: 2px;
+    width: 14px;
+    margin: 8px auto 0;
+    background: #908885;
+    .subtitle {
+      line-height: 40px;
+      padding-bottom: 20px;
+      font-size: 14px;
+      color: #564b47;
+      text-align: center;
+    }
+    .images {
+      border: 4px solid #fff;
+    }
+    .paragraph {
+      margin-top: 34px;
+      @include font(16px, #32251f);
+      line-height: 24px;
+    }
   }
-  .paragraph {
-    margin-top: 34px;
-    @include font(16px, #32251f);
-    line-height: 24px;
+
+  .m-content1-cy .images a span.glyphicon, .m-content2-cy .images a span.glyphicon {
+    background: #392e24;
+    color: #cdb398;
+    font-size: 50px;
   }
-}
 
-.m-content1-cy .images a span.glyphicon, .m-content2-cy .images a span.glyphicon {
-  background: #392e24;
-  color: #cdb398;
-  font-size: 50px;
-}
+  .m-content3-cy .img img, .m-content4-cy .vedio img {
+    max-width: 100%;
+  }
 
-.m-content3-cy .img img, .m-content4-cy .vedio img {
-  max-width: 100%;
-}
-
-/*第五屏图片列表展示*/
-.m-imgList {
-  margin-top: 178px;
-
+  /*第五屏图片列表展示*/
+  .m-imgList {
+    margin-top: 178px;
+  }
 }
