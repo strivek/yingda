@@ -1,0 +1,63 @@
+@charset "utf-8";
+@mixin box-sizing($fontfl: 'Times New Roman', $fontse: 6em, $fontwg: bold, $fontco: #32251f) {
+  font-family: $fontfl;
+  font-size: $fontse;
+  font-weight: $fontwg;
+  color: $fontco;
+}
+
+.m-main-wzt {
+  font-size: 62.5%;
+  .z-main {
+    position: relative;
+    display: table;
+    text-align: center;
+    .con {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle;
+      h3 {
+        @include box-sizing();
+      }
+      span {
+        @include box-sizing($fontfl: '宋体', $fontse: 4em, $fontwg: normal);
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      button {
+        border: 1px solid #3b3b39;
+        font-size: 2.6em;
+        color: #32251f;
+        background: none;
+        margin: 20px auto 0;
+        padding: 4px 12px 4px 16px;
+      }
+    }
+  }
+  .main1 .con {
+    margin-left: 50%;
+  }
+  .main2 .con {
+    margin-right: 50%;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .z-main {
+      .con {
+        h3 {
+          font-size: 2em;
+        }
+        span {
+          font-size: 2em;
+        }
+        button {
+          font-size: 1.2em;
+          padding: 2px 4px 2px 6px;
+        }
+      }
+    }
+  }
+}
