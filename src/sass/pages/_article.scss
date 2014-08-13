@@ -1,17 +1,13 @@
-@charset "utf-8";
+@charset "UTF-8";
 $font-family: '宋体';
 $color: #ffe3cd;
-body {
-
-}
-
 @mixin font($font-size: 16px) {
   font-size: $font-size;
   color: $color;
   font-family: $font-family;
   font-weight: normal;
 }
-
+.m-main2-cy{
 .text {
   margin-top: 83px;
   background: #251f20;
@@ -40,18 +36,16 @@ body {
     }
   }
 }
-
 #scrollbar1 {
-  position: relative;
   margin-top: 30px;
-}
+  position: relative;
 
+}
 #scrollbar1 .viewport {
   height: 600px;
   overflow: hidden;
   position: relative;
 }
-
 #scrollbar1 .overview {
   list-style: none;
   position: absolute;
@@ -60,7 +54,6 @@ body {
   margin: 0;
   padding: 0px 10px;
 }
-
 #scrollbar1 .scrollbar {
   background-color: #000;
   position: absolute;
@@ -68,7 +61,6 @@ body {
   top: 0;
   width: 2px;
 }
-
 #scrollbar1 .track {
   background-color: #000;
   height: 100%;
@@ -76,7 +68,6 @@ body {
   position: relative;
   padding: 0 1px;
 }
-
 #scrollbar1 .thumb {
   background: url("../images/article-scroll.png") repeat-y center top;
   cursor: pointer;
@@ -87,22 +78,23 @@ body {
   top: 0;
   left: -6px;
 }
-
-#scrollbar1 .thumb .end {
-  background: transparent url("../images/article-scroll.png") no-repeat center top;
-  overflow: hidden;
-  height: 5px;
-  width: 14px;
+#scrollbar1 .thumb .end
+{
+  background:transparent url("../images/article-scroll.png") no-repeat center top;
+overflow:hidden;
+height:5px;
+width:14px;
 }
-
-#scrollbar1 .disable {
-  display: none;
+#scrollbar1 .disable
+{
+display:none;
 }
+.noSelect
+{
+user-select:none;
+-o-user-select:none;
+-moz-user-select:none;
+-khtml-user-select:none;
+-webkit-user-select:none;
 
-.noSelect {
-  user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-}
+}}

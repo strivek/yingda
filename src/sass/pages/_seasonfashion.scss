@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 $font-family: '宋体';
 @mixin font($font-size: 14px, $font-color: #564b47) {
   font-size: $font-size;
@@ -7,48 +6,46 @@ $font-family: '宋体';
   color: #564b47;
   font-weight: normal;
 }
-
-/*所有屏的公共样式*/
+//所有屏的公共样式
 .m-content-cy {
   margin-top: 70px;
-  .title {
+.title {
     text-align: center;
     @include font(30px);
   }
-  .yiheng {
-    height: 2px;
-    width: 14px;
-    margin: 8px auto 0;
-    background: #908885;
-    .subtitle {
-      line-height: 40px;
-      padding-bottom: 20px;
-      font-size: 14px;
-      color: #564b47;
-      text-align: center;
-    }
-    .images {
-      border: 4px solid #fff;
-    }
-    .paragraph {
-      margin-top: 34px;
-      @include font(16px, #32251f);
-      line-height: 24px;
-    }
+.yiheng {
+  height: 2px;
+  width: 14px;
+  margin: 8px auto 0;
+  background: #908885;
+}
+.subtitle {
+  line-height: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #564b47;
+  text-align: center;
+}
+  .images {
+    border: 4px solid #fff;
   }
-
-  .m-content1-cy .images a span.glyphicon, .m-content2-cy .images a span.glyphicon {
+  //轮播左右箭头背景色改变
+  .images a span.glyphicon,.images a span.glyphicon {
     background: #392e24;
     color: #cdb398;
     font-size: 50px;
   }
-
-  .m-content3-cy .img img, .m-content4-cy .vedio img {
-    max-width: 100%;
-  }
-
-  /*第五屏图片列表展示*/
-  .m-imgList {
-    margin-top: 178px;
+  .paragraph {
+    margin-top: 34px;
+    @include font(16px, #32251f);
+    line-height: 24px;
   }
 }
+.m-content3-cy .img img,.m-content4-cy .vedio iframe{
+  max-width: 100%;
+}
+//第五屏图片列表展示
+.m-imgList {
+  margin-top:178px;
+}
+

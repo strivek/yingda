@@ -1,5 +1,5 @@
 require.config({
-	baseUrl:"javascript",
+	baseUrl:"../javascript",
 	paths:{
 		jquery:"lib/jquery.min"
 	}
@@ -44,4 +44,33 @@ require(['jquery','jquery.waterfall'],function($){
         ajaxTimes: 1 		// 只发送一次请求
     });
 });
+
+require(['jquery', 'bootstrap'], function($) {
+
+    $('.carousel').carousel({
+        interval: 2000
+    })
+})
+require(['jquery', 'jquery.tinyscrollbar'], function($) {
+    var $scrollbar = $("#scrollbar1");
+    $scrollbar.tinyscrollbar();
+})
+require(['jquery', 'click'], function($) {
+
+    var selectBtn1 = $('.select1');
+//    var selectBtn2 = $('.select2');
+    var li = $('.choose li');
+    var choose=$('.choose');
+    selectBtn1.clickonoff(choose,li);
+//    selectBtn2.clickon();
+
+    $('.u-input').focus(function(){
+        $(this).attr('value','');
+    })
+
+
+
+
+
+})
 

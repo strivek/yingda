@@ -1,20 +1,27 @@
+@charset "utf-8";
+//垂直居中
 .g-carousel-cy {
   height: 100%;
   width: 100%;
   display: table;
   text-align: center;
 }
-
 .m-carousel-cy {
   display: table-cell;
   vertical-align: middle;
-
   .carousel-inner .item {
     img {
       width: 100%;
     }
     .carousel-caption {
       position: static;
+      .heng {
+        display: block;
+        margin-left: 4px;
+        height: 1px;
+        width: 18px;
+        background: #d8baa5;
+      }
       h3 {
         margin-top: 10%;
         font-size: 40px;
@@ -31,7 +38,7 @@
       }
       p.con {
         margin-top: 4%;
-        padding-right: 4%;
+        padding-right: 10%;
         text-align: left;
         color: #f6d2b9;
         font-size: 14px;
@@ -40,17 +47,25 @@
 
     }
   }
+  //左右箭头点击区域
+  .carousel-control {
+    width: 5%;
+  }
+  //左箭头位置设置
   .carousel .left {
     text-align: left;
-    .glyphicon-chevron-left {
-      left: 4%;
+    span.glyphicon-chevron-left {
+      left: 8%;
+      color: #ffe3cd;
     }
   }
-
+  //右箭头位置设置
   .carousel .right {
     text-align: right;
-    .glyphicon-chevron-right {
-      right: 4%;
+    span.glyphicon-chevron-right {
+      right: 8%;
+      color: #ffe3cd;
+      margin-right: 0px;
     }
   }
 }

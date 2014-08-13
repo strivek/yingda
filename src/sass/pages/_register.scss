@@ -8,7 +8,6 @@ $color: #ffe3cd;
   font-family: $font-family;
   font-weight: normal;
 }
-
 .m-main-cy .title {
   margin-top: 35px;
   padding-bottom: 42px;
@@ -16,7 +15,6 @@ $color: #ffe3cd;
   text-align: center;
   @include font(24px);
 }
-
 .m-main-cy .prompt {
   position: relative;
   margin-top: 7px;
@@ -29,7 +27,6 @@ $color: #ffe3cd;
     left: 0;
   }
 }
-
 .m-main-cy .register-form {
   padding-top: 43px;
   .form-group {
@@ -43,7 +40,6 @@ $color: #ffe3cd;
         top: -6px;
         right: -8px;
       }
-
     }
     .form-control {
       height: 38px;
@@ -52,7 +48,7 @@ $color: #ffe3cd;
       border-radius: 0;
       color: $color;
     }
-    .warning-message {
+    p {
       display: none;
     }
   }
@@ -60,12 +56,12 @@ $color: #ffe3cd;
     .form-control {
       border: 1px solid #ff0000;
     }
-    .warning-message {
+    p {
       margin-top: 4px;
       display: block;
       margin-bottom: -10px;
       text-align: right;
-      font-family: "宋体";
+      font-family:$font-family;
       font-size: 12px;
       color: #e60012;
     }
@@ -75,22 +71,19 @@ $color: #ffe3cd;
     padding-top: 13px;
     border-bottom: 1px solid $color;
     label {
-      @include font();
-      input[type="checkbox"] {
+      @include font();}
+    label input{
         display: inline-block;
         margin-right: 5px;
         background: none;
-        border-bottom: 1px solid $color;
+        border: 1px solid $color;
         border-radius: 0;
-
-      }
     }
   }
   p.button {
     margin-top: 43px;
     text-align: center;
     padding-bottom: 48px;
-
     .btn {
       padding: 10px 45px;
       background: #44332c;
