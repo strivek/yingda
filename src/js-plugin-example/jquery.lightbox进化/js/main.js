@@ -1,7 +1,8 @@
 require.config({
-    baseUrl:"js",
+
     paths:{
-        jquery:"jquery-1.11.0.min"
+        jquery:"/yingda/src/javascript/lib/jquery.min",
+        jsviews:"/yingda/src/javascript/jsviews"
     }
 
 });
