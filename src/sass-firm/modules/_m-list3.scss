@@ -8,7 +8,7 @@
     color: #564b47;
     font-family: "宋体";
   }
-  a {
+  & > a {
     position: relative;
     display: block;
     padding-right: 1px;
@@ -18,7 +18,7 @@
       margin-right: auto;
       width: 100%;
     }
-    span {
+  & > span {
       display: none;
       position: absolute;
       bottom: 0;
@@ -30,7 +30,7 @@
       filter: alpha(opacity=70);
       z-index: 20;
     }
-    p {
+    & > p {
       display: none;
       position: absolute;
       bottom: 0;
