@@ -1,6 +1,6 @@
 [
     {
-        "imgSrc": "../src/images/look1.jpg",
+        "imgSrc": "../images/look1.jpg",
         "href": "http://leolai.cnblogs.com/", "time": "2012-12-12",
 
         "title": "应大2014秋冬新品绚丽登场",

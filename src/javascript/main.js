@@ -1,22 +1,22 @@
 require.config({
-	baseUrl:"../javascript",
-	paths:{
-		jquery:"lib/jquery.min"
-	}
-
+    baseUrl: "../javascript",
+    paths: {
+        jquery: "lib/jquery.min"
+    }
 });
-require(['jquery', 'bootstrap','nav'], function($,nav) {
+
+require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
 //    $('.nav>li:not(:last):not(:first)').hover(function(){
 //        $(this).navshow('.m-menu','.m-nav-list-bg');
 //	})
 //    $('.nav>li:not(:last)').on('hover click')
-    var obj=$('.nav>li:not(:last):not(:first)');
+    var obj = $('.nav>li:not(:last):not(:first)');
 //    alert(obj.html());
-    var obj1=$('.nav>li:not(:last)');
-    var number=0;
-    obj.attr('num',number);
-    obj.on('click',function(){
-        if($(window).width()<1000) {
+    var obj1 = $('.nav>li:not(:last)');
+    var number = 0;
+    obj.attr('num', number);
+    obj.on('click', function () {
+        if ($(window).width() < 1000) {
             $(this).attr('num', parseInt($(this).attr('num')) + 1);
             $(this).siblings().attr('num', 0);
             var _that = $(this).attr('num');
@@ -24,9 +24,9 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
             $(this).navshow('.m-menu', '.m-nav-list-bg', _that);
         }
     });
-    obj1.hover(function(){
-        if($(window).width()>1000){
-            $(this).navshow1('.m-menu','.m-nav-list-bg');
+    obj1.hover(function () {
+        if ($(window).width() > 1000) {
+            $(this).navshow1('.m-menu', '.m-nav-list-bg');
         }
     });
 //    obj1.mouseout(function(){
@@ -37,40 +37,36 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
 
 });
 //瀑布流调用
-require(['jquery','jquery.waterfall'],function($){
+require(['jquery', 'jquery.waterfall'], function ($) {
     $('#waterfall').waterfall({
-        url: 'json/json.js',
+        url: '../json/json.js',
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1 		// 只发送一次请求
     });
 });
-
-require(['jquery', 'bootstrap'], function($) {
+//轮播
+require(['jquery', 'bootstrap'], function ($) {
 
     $('.carousel').carousel({
         interval: 2000
     })
 })
-require(['jquery', 'jquery.tinyscrollbar'], function($) {
+//滚动条
+require(['jquery', 'jquery.tinyscrollbar'], function ($) {
     var $scrollbar = $("#scrollbar1");
     $scrollbar.tinyscrollbar();
 })
-require(['jquery', 'click'], function($) {
+//下拉条
+require(['jquery', 'click'], function ($) {
 
     var selectBtn1 = $('.select1');
 //    var selectBtn2 = $('.select2');
     var li = $('.choose li');
-    var choose=$('.choose');
-    selectBtn1.clickonoff(choose,li);
+    var choose = $('.choose');
+    selectBtn1.clickonoff(choose, li);
 //    selectBtn2.clickon();
-
-    $('.u-input').focus(function(){
-        $(this).attr('value','');
+    $('.u-input').focus(function () {
+        $(this).attr('value', '');
     })
-
-
-
-
-
 })
 
