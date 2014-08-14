@@ -39,7 +39,7 @@ require(['jquery', 'bootstrap','nav'], function($,nav) {
 //瀑布流调用
 require(['jquery','jquery.waterfall'],function($){
     $('#waterfall').waterfall({
-        url: 'json/json.js',
+        url: '../json/json.js',
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1 		// 只发送一次请求
     });
