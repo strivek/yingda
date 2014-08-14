@@ -68,6 +68,15 @@ require(['jquery', 'click'], function($) {
         $(this).attr('value','');
     })
 
+    $('dl .detail').click(function(){
+        $(this).toggleClass('color');
+
+
+
+       $(this).closest('dl').siblings('.u-details').toggle();
+       $(this).trigger("click.detail");
+    })
+
 
 
 
