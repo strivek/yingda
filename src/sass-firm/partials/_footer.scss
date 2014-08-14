@@ -1,0 +1,35 @@
+@charset "utf-8";
+.g-bottom {
+  border-top: 1px solid #ada18f;
+}
+
+.m-list {
+  margin: 0 auto;
+  width: 1154px;
+  &:after, &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+  li {
+    float: left;
+  }
+  .first a{
+    padding-left: 0;
+  }
+  li > a {
+    padding: 0 30px;
+    border-right: 1px solid #a79281;
+    height: 44px;
+    line-height: 44px;
+    font-size:14px;
+    font-family: "宋体";
+    color:#83654c;
+  }
+.icon{padding-left: 20px; height: 44px;
+      line-height: 44px;}
+.icon a{padding-right:10px;color:#967e6b;
+   &:hover{color:#210700;}}
+}

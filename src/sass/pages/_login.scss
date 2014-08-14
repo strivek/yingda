@@ -1,15 +1,12 @@
 @charset "utf-8";
 $font-family: '宋体';
 $color: #ffe3cd;
-
-
-@mixin font($font-size:16px) {
+@mixin font($font-size: 16px) {
   font-size: $font-size;
   color: $color;
   font-family: $font-family;
   font-weight: normal;
 }
-
 
 .m-main1-cy {
   position: relative;
@@ -21,7 +18,7 @@ $color: #ffe3cd;
     text-align: center;
     img {
       max-width: 100%;
-    }
+        }
   }
   // 登录表单
   .login-form {
@@ -44,9 +41,7 @@ $color: #ffe3cd;
       display: block;
       padding-bottom: 7px;
       border-bottom: 1px solid $color;
-      font-size: 16px;
-      color: $color;
-      font-family: $font-family;
+      @include font();
       &:hover {
         color: #44332c;
       }
@@ -64,9 +59,9 @@ $color: #ffe3cd;
     }
   }
   //注册新用户
-  .reg{
+  .reg {
     padding-top: 32px;
-    .reg-label{
+    .reg-label {
       margin-bottom: 13px;
       @include font();
     }
@@ -75,8 +70,8 @@ $color: #ffe3cd;
       background: #44332c;
       border-radius: 0;
       color: $color;
-      font-size: 18px;
-      outline: none;
+      font-size:18px;
+      outline:none;
     }
   }
   //第三方登录
@@ -90,15 +85,15 @@ $color: #ffe3cd;
     .social-list {
       margin-top: 20px;
       a {
-        display: inline-block;
-        span {
+        display: inline-block;}
+      a span {
           padding-right: 30px;
           display: inline-block;
           font-size: 30px;
           color: $color;
           font-family: iconfont;
         }
-      }
+
       a:hover span {
         color: #44332c;
       }

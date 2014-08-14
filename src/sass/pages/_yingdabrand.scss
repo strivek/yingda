@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.m-yingdabrand-cy {
+  margin-top: 120px;
+  .container {
+    position: relative;
+  }
+  .heng {
+    display: block;
+    margin-left: 4px;
+    width: 18px;
+    height: 1px;
+    background: #f6d2b9;
+  }
+  .title {
+    margin-top: 60px;
+    font-size: 40px;
+    color: #f6d2b9;
+    font-weight: normal;
+  }
+  .img {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .pic {
+      margin-top: 20px;
+    }
+    .iconfont {
+      position: absolute;
+      bottom: 2%;
+      right: 3%;
+      color: #ffe3cd;
+      font-size: 4em;
+      cursor: pointer;
+    }
+  }
+  p {
+    margin-top: 26px;
+    font-size: 14px;
+    color: #f6d2b9;
+    line-height: 1.8;
+  }
+  .pra {
+    margin-top: 26px;
+  }
+  .pra1 {
+    margin-top: 0;
+  }
+  /*底部时间列表*/
+  .bottom-years {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f2d8c3;
+    clear: both;
+    .years {
+      margin: 0 auto;
+      list-style-type: none;
+      height: 30px;
+      overflow: hidden;
+
+      li {
+        float: left;
+        a {
+          display: block;
+          padding-left: 4px;
+          padding-right: 18px;
+          padding-bottom: 16px;
+          color: #959597;
+          font-size: 14px;
+          border-right: 1px solid #f2d8c3;
+          &:hover {
+            color: #ffe3cd;
+          }
+        }
+        a.last {
+          border-right: none;
+        }
+      }
+    }
+    //时间列表左右滑动箭头
+    .iconfont {
+      position: absolute;
+      top: -1px;
+      font-size: 14px;
+      color: #f6d2b9;
+      cursor: pointer;
+      padding: 0 0 10px 10px;
+    }
+  }
+  @media(min-width: 768px) {
+    .bottom-years {
+      .years {
+        width: 660px;
+      }
+      span.left {
+        left: 20px;
+      }
+      span.right {
+        right: 20px;
+      }
+    }
+  }
+  @media(min-width: 1200px) {
+    .bottom-years {
+      .years {
+        width: 935px;
+        }
+      span.left {
+        left: 90px;
+      }
+      span.right {
+        right: 90px;
+      }
+    }
+  }
+}

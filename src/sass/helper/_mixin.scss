@@ -1,4 +1,4 @@
-@mixin f-cb{
+@mixin f-cb {
   &:before,
   &:after {
     content: " "; // 1

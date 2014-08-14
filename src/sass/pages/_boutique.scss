@@ -1,0 +1,182 @@
+.boutique_bg{background: url("../images/boutique_bg.jpg")  center center no-repeat;}
+
+.m-boutique-search{
+  margin-bottom: 58px;
+  color: #ffe3cd;
+  font-size: 16px;  line-height: 26px;
+  h3{font-weight: normal; line-height: 26px;}
+  input{border: none; background:none; color:#ffe3cd; padding: 0 20%; font-size: 16px; background: #32251f; line-height: 26px; }
+  .u-position{ position: relative;
+    span{position:absolute; top:0; right:10px;}
+  }
+  .u-input{background: #ffe3cd; color: #32251f; width: 100%;  line-height: 20px; font-size: 16px; padding: 3px 0px 3px 10px}
+  .m-select{position: relative;}
+  .select1,.select2{
+    width:100%;
+    height: 26px;
+    line-height: 26px;
+    color:#32251f;
+    padding-left: 10px;;
+    background: #ffe3cd;
+    position: relative;
+  }
+  .choose{
+
+
+    width: 100%;
+    background: #000;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 26px;
+    z-index: 100;
+  }
+  .choose li{
+    padding-left: 10px;
+    height: 26px;
+    line-height: 26px;
+  }
+  .choose li:hover,.choose1 li:hover{
+    background: #ccc;
+  }
+
+}
+.m-shop-pic{
+
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 0px;
+  float:left;
+//  width:817px;
+  width: 69.82906%;
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 100%;float: left;
+  }
+  .u-arrow{position: absolute;  width:35px; height:35px; display: inline-block; font-size: 32px; color: #cbb3a0; background:#382a1f; top:50%; left: 30%; }
+}
+.m-shop-detail{
+//  width:353px;
+  dl{border-top: 1px solid #7c5e50; padding-bottom: 16px; margin-left: 15px; padding-top: 10px;}
+
+  dt{ font-size: 14px; line-height: 32px; color:#ffe3cd; padding-left: 36px;position: relative; font-weight: normal;
+    span{position:absolute; top:center; left:0;}
+  }
+  dd{
+    padding-left: 36px;
+    p{
+      font-size: 14px; line-height: 22px;color: #7c5e50;
+      a{font-size: 12px; line-height: 20px; color:#7c5e50; }
+      .color{color:#ffe3cd;}
+    }
+  }
+}
+.u-details{ margin-left:15px;padding:8px 0 9px 0;color:#ffe3cd; border-top: 1px solid #7c5e50; display: none;
+    li{padding-left: 36px; line-height: 30px; font-size:12px;}
+}
+.m-shop-detail dl.no-border{border-top: none; padding-top:0;}
+.m-shop{
+  position: relative;
+  //  width:353px;
+  width: 30.17094%;
+  padding-right: 0;
+  padding-left: 0;
+  .shop_bg{background: #17100c; @include opacity(0.8);width: 100%;height: 100%; position: absolute;top: 0; left: 0; padding: 26px; }
+  @media (max-width: 991px) {
+    padding-left: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    width: 100%;
+    float: left;
+  }
+  #scrollbar1
+  {
+    position: relative;
+  }
+  #scrollbar1 .viewport
+  {
+    height: 502px;
+    overflow:hidden;
+    position:relative;
+
+  }
+  @media (min-width: 992px) and (max-width: 1200px){
+    #scrollbar1 .viewport{height: 415px;}
+  }
+
+  #scrollbar1 .overview
+  {
+    list-style:none;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding: 10px 20px;
+  }
+  @media (max-width: 991px){
+    #scrollbar1 .viewport{height: 310px;}
+    dl.no-border2{border-top: none;padding-top: 0; }
+    #scrollbar1 .overview{padding:30px 20px 20px;}
+
+  }
+  #scrollbar1 .scrollbar
+  {
+
+    position:absolute;
+    background-position:0 0;
+    right: 0px;
+    top:0;
+    width:5px;
+    height: 100%;
+    z-index: 100;
+  }
+
+  #scrollbar1 .track
+  {
+    background-color: #000;
+    height: 100%;
+    width: 2px;
+    position: relative;
+
+  }
+  #scrollbar1 .thumb
+  {
+    background:transparent url(../images/article-scroll.png) repeat-y 50% 100%;
+    height:20px;
+    width:14px;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:-5px;
+  }
+  #scrollbar1 .disable
+  {
+    display:none;
+  }
+  .noSelect
+  {
+    user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+  }
+}
+
+.m-shop-vip{
+  color:#7c5e50;
+  h2{ font-size: 30px; font-weight: normal; line-height: 50px;font-family: 'myfont';color: #ffe3cd;}
+  h3{ font-size: 18px; font-weight: normal; line-height: 30px; color: #ffe3cd;}
+  dt{
+    font-size: 14px; font-weight: normal; line-height: 22px;
+  }
+  dd p{
+      line-height: 20px;font-size: 12px; font-weight: normal;
+    }
+
+}
+

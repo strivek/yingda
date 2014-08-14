@@ -67,8 +67,23 @@
         {
             self.update();
             setEvents();
-
+            //观察者
+            setUpdateEvent();
             return self;
+
+        }
+        function heightChangeUpdate(){
+            $container =$("#scrollbar1");
+            $viewport   = $container.find(".viewport")
+                ,   $overview   = $container.find(".overview")
+                ,   $scrollbar  = $container.find(".scrollbar")
+                ,   $track      = $scrollbar.find(".track")
+                ,   $thumb      = $scrollbar.find(".thumb")
+            self.update();
+        }
+
+        function setUpdateEvent(){
+            $(".detail").on("click.detail",heightChangeUpdate);
         }
 
         this.update = function(scrollTo)
@@ -98,6 +113,7 @@
             }
 
             setSize();
+
 
             return self;
         };
@@ -148,6 +164,7 @@
 
         function start(event)
         {
+
             $("body").addClass("noSelect");
 
             mousePosition      = isHorizontal ? event.pageX : event.pageY;
@@ -168,6 +185,7 @@
                 $(document).bind("mouseup", end);
                 $thumb.bind("mouseup", end);
             }
+
         }
 
         function wheel(event)
