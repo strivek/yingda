@@ -65,3 +65,12 @@
   font-style: 14px;
   font-weight: normal;
 }
+
+
+@font-face {
+  font-family: 'myfont-bold';
+  src: url('../font/Didot-Bold.eot');
+  src: url('../font/Didot-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Didot-Bold.woff') format('woff'), url('../font/Didot Bold.ttf') format('truetype'), url('../font/Didot-Bold.svg#FontName') format('svg');
+  font-style: 14px;
+  font-weight: normal;
+}
