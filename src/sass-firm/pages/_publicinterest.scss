@@ -1,0 +1,67 @@
+.m-main1-cy {
+  width: 862px;
+  float: right;
+  &:after, &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+  .left {
+    float: left;
+    width: 422px;
+    .title {
+      height: 58px;
+      line-height: 58px;
+      font-size: 26px;
+      color: #210700;
+      font-family: "宋体";
+      font-weight: normal;
+      border-bottom: 1px solid #b7b2a8;
+    }
+    .first {
+      border-top: 1px solid #fff;
+    }
+    .con {
+      h5 {
+        margin-top: 30px;
+        font-size: 22px;
+        font-family: "Myriad Pro";
+        color: #210700;
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+    span {
+      display: block;
+      margin-top: 14px;
+      height: 1px;
+      width: 18px;
+      background: #84746b;
+    }
+    p {
+      margin-top: 16px;
+      font-size: 14px;
+      font-family: "宋体";
+      color: #210700;
+      line-height: 1.5;
+    }
+  }
+  .right {
+    float: right;
+    .title {
+      height: 58px;
+      line-height: 58px;
+      border-bottom: 1px solid #b7b2a8;
+    }
+    .con {
+      padding-top: 30px;
+      border-top: 1px solid #fff;
+      p{margin-top: 20px;
+        font-size: 14px;
+        color:#210700;
+      }
+    }
+  }
+}
