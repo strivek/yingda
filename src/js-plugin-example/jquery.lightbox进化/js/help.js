@@ -9,6 +9,9 @@ define(function () {
     Hp.prototype.log = function (msg) {
         console.log("调试信息->" + msg);
     };
+    Hp.prototype.at = function(msg){
+        alert("调试值为->"+msg);
+    }
     var hp = new Hp();
     return hp;
 })
