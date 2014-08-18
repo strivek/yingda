@@ -16,7 +16,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             this.fireName = ".water-modal";
             this.jsonData = "";
             this.currentId = -1;
-            this.isAjaxCompleted = ture;
+            this.isAjaxCompleted = 1;
         }
 
         return LightModalOptions;
