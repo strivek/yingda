@@ -25,18 +25,14 @@
     li a{ padding: 0 50px; border-right: 1px solid #a6917f; font-size:14px; color:#83654c;font-family: "宋体"; font-weight:700;}
     li a:hover{color:#4a3b34;}
   }
-  .select {
+  .icon {
+    margin-top: 100px;
     float: right;
-    margin-top: 70px;
-    h4{
-      line-height: 22px;
-      height: 24px;
-      font-size: 14px;
-      color: #83654c;
-      font-weight: nomal;
-      font-family: "宋体";
-    }
+     padding-left: 22px;
   }
+    .icon a{padding-right:10px;color:#967e6b; font-size:22px;
+      &:hover{color:#210700;}
+    }
   &:before, &:after {
     content: "";
     display: table;
