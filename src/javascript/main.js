@@ -46,11 +46,16 @@ require(['jquery','jquery.waterfall'],function($){
 });
 
 require(['jquery', 'bootstrap'], function($) {
-
     $('.carousel').carousel({
         interval: 3000
+    });
+//    推荐效果
+    $('.m-introlist').hover(function(){
+        $(this).find('.title').stop().animate({'bottom':'0'});
+    },function(){
+        $(this).find('.title').stop().animate({'bottom':'-26px'});
     })
-})
+});
 require(['jquery', 'jquery.tinyscrollbar'], function($) {
     var $scrollbar = $("#scrollbar1");
     $scrollbar.tinyscrollbar();
