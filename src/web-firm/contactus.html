@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="../css/firm-main.css"/>
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+<div class="g-top">
+    <div class="m-nav">
+        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
+        <ul class="list">
+            <li><a href="#">走进应大</a></li>
+            <li><a href="#">企业文化</a></li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">招贤纳士</a></li>
+            <li class="last"><a href="#">联系我们</a></li>
+        </ul>
+        <div class="select"><h4>CHOOSE LANGUAGE : 中文</h4></div>
+    </div>
+</div>
+<div class="g-main">
+    <!--左侧栏-->
+    <div class="m-left">
+        <h3>联系我们</h3>
+        <ul>
+            <li><a href="#">合作加盟</a></li>
+        </ul>
+    </div>
+    <!--左侧栏结束-->
+    <!--  右侧主要内容-->
+    <div class="m-main9-cy">
+        <h2 class="title">联系我们</h2>
+
+        <div class="yh"></div>
+        <div class="main">
+            <div class="map" id="dituContent"></div>
+            <div class="firmdet">
+                <h3>天津应大股份有限公司</h3>
+
+                <p class="add">天津市 空港经济区 十一道135号（中心大道交口）</p>
+
+                <p class="num">300308</p>
+                <span class="tel">022-24966666</span>
+                <span class="email">yingda@mail.com</span>
+                <span class="fax">022-24968888</span>
+                <span class="web">www.yingda.cn</span>
+
+                <div class="weixin">
+                    <span class="wei iconfont">&#xe642</span>
+                    <span class="video iconfont">&#xe644</span>
+                    <span class="name">微信二维码yingda</span>
+                    <span class="erweima"><img src="../images/contactus-pic2.png" alt=""/></span>
+                </div>
+            </div>
+
+        </div>
+        <!--<div class="fengongsi">
+            <div class="item">
+                <h3>北京分公司</h3>
+
+                <p class="add">北京市 朝阳区 十一道135号中心大道交口 中心大道交口</p>
+
+                <p class="num">300308</p>
+                <span class="tel">022-24966666</span>
+                <span class="fax">022-24968888</span>
+            </div>
+            <div class="item">
+                <h3>北京分公司</h3>
+
+                <p class="add">北京市 朝阳区 十一道135号中心大道交口 中心大道交口</p>
+
+                <p class="num">300308</p>
+                <span class="tel">022-24966666</span>
+                <span class="fax">022-24968888</span>
+            </div>
+            <div class="item">
+                <h3>北京分公司</h3>
+
+                <p class="add">北京市 朝阳区 十一道135号中心大道交口 中心大道交口</p>
+
+                <p class="num">300308</p>
+                <span class="tel">022-24966666</span>
+                <span class="fax">022-24968888</span>
+            </div>
+            <div class="item">
+                <h3>北京分公司</h3>
+                <p class="add">北京市 朝阳区 十一道135号中心大道交口 中心大道交口</p>
+                <p class="num">300308</p>
+                <span class="tel">Tel  022-24966666</span>
+                <span class="fax">Fax  022-24968888</span>
+            </div>
+        </div>-->
+    </div>
+</div>
+<div class="g-bottom">
+    <ul class="m-list">
+        <li class="first"><a href="#">应大年鉴</a></li>
+        <li><a href="#">合作加盟</a></li>
+        <li class="icon"><p>
+            <a href="#" class="iconfont">&#xe642</a>
+            <a href="#" class="iconfont">&#xe643</a>
+            <a href="#" class="iconfont">&#xe644</a>
+        </p></li>
+    </ul>
+</div>
+<!--底部结束-->
+<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.56834,40.074293);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"我的标记",content:"我的备注",point:"116.468048|39.959465",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+        ,{title:"空港经济区",content:"空港经济区",point:"116.567904|40.075397",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+
+</body>
+</html>

@@ -3,6 +3,7 @@ require.config({
     paths: {
         jquery: "lib/jquery.min"
     }
+
 });
 
 require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
@@ -48,7 +49,7 @@ require(['jquery', 'jquery.waterfall'], function ($) {
 require(['jquery', 'bootstrap'], function ($) {
 
     $('.carousel').carousel({
-        interval: 2000
+        interval: 3000
     })
 })
 //滚动条
@@ -70,13 +71,17 @@ require(['jquery', 'click'], function ($) {
     })
 })
 require(['jquery', 'jquery.waterfall'], function ($) {
+//    $('dl .detail').click(function(){
+//        $(this).toggleClass('color');
+//        $(this).closest('dl').siblings('.u-details').toggle();
+//        $(this).trigger("click.detail");
+//    })
 
     $('#productListWomen').waterfall({
         url: '../json/json.js',
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1, 		// 只发送一次请求
         createHtml: function (data) {
-
             return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' data-toggle="modal" data-target="#water-modal"> ' +
                 '<a href="' + data.url + '" class="thumb" target="_blank">' +
                 '<img class="thumb_img"  src="' + data.imgSrc + '" />' +
@@ -86,10 +91,8 @@ require(['jquery', 'jquery.waterfall'], function ($) {
                 '</div>';
         }
     })
-
 });
 require(['jquery', 'jquery.lightbox2.js'], function ($) {
-
 
 })
 

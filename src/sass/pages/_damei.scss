@@ -68,11 +68,17 @@ $primaryColor: #f6d2b9;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .m-product1, .m-product2 {
+   .m-product2 {
     padding-top: 0 !important;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 }
+
+.damei_title{
+  h3{font-size: 16px; color:#f6d2b9; font-weight: normal;}
+  p{color:#f6d2b9; font-size: 20px; margin-top: 60px;}
+}
+.damei_bg{background: url("../images/damei-bg.png") center center no-repeat;}
 
 .m-lcon-1 {
   @include pic-center(365px, -144px)

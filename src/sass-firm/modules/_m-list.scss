@@ -35,7 +35,7 @@
 .m-list-x {
   line-height: 23px;
   ul {
-    @include f-cb(); //清除浮动
+    /*@include f-cb();*/ //清除浮动
     margin-left: -10px;
     padding-left: 0; //css reset 可以包含
   }

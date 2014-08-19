@@ -1,0 +1,38 @@
+.g-main {
+  margin: 46px auto 0;
+  width: 1154px;
+  min-height: 780px;
+  &:after, &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.m-left {
+  float: left;
+  width: 184px;
+  border-bottom: 1px solid #eae1d1;
+  h3 {
+    height: 56px;
+    line-height: 56px;
+    font-size: 20px;
+    color: #210700;
+    font-weight: normal;
+    border-bottom: 1px solid #c5bdad;
+  }
+  li {
+    border-top: 1px solid #eae1d1;
+    border-bottom: 1px solid #c5bdad;
+  }
+  li a {
+    font-size: 14px;
+    font-family: "宋体";
+    color: #210700;
+    height: 36px;
+    line-height: 36px;
+    &:hover{color:#8d735d;}
+  }
+}

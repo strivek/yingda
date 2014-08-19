@@ -4,7 +4,7 @@
   margin-bottom: 58px;
   color: #ffe3cd;
   font-size: 16px;  line-height: 26px;
-  h3{font-weight: normal;}
+  h3{font-weight: normal; line-height: 26px;}
   input{border: none; background:none; color:#ffe3cd; padding: 0 20%; font-size: 16px; background: #32251f; line-height: 26px; }
   .u-position{ position: relative;
     span{position:absolute; top:0; right:10px;}
@@ -57,8 +57,6 @@
   }
   .u-arrow{position: absolute;  width:35px; height:35px; display: inline-block; font-size: 32px; color: #cbb3a0; background:#382a1f; top:50%; left: 30%; }
 }
-
-
 .m-shop-detail{
 //  width:353px;
   dl{border-top: 1px solid #7c5e50; padding-bottom: 16px; margin-left: 15px; padding-top: 10px;}
@@ -71,11 +69,14 @@
     p{
       font-size: 14px; line-height: 22px;color: #7c5e50;
       a{font-size: 12px; line-height: 20px; color:#7c5e50; }
+      .color{color:#ffe3cd;}
     }
   }
 }
+.u-details{ margin-left:15px;padding:8px 0 9px 0;color:#ffe3cd; border-top: 1px solid #7c5e50; display: none;
+    li{padding-left: 36px; line-height: 30px; font-size:12px;}
+}
 .m-shop-detail dl.no-border{border-top: none; padding-top:0;}
-
 .m-shop{
   position: relative;
   //  width:353px;
@@ -93,11 +94,8 @@
   }
   #scrollbar1
   {
-
-
     position: relative;
   }
-
   #scrollbar1 .viewport
   {
     height: 502px;
@@ -120,11 +118,10 @@
   }
   @media (max-width: 991px){
     #scrollbar1 .viewport{height: 310px;}
-    dl.no-border2{border-top: none; }
+    dl.no-border2{border-top: none;padding-top: 0; }
     #scrollbar1 .overview{padding:30px 20px 20px;}
 
   }
-
   #scrollbar1 .scrollbar
   {
 
@@ -145,7 +142,6 @@
     position: relative;
 
   }
-
   #scrollbar1 .thumb
   {
     background:transparent url(../images/article-scroll.png) repeat-y 50% 100%;
@@ -157,14 +153,10 @@
     top:0;
     left:-5px;
   }
-
-
-
   #scrollbar1 .disable
   {
     display:none;
   }
-
   .noSelect
   {
     user-select:none;
@@ -176,7 +168,6 @@
 }
 
 .m-shop-vip{
-
   color:#7c5e50;
   h2{ font-size: 30px; font-weight: normal; line-height: 50px;font-family: 'myfont';color: #ffe3cd;}
   h3{ font-size: 18px; font-weight: normal; line-height: 30px; color: #ffe3cd;}

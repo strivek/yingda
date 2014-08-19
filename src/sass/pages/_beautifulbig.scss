@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.g-main-gf {
+  height: 100%;
+  display: table;
+ //#TODO-GF 背景图待替换
+  background: url('../images/damei-bg.png') center center;
+}
+
+.g-maininner-gf {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+.u-toptitle {
+  padding-bottom: 10px;
+  &:after, &:before {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+  position: relative;
+  border-bottom: 1px solid #d6cfc7;
+  p {
+    font-size: 18px;
+    color: #210700;
+    font-family: "宋体";
+    float: left;
+  }
+  a {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 12px;
+    color: #83654c;
+    &:hover{color:#210700;}
+  }
+}
