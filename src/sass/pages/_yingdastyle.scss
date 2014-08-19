@@ -9,7 +9,17 @@
 .m-carousel-cy {
   display: table-cell;
   vertical-align: middle;
+
+  .container{
+    //上下排列时,不上下颠跳
+    @media (max-width: 992px) {
+        min-height: 600px;
+    }
+  }
   .carousel-inner .item {
+    .u-video{
+        width: 100%;
+    }
     img {
       width: 100%;
     }

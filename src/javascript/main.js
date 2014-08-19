@@ -47,8 +47,8 @@ require(['jquery','jquery.waterfall'],function($){
 
 require(['jquery', 'bootstrap'], function($) {
 
-    $('.carousel').carousel({
-        interval: 2000
+    $('.m-carousel-cy .carousel').carousel({
+        interval: false
     })
 })
 require(['jquery', 'jquery.tinyscrollbar'], function($) {
@@ -76,10 +76,5 @@ require(['jquery', 'click'], function($) {
        $(this).closest('dl').siblings('.u-details').toggle();
        $(this).trigger("click.detail");
     })
-
-
-
-
-
-})
+});
 
