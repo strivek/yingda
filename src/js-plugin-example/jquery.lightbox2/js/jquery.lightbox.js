@@ -39,7 +39,7 @@ define(['jquery'],function($){
       this.options           = options;
       this.album             = [];
       this.currentImageIndex = void 0;
-      this.init();
+      this.init();//实例化后直接运行init方法
     }
 
     Lightbox.prototype.init = function() {

@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>demo</title>
-    <link rel="stylesheet" href="../../css/main.css"/>
-    <link rel="stylesheet" href="css/lightbox.css">
+    <meta charset="utf-8">
+    <title>jQuery 瀑布流插件</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-<h1>图片灯箱效果</h1>
-<!-- 单张图片放大 -->
-<!-- data-lightbox 起到分组的作用 -->
-<!-- data-title 页面底部标题内容-->
+
+<div id="productListWomen"></div>
 <div class="modal fade" id="water-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -29,28 +27,9 @@
         </div>
     </div>
 </div>
-<!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg water-modal" data-toggle="modal" data-id="dt1" data-target="#water-modal">
-    Launch demo modal
-</button>
-<button class="btn btn-primary btn-lg water-modal" data-toggle="modal" data-id="dt2" data-target="#water-modal">
-    Launch demo modal
-</button>
-<button class="btn btn-primary btn-lg water-modal" data-toggle="modal" data-id="dt3" data-target="#water-modal">
-    Launch demo modal
-</button>
-<button class="btn btn-primary btn-lg water-modal" data-toggle="modal" data-id="dt4" data-target="#water-modal">
-    Launch demo modal
-</button>
-<button class="btn btn-primary btn-lg water-modal" data-toggle="modal" data-id="dt5" data-target="#water-modal">
-    Launch demo modal
-</button>
-<button class="btn btn-primary btn-lg water-modal" data-toggle="modal" data-id="dt6" data-target="#water-modal">
-    Launch demo modal
-</button>
 
-<script data-main="js/main" src="../../javascript/require.js"></script>
-<!--modal template-->
+<script data-main="../javascript/main" src="../javascript/require.js"></script>
+
 <script id="detail-modal" type="text/x-jsrender">
    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -100,6 +79,6 @@
    <p class="prev" data-id="{{:prev}}" >上一页:{{:prev}}</p>
    <p class="next" data-id="{{:next}}">下一页:{{:next}}</p>
 </script>
-</body>
 
+</body>
 </html>

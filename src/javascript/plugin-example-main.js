@@ -18,5 +18,6 @@ require(['jquery','jquery.waterfall'],function($){
 })
 //TODO: 你好悲剧
 require(['jquery','jquery.lightbox'],function($){
-	
+
 })
+
