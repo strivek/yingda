@@ -69,4 +69,27 @@ require(['jquery', 'click'], function ($) {
         $(this).attr('value', '');
     })
 })
+require(['jquery', 'jquery.waterfall'], function ($) {
+
+    $('#productListWomen').waterfall({
+        url: '../json/json.js',
+        perNum: 5,			// 每次显示五个
+        ajaxTimes: 1, 		// 只发送一次请求
+        createHtml: function (data) {
+
+            return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' data-toggle="modal" data-target="#water-modal"> ' +
+                '<a href="' + data.url + '" class="thumb" target="_blank">' +
+                '<img class="thumb_img"  src="' + data.imgSrc + '" />' +
+                '</a>' +
+                '<p class="desc" style="margin-top:1px;">' + data.title + '</p>' +
+                '<a style="display:block;color:#060;" href="' + data.href + '" target="_blank">查看大图</a>' +
+                '</div>';
+        }
+    })
+
+});
+require(['jquery', 'jquery.lightbox2.js'], function ($) {
+
+
+})
 

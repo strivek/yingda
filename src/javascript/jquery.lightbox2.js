@@ -4,20 +4,7 @@
 
 define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, hp) {
     //options；
-    [
-        {
-            "id": "dt1",
-            "title": "休闲系列",
-            "subtitle": "掐腰款皮草",
-            "info": "黑色厚实掐腰款皮草",
-            "num": "8x12xk2",
-            "salelink": "www.baidu.com",
-            "img1":"../../images/look1.jpg",
-            "img2":"../../images/look2.jpg",
-            "img3":"../../images/look3.jpg",
-            "img4":"../../images/look4.jpg"
-        }
-    ]
+
     var LightModalOptions = (function () {
         function LightModalOptions() {
             this.fadeDuration = 500;
@@ -32,7 +19,6 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             this.currentId = -1;
             this.isAjaxCompleted = 1;
         }
-
         return LightModalOptions;
     })();
 
@@ -48,7 +34,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             this.init();
         };
         Lightmodalbox.prototype.init = function () {
-            this.getIdList();
+
             this.start();
         };
         //获取json数据，与模板绑定，构建弹出层
@@ -71,9 +57,11 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             var self = this;
             //监测弹出事件。
             //TODO 从点击图片开始获取id,写一个配置id的方法
-            $(document).on('click','.water-modal',function (e) {
+            $(document).on('click','.water-modal', function (e) {
+                self.getIdList();
                 self.currentId = $(this).data("id");//获取id
                 self.build();//开始构造弹出modal
+                e.preventDefault();
             });
             //上一页
             $(document).on("click", "#water-modal .prev", function () {
@@ -96,13 +84,14 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
                 var data = $this.data("id");
                 self.idList.push(data);
             });
+
         }
         //获取json数据
         Lightmodalbox.prototype.getJsonData = function () {
             var self = this;
             var request = $.ajax({
                 type: "GET",
-                url: "/yingda/src/json/jsview.json",
+                url: "/yingda/src/json/productListWomen.json",
                 data: { id: self.currentId, location: "Boston" }
             })
             return request;
