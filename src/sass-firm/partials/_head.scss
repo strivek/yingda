@@ -33,11 +33,5 @@
     .icon a{padding-right:10px;color:#967e6b; font-size:20px;
       &:hover{color:#210700;}
     }
-  &:before, &:after {
-    content: "";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+  @include clearfix();
 }

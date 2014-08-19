@@ -6,6 +6,8 @@
 @import "helper/function";
 @import "helper/iconfont";
 @import "helper/fontdidot";
+//mixin
+@import "mixin/clearfix";
 //模块类
 @import "modules/m-list";
 @import "modules/m-list1";
@@ -16,6 +18,7 @@
 @import "unit/u-fullscreen";
 @import "unit/u-toptitle";
 @import "unit/u-title";
+@import "unit/u-page";
 //局部
 @import "partials/head";
 @import "partials/footer";

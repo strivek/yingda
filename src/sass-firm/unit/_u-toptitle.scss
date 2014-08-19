@@ -1,9 +1,6 @@
 .u-toptitle {
   padding-bottom: 10px;
-  &:after, &:before {
-    display: table;
-    content: "";
-  }
+@include clearfix();
   &:after {
     clear: both;
   }

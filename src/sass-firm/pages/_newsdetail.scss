@@ -2,17 +2,7 @@
 .m-main6-cy {
   width: 862px;
   float: right;
-  .title {
-    height: 58px;
-    line-height: 58px;
-    font-size: 26px;
-    color: #210700;
-    font-family: "宋体";
-    font-weight: normal;
-    border-bottom: 1px solid #b7b2a8;
-  }
   .con{padding-top: 30px;
-    border-top:1px solid #fff;
     .ti{font-size: 18px; color:#83654c;
        font-family: "宋体";
      font-weight: normal;}
@@ -37,15 +27,8 @@
     }
   }
   .b-title{font-size:22px;}
-  .yh{width: 100%; height: 1px; background:#fff; }
   .piclist{ padding-top: 30px; margin-bottom: 100px; margin-left: -24px;
-    &:after, &:before {
-    display: table;
-    content: "";
-  }
-    &:after {
-      clear: both;
-    }
+    @include clearfix();
   .pic{ float: left; margin-left: 24px; width: 197px;
     a{margin-top:12px; display:inline-block; line-height:1.5;font-size:14px; font-family: "宋体";color:#83654c;
       &:hover{color:#ab9885;}}

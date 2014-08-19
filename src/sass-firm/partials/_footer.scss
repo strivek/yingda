@@ -7,22 +7,10 @@
 .m-bottomlist {
   margin: 0 auto;
   width: 1154px;
-  &:after, &:before {
-    display: table;
-    content: "";
-  }
-  &:after {
-    clear: both;
-  }
+  @include clearfix();
   .list {
     float: left;
-    &:after, &:before {
-      display: table;
-      content: "";
-    }
-    &:after {
-      clear: both;
-    }
+    @include clearfix();
     li {
       float: left;
     }

@@ -17,10 +17,15 @@
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <div class="select"><h4>CHOOSE LANGUAGE : 中文</h4></div>
+        <div class="icon">
+            <p>
+                <a href="#" class="iconfont">&#xe642</a>
+                <a href="#" class="iconfont">&#xe643</a>
+                <a href="#" class="iconfont">&#xe644</a>
+            </p>
+        </div>
     </div>
-
-    </div>
+</div>
 <div class="g-main">
     <!--左侧栏-->
     <div class="m-left">
@@ -33,7 +38,7 @@
     <!--左侧栏结束-->
     <!--  右侧主要内容-->
     <div class="m-main8-cy">
-        <h2 class="title">招聘职位</h2>
+        <h2 class="u-title">招聘职位</h2>
         <div class="yh"></div>
         <div class="thead">
             <span class="name">岗位名称</span><span class="num">招聘人数</span><span class="address">工作地点</span><span class="date">发布日期</span>
@@ -90,26 +95,36 @@
                     3. 依据公司整体发展规划，组织制定公司年度拓展计划和各项工作目标，并及时跟踪工作完成情况<br></p>
             </div>
         </div>
-        <div class="page"><a href="#" class="pre">上一页</a> <a href="#" class="pagef">1</a> <a href="#" class="pagef">2</a><a href="#" class="pagef">3</a> <a href="#" class="next">下一页</a></div>
+        <div class="u-page"><a href="#" class="pre">上一页</a> <a href="#" class="pagef">1</a> <a href="#" class="pagef">2</a><a href="#" class="pagef">3</a> <a href="#" class="next">下一页</a></div>
     </div>
 </div>
-    <div class="g-bottom">
-        <ul class="m-list">
+<div class="g-bottom">
+    <div class="m-bottomlist">
+        <ul class="list">
             <li class="first"><a href="#">应大年鉴</a></li>
             <li><a href="#">合作加盟</a></li>
-            <li class="icon"><p>
-                <a href="#" class="iconfont">&#xe642</a>
-                <a href="#" class="iconfont">&#xe643</a>
-                <a href="#" class="iconfont">&#xe644</a>
-            </p></li>
+            <li class="last"><a href="#">法律申明</a></li>
         </ul>
+        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
     </div>
+</div>
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
 <script>
     $(document).ready(function(){
-        $(".main").click(function(){
-            $(".main").removeClass("line");
-            $(this).toggleClass("line");
+        $(".list").click(function(e){
+            var $main=$(this).parent();
+            var $allmain = $(".main");
+            if($main.hasClass("line"))
+            {
+                $allmain.removeClass("line");
+            }
+            else{
+
+                $allmain.removeClass("line");
+                $main.addClass("line");
+            }
+            e.preventDefault();
+            return false;
         });
     });
 </script>
