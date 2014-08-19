@@ -5,7 +5,7 @@
 
 ### 手机端
 ### 项目参与人
-@lisongyu @strivek @chengyuan
+@lisongyu @strivek @chengyuan @jingxijun
 
 ###注意事项
 
