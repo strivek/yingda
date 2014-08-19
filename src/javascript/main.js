@@ -3,7 +3,6 @@ require.config({
     paths: {
         jquery: "lib/jquery.min"
     }
-
 });
 
 require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
@@ -92,7 +91,7 @@ require(['jquery', 'jquery.waterfall'], function ($) {
         }
     })
 });
-require(['jquery', 'jquery.lightbox2.js'], function ($) {
+require(['jquery', 'jquery.lightbox2'], function ($) {
 
 })
 
