@@ -2,18 +2,8 @@
 .m-main-cy {
   width: 862px;
   float: right;
-  .title {
-    height: 58px;
-    line-height: 58px;
-    font-size: 26px;
-    color: #210700;
-    font-family: "宋体";
-    font-weight: normal;
-    border-bottom: 1px solid #b7b2a8;
-  }
   .imglb {
     margin-bottom: 40px;
-    border-top: 1px solid #fff;
     position: relative;
     width: 100%;
     height: 300px;
@@ -75,26 +65,24 @@
     }
   }
   .list {
-    width: 402px;
+    width: 400px;
 
     .showpic {
       margin-top: 20px;
-      &:after,&:before{display: table;
-      content: "";}
-      &:after{clear: both;}
+      @include clearfix();
+      margin-left: -20px;
     }
     .showpic li {
       float: left;
-      margin-right: 20px;
-      p{line-height: 30px;
+      margin-left: 20px;
+      p a{ display: block;
+      line-height: 30px;
       height: 30px;
       text-align: center;
       font-size:14px;
       color:#210700;
-      font-family: "宋体";}
-    }
-    .showpic .last {
-      margin-right: 0;
+      font-family: "宋体";
+      &:hover{color:#714e38;}}
     }
     .changemargin{margin-top: 40px;}
     .changemargin .m-list3{margin-top: 20px;}

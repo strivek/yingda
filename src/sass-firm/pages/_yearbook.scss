@@ -9,17 +9,7 @@
   &:after {
     clear: both;
   }
-  .title {
-    height: 58px;
-    line-height: 58px;
-    font-size: 26px;
-    color: #210700;
-    font-family: "宋体";
-    font-weight: normal;
-    border-bottom: 1px solid #b7b2a8;
-  }
   .yearbook {margin-bottom:100px;
-    border-top: 1px solid #fff;
     li {
       .show{   position: relative;
         height: 56px;
@@ -32,7 +22,7 @@
         font-size: 22px;
         font-style: italic;
         color: #210700;
-        &:hover{color:#f6d2b9;}
+        &:hover{color:#714e38;}
       }
       p{
         float: left;

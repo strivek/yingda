@@ -2,56 +2,24 @@
   width:786px;
   float: left;
   margin-left: 108px;
-  .title {
-    height: 58px;
-    line-height: 58px;
-    font-size: 26px;
-    color: #210700;
-    font-family: "宋体";
-    font-weight: normal;
-    border-bottom: 1px solid #b7b2a8;
-  }
   .main {
-    border-top: 1px solid #fff;
     padding-top: 10px;
     padding-bottom:100px;
     .newslist {
-      &:after, &:before {
-        display: table;
-        content: "";
-      }
-      &:after {
-        clear: both;
-      }
-
+      @include clearfix();
       padding: 20px 0;
       border-bottom: 1px dotted #b7b2a8;
       .img {float: left; width: 192px; height: 112px;}
       .con{float: right; width: 563px;
-        .ti a{font-size: 15px; font-family: "宋体"; color:#83654c; font-weight: normal;
+        .ti a{font-size: 16px; font-family: "宋体"; color:#83654c; font-weight: normal;
             &:hover{color:#210700;}}
-        .time{display: inline-block;font-size: 14px;color:#83654c; margin-top: 10px;}
-        .author{display: inline-block; font-size: 14px;color:#83654c; margin-top: 10px; margin-left: 26px;}
-        .article{font-size: 14px; color:#83654c;margin-top: 10px; line-height: 1.3;}
+        .time{display: inline-block;font-size: 13px;color:#83654c; margin-top: 10px;}
+        .author{display: inline-block; font-size: 13px;color:#83654c; margin-top: 10px; margin-left: 26px;}
+        .article{font-size: 13px; color:#83654c;margin-top: 10px; line-height: 1.6;}
         .more{display: block; text-align: right;fotn-size:10px; color:#83654c;
         &:hover{color:#ab9885;}}
       }
     }
-    .page{margin-top: 38px;
-      text-align: right;
-      .pre{display: inline-block;
-           padding-left: 14px;
-          padding-right: 15px;
-          background:url("../images/newslist-pic2.png")2px 2px no-repeat;
-          font-size:12px;
-          color:#83654c;}
-      .next{display: inline-block;
-        padding-right: 14px;
-        padding-left: 14px;
-        background:url("../images/newslist-pic3.png")right 2px no-repeat;
-        font-size:12px;
-        color:#83654c;}
-      .pagef{padding:0 15px; font-size:12px;color:#83654c;}
-    }
+
   }
 }
