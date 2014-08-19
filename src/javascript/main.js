@@ -48,7 +48,6 @@ require(['jquery', 'bootstrap'], function ($) {
     $('.m-shop-pic .carousel').carousel({
         interval: 3000
     });
-
     $('.g-maininner-gf .carousel').carousel({
         interval: 3000
     });
@@ -67,6 +66,14 @@ require(['jquery', 'bootstrap'], function ($) {
 })
 //滚动条
 require(['jquery', 'jquery.tinyscrollbar'], function ($) {
+//    推荐效果
+    $('.m-introlist').hover(function(){
+        $(this).find('.title').stop().animate({'bottom':'0'});
+    },function(){
+        $(this).find('.title').stop().animate({'bottom':'-26px'});
+    })
+});
+require(['jquery', 'jquery.tinyscrollbar'], function($) {
     var $scrollbar = $("#scrollbar1");
     $scrollbar.tinyscrollbar();
 });
@@ -103,7 +110,6 @@ require(['jquery', 'jquery.waterfall'], function ($) {
 require(['jquery', 'jquery.lightbox2'], function ($) {
 
 });
-
 //boutique.html 精品店下拉
 require(['jquery'], function ($) {
     $('dl .detail').click(function () {
