@@ -4,7 +4,6 @@ require.config({
         jquery: "lib/jquery.min"
     }
 });
-
 require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
 //    $('.nav>li:not(:last):not(:first)').hover(function(){
 //        $(this).navshow('.m-menu','.m-nav-list-bg');
@@ -46,19 +45,33 @@ require(['jquery', 'jquery.waterfall'], function ($) {
 });
 //轮播
 require(['jquery', 'bootstrap'], function ($) {
-
-    $('.carousel').carousel({
+    $('.m-shop-pic .carousel').carousel({
         interval: 3000
+    });
+
+    $('.g-maininner-gf .carousel').carousel({
+        interval: 3000
+    });
+    $('.m-content-cy .carousel').carousel({
+        interval: 3000
+    });
+    $('.m-carousel-cy .carousel').carousel({
+        interval: false
+    });
+//    推荐效果
+    $('.m-introlist').hover(function () {
+        $(this).find('.title').stop().animate({'bottom': '0'});
+    }, function () {
+        $(this).find('.title').stop().animate({'bottom': '-26px'});
     })
 })
 //滚动条
 require(['jquery', 'jquery.tinyscrollbar'], function ($) {
     var $scrollbar = $("#scrollbar1");
     $scrollbar.tinyscrollbar();
-})
+});
 //下拉条
 require(['jquery', 'click'], function ($) {
-
     var selectBtn1 = $('.select1');
 //    var selectBtn2 = $('.select2');
     var li = $('.choose li');
@@ -68,14 +81,9 @@ require(['jquery', 'click'], function ($) {
     $('.u-input').focus(function () {
         $(this).attr('value', '');
     })
-})
+});
+////productListWomen.html 瀑布流
 require(['jquery', 'jquery.waterfall'], function ($) {
-//    $('dl .detail').click(function(){
-//        $(this).toggleClass('color');
-//        $(this).closest('dl').siblings('.u-details').toggle();
-//        $(this).trigger("click.detail");
-//    })
-
     $('#productListWomen').waterfall({
         url: '../json/json.js',
         perNum: 5,			// 每次显示五个
@@ -91,7 +99,16 @@ require(['jquery', 'jquery.waterfall'], function ($) {
         }
     })
 });
+//productListWomen.html 灯箱
 require(['jquery', 'jquery.lightbox2'], function ($) {
 
-})
+});
 
+//boutique.html 精品店下拉
+require(['jquery'], function ($) {
+    $('dl .detail').click(function () {
+        $(this).toggleClass('color');
+        $(this).closest('dl').siblings('.u-details').toggle();
+        $(this).trigger("click.detail");
+    })
+});
