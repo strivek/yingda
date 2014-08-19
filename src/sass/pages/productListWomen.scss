@@ -43,43 +43,30 @@ $font-family:"宋体";
       position: relative;
       float: left;
       width: 60%;
-      a.left {
+      .item img{width: 100%;}
+      a.left,a.right {
         position: absolute;
         top:20px;
-        right: 34px;
         width: 34px;
         height: 34px;
         text-align: center;
-        line-height: 34px;
         border: 1px solid #48494c;
         .glyphicon {
+          position:static;
           margin: 0;
           width: 100%;
-          height: 100%;
+          height: 34px;
+          line-height: 34px;
           color: #c0a992;
           font-size: 16px;
         }
       }
-      a.right {
-        position: absolute;
-        top:20px;
-        right: 0;
-        width: 34px;
-        height: 34px;
-        text-align: center;
-        line-height: 34px;
-        border: 1px solid #48494c;
-        .glyphicon {
-          margin: 0;
-          width: 100%;
-          height: 100%;
-          color: #c0a992;
-          font-size: 16px;
-
-        }
+      a.left{  left: auto;
+        right: 33px;}
+      a.right{right: 0;}
       }
     }
-    .rightDes{  float: right;padding-left: 20px; padding-top: 30px; width: 40%;color:#663e1f;
+    .rightDes{float: right;padding-left: 20px; padding-top: 30px; width: 40%;color:#663e1f;
       .title,.subtitle,.info,.salelink,.num,.aa{margin-top: 5px;font-size: 14px; }
       .title{font-size:30px;}
       .subtitle{}
@@ -100,4 +87,4 @@ $font-family:"宋体";
   }
    }
 
-}}
+}
