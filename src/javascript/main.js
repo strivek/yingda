@@ -43,6 +43,7 @@ require(['jquery', 'jquery.waterfall'], function ($) {
         ajaxTimes: 1 		// 只发送一次请求
     });
 });
+
 //轮播
 require(['jquery', 'bootstrap'], function ($) {
     $('.m-shop-pic .carousel').carousel({
@@ -57,22 +58,16 @@ require(['jquery', 'bootstrap'], function ($) {
     $('.m-carousel-cy .carousel').carousel({
         interval: false
     });
+});
+//滚动条
+require(['jquery', 'jquery.tinyscrollbar'], function ($) {
 //    推荐效果
     $('.m-introlist').hover(function () {
         $(this).find('.title').stop().animate({'bottom': '0'});
     }, function () {
         $(this).find('.title').stop().animate({'bottom': '-26px'});
-    })
+    });
 })
-//滚动条
-require(['jquery', 'jquery.tinyscrollbar'], function ($) {
-//    推荐效果
-    $('.m-introlist').hover(function(){
-        $(this).find('.title').stop().animate({'bottom':'0'});
-    },function(){
-        $(this).find('.title').stop().animate({'bottom':'-26px'});
-    })
-});
 require(['jquery', 'jquery.tinyscrollbar'], function($) {
     var $scrollbar = $("#scrollbar1");
     $scrollbar.tinyscrollbar();
