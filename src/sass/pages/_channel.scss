@@ -1,0 +1,36 @@
+.m-channel{
+  .channel_list{
+    width: 100%;position: relative; font-size: 20px;
+    @media (min-width: 1380px) and (max-width: 1679px) {
+      font-size: 18px;
+    }
+    @media (min-width: 1200px) and (max-width: 1379px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      font-size: 14px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 12px;
+    }
+    .channel{position: absolute; top: 36%;left: 0; width: 50%;text-align: center;
+      @media (max-width: 1023px) {
+       top:20%;
+      }
+      h3{font-size:3em; line-height: 1.2em;font-family:'myfont-bold';font-weight: normal;}
+      h4{font-size: 2em; line-height: 1.25em; margin-bottom: 0.65em; font-weight: normal;
+
+        span{font-family: 'myfont';}
+      }
+      a{color:#32251f;}
+      a:hover{color:#714e38;}
+      input{border:1px solid #32251f; padding: 0.2em 0.6em; background: none; font-size: 1em;
+      &:hover{ border:1px solid #714e38;color:#714e38;
+          @include hover-transition();
+      }
+      }
+    }
+    .channel-r{left: 50%;}
+
+  }
+}

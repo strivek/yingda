@@ -91,6 +91,9 @@ $color: #ffe3cd;
       color: $color;
       font-family: $font-family;
       outline: none;
+      &:hover{
+        color:#714e38;
+      }
     }
   }
 }

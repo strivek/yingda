@@ -1,8 +1,8 @@
 require.config({
-	baseUrl:"../javascript",
-	paths:{
-		jquery:"lib/jquery.min"
-	}
+    baseUrl:"../javascript",
+    paths:{
+        jquery:"lib/jquery.min"
+    }
 
 });
 require(['jquery', 'bootstrap','nav'], function($,nav) {
@@ -47,8 +47,8 @@ require(['jquery','jquery.waterfall'],function($){
 
 require(['jquery', 'bootstrap'], function($) {
 
-    $('.m-carousel-cy .carousel').carousel({
-        interval: false
+    $('.carousel').carousel({
+        interval: 3000
     })
 })
 require(['jquery', 'jquery.tinyscrollbar'], function($) {
@@ -73,8 +73,13 @@ require(['jquery', 'click'], function($) {
 
 
 
-       $(this).closest('dl').siblings('.u-details').toggle();
-       $(this).trigger("click.detail");
+        $(this).closest('dl').siblings('.u-details').toggle();
+        $(this).trigger("click.detail");
     })
-});
+
+
+
+
+
+})
 
