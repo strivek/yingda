@@ -64,12 +64,12 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
                 e.preventDefault();
             });
             //上一页
-            $(document).on("click", "#water-modal .prev", function () {
+            $(document).on("click", "#water-modal .item-prev", function () {
                 self.currentId = $(this).data("id");//获取id
                 self.build();//开始构造弹出modal
             });
             //下一页
-            $(document).on("click", '#water-modal .next', function () {
+            $(document).on("click", '#water-modal .item-next', function () {
                 self.currentId = $(this).data("id");//获取id
                 self.build();//开始构造弹出modal
             });
@@ -93,7 +93,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
                 type: "GET",
                 url: "/yingda/src/json/productListWomen.json",
                 data: { id: self.currentId, location: "Boston" }
-            })
+            });
             return request;
         };
         //将json数据绑定到html模板上
