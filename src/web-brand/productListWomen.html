@@ -39,7 +39,8 @@
 <div class="modal fade" id="water-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times</span>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><img src="../images/productListwomen-icon.png" alt=""/></span>
+                
                 <span class="sr-only">Close</span>
             </button>
             <div class="modal-body clearfix" id="modal-body">
@@ -86,12 +87,20 @@
   </a>
 </div>
 <div class="rightDes">
+<div class="wrap">
    <p class="title">{{:title}}</p>
    <p class="subtitle">{{:subtitle}}</p>
-   <p class="info">{{:info}}}</p>
+   <p class="price">{{:price}}</p>
+   <p class="xinxi">商品信息</p>
+   <p class="info">{{:info}}</p>
+   <p class="des">{{:des}}</p>
+   <p class="xinxi">商品编号</p>
    <p class="num">{{:num}}</p>
-   <p class="salelink">{{:salelink}}</p>
+   <p class="online"><a href="{{:salelink}}">在线商场</a> <span class="iconfont">&#xe649</span> </p>
+<!--   <p class="salelink">{{:salelink}}</p>-->
    <p class="aa">{{:aa}}</p>
+   <p class="share">分享到：<a href="#" class="iconfont">&#xe642</a></p>
+ </div>
 </div>
 <p class="prev iconfont" data-id="{{:prev}}" >&#xe648</p>
 <p class="next iconfont" data-id="{{:next}}">&#xe649</p>
