@@ -137,3 +137,6 @@ require(['jquery'], function ($) {
     });
 
 });
+require(['jquery','jquery.lightbox'],function($){
+
+})
