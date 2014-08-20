@@ -8,6 +8,10 @@ $color: #ffe3cd;
   font-family: $font-family;
   font-weight: normal;
 }
+
+.m-main-cy{
+  padding-top: 80px;
+}
 .m-main-cy .title {
   margin-top: 35px;
   padding-bottom: 42px;
@@ -96,4 +100,34 @@ $color: #ffe3cd;
       }
     }
   }
+}
+
+//下拉性别
+.sexnone{display: none;}
+.wrap-select{
+  position: relative;width: 100%;
+}
+
+.wrap-select .select{
+  height: 36px; color:#ffe3cd;border: 1px solid #ffe3cd;padding-left: 10px; line-height:26px;padding-top: 5px;
+}
+.wrap-select ul{
+  display: none;
+  border: 1px solid #ccc;
+  position: absolute;top: 35px; left:0;background: #ffe3cd; width: 100%;
+
+  /*display: none;*/
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*top: 32px;*/
+}
+.wrap-select ul li{
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  color:#32251f;
+  padding-left: 10px;
+}
+.wrap-select ul li:hover{
+  background: #d7bca0;
 }

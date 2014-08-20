@@ -2,8 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>注册页面</title>
-    <link rel="stylesheet" href="../css/main.css"/>
+    <title>隐私条款</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,8 +12,10 @@
     <script src="../javascript/html5shiv.js"></script>
     <script src="../javascript/respond.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
+<!--通用顶部-->
 <div class="g-header">
     <div class="s-black"></div>
     <div class="container m-nav">
@@ -90,84 +91,12 @@
         </nav>
     </div>
 </div>
-<div class="m-nav-list-bg"></div>
-<div class="m-main-cy">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
-                <h1 class="title">建立您的账户</h1>
-                <p class="prompt"><span>*</span>为必填项</p>
-                <form action="" class="register-form">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="name">姓名<span>*</span></label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <!--8.20 开始-->
-                                <label for="sex">性别<span>*</span></label>
-                                <div class="wrap-select">
-                                    <div class="select" >男</div>
-                                    <ul >
-                                        <li val="boy">男</li>
-                                        <li val="girl">女</li>
-                                        <li val="secret">保密</li>
-                                    </ul>
-                                    <input type="hidden" name="a" value="" id="a">
-                                </div>
+<div class="g-mn1-gf">
 
-                                    <select name="sex" id="sex" class="sexnone">
-                                        <option value="boy">男</option>
-                                        <option value="girl">女</option>
-                                        <option value="secret">保密</option>
-                                    </select>
-                                <!--8.20 结束-->
-                                <!--<select name="select" id="sex" class="form-control">-->
-                                    <!--<option value="boy">男</option>-->
-                                    <!--<option value="girl">女</option>-->
-                                <!--</select>-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="birth">生日<span>*</span></label>
-                        <input type="text" class="form-control" id="birth">
-                    </div>
-                    <div class="form-group warning">
-                        <label for="email">电子邮箱<span>*</span></label>
-                        <input type="text" class="form-control" id="email">
-                        <p>电子邮箱不符合规范</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">密码<span>*</span></label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label for="repwd">确认密码<span>*</span></label>
-                        <input type="password" class="form-control" id="repwd">
-                    </div>
-                    <div class="form-group">
-                        <label for="num">电话号码<span>*</span></label>
-                        <input type="text" class="form-control" id="num">
-                    </div>
-                    <div class="form-check">
-                        <label for="check"><input type="checkbox" id="check" class="check">我已阅读并接受隐私声明</label>
-                    </div>
-                    <p class="button">
-                        <button type="submit" class="btn">建立您的账户</button>
-                    </p>
-                </form>
-            </div>
-        </div>
-    </div>
+
 </div>
-<!-- 全屏背景壁纸 -->
-<img class="u-fullscreen" src="../images/register-bg.png" alt="背景图片">
 
-<!--底部样式-->
+<!--通用底部-->
 <div class="g-footer navbar-fixed-bottom" >
     <div class="m-footer-bg"></div>
     <div class="container-fluid m-footer">
@@ -198,6 +127,5 @@
         </div>
     </div>
 </div>
-<script data-main="../javascript/main" src="../javascript/require.js"></script>
 </body>
 </html>

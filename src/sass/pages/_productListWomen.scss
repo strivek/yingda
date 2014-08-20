@@ -1,6 +1,8 @@
+@charset "utf-8";
 $font-family: "宋体";
 .g-main-cy {
   width: 80%;
+
   @media (min-width: 768px) and(max-width: 992px) {
     width: 100%;
   }
@@ -19,6 +21,7 @@ $font-family: "宋体";
   .heng {
     height: 1px;
     width: 10px;
+
     background: #8f715b;
   }
   .title {
@@ -54,7 +57,7 @@ $font-family: "宋体";
   }
 }
 
-.m-main-cy {
+.m-productList-main-cy {
   width: 84%;
   float: left;
   .title-cy {
@@ -168,6 +171,7 @@ $font-family: "宋体";
           font-size: 30px;
         }
         .subtitle {
+
           font-weight: bold;
           color: #846751;
         }
@@ -240,7 +244,7 @@ $font-family: "宋体";
       }
     }
   }
- .close {
+  .close {
     z-index: 10000;
     position: absolute;
     right: 3%;
