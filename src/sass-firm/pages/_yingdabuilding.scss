@@ -1,0 +1,113 @@
+@charset "utf-8";
+.m-mainlast-cy {
+  width: 862px;
+  float: right;
+  @include clearfix();
+  .imglb {
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    .imgList {
+      margin-top: 30px;
+    }
+    ol, li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+    }
+    li {
+      left: -100%;
+      opacity: 0;
+      -webkit-transition: 0.5s ease-out;
+      -moz-transition: 0.5s ease-out;
+      -ms-transition: 0.5s ease-out;
+      transition: 0.5s ease-out;
+      -webkit-transition-property: opacity, left, top;
+      -moz-transition-property: opacity, left, top;
+      -ms-transition-property: opacity, left, top;
+      transition-property: opacity, left, top;
+    }
+    li.z-crt {
+      z-index: 21;
+      opacity: 1;
+      left: 0;
+    }
+    li.z-crt ~ li {
+      left: 100%;
+    }
+    .u-pointer {
+      position: absolute;
+      bottom: 35px;
+      right: 14px;
+      z-index: 50;
+      text-align: center;
+      line-height: 0;
+    }
+    .u-pointer i {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 0 0 0 2px;
+      cursor: pointer;
+      background: #8d735d;
+      border: 1px solid transparent;
+    }
+    .u-pointer i:first-child {
+      margin-left: 0;
+    }
+    .u-pointer i:hover {
+      border: 1px solid #fff;
+    }
+    .u-pointer i.z-crt {
+      border: 1px solid #fff;
+    }
+  }
+  .list {
+    margin-left: -60px;
+    @include clearfix();
+    .piclist {
+      float: left;
+      margin-left: 60px;
+      width: 400px;
+      .m-list3 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+  .list2 {
+    & > .u-toptitle {
+      margin-left: 60px;
+    }
+    .textlist {
+      margin-left: 30px;
+      width: 430px;
+      float: left;
+      .line {
+        @include clearfix();
+        margin-top: 20px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d6cfc7;
+        a {
+          display: block;
+          float: left;
+          color: #210700;
+          font-szie: 16px;
+          font-family: "宋体";
+          &:hover {
+            color: #83654c;
+          }
+        }
+        span{display: block; float: right;font-size:12px; color:#83654c; font-family: "宋体"}
+      }
+
+    }
+
+  }
+}
