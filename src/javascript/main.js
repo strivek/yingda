@@ -95,8 +95,7 @@ require(['jquery', 'jquery.waterfall'], function ($) {
                 '<a href="' + data.url + '" class="thumb" target="_blank">' +
                 '<img class="thumb_img"  src="' + data.imgSrc + '" />' +
                 '</a>' +
-                '<p class="desc" style="margin-top:1px;">' + data.title + '</p>' +
-                '<a style="display:block;color:#060;" href="' + data.href + '" target="_blank">查看大图</a>' +
+                '<a style="position:absolute; right:10px; bottom:8px; display:block;color:#ffe3cd; font-size:40px;" class="iconfont" href="' + data.href + '" target="_blank">&#xe647</a>' +
                 '</div>';
         }
     })
