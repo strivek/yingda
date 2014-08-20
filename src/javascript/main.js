@@ -113,3 +113,28 @@ require(['jquery'], function ($) {
         $(this).trigger("click.detail");
     })
 });
+//register.html 登陆页性别选择
+require(['jquery'], function ($) {
+    var selectBtn = $('.wrap-select .select');
+    var li = $('.wrap-select ul li');
+    selectBtn.click(function(){
+        $('.wrap-select ul').slideToggle();
+    });
+
+    li.click(function(){
+        var val = $(this).attr('val');
+        var oText = $(this).text();
+        var aSelect=$('.sexnone option');
+        for(var i=0;i<aSelect.length;i++){
+            aSelect.eq(i).removeAttr('selected');
+            if(aSelect.eq(i).attr('value')==val){
+                aSelect.eq(i).attr('selected','selected');
+                aSelect.eq(i).text(oText);
+            }
+        }
+        selectBtn.text(oText);
+        $('#a').val(val);
+        $('.wrap-select ul').slideUp(10);
+    });
+
+});

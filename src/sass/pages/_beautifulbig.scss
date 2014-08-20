@@ -1,9 +1,13 @@
-@charset "UTF-8";
-
+@charset "UTF-8"; 
 .g-main-gf {
   height: 100%;
-  display: table;
+
   background: url('../images/damei-bg.png') center center;
+  overflow: hidden;
+  .set_table {
+    display: table;
+    height: 100%;
+  }
 }
 
 .g-maininner-gf {
