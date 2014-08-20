@@ -1,20 +1,24 @@
 $font-family: "宋体";
 .g-main-cy {
-  width: 90%;
+  width: 80%;
   @media (min-width: 768px) and(max-width: 992px) {width: 100%;}
   margin: 0 auto;
   margin-top: 124px;
-/*  @media (min-width: 1610px) {
-    width: 80%;
-  }*/
+ @media (min-width: 1610px) {
+    width: 70%;
+  }
   @include clearfix();
 }
-
 .m-side-cy {
   float: left;
   padding-left: 40px;
   width: 16%;
+  .heng {
+    height: 1px;
+    width: 10px;
+    background: #8f715b;}
   .title {
+    margin-top: 30px;
     font-size: 24px;
     color: #663e1f;
     font-family: $font-family;
