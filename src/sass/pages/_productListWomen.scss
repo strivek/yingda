@@ -1,6 +1,7 @@
 $font-family: "宋体";
 .g-main-cy {
   width: 90%;
+  @media (min-width: 768px) and(max-width: 992px) {width: 100%;}
   margin: 0 auto;
   margin-top: 124px;
   @media (min-width: 1610px) {
@@ -13,6 +14,7 @@ $font-family: "宋体";
   float: left;
   padding-left: 40px;
   width: 16%;
+  background: red;
   .title {
     font-size: 24px;
     color: #663e1f;
