@@ -24,7 +24,7 @@
 
 
     width: 100%;
-    background: #000;
+    background: #ffe3cd;
     border: 1px solid #ccc;
     border-top: none;
     display: none;
@@ -37,9 +37,11 @@
     padding-left: 10px;
     height: 26px;
     line-height: 26px;
+    color:#32251f;
+    cursor: pointer;
   }
   .choose li:hover,.choose1 li:hover{
-    background: #ccc;
+    background: #d7bca0;
   }
 
 }
