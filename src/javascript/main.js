@@ -19,7 +19,6 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
             $(this).attr('num', parseInt($(this).attr('num')) + 1);
             $(this).siblings().attr('num', 0);
             var _that = $(this).attr('num');
-
             $(this).navshow('.m-menu', '.m-nav-list-bg', _that);
         }
     });
@@ -38,7 +37,7 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
 //瀑布流调用
 require(['jquery', 'jquery.waterfall'], function ($) {
     $('#waterfall').waterfall({
-        url: '../json/json.js',
+        url: '../json-man/json.js',
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1 		// 只发送一次请求
     });
