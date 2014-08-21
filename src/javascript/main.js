@@ -82,6 +82,11 @@ require(['jquery', 'jquery.tinyscrollbar'], function($) {
     var $scrollbar = $("#scrollbar1");
     $scrollbar.tinyscrollbar();
 });
+
+require(['jquery', 'jquery.tinyscrollbar'], function($) {
+    var $scrollbar1 = $("#scrollbar2");
+    $scrollbar1.tinyscrollbar();
+});
 //下拉条
 //require(['jquery', 'click'], function ($) {
 //    var selectBtn1 = $('.select1');
@@ -133,11 +138,17 @@ require(['jquery','down'], function ($) {
     //城市
     var oSelect=$('.m-select .select1');
     var oli = $('.m-select ul li');
-    var oDisplay=$('.m-select ul')
+    var oDisplay=$('.m-select ul');
     selectBtn.down(li,aSelect,aDisplay);
     oSelect.down(oli,aSelect,oDisplay);
 
 });
 require(['jquery','jquery.lightbox'],function($){
 
-})
+});
+
+require(['jquery'],function($){
+    $('.boutique_map').click(function(){
+        alert(1);
+    })
+});
