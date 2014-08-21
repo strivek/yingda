@@ -1,0 +1,67 @@
+@charset "utf-8";
+//兼容[1]：支持包括IE6在内的所有主流浏览器和设备，UI效果可能有所退化。
+//优雅[2]：在高级浏览器中有“高级”效果，在低级浏览器中有“兼容”效果，是高级版的“优雅退化”，也是兼容版的“渐进/增强”。
+//高级[3]：支持IE9+、Chrome、Safari、Firefox等主流浏览器，支持移动设备和所有智能系统，具有优越的UI效果。
+
+//base 垂直列表
+//兼容性：兼容
+.m-list {
+  line-height: 21px;
+  a {
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
+//extend 鼠标经过扩展
+
+.m-list-c1 {
+  a {
+    color: #333;
+    &:hover {
+      color: blue;
+    }
+  }
+
+}
+
+//base 水平列表
+//兼容性：兼容
+.m-list-x {
+  line-height: 23px;
+  ul {
+    @include f-cb(); //清除浮动
+    margin-left: -10px;
+    padding-left: 0; //css reset 可以包含
+  }
+
+  li {
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+//extend  鼠标经过扩展
+.m-list-x-c1 {
+  a {
+    color: #333;
+    &:hover {
+      color: blue;
+    }
+  }
+
+}
