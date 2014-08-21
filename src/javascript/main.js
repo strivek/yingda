@@ -25,7 +25,9 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
     });
     obj1.hover(function () {
         if ($(window).width() > 1000) {
+
             $(this).navshow1('.m-menu', '.m-nav-list-bg');
+
         }
     });
 //    obj1.mouseout(function(){
@@ -33,8 +35,16 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
 //        $(this).navshow2('.m-menu','.m-nav-list-bg');
 //        }
 //    })
+    $(".bk-toggle").mouseenter(function(){
+       $(this).trigger("hover.navtoggle");
+    })
 
 });
+require(["backgroundtoggle"],function($){
+
+})
+
+
 //瀑布流调用
 require(['jquery', 'jquery.waterfall'], function ($) {
     $('#waterfall').waterfall({
