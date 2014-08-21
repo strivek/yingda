@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu,img{margin:0;padding:0;}
+a {text-decoration: none;}
+html {font-size: 10px;}
 $fontColor:#fee3ce;
 
 @font-face {
@@ -36,16 +39,15 @@ $fontColor:#fee3ce;
       font-family: '\5B8B\4F53';
       text-align: center;
       h3 {
-        margin: 0;
         line-height: 2.1rem;
         font-size: 1.5rem;
         font-family: 'didotbold';
-        font-weight: bold;
+        font-weight: normal;
       }
       h4 {
-        margin: 0;
         line-height: 2.5rem;
         font-size: 1.5rem;
+        font-weight: normal;
       }
       a {
         color: $fontColor;
@@ -72,4 +74,5 @@ $fontColor:#fee3ce;
       }
     }
   }
+  img {display: block;}
 }

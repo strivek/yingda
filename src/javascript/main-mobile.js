@@ -6,12 +6,20 @@ require.config({
 
 });
 
-require(['jquery', 'bootstrap'], function($) {
-    $('#carousel-1').carousel({
-        interval: false
+require(['jquery', 'idangerous.swiper'], function($) {
+    var mySwiper = $('.swiper-container').swiper({
+        loop:true,
+        grabCursor: true
     });
-    $('#carousel-2').carousel({
-        interval: false
+    $('.arrow-left').on('click', function(e){
+        e.preventDefault()
+        var swiper = $(this).parent('.swiper-container').data('swiper');
+        swiper.swipePrev();
+    });
+    $('.arrow-right').on('click', function(e){
+        e.preventDefault()
+        var swiper = $(this).parent('.swiper-container').data('swiper');
+        swiper.swipeNext();
     });
 });
 

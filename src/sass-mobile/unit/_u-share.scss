@@ -1,5 +1,6 @@
 .u-share {
   padding-top: 2rem;
+  padding-bottom: 0.3rem;
   border-bottom: 1px #564b47 solid;
   .share {
     float: left;
@@ -21,7 +22,7 @@
     float: right;
     a {
       display: inline-block;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: #333333;
       &:hover {
         color: #714e38;

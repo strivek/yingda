@@ -1,9 +1,7 @@
 @charset "utf-8";
 
-//框架
-@import "vendor/bootstrap/bootstrap";
-
 //方法
+@import "helper/normalize";
 @import "helper/iconfont";
 @import "helper/mixin";
 @import "helper/function";
@@ -15,3 +13,6 @@
 //页面
 @import "pages/seasonfashion";
 @import "pages/seasonfashion-content";
+
+//框架
+@import "vendor/swiper";
