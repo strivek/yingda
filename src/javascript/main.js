@@ -38,6 +38,3 @@ require(['xscroll']);
 require(['others']);
 
 
-
-
-

@@ -86,14 +86,14 @@
 <div class="body_bg boutique_bg"></div>
 <div   class="container m-boutique pt-84">
     <div class="row">
-        <div class="col-md-10 m-boutique-search">
+        <div class="col-sm-10 m-boutique-search col-sm-offset-2 col-md-offset-2">
             <div class="row">
                 <div class="col-sm-2">
                     <h3>
                         寻找门店
                     </h3>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3 col-md-2">
                     <!-- Single button -->
                     <!--todo-lsy niijjjjjj-->
                     <div class="m-select">
@@ -103,14 +103,15 @@
                         <ul class="choose">
                             <li val="beijing">北京</li>
                             <li val="tianjin">天津</li>
-                            <li val="shang">上海</li>
+                            <li val="shanghai">上海</li>
                         </ul>
                         <input type="hidden" name="a" value="" id="a">
-                        <!--<select name="" id="">-->
-                            <!--<option value="" selected="selected"></option>-->
-                            <!--<option value="" selected="selected"></option>-->
-                        <!--</select>-->
                     </div>
+                    <select name="city" id="sex" class="sexnone">
+                        <option value="beijing">北京</option>
+                        <option value="tianjin">天津</option>
+                        <option value="shanghai">上海</option>
+                    </select>
                 </div>
                 <div class="col-sm-3 pr-0">
                     <input type="text" value="门店" class="u-input"/>
@@ -120,51 +121,123 @@
                 </div>
             </div>
         </div>
-        <div class="m-shop-pic">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!--<ol class="carousel-indicators">-->
-                <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
-                <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
-                <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-                <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
-                <!--</ol>-->
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">
-                    </div>
-                    <div class="item">
-                        <img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">
+        <!--<div class="m-shop-pic">-->
+            <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
+                <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+                <!--&lt;!&ndash;<ol class="carousel-indicators">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li data-target="#carousel-example-generic" data-slide-to="1"></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li data-target="#carousel-example-generic" data-slide-to="2"></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li data-target="#carousel-example-generic" data-slide-to="3"></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;</ol>&ndash;&gt;-->
+                <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+                <!--<div class="carousel-inner" role="listbox">-->
+                    <!--<div class="item active">-->
+                        <!--<img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">-->
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                        <!--<img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">-->
 
-                    </div>
-                    <div class="item">
-                        <img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                        <!--<img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">-->
 
-                    </div>
-                    <div class="item">
-                        <img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">
-                    </div>
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                        <!--<img src="../images/boutique.jpg" alt="..." class="img-responsive" width="100%">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; Controls &ndash;&gt;-->
+                <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+                    <!--<span class="iconfont icon-yingdaicon09 u-arrow"></span>-->
+                    <!--<span class="sr-only">Previous</span>-->
+                <!--</a>-->
+                <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+                    <!--<span class="iconfont icon-yingdaicon10 u-arrow"></span>-->
+                    <!--<span class="sr-only">Next</span>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class=" col-md-4 m-shop">-->
+
+            <!--<div id="scrollbar1">-->
+                <!--<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>-->
+                <!--<div class="viewport ">-->
+                    <!--<div class="shop_bg"></div>-->
+                    <!--<div class="overview">-->
+                        <!--<div class="pr-20 m-shop-vip">-->
+                            <!--<h2>VIP</h2>-->
+                            <!--<div class="f-mt20">-->
+                                <!--<h3>4S店理念</h3>-->
+                                <!--<dl>-->
+                                    <!--<dt>跨界商业理念．打造服务价值</dt>-->
+                                    <!--<dd><p>2011年．应大提出皮草4s店的核心理念：致力于皮草终身服务解决方案。这一起源于汽车4S店的理念，旨在延伸皮草的使用价值．对皮草进行专业的护理、保养、维修和改造，基于此,应大提出了集销售、服务、配件、信息反馈四位一体额皮草4S店新概念。</p></dd>-->
+                                <!--</dl>-->
+                            <!--</div>-->
+                            <!--<div class="f-mt20">-->
+                                <!--<h3>应大皮草4S店含义</h3>-->
+                                <!--<dl>-->
+                                    <!--<dt>销售</dt>-->
+                                    <!--<dd>-->
+                                        <!--<p>1 店铺统一视觉形象，面积在1000m2以上，拥有VIP独享空间。</p>-->
+                                        <!--<p>2 厂家直销应大牌系列产品（应大女装、应大男装、应大裘皮和卡雷尔）。</p>-->
+                                        <!--<p>3 拥有一批专业的皮草销售顾问，为顾客提供形象指导和专业咨询。</p>-->
+                                    <!--</dd>-->
+                                <!--</dl>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div class="m-boutique-content">
+    <div class="m-shop-pic">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+            <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+            <!--</ol>-->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item ">
+                    <img src="../images/boutique.jpg"alt="..." >
                 </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="iconfont icon-yingdaicon09 u-arrow"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="iconfont icon-yingdaicon10 u-arrow"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="item active">
+                    <img src="../images/boutique.jpg" alt="...">
+
+                </div>
+                <div class="item">
+                    <img src="../images/boutique.jpg" alt="...">
+
+                </div>
+                <div class="item">
+                    <img src="../images/boutique.jpg"  alt="...">
+                </div>
             </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="iconfont icon-yingdaicon09 u-arrow"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="iconfont icon-yingdaicon10 u-arrow"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class=" col-md-4 m-shop">
+        <div class="m-shop">
 
             <div id="scrollbar1">
                 <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                 <div class="viewport ">
                     <div class="shop_bg"></div>
                     <div class="overview">
-                        <div class="pr-20 m-shop-vip">
+                        <div class="pr-20 m-shop-vip pb-20">
                             <h2>VIP</h2>
                             <div class="f-mt20">
                                 <h3>4S店理念</h3>
@@ -178,7 +251,7 @@
                                 <dl>
                                     <dt>销售</dt>
                                     <dd>
-                                        <p>1 店铺统一视觉形象，面积在1000m2以上，拥有VIP独享空间。</p>
+                                        <p>1 店铺统一视觉形象，面积在1000m<sup>2</sup>以上，拥有VIP独享空间。</p>
                                         <p>2 厂家直销应大牌系列产品（应大女装、应大男装、应大裘皮和卡雷尔）。</p>
                                         <p>3 拥有一批专业的皮草销售顾问，为顾客提供形象指导和专业咨询。</p>
                                     </dd>
@@ -190,7 +263,9 @@
             </div>
         </div>
     </div>
+
 </div>
+
 <!--底部样式-->
 <div class="g-footer navbar-fixed-bottom" >
     <div class="m-footer-bg"></div>

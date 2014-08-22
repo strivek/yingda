@@ -12,6 +12,10 @@ require(['jquery', 'scrollbar/jquery.tinyscrollbar'], function ($) {
     });
 })
 require(['jquery', 'scrollbar/jquery.tinyscrollbar'], function ($) {
-    var $scrollbar = $("#scrollbar1");
-    $scrollbar.tinyscrollbar();
+    $("#scrollbar1").tinyscrollbar();
 });
+require(['jquery', 'scrollbar/jquery.tinyscrollbar'], function ($) {
+    $("#scrollbar2").tinyscrollbar();
+});
+
+
