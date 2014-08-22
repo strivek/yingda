@@ -2,9 +2,17 @@
 
 //方法
 @import "helper/normalize";
-@import "helper/iconfont";
 @import "helper/mixin";
 @import "helper/function";
+@import "helper/iconfont";
+@import "helper/reset";
+@import "helper/color";
+
+//模块
+@import "modules/m-swiper";
+@import "modules/m-imgList";
+@import "modules/m-textImg";
+@import "modules/m-textOnImg";
 
 //页面
 @import "pages/seasonfashion";

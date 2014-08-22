@@ -178,44 +178,6 @@ td,
 th {
   padding: 0; }
 
-@font-face {
-  font-family: "iconfont";
-  src: url("../fonts/iconfont.eot");
-  /* IE9*/
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
-  /* iOS 4.1- */ }
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-taobao:before {
-  content: "\e64f"; }
-
-.icon-yingdaicon09:before {
-  content: "\e648"; }
-
-.icon-yingdaicon10:before {
-  content: "\e649"; }
-
-.icon-yingdaicon07:before {
-  content: "\e646"; }
-
-.icon-yingdaicon08:before {
-  content: "\e647"; }
-
-.icon-yingdaicon05:before {
-  content: "\e644"; }
-
-.icon-yingdaicon03:before {
-  content: "\e642"; }
-
-.icon-yingdaicon04:before {
-  content: "\e643"; }
-
 /* function */
 .f-cb:after, .f-cbli li:after {
   display: block;
@@ -346,6 +308,44 @@ th {
   -o-user-select: none;
   user-select: none; }
 
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot");
+  /* IE9*/
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-taobao:before {
+  content: "\e64f"; }
+
+.icon-yingdaicon09:before {
+  content: "\e648"; }
+
+.icon-yingdaicon10:before {
+  content: "\e649"; }
+
+.icon-yingdaicon07:before {
+  content: "\e646"; }
+
+.icon-yingdaicon08:before {
+  content: "\e647"; }
+
+.icon-yingdaicon05:before {
+  content: "\e644"; }
+
+.icon-yingdaicon03:before {
+  content: "\e642"; }
+
+.icon-yingdaicon04:before {
+  content: "\e643"; }
+
 html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu, img {
   margin: 0;
   padding: 0; }
@@ -356,134 +356,29 @@ a {
 html {
   font-size: 10px; }
 
-@font-face {
-  font-family: 'didotbold';
-  src: url("../fonts/Didot-Bold.eot");
-  src: url("../fonts/Didot-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Didot-Bold.woff") format("woff"), url("../fonts/Didot Bold.ttf") format("truetype"), url("../fonts/Didot-Bold.svg#NeuesBauenDemo") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-.m-sfashion {
+.m-swiper-container {
   width: 100%;
-  color: #fee3ce; }
-  .m-sfashion .table {
+  border: 1px solid #fff; }
+  .m-swiper-container .arrows, .m-swiper-container .arrow-left, .m-swiper-container .arrow-right {
     position: absolute;
-    margin: 0;
-    width: 100%;
-    display: table; }
-    @media only screen and (max-width: 320px) {
-      .m-sfashion .table {
-        height: 162px; } }
-    @media only screen and (min-width: 360px) {
-      .m-sfashion .table {
-        height: 182px; } }
-    @media only screen and (min-width: 540px) {
-      .m-sfashion .table {
-        height: 273px; } }
-    .m-sfashion .table .table-cell {
-      display: table-cell;
-      vertical-align: middle;
-      font-family: '\5B8B\4F53';
-      text-align: center; }
-      .m-sfashion .table .table-cell h3 {
-        line-height: 2.1rem;
-        font-size: 1.5rem;
-        font-family: 'didotbold';
-        font-weight: normal; }
-      .m-sfashion .table .table-cell h4 {
-        line-height: 2.5rem;
-        font-size: 1.5rem;
-        font-weight: normal; }
-      .m-sfashion .table .table-cell a {
-        color: #fee3ce; }
-      .m-sfashion .table .table-cell p a {
-        padding: 0.25rem 0.75rem;
-        font-size: 1rem;
-        border: 1px solid #fee3ce; }
-        .m-sfashion .table .table-cell p a.weibo {
-          padding: 0;
-          font-size: 1.5rem;
-          border: none 0;
-          color: #fee3ce; }
-        .m-sfashion .table .table-cell p a.wechat {
-          padding: 0;
-          font-size: 1.5rem;
-          border: none 0;
-          margin-left: 0.5rem;
-          color: #fee3ce; }
-  .m-sfashion img {
-    display: block; }
-
-.g-sfashion-c {
-  padding: 0 1.5rem;
-  color: #564b47;
-  background: url("../images/mobile-seasonfashion-bg.jpg") no-repeat center top;
-  background-size: cover; }
-
-.m-sfashion-c {
-  padding: 1rem 0;
-  width: 100%; }
-  .m-sfashion-c .name {
-    margin-bottom: 0;
-    padding-top: 2rem;
-    text-align: center;
-    font-size: 2.6rem; }
-  .m-sfashion-c .line {
-    margin: 0 auto;
-    width: 1rem;
-    height: 1px;
-    background-color: #564b47; }
-  .m-sfashion-c .date {
-    margin-bottom: 1.8rem;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 2rem; }
-  .m-sfashion-c .img-border {
-    border: 1px solid #fff; }
-  .m-sfashion-c .swiper-container {
-    width: 100%;
-    border: 1px solid #fff; }
-    .m-sfashion-c .swiper-container .arrows, .m-sfashion-c .swiper-container .arrow-left, .m-sfashion-c .swiper-container .arrow-right {
-      position: absolute;
-      top: 50%;
-      z-index: 2;
-      margin-top: -1.5rem;
-      width: 2.7rem;
-      height: 2.7rem;
-      background-color: #382d23;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 30%;
-      opacity: 0.7;
-      font-size: 3rem;
-      text-align: center; }
-    .m-sfashion-c .swiper-container .arrow-left {
-      background-image: url("../images/left_arrow.png");
-      left: 10px; }
-    .m-sfashion-c .swiper-container .arrow-right {
-      background-image: url("../images/right_arrow.png");
-      right: 10px; }
-  @media only screen and (max-width: 320px) {
-    .m-sfashion-c .swiper-container-1 {
-      height: 146px; } }
-  @media only screen and (min-width: 360px) {
-    .m-sfashion-c .swiper-container-1 {
-      height: 167px; } }
-  @media only screen and (min-width: 540px) {
-    .m-sfashion-c .swiper-container-1 {
-      height: 257px; } }
-  @media only screen and (max-width: 320px) {
-    .m-sfashion-c .swiper-container-2 {
-      height: 427px; } }
-  @media only screen and (min-width: 360px) {
-    .m-sfashion-c .swiper-container-2 {
-      height: 486px; } }
-  @media only screen and (min-width: 540px) {
-    .m-sfashion-c .swiper-container-2 {
-      height: 751px; } }
-  .m-sfashion-c .text {
-    margin: 0;
-    padding: 1rem 0;
-    font-size: 1.4rem; }
+    top: 50%;
+    z-index: 2;
+    margin-top: -1.5rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: #382d23;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30%;
+    opacity: 0.7;
+    font-size: 3rem;
+    text-align: center; }
+  .m-swiper-container .arrow-left {
+    background-image: url("../images/left_arrow.png");
+    left: 10px; }
+  .m-swiper-container .arrow-right {
+    background-image: url("../images/right_arrow.png");
+    right: 10px; }
 
 .m-imgList {
   padding: 1rem 0; }
@@ -510,6 +405,109 @@ html {
         background-color: #000;
         opacity: 0.6;
         color: #d3ccc9; }
+
+.m-textImg {
+  padding: 1rem 0;
+  width: 100%; }
+  .m-textImg .name {
+    margin-bottom: 0;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2.6rem; }
+  .m-textImg .line {
+    margin: 0 auto;
+    width: 1rem;
+    height: 1px;
+    background-color: #564b47; }
+  .m-textImg .date {
+    margin-bottom: 1.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem; }
+  .m-textImg .text {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.4rem; }
+
+@font-face {
+  font-family: 'didotbold';
+  src: url("../fonts/Didot-Bold.eot");
+  src: url("../fonts/Didot-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Didot-Bold.woff") format("woff"), url("../fonts/Didot Bold.ttf") format("truetype"), url("../fonts/Didot-Bold.svg#NeuesBauenDemo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.m-textOnImg {
+  position: relative;
+  width: 100%;
+  color: #fee3ce; }
+  .m-textOnImg .table-wrap {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%; }
+    .m-textOnImg .table-wrap .table-inner {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      .m-textOnImg .table-wrap .table-inner .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        font-family: '\5B8B\4F53';
+        text-align: center; }
+        .m-textOnImg .table-wrap .table-inner .table-cell h3 {
+          font-size: 1.5rem;
+          line-height: 2.3rem;
+          font-family: 'didotbold'; }
+        .m-textOnImg .table-wrap .table-inner .table-cell h4 {
+          font-size: 1.5rem;
+          line-height: 2.3rem;
+          font-weight: normal; }
+        .m-textOnImg .table-wrap .table-inner .table-cell a {
+          color: #fee3ce; }
+        .m-textOnImg .table-wrap .table-inner .table-cell p {
+          padding: 0.5rem 0; }
+          .m-textOnImg .table-wrap .table-inner .table-cell p a {
+            padding: 0.25rem 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #fee3ce; }
+            .m-textOnImg .table-wrap .table-inner .table-cell p a.weibo {
+              padding: 0;
+              font-size: 1.5rem;
+              border: none 0;
+              color: #fee3ce; }
+            .m-textOnImg .table-wrap .table-inner .table-cell p a.wechat {
+              padding: 0;
+              font-size: 1.5rem;
+              border: none 0;
+              margin-left: 0.5rem;
+              color: #fee3ce; }
+  .m-textOnImg img {
+    display: block; }
+
+.g-sfashion-c {
+  padding: 0 1.5rem;
+  color: #564b47;
+  background: url("../images/mobile-seasonfashion-bg.jpg") no-repeat center top;
+  background-size: cover; }
+
+@media only screen and (max-width: 320px) {
+  .m-swiper-container-1 {
+    height: 146px; } }
+@media only screen and (min-width: 360px) {
+  .m-swiper-container-1 {
+    height: 167px; } }
+@media only screen and (min-width: 540px) {
+  .m-swiper-container-1 {
+    height: 257px; } }
+
+@media only screen and (max-width: 320px) {
+  .m-swiper-container-2 {
+    height: 427px; } }
+@media only screen and (min-width: 360px) {
+  .m-swiper-container-2 {
+    height: 486px; } }
+@media only screen and (min-width: 540px) {
+  .m-swiper-container-2 {
+    height: 751px; } }
 
 .u-img {
   display: block;
@@ -584,7 +582,7 @@ html {
 /* ===============================================================
 Basic Swiper Styles
 ================================================================*/
-.swiper-container {
+.m-swiper-container {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
