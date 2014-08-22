@@ -1,0 +1,20 @@
+[
+    {
+        "1": "../images/index-1.jpg",
+        "1-1":"../images/index-2.jpg",
+        "1-2":"../images/index-3.jpg",
+        "1-3":"../images/index-4.jpg",
+        "1-4":"../images/index-5.jpg",
+        "2":"../images/index-2-0.jpg",
+        "2-1":"../images/index-2-1.jpg",
+        "2-2":"../images/index-2-2.jpg",
+        "2-3":"../images/index-2-3.jpg",
+        "3":"../images/index-3-0.jpg",
+        "3-1":"../images/index-3-1.jpg",
+        "3-2":"../images/index-3-2.jpg",
+        "4":"../images/index-4-0.jpg",
+        "5":"../images/index-5-0.jpg",
+        "6":"../images/index-6-0.jpg"
+
+    }
+]

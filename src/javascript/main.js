@@ -9,9 +9,9 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
 //        $(this).navshow('.m-menu','.m-nav-list-bg');
 //	})
 //    $('.nav>li:not(:last)').on('hover click')
-    var obj = $('.nav>li:not(:last):not(:first)');
+    var obj = $('.nav>li:not(:last):not(:first):not(:nth-last-child(2))');
 //    alert(obj.html());
-    var obj1 = $('.nav>li:not(:last)');
+    var obj1 = $('.nav>li:not(:last):not(:nth-last-child(2))');
     var number = 0;
     obj.attr('num', number);
     obj.on('click', function () {
@@ -25,7 +25,9 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
     });
     obj1.hover(function () {
         if ($(window).width() > 1000) {
+
             $(this).navshow1('.m-menu', '.m-nav-list-bg');
+
         }
     });
 //    obj1.mouseout(function(){
@@ -33,8 +35,16 @@ require(['jquery', 'bootstrap', 'nav'], function ($, nav) {
 //        $(this).navshow2('.m-menu','.m-nav-list-bg');
 //        }
 //    })
+    $(".bk-toggle").mouseenter(function(){
+       $(this).trigger("hover.navtoggle");
+    })
 
 });
+require(["backgroundtoggle"],function($){
+
+})
+
+
 //瀑布流调用
 require(['jquery', 'jquery.waterfall'], function ($) {
     $('#waterfall').waterfall({
@@ -73,23 +83,24 @@ require(['jquery', 'jquery.tinyscrollbar'], function($) {
     $scrollbar.tinyscrollbar();
 });
 //下拉条
-require(['jquery', 'click'], function ($) {
-    var selectBtn1 = $('.select1');
-//    var selectBtn2 = $('.select2');
-    var li = $('.choose li');
-    var choose = $('.choose');
-    selectBtn1.clickonoff(choose, li);
-//    selectBtn2.clickon();
-    $('.u-input').focus(function () {
-        $(this).attr('value', '');
-    })
-});
+//require(['jquery', 'click'], function ($) {
+//    var selectBtn1 = $('.select1');
+////    var selectBtn2 = $('.select2');
+//    var li = $('.choose li');
+//    var choose = $('.choose');
+//    selectBtn1.clickonoff(choose, li);
+////    selectBtn2.clickon();
+//    $('.u-input').focus(function () {
+//        $(this).attr('value', '');
+//    })
+//});
 ////productListWomen.html 瀑布流
 require(['jquery', 'jquery.waterfall'], function ($) {
     $('#productListWomen').waterfall({
         url: '../json/json.js',
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1, 		// 只发送一次请求
+        colWidth:235,
         createHtml: function (data) {
             return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' data-toggle="modal" data-target="#water-modal"> ' +
                 '<a href="' + data.url + '" class="thumb" target="_blank">' +
@@ -113,28 +124,18 @@ require(['jquery'], function ($) {
     })
 });
 //register.html 登陆页性别选择
-require(['jquery'], function ($) {
+require(['jquery','down'], function ($) {
     var selectBtn = $('.wrap-select .select');
     var li = $('.wrap-select ul li');
-    selectBtn.click(function(){
-        $('.wrap-select ul').slideToggle();
-    });
+    var aSelect=$('.sexnone option');
+    var aDisplay=$('.wrap-select ul');
 
-    li.click(function(){
-        var val = $(this).attr('val');
-        var oText = $(this).text();
-        var aSelect=$('.sexnone option');
-        for(var i=0;i<aSelect.length;i++){
-            aSelect.eq(i).removeAttr('selected');
-            if(aSelect.eq(i).attr('value')==val){
-                aSelect.eq(i).attr('selected','selected');
-                aSelect.eq(i).text(oText);
-            }
-        }
-        selectBtn.text(oText);
-        $('#a').val(val);
-        $('.wrap-select ul').slideUp(10);
-    });
+    //城市
+    var oSelect=$('.m-select .select1');
+    var oli = $('.m-select ul li');
+    var oDisplay=$('.m-select ul')
+    selectBtn.down(li,aSelect,aDisplay);
+    oSelect.down(oli,aSelect,oDisplay);
 
 });
 require(['jquery','jquery.lightbox'],function($){

@@ -32,14 +32,12 @@ html, body {
 .m-nav .navbar-default .navbar-nav > li:last-child > a {
   padding-right: 0;
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .m-nav .navbar-default .navbar-nav > li:nth-child(5) > a {
-    padding: 15px 16px;
-  }
-
-}
-
+//@media (min-width: 768px) and (max-width: 991px) {
+//  .m-nav .navbar-default .navbar-nav > li:nth-child(5) > a {
+//    padding: 15px 16px;
+//  }
+//
+//}
 .m-nav .navbar-default .navbar-nav > li > a {
   padding: 15px 30px;
   color: #9b9b9e;
@@ -49,13 +47,13 @@ html, body {
     @include hover-transition;
 
   }
-  &:nth-child(5) > a {
-    padding: 15px 34px;
-
-  }
+//  &:nth-child(5) > a {
+//    padding: 15px 34px;
+//
+//  }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    padding: 15px 12px;
+    padding: 15px 10px;
     font-size: 14px;
   }
   @media (min-width: 992px) and (max-width: 1200px) {
