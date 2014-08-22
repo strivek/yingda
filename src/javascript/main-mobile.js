@@ -1,12 +1,11 @@
 require.config({
 	baseUrl:"../javascript",
 	paths:{
-		jquery:"lib/jquery.min"
+        zepto:"lib/zepto.min"
 	}
-
 });
 
-require(['jquery', 'idangerous.swiper'], function($) {
+require(['zepto', 'idangerous.swiper'], function() {
     var mySwiper = $('.swiper-container').swiper({
         loop:true,
         grabCursor: true

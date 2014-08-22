@@ -346,62 +346,6 @@ th {
   -o-user-select: none;
   user-select: none; }
 
-.u-img {
-  display: block;
-  position: relative;
-  width: 100px;
-  height: 100px; }
-  .u-img img {
-    display: block;
-    width: 100%;
-    height: 100%; }
-
-.u-img-ha {
-  height: auto; }
-  .u-img-ha img {
-    height: auto; }
-
-.u-img2 {
-  display: block;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding: 2px;
-  border: 1px solid #ddd; }
-  .u-img2 img {
-    display: block;
-    width: 100%;
-    height: 100%; }
-
-.u-img2-ha {
-  height: auto; }
-  .u-img2-ha img {
-    height: auto; }
-
-.u-share {
-  padding-top: 2rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px #564b47 solid; }
-  .u-share .share {
-    float: left; }
-    .u-share .share a {
-      display: inline-block;
-      margin-right: 1rem; }
-      .u-share .share a span {
-        display: inline-block;
-        font-size: 2rem;
-        color: #160b0a; }
-      .u-share .share a:hover span {
-        color: #6f4d38; }
-  .u-share .paging {
-    float: right; }
-    .u-share .paging a {
-      display: inline-block;
-      font-size: 1.2rem;
-      color: #333333; }
-      .u-share .paging a:hover {
-        color: #714e38; }
-
 html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu, img {
   margin: 0;
   padding: 0; }
@@ -545,6 +489,7 @@ html {
   padding: 1rem 0; }
   .m-imgList .title {
     padding: 1rem 0;
+    font-size: 1.4rem;
     line-height: 2rem; }
   .m-imgList .imgWrap {
     overflow: hidden; }
@@ -558,13 +503,69 @@ html {
         bottom: 0;
         display: block;
         width: 100%;
-        height: 2rem;
-        line-height: 2rem;
-        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
         text-align: center;
         background-color: #000;
         opacity: 0.6;
         color: #d3ccc9; }
+
+.u-img {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px; }
+  .u-img img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.u-img-ha {
+  height: auto; }
+  .u-img-ha img {
+    height: auto; }
+
+.u-img2 {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  border: 1px solid #ddd; }
+  .u-img2 img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.u-img2-ha {
+  height: auto; }
+  .u-img2-ha img {
+    height: auto; }
+
+.u-share {
+  padding-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px #564b47 solid; }
+  .u-share .share {
+    float: left; }
+    .u-share .share a {
+      display: inline-block;
+      margin-right: 1rem; }
+      .u-share .share a span {
+        display: inline-block;
+        font-size: 2rem;
+        color: #160b0a; }
+      .u-share .share a:hover span {
+        color: #6f4d38; }
+  .u-share .paging {
+    float: right; }
+    .u-share .paging a {
+      display: inline-block;
+      font-size: 1.2rem;
+      color: #333333; }
+      .u-share .paging a:hover {
+        color: #714e38; }
 
 /*
  * Swiper - Mobile Touch Slider CSS

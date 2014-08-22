@@ -6,13 +6,13 @@
 @import "helper/mixin";
 @import "helper/function";
 
-//元件
-@import "unit/u-img";
-@import "unit/u-share";
-
 //页面
 @import "pages/seasonfashion";
 @import "pages/seasonfashion-content";
+
+//元件
+@import "unit/u-img";
+@import "unit/u-share";
 
 //框架
 @import "vendor/swiper";
