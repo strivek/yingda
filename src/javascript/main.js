@@ -35,5 +35,3 @@ require(['carousel']);
 
 require(['xscroll']);
 
-require(['others']);
-
