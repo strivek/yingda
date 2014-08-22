@@ -61,7 +61,7 @@ $font-family: "宋体";
   margin-top: 100px;
   width: 60%;
   height: 61%;
-  @media (min-width: 768px) and(max-width: 1300px) {width: 80%; height: 81.4%;margin-top: 200px;}
+  @media (min-width: 768px) and(max-width: 1200px) {width: 80%; height: 81.4%;}
   .modal-content {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -86,21 +86,25 @@ $font-family: "宋体";
           position: absolute;
           top: 20px;
           @media (min-width: 768px) and(max-width: 1153px) {
-            top: 30px;
+            top: 1px;
           }
           width: 34px;
           height: 34px;
           text-align: center;
+
           &:hover {
             background: #46484c;
+            .glyphicon{color:#9d8e7e;}
           }
           .glyphicon {
             position: static;
             margin: 0;
             width: 34px;
             height: 34px;
-            color: #c0a992;
-            font-size: 1.6em;
+            line-height: 32px;
+            color: #4a4b4f;
+            font-size: 1em;
+
           }
         }
         a.left {
@@ -109,39 +113,30 @@ $font-family: "宋体";
           border: 1px solid #48494c;
         }
         a.right {
-          right: 0;
+          right: 1px;
           border: 1px solid #48494c;
         }
       }
     }
     .rightDes {
-      float: right;
-      height: 100%;
+     float: right;
+     height: 100%;
       width: 42%;
       padding-top: 6%;
-      padding-bottom: 20px;
-      @media (min-width: 768px) and(max-width: 992px){padding-top: 20px;padding-bottom: 0;}
+     @media (min-width: 768px) and(max-width: 992px){padding-top: 20px;padding-bottom: 0;}
       .vertical{
-       /* position: relative;*/
-        height: 100%;
-/*      display:table;
-       text-align:center;*/
+/*        height: 100%;
+        line-height: 100%;*/
       }
-      .wrap {
-        /*position: absolute;
-        top: 50%;
-        left: 0;*/
-        height: 100%;
-       /* position: relative;
-        top: -50%;
-        left: 0;*/
-/*        display: table-cell;
-        vertical-align: middle;
-        */
+/*      .extra{height: 100%;}*/
+      .wrap/*,.extra*/ {
+       /* display:inline-block;
+        vertical-align:middle;*/
         text-align: left;
         padding-left: 100px;
+        padding-right: 16px;
         @media (min-width: 992px) and(max-width: 1400px){padding-left: 40px;}
-        @media (min-width: 768px) and(max-width: 992px) {padding-left: 10px;}
+        @media (min-width: 768px) and(max-width: 992px) {padding-left: 16px;}
         color: #663e1f;
         .title, .subtitle, .info, .salelink, .num, .price, .info, .des, .aa {
           margin-top: 5px;
@@ -152,26 +147,26 @@ $font-family: "宋体";
           font-size: 3em;
         }
         .subtitle {
-          font-weight: bold;
           color: #846751;
         }
         .price {
           font-size: 1.6em;
           font-weight: bold;
         }
-        .xinxi {
+        .xinxi,.online span{
           margin-top: 30px;
+          @media (min-width: 768px) and(max-width:992px){margin-top:25px;}
           font-size: 1.4em;
           font-weight: bold;
         }
+        .publicdes{ padding-top: 5px;
         .info ,.des{
           font-size: 1.2em;
+          }
         }
+        .num{padding-top: 4px;}
         .online {
-          margin-top: 30px;
           a {
-            font-size: 1.4em;
-            font-weight: bold;
             color: #663e1f;
             &:hover {
               color: #32251f;
@@ -179,9 +174,8 @@ $font-family: "宋体";
           }
         }
         .share {
-          margin-top: 30px;
           font-weight: bold;
-          a {
+          a {font-size: 1.4em;
             color: #663e1f;
             &:hover {
               color: #32251f;
@@ -192,14 +186,14 @@ $font-family: "宋体";
     }
     p.item-prev, p.item-next {
       position: absolute;
-      top: 40%;
-     @media (min-width: 768px) and(max-width: 992px) {
-        top: 30%;}
-      color: #d7bca0;
+      top: 50%;
+      margin-top: -5%;
+      color:#3d3b39;
       font-size: 60px;
       cursor: pointer;
       width: 50px;
       height: 50px;
+      &:hover{color:#c0a992;}
     }
     p.item-prev {
       left: -20%;
@@ -215,6 +209,7 @@ $font-family: "宋体";
     position: absolute;
     right: 3%;
     top: 5%;
+    color:#303030;
     @media (min-width: 768px) and(max-width: 992px) {
       top: -30px;
       right: 0px;

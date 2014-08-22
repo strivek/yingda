@@ -1,8 +1,12 @@
 @charset "UTF-8";
 .m-yingdabrand-cy {
   padding-top: 120px;
-  .container {
+ & > .container {
     position: relative;
+   @media (max-width: 999px){ padding-bottom:200px;}
+  }
+  .main{
+    @media (min-width: 1200px) and (max-width: 1400px) {width: 1000px;}
   }
   .heng {
     display: block;
@@ -52,6 +56,12 @@
     position: fixed;
     bottom: 40px;
     left: 0;
+    @media (min-width: 1000px) and(max-width: 1139px) {position: fixed;
+      bottom: 80px;
+      left: 0;}
+    @media (max-width: 999px) {position: fixed;
+      bottom: 120px;
+      left: 0;}
     width: 100%;
     border-bottom: 1px solid #f2d8c3;
     clear: both;
