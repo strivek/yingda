@@ -9,31 +9,25 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="../javascript/html5shiv.js"></script>
-    <script src="../javascript/respond.js"></script>
+    <script src="../javascript/ie8/html5shiv.js"></script>
+    <script src="../javascript/ie8/respond.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../javascript/lib/jquery.min.js"></script>
-    <script type="text/javascript" src="../javascript/jquery.tinyscrollbar.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var $scrollbar = $("#scrollbar1");
-            $scrollbar.tinyscrollbar();
-        });
-    </script>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
 <div class="m-main2-cy">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 col-md-6 col-sm-offset-2">
+            <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                 <div class="text">
                     <h2 class="title">隐私条款</h2>
                     <button class="close"><img src="../images/article-btn.png" alt="close"/></button>
-                    <div id="scrollbar1">
+                    <div id="scrollbar2">
                         <div class="scrollbar">
                             <div class="track">
-                                <div class="thumb"><div class="end"></div></div>
+                                <div class="thumb">
+                                    <div class="end"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="viewport">
@@ -62,5 +56,6 @@
 </div>
 <!-- 全屏背景壁纸 -->
 <img class="u-fullscreen" src="../images/register-bg.png" alt="背景图片">
+<script data-main="../javascript/main" src="../javascript/require.js"></script>
 </body>
 </html>

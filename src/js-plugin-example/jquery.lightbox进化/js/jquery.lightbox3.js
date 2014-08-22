@@ -2,7 +2,7 @@
  * Created by jeff on 14/8/11.
  */
 
-define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, hp) {
+define(['jquery', 'bootstrap', '../../../javascript/lib/jsviews', 'help'], function ($, boot, jsrender, hp) {
     //options；
     [
         {

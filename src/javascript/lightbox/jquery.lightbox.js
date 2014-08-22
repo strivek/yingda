@@ -7,8 +7,6 @@ define(['jquery'], function ($) {
      * - Free for use in both personal and commercial projects
      * - Attribution requires leaving author name, author link, and the license info intact
      */
-
-
     // Use local alias
     var $ = jQuery;
 

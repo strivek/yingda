@@ -7,7 +7,7 @@ require.config({
 
 });
 
-require(['jquery','jsviews'],function($){
+require(['jquery','../../../javascript/lib/jsviews'],function($){
     var data = {
         "name": "Adriana"
     };

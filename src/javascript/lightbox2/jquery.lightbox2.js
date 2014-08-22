@@ -1,26 +1,7 @@
 /**
- * Created by jeff on 14/8/11.
+ * Created by GF on 14/8/11.
  */
-
 define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, hp) {
-    //options；
-
-    var LightModalOptions = (function () {
-        function LightModalOptions() {
-            this.fadeDuration = 500;
-            this.fitImagesInViewport = true;
-            this.resizeDuration = 700;
-            this.positionFromTop = 50;
-            this.showImageNumberLabel = true;
-            this.alwaysShowNavOnTouchDevices = false;
-            this.wrapAround = false;
-            this.fireName = ".water-modal";
-            this.jsonData = "";
-            this.currentId = -1;
-            this.isAjaxCompleted = 1;
-        }
-        return LightModalOptions;
-    })();
 
     var Lightmodalbox = (function () {
         function Lightmodalbox(options) {
@@ -57,19 +38,19 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             var self = this;
             //监测弹出事件。
             //TODO 从点击图片开始获取id,写一个配置id的方法
-            $(document).on('click','.water-modal', function (e) {
+            $(document).on('click',this.options.fireClass, function (e) {
                 self.getIdList();
                 self.currentId = $(this).data("id");//获取id
                 self.build();//开始构造弹出modal
                 e.preventDefault();
             });
             //上一页
-            $(document).on("click", "#water-modal .item-prev", function () {
+            $(document).on("click",this.options.modalId+" .item-prev", function () {
                 self.currentId = $(this).data("id");//获取id
                 self.build();//开始构造弹出modal
             });
             //下一页
-            $(document).on("click", '#water-modal .item-next', function () {
+            $(document).on("click",this.options.modalId+" .item-next", function () {
                 self.currentId = $(this).data("id");//获取id
                 self.build();//开始构造弹出modal
             });
@@ -78,7 +59,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
         Lightmodalbox.prototype.getIdList = function () {
             var self = this;
             self.idList = [];
-            var modalList = $(this.options.fireName);
+            var modalList = $(this.options.fireClass);
             modalList.each(function () {
                 var $this = $(this);
                 var data = $this.data("id");
@@ -91,7 +72,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             var self = this;
             var request = $.ajax({
                 type: "GET",
-                url: "/yingda/src/json/productListWomen.json",
+                url: self.options.url,
                 data: { id: self.currentId, location: "Boston" }
             });
             return request;
@@ -141,10 +122,10 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
         };
         return Lightmodalbox;
     })();
-    (function () {
-        var options = new LightModalOptions();
-        var lightmodalbox = new Lightmodalbox(options);
-    })()
+
+
+    return Lightmodalbox;
+
 })
 ;
 
