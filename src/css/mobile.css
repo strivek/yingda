@@ -357,8 +357,7 @@ html {
   font-size: 10px; }
 
 .m-swiper-container {
-  width: 100%;
-  border: 1px solid #fff; }
+  width: 100%; }
   .m-swiper-container .arrows, .m-swiper-container .arrow-left, .m-swiper-container .arrow-right {
     position: absolute;
     top: 50%;
@@ -456,6 +455,7 @@ html {
         .m-textOnImg .table-wrap .table-inner .table-cell h3 {
           font-size: 1.5rem;
           line-height: 2.3rem;
+          font-weight: normal;
           font-family: 'didotbold'; }
         .m-textOnImg .table-wrap .table-inner .table-cell h4 {
           font-size: 1.5rem;
@@ -483,31 +483,75 @@ html {
   .m-textOnImg img {
     display: block; }
 
+.m-textOnImg1 {
+  width: 100%; }
+  .m-textOnImg1 img {
+    display: block; }
+  .m-textOnImg1 a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #f7dcc7;
+    font-size: 1.8rem; }
+    @media screen and (width: 320px) {
+      .m-textOnImg1 a {
+        height: 120px;
+        line-height: 120px; } }
+  .m-textOnImg1 .menu {
+    display: none; }
+
+.g-main {
+  background-color: #000; }
+
+.m-swiper-container-index .arrow-left {
+  background-color: transparent;
+  background-size: 60%; }
+.m-swiper-container-index .arrow-right {
+  background-color: transparent;
+  background-size: 60%; }
+@media only screen and (max-width: 320px) {
+  .m-swiper-container-index {
+    height: 130px;
+    margin-bottom: 1.5rem; } }
+@media only screen and (min-width: 360px) {
+  .m-swiper-container-index {
+    height: 146px;
+    margin-bottom: 1.7rem; } }
+@media only screen and (min-width: 540px) {
+  .m-swiper-container-index {
+    height: 219px;
+    margin-bottom: 2.5rem; } }
+
 .g-sfashion-c {
   padding: 0 1.5rem;
   color: #564b47;
   background: url("../images/mobile-seasonfashion-bg.jpg") no-repeat center top;
   background-size: cover; }
 
-@media only screen and (max-width: 320px) {
-  .m-swiper-container-1 {
-    height: 146px; } }
-@media only screen and (min-width: 360px) {
-  .m-swiper-container-1 {
-    height: 167px; } }
-@media only screen and (min-width: 540px) {
-  .m-swiper-container-1 {
-    height: 257px; } }
+.m-swiper-container-1 {
+  border: 1px solid #fff; }
+  @media only screen and (max-width: 320px) {
+    .m-swiper-container-1 {
+      height: 146px; } }
+  @media only screen and (min-width: 360px) {
+    .m-swiper-container-1 {
+      height: 167px; } }
+  @media only screen and (min-width: 540px) {
+    .m-swiper-container-1 {
+      height: 257px; } }
 
-@media only screen and (max-width: 320px) {
-  .m-swiper-container-2 {
-    height: 427px; } }
-@media only screen and (min-width: 360px) {
-  .m-swiper-container-2 {
-    height: 486px; } }
-@media only screen and (min-width: 540px) {
-  .m-swiper-container-2 {
-    height: 751px; } }
+.m-swiper-container-2 {
+  border: 1px solid #fff; }
+  @media only screen and (max-width: 320px) {
+    .m-swiper-container-2 {
+      height: 427px; } }
+  @media only screen and (min-width: 360px) {
+    .m-swiper-container-2 {
+      height: 486px; } }
+  @media only screen and (min-width: 540px) {
+    .m-swiper-container-2 {
+      height: 751px; } }
 
 .u-img {
   display: block;
@@ -583,7 +627,7 @@ html {
 Basic Swiper Styles
 ================================================================*/
 .m-swiper-container {
-  margin: 0 auto;
+  /*margin:0 auto;*/
   position: relative;
   overflow: hidden;
   -webkit-backface-visibility: hidden;

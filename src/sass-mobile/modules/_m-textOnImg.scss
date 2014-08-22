@@ -36,7 +36,6 @@
         }
         h4 {
           @include textOnImg();
-          font-weight: normal;
         }
         a {
           color: $seasonFashion1;
@@ -66,4 +65,27 @@
     }
   }
   img {display: block;}
+}
+
+.m-textOnImg1 {
+  width: 100%;
+  img {display: block;}
+  a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $indexImgText;
+    font-size: 1.8rem;
+    @media screen and (width: 320px) {
+      height: 120px;
+      line-height: 120px;
+    }
+  }
+  .menu {
+    display: none;
+    li {
+
+    }
+  }
 }

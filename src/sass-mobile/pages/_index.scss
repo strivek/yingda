@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.g-main {background-color: #000;}
+
+.m-swiper-container-index {
+  .arrow-left {
+    background-color: transparent;
+    background-size: 60%;
+  }
+  .arrow-right {
+    background-color: transparent;
+    background-size: 60%;
+  }
+  @media only screen and (max-width: 320px) {
+    height: 130px;
+    margin-bottom: 1.5rem;
+  }
+  @media only screen and (min-width: 360px) {
+    height: 146px;
+    margin-bottom: 1.7rem;
+  }
+  @media only screen and (min-width: 540px) {
+    height: 219px;
+    margin-bottom: 2.5rem;
+  }
+}
+

@@ -22,5 +22,9 @@ require(['zepto', 'idangerous.swiper'], function() {
     });
 });
 
+require(['zepto', 'click'], function(){
+    
+});
+
 
 
