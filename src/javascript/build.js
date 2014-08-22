@@ -1,0 +1,5 @@
+({
+
+    baseUrl: ".",
+    dir: "javascript"
+})
