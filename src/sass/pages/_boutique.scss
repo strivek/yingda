@@ -230,5 +230,8 @@
    height: 52.08%;
 
 }
+.center{box-sizing: content-box;}
 
-
+.BMapLabel{
+  box-sizing: content-box !important; max-width: none !important;
+}

@@ -21,7 +21,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
         //获取json数据，与模板绑定，构建弹出层
         Lightmodalbox.prototype.build = function () {
             var self = this;
-            hp.log("开始开准异步请求")
+            hp.log("开始开准异步请求");
             //请求json数据
             var request = self.getJsonData();
             //回调函数
@@ -66,7 +66,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
                 self.idList.push(data);
             });
 
-        }
+        };
         //获取json数据
         Lightmodalbox.prototype.getJsonData = function () {
             var self = this;

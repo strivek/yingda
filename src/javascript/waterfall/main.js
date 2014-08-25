@@ -14,7 +14,6 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1, 		// 只发送一次请求
         colWidth: 235,
-        url: "../json/json.js",
         createHtml: function (data) {
             return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' data-toggle="modal" data-target="#water-modal"> ' +
                 '<a href="' + data.url + '" class="thumb" target="_blank">' +
@@ -33,7 +32,6 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1, 		// 只发送一次请求
         colWidth: 235,
-        url: "../json/json.js",
         createHtml: function (data) {
             return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' data-toggle="modal" data-target="#water-modal-men"> ' +
                 '<a href="' + data.url + '" class="thumb" target="_blank">' +
