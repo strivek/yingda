@@ -1,7 +1,7 @@
 /**
  * Created by GaoFei on 14/8/22.
  */
-define(['jquery'], function ($) {
+define(['jquery','help'], function ($,hp) {
 
     'use strict';
 
@@ -13,14 +13,15 @@ define(['jquery'], function ($) {
     var Hscroll = function (element, options) {
         this.element = element;
         this.options = options;
+        this.init();
     };
 
     // Plugin methods and shared properties
     Hscroll.prototype = {
-        constructor: Plugin,
-
+        constructor: Hscroll,
         init: function () {
 
+            hp.log(wrapWidth);
         }
     }
 
@@ -31,7 +32,8 @@ define(['jquery'], function ($) {
 
         return this.each(function () {
             var $this = $(this);
-            $this.data('plugin', new Plugin($this, options));
+            var obj = new Hscroll($this, options);
+            $this.data('plugin', new Hscroll($this, options));
         });
     };
 
