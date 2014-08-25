@@ -1,0 +1,35 @@
+@charset "utf-8";
+//兼容[1]：支持包括IE6在内的所有主流浏览器和设备，UI效果可能有所退化。
+//优雅[2]：在高级浏览器中有“高级”效果，在低级浏览器中有“兼容”效果，是高级版的“优雅退化”，也是兼容版的“渐进/增强”。
+//高级[3]：支持IE9+、Chrome、Safari、Firefox等主流浏览器，支持移动设备和所有智能系统，具有优越的UI效果。
+
+//base 竖直图文混排
+//兼容性：兼容
+
+.m-list2 {
+  padding: 1px 0 0;
+  zoom: 1;
+  ul {
+    margin: -11px 0 0;
+  }
+  li {
+    display: inline;
+    float: left;
+    width: 150px;
+    margin: 10px 0 0 10px;
+  }
+  h3, p {
+    width: 100%;
+    height: 18px;
+    overflow: hidden;
+    margin: 5px 0 0;
+    line-height: 18px;
+  }
+  h3 a, h3 a:hover {
+    color: #333;
+  }
+  .u-img {
+    width: auto;
+    height: 120px;
+  }
+}

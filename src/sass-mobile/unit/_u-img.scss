@@ -1,0 +1,50 @@
+@charset "utf-8";
+// 无边图片容器
+
+//默认定宽定高、图片拉伸
+.u-img {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// 图片高度自适应
+.u-img-ha {
+  height: auto;
+  img {
+    height: auto;
+  }
+}
+
+//有边图片容器
+
+//默认定宽定高、图片拉伸
+
+.u-img2 {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//图片高度自适应
+.u-img2-ha {
+  height: auto;
+  img {
+    height: auto;
+  }
+}
+
