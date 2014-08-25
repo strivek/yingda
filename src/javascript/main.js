@@ -1,7 +1,7 @@
 require.config({
     baseUrl: "../javascript",
     packages: ['waterfall', 'lightbox', 'lightbox2', 'formselected', 'scrollbar', 'bkgroundtoggle', 'navdropdown'
-        , 'carousel', 'others','xscroll'],
+        , 'carousel', 'others', 'xscroll'],
     paths: {
         jquery: 'lib/jquery.min',
         bootstrap: 'lib/bootstrap',
@@ -36,5 +36,4 @@ require(['carousel']);
 require(['xscroll']);
 
 require(['others']);
-
 
