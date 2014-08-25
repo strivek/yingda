@@ -22,8 +22,13 @@ require(['zepto', 'idangerous.swiper'], function() {
     });
 });
 
-require(['zepto', 'click'], function(){
-    
+
+require(['zepto'], function(){
+   $('.m-textOnImg1').on('click', function(e){
+       e.preventDefault()
+       $(this).children('ul').show();
+       $(this).siblings().children('ul').hide();
+   });
 });
 
 

@@ -487,7 +487,7 @@ html {
   width: 100%; }
   .m-textOnImg1 img {
     display: block; }
-  .m-textOnImg1 a {
+  .m-textOnImg1 .big-btn {
     position: absolute;
     display: block;
     width: 100%;
@@ -495,11 +495,21 @@ html {
     color: #f7dcc7;
     font-size: 1.8rem; }
     @media screen and (width: 320px) {
-      .m-textOnImg1 a {
+      .m-textOnImg1 .big-btn {
         height: 120px;
         line-height: 120px; } }
   .m-textOnImg1 .menu {
     display: none; }
+    .m-textOnImg1 .menu li {
+      height: 4.4rem;
+      border-bottom: 1px solid #2e2e2e; }
+      .m-textOnImg1 .menu li a {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 4.4rem;
+        text-align: center;
+        color: #9b9b9e; }
 
 .g-main {
   background-color: #000; }
