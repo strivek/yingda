@@ -9,3 +9,9 @@
   }
   zoom: 1;
 }
+
+@mixin textOnImg ($font-size:1.5rem,$line-height:2.3rem,$font-weight:normal){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
