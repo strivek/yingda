@@ -610,7 +610,7 @@ a, a:hover {
 .g-main {
   margin: 46px auto 0;
   width: 1154px;
-  min-height: 780px; }
+  min-height: 720px; }
   .g-main:before, .g-main:after {
     content: " ";
     display: table; }
@@ -826,87 +826,89 @@ a, a:hover {
     clear: both; }
   .m-main3-cy .yearbook {
     margin-bottom: 100px; }
-    .m-main3-cy .yearbook li .show {
-      position: relative;
-      height: 56px; }
-      .m-main3-cy .yearbook li .show a {
-        display: block;
-        float: left;
-        width: 156px;
-        height: 56px;
-        line-height: 56px;
-        border-right: 1px solid #fff;
-        font-size: 22px;
-        font-style: italic;
-        color: #210700; }
-        .m-main3-cy .yearbook li .show a:hover {
-          color: #714e38; }
-      .m-main3-cy .yearbook li .show p {
-        float: left;
-        padding-left: 44px;
-        margin: 0;
-        border-left: 1px solid #b7b2a8;
-        height: 56px;
-        line-height: 56px;
-        font-size: 20px;
-        font-family: "宋体";
-        color: #210700; }
-      .m-main3-cy .yearbook li .show span {
-        display: block;
-        position: absolute;
-        left: 152px;
-        top: 23px;
-        width: 10px;
-        height: 10px;
-        background: #b7b2a8; }
-    .m-main3-cy .yearbook li .detail {
-      display: none; }
-      .m-main3-cy .yearbook li .detail li {
-        position: relative; }
-        .m-main3-cy .yearbook li .detail li:after, .m-main3-cy .yearbook li .detail li:before {
-          display: table;
-          content: ""; }
-        .m-main3-cy .yearbook li .detail li:after {
-          clear: both; }
-      .m-main3-cy .yearbook li .detail p.year {
-        float: left;
-        text-align: right;
-        padding-right: 20px;
-        height: 100%;
-        width: 136px;
-        font-size: 16px;
-        font-style: italic;
-        color: #210700; }
-      .m-main3-cy .yearbook li .detail span {
-        display: block;
-        position: absolute;
-        top: 2px;
-        left: 153px;
-        width: 8px;
-        height: 7px;
-        background: #b7b2a8; }
-      .m-main3-cy .yearbook li .detail .wrap {
-        border-left: 1px solid #fff;
-        float: left;
-        width: 700px; }
-        .m-main3-cy .yearbook li .detail .wrap div.wai {
-          padding-bottom: 20px;
-          border-left: 1px solid #b7b2a8; }
-          .m-main3-cy .yearbook li .detail .wrap div.wai div.nei {
-            margin-left: 44px;
-            padding: 20px 15px;
-            background: #f9f9f9;
-            width: 435px; }
-            .m-main3-cy .yearbook li .detail .wrap div.wai div.nei img {
-              width: 432px; }
-          .m-main3-cy .yearbook li .detail .wrap div.wai p {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #210700;
-            font-family: "宋体";
-            line-height: 1.5; }
-    .m-main3-cy .yearbook li .showdetail {
-      display: block; }
+    .m-main3-cy .yearbook li {
+      cursor: pointer; }
+      .m-main3-cy .yearbook li .show {
+        position: relative;
+        height: 56px; }
+        .m-main3-cy .yearbook li .show a {
+          display: block;
+          float: left;
+          width: 156px;
+          height: 56px;
+          line-height: 56px;
+          border-right: 1px solid #fff;
+          font-size: 22px;
+          font-style: italic;
+          color: #210700; }
+          .m-main3-cy .yearbook li .show a:hover {
+            color: #714e38; }
+        .m-main3-cy .yearbook li .show p {
+          float: left;
+          padding-left: 44px;
+          margin: 0;
+          border-left: 1px solid #b7b2a8;
+          height: 56px;
+          line-height: 56px;
+          font-size: 20px;
+          font-family: "宋体";
+          color: #210700; }
+        .m-main3-cy .yearbook li .show span {
+          display: block;
+          position: absolute;
+          left: 152px;
+          top: 23px;
+          width: 10px;
+          height: 10px;
+          background: #b7b2a8; }
+      .m-main3-cy .yearbook li .detail {
+        display: none; }
+        .m-main3-cy .yearbook li .detail li {
+          position: relative; }
+          .m-main3-cy .yearbook li .detail li:after, .m-main3-cy .yearbook li .detail li:before {
+            display: table;
+            content: ""; }
+          .m-main3-cy .yearbook li .detail li:after {
+            clear: both; }
+        .m-main3-cy .yearbook li .detail p.year {
+          float: left;
+          text-align: right;
+          padding-right: 20px;
+          height: 100%;
+          width: 136px;
+          font-size: 16px;
+          font-style: italic;
+          color: #210700; }
+        .m-main3-cy .yearbook li .detail span {
+          display: block;
+          position: absolute;
+          top: 2px;
+          left: 153px;
+          width: 8px;
+          height: 7px;
+          background: #b7b2a8; }
+        .m-main3-cy .yearbook li .detail .wrap {
+          border-left: 1px solid #fff;
+          float: left;
+          width: 700px; }
+          .m-main3-cy .yearbook li .detail .wrap div.wai {
+            padding-bottom: 20px;
+            border-left: 1px solid #b7b2a8; }
+            .m-main3-cy .yearbook li .detail .wrap div.wai div.nei {
+              margin-left: 44px;
+              padding: 20px 15px;
+              background: #f9f9f9;
+              width: 435px; }
+              .m-main3-cy .yearbook li .detail .wrap div.wai div.nei img {
+                width: 432px; }
+            .m-main3-cy .yearbook li .detail .wrap div.wai p {
+              margin-top: 20px;
+              font-size: 12px;
+              color: #210700;
+              font-family: "宋体";
+              line-height: 1.5; }
+      .m-main3-cy .yearbook li .showdetail {
+        display: block; }
 
 .m-main4-cy {
   width: 812px;
@@ -920,6 +922,7 @@ a, a:hover {
     .m-main4-cy .main:after {
       clear: both; }
     .m-main4-cy .main .list {
+      cursor: pointer;
       float: left;
       margin-left: 60px;
       width: 230px; }
@@ -1023,7 +1026,8 @@ a, a:hover {
   width: 862px;
   float: right; }
   .m-main6-cy .con {
-    padding-top: 30px; }
+    padding-top: 30px;
+    cursor: pointer; }
     .m-main6-cy .con .ti {
       font-size: 18px;
       color: #83654c;

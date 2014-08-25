@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/style1.css"/>
 </head>
-<body>
+<body class="proListWomen-body">
 <div class="g-header">
     <div class="s-black"></div>
     <div class="container m-nav">
@@ -110,13 +110,10 @@
 <div class="modal fade" id="water-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><img
-                    src="../images/productListwomen-icon.png" alt=""/></span>
-                <span class="sr-only">Close</span>
+            <button type="button" class="close" data-dismiss="modal"><img
+                    src="../images/productListwomen-icon.png" alt="关闭"/>
             </button>
             <div class="modal-body clearfix" id="modal-body">
-
             </div>
         </div>
     </div>
@@ -147,27 +144,30 @@
     <span class="glyphicon glyphicon-chevron-right iconfont">&#xe649</span>
   </a>
 </div>
-<div class="rightDes">
+<div class="rightDes clearfix">
+<div class="vertical clearfix">
 <div class="wrap">
    <p class="title">{{:title}}</p>
    <p class="subtitle">{{:subtitle}}</p>
    <p class="price">{{:price}}</p>
    <p class="xinxi">商品信息</p>
-   <p class="info">{{:info}}</p>
-   <p class="des">{{:des}}</p>
+   <div class="publicdes">
+     <p class="info">{{:info}}</p>
+     <p class="des">{{:des}}</p>
+   </div>
    <p class="xinxi">商品编号</p>
    <p class="num">{{:num}}</p>
-   <p class="online"><a href="{{:salelink}}">在线商场</a> <span class="iconfont">&#xe649</span> </p>
+   <p class="online xinxi"><a href="{{:salelink}}">在线商场</a> <span class="iconfont">&#xe649</span> </p>
 <!--   <p class="salelink">{{:salelink}}</p>-->
    <p class="aa">{{:aa}}</p>
-   <p class="share">分享到：<a href="#" class="iconfont">&#xe642</a></p>
+   <p class="share xinxi">分享到：<a href="#" class="iconfont">&#xe642</a></p>
+ </div>
+<div class="extra"></div>
  </div>
 </div>
 
 <p class="item-prev iconfont" data-id="{{:prev}}" >&#xe648</p>
 <p class="item-next iconfont" data-id="{{:next}}">&#xe649</p>
-
-
 </script>
 <div class="g-footer navbar-fixed-bottom">
     <div class="m-footer-bg"></div>
@@ -191,7 +191,6 @@
                     <li><a href="#"><img src="../images/youku.png" alt=""/></a></li>
                     <li><a href="#"><img src="../images/microblog.png" alt=""/></a></li>
                     <li><a href="#"><img src="../images/micro.png" alt=""/></a></li>
-
                 </ul>
             </div>
             <div class="from"><p class="text-right">中国/中文 (更改)© YD - p.iva 00900541004</p></div>

@@ -1,8 +1,28 @@
 @charset "UTF-8";
 .m-yingdabrand-cy {
   padding-top: 120px;
-  .container {
+  & > .container {
     position: relative;
+    @media (max-width: 999px) {
+          padding-bottom: 200px;
+    }
+  }
+  .container {
+    @media (min-width: 1400px){
+      width: 1000px;}
+    @media (min-width: 1199px) and (max-width: 1399px) {
+      width: 900px;
+    }
+    @media (max-width: 1200px) and (min-width: 992px){
+      width: 800px;
+    }
+    @media (min-width:768px) and (max-width: 991px){
+      width: 700px;
+    }
+    @media (max-width: 768px) {
+      width: 500px;
+    }
+
   }
   .heng {
     display: block;
@@ -52,31 +72,45 @@
     position: fixed;
     bottom: 40px;
     left: 0;
+    @media (min-width: 1000px) and(max-width: 1139px) {
+      bottom: 80px;
+      left: 0;
+    }
+    @media (max-width: 999px) {
+      bottom: 120px;
+      left: 0;
+    }
     width: 100%;
     border-bottom: 1px solid #f2d8c3;
     clear: both;
-    .years {
+    .year-list {
+      position:relative;
       margin: 0 auto;
-      list-style-type: none;
       height: 30px;
       overflow: hidden;
+      .years {
+        position: absolute;
+        top:0;
+        left: 0;
+        list-style-type: none;
+        li {
+          float: left;
 
-      li {
-        float: left;
-        a {
-          display: block;
-          padding-left: 4px;
-          padding-right: 18px;
-          padding-bottom: 16px;
-          color: #959597;
-          font-size: 14px;
-          border-right: 1px solid #f2d8c3;
-          &:hover {
-            color: #ffe3cd;
+          a {
+            display: block;
+            padding-left: 4px;
+            padding-right: 18px;
+            padding-bottom: 16px;
+            color: #959597;
+            font-size: 14px;
+            border-right: 1px solid #f2d8c3;
+            &:hover {
+              color: #ffe3cd;
+            }
           }
-        }
-        a.last {
-          border-right: none;
+          a.last {
+            border-right: none;
+          }
         }
       }
     }
@@ -88,30 +122,25 @@
       color: #f6d2b9;
       cursor: pointer;
       padding: 0 0 10px 10px;
+      &:hover{color:#9b9b9e;}
     }
   }
   @media(min-width: 768px) {
     .bottom-years {
-      .years {
-        width: 660px;
-      }
-      span.left {
+      .iconfont.left {
         left: 20px;
       }
-      span.right {
+      .iconfont.right {
         right: 20px;
       }
     }
   }
   @media(min-width: 1200px) {
     .bottom-years {
-      .years {
-        width: 935px;
-        }
-      span.left {
+      .iconfont.left {
         left: 90px;
       }
-      span.right {
+      .iconfont.right {
         right: 90px;
       }
     }

@@ -10,6 +10,7 @@ require.config({
     }
 });
 
+
 //home.html
 require(['bkgroundtoggle']);
 
