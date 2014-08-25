@@ -21,7 +21,7 @@ define(['jquery','help'], function ($,hp) {
         constructor: Hscroll,
         init: function () {
 
-            hp.log(wrapWidth);
+
         }
     }
 
