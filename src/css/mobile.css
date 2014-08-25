@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -346,15 +347,81 @@ th {
 .icon-yingdaicon04:before {
   content: "\e643"; }
 
-html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu, img {
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
   margin: 0;
   padding: 0; }
 
-a {
-  text-decoration: none; }
-
 html {
   font-size: 10px; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left;
+  font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0; }
+
+i, cite, em, var, address, dfn {
+  font-style: normal; }
+
+[hidefocus], summary {
+  outline: 0; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+sup, sub {
+  font-size: 83%; }
+
+pre, code, kbd, samp {
+  font-family: inherit; }
+
+q:before, q:after {
+  content: none; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+label, summary {
+  cursor: default; }
+
+a, button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: bold; }
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 arial, \5b8b\4f53;
+  color: #333;
+  outline: 0; }
+
+body {
+  background: #fff; }
+
+a, a:hover {
+  color: #333; }
 
 .m-swiper-container {
   width: 100%; }
@@ -506,7 +573,6 @@ html {
       .m-textOnImg1 .menu li a {
         display: block;
         font-size: 1.4rem;
-        font-weight: bold;
         line-height: 4.4rem;
         text-align: center;
         color: #9b9b9e; }
@@ -563,7 +629,83 @@ html {
     .m-swiper-container-2 {
       height: 751px; } }
 
->>>>>>> mobile
+.register {
+  margin: 0;
+  background: url("../images/register-bg.png") repeat-y; }
+
+.m-mobRegister {
+  margin: 5rem auto;
+  width: 80%; }
+  .m-mobRegister .title {
+    padding-bottom: 3.4rem;
+    width: 100%;
+    font-size: 2.4rem;
+    color: #ffe3cd;
+    font-family: "宋体";
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ffe3cd; }
+  .m-mobRegister .subtitle {
+    padding-top: 0.5rem;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #ffe3cd;
+    font-family: "宋体";
+    font-weight: normal; }
+  .m-mobRegister .form {
+    padding-top: 4rem; }
+    .m-mobRegister .form .form-list {
+      margin-bottom: 2.4rem; }
+      .m-mobRegister .form .form-list label {
+        position: relative;
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        font-family: "宋体";
+        font-weight: normal; }
+      .m-mobRegister .form .form-list span.star {
+        position: absolute;
+        display: inline-block;
+        top: -6px;
+        right: -9px; }
+      .m-mobRegister .form .form-list input, .m-mobRegister .form .form-list select {
+        padding-left: 10px;
+        display: block;
+        width: 100%;
+        height: 36px;
+        background: none;
+        border: 1px solid #ffe3cd;
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        outline: none; }
+    .m-mobRegister .form .form-select {
+      padding-top: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ffe3cd; }
+      .m-mobRegister .form .form-select label {
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        font-family: "宋体";
+        font-weight: normal; }
+        .m-mobRegister .form .form-select label input {
+          border-radius: 0;
+          margin-right: 6px; }
+    .m-mobRegister .form .btn {
+      display: block;
+      margin: 5rem auto 0;
+      padding: 1rem 4.5rem;
+      border: none;
+      background: #44332c;
+      font-size: 1.6rem;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal;
+      outline: none; }
+      .m-mobRegister .form .btn:hover {
+        color: #714e38; }
+
 .u-img {
   display: block;
   position: relative;
@@ -599,7 +741,6 @@ html {
 .u-share {
   padding-top: 2rem;
   padding-bottom: 0.3rem;
->>>>>>> mobile
   border-bottom: 1px #564b47 solid; }
   .u-share .share {
     float: left; }
@@ -620,6 +761,7 @@ html {
       color: #333333; }
       .u-share .paging a:hover {
         color: #714e38; }
+
 /*
  * Swiper - Mobile Touch Slider CSS
  * http://www.idangero.us/sliders/swiper

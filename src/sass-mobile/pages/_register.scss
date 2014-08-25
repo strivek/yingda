@@ -1,0 +1,84 @@
+@charset "utf-8";
+$font-family: '宋体';
+$color: #ffe3cd;
+
+@mixin font($font-size: 1.6rem) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+.register {
+  margin: 0;
+  background: url("../images/register-bg.png") repeat-y;
+}
+
+.m-mobRegister {
+  margin: 5rem auto;
+  width: 80%;
+  .title {
+    padding-bottom: 3.4rem;
+    width:100%;
+    @include font(2.4rem);
+    text-align: center;
+    border-bottom: 1px solid $color;
+  }
+  .subtitle {
+    padding-top: 0.5rem;
+    width:100%;
+    @include font();
+  }
+  .form {
+    padding-top: 4rem;
+    .form-list {
+      margin-bottom: 2.4rem;
+      label {
+        position:relative;
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+        display:inline-block;
+        @include font();
+      }
+      span.star{position:absolute;
+        display:inline-block;
+        top:-6px;
+        right:-9px;
+      }
+      input, select {
+        padding-left: 10px;
+        display: block;
+        width: 100%;
+        height: 36px;
+        background: none;
+        border: 1px solid $color;
+        font-size:1.6rem;
+        color: $color;
+        outline: none;
+      }
+    }
+    .form-select {
+      padding-top: 1.2rem;
+      padding-bottom:1rem;
+      border-bottom: 1px solid $color;
+      label {
+        input {
+          border-radius: 0;
+          margin-right: 6px;
+        }
+        @include font();
+      }
+    }
+    .btn {display:block;
+      margin: 5rem auto 0;
+      padding: 1rem 4.5rem;
+      border:none;
+      background: #44332c;
+      @include font();
+      outline: none;
+      &:hover {
+        color: #714e38;
+      }
+    }
+  }
+}

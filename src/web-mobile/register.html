@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <title>用户注册</title>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+</head>
+<body class="register">
+<div class="m-mobRegister">
+    <h2 class="title">建立您的账户</h2>
+
+    <p class="subtitle">*为必填项</p>
+
+    <form action="" class="form">
+        <div class="form-list">
+            <label for="name">姓名<span class="star">*</span></label>
+            <input type="text" class="name" id="name"/>
+        </div>
+        <div class="form-list">
+            <label for="sex">性别<span class="star">*</span></label>
+            <select name="sex" id="sex" class="sex">
+                <option value="boy">男</option>
+                <option value="girl">女</option>
+                <option value="secret">保密</option>
+            </select>
+        </div>
+        <div class="form-list">
+            <label for="both">生日<span class="star">*</span></label>
+            <input type="text" id="both" class="both"/>
+        </div>
+        <div class="form-list">
+            <label for="email">电子邮箱<span class="star">*</span></label>
+            <input type="text" class="email" id="email"/>
+        </div>
+        <div class="form-list">
+            <label for="pwd">密码<span class="star">*</span></label>
+            <input type="password" id="pwd" class="pwd"/>
+        </div>
+        <div class="form-list">
+            <label for="repwd">确认密码<span class="star">*</span></label>
+            <input type="password" id="repwd" class="repwd"/>
+        </div>
+        <div class="form-list">
+            <label for="tel">电话号码<span class="star">*</span></label>
+            <input type="text" class="tel" id="tel"/>
+        </div>
+        <div class="form-select">
+            <label for="agree"><input type="checkbox" id="agree" class="agree">我已阅读并接受隐私声明</label>
+        </div>
+
+        <button type="submit" class="btn">建立您的账户</button>
+    </form>
+</div>
+</body>
+</html>
