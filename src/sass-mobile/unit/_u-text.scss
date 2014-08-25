@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.u-text {
+  color: $shopListFont;
+  line-height: 2;
+  $headings: (h1: 2.9rem, h2: 1.8rem, h3: 1.4rem, p: 1.2rem);
+  @each $header, $size in $headings {
+    #{$header} {
+      font-size: $size;
+      font-weight: normal;
+    }
+  }
+}

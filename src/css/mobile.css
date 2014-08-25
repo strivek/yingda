@@ -346,6 +346,9 @@ th {
 .icon-yingdaicon04:before {
   content: "\e643"; }
 
+* {
+  box-sizing: border-box; }
+
 html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu, img {
   margin: 0;
   padding: 0; }
@@ -353,8 +356,33 @@ html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, 
 a {
   text-decoration: none; }
 
-html {
-  font-size: 10px; }
+ul, li {
+  list-style: none; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 10px; } }
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 11.25px; } }
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 12.5px; } }
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 15px; } }
+@media only screen and (min-width: 540px) {
+  html {
+    font-size: 17px; } }
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 20px; } }
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 22.5px; } }
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 30px; } }
 
 .m-swiper-container {
   width: 100%; }
@@ -383,7 +411,7 @@ html {
   padding: 1rem 0; }
   .m-imgList .title {
     padding: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 2rem; }
   .m-imgList .imgWrap {
     overflow: hidden; }
@@ -397,9 +425,9 @@ html {
         bottom: 0;
         display: block;
         width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        font-size: 1.2rem;
+        height: 2.4rem;
+        line-height: 2.4rem;
+        font-size: 1rem;
         text-align: center;
         background-color: #000;
         opacity: 0.6;
@@ -412,7 +440,7 @@ html {
     margin-bottom: 0;
     padding-top: 2rem;
     text-align: center;
-    font-size: 2.6rem; }
+    font-size: 1.5rem; }
   .m-textImg .line {
     margin: 0 auto;
     width: 1rem;
@@ -421,12 +449,12 @@ html {
   .m-textImg .date {
     margin-bottom: 1.8rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     line-height: 2rem; }
   .m-textImg .text {
     margin: 0;
     padding: 1rem 0;
-    font-size: 1.4rem; }
+    font-size: 1rem; }
 
 @font-face {
   font-family: 'didotbold';
@@ -436,52 +464,54 @@ html {
   font-style: normal; }
 .m-textOnImg {
   position: relative;
-  width: 100%;
-  color: #fee3ce; }
+  width: 100%; }
+  .m-textOnImg a {
+    color: #fee3ce; }
   .m-textOnImg .table-wrap {
     position: absolute;
     margin: 0;
     width: 100%;
     height: 100%; }
-    .m-textOnImg .table-wrap .table-inner {
-      display: table;
-      width: 100%;
-      height: 100%; }
-      .m-textOnImg .table-wrap .table-inner .table-cell {
-        display: table-cell;
-        vertical-align: middle;
-        font-family: '\5B8B\4F53';
-        text-align: center; }
-        .m-textOnImg .table-wrap .table-inner .table-cell h3 {
-          font-size: 1.5rem;
-          line-height: 2.3rem;
-          font-weight: normal;
-          font-family: 'didotbold'; }
-        .m-textOnImg .table-wrap .table-inner .table-cell h4 {
-          font-size: 1.5rem;
-          line-height: 2.3rem;
-          font-weight: normal; }
-        .m-textOnImg .table-wrap .table-inner .table-cell a {
-          color: #fee3ce; }
-        .m-textOnImg .table-wrap .table-inner .table-cell p {
-          padding: 0.5rem 0; }
-          .m-textOnImg .table-wrap .table-inner .table-cell p a {
-            padding: 0.25rem 0.75rem;
-            font-size: 1rem;
-            border: 1px solid #fee3ce; }
-            .m-textOnImg .table-wrap .table-inner .table-cell p a.weibo {
-              padding: 0;
-              font-size: 1.5rem;
-              border: none 0;
-              color: #fee3ce; }
-            .m-textOnImg .table-wrap .table-inner .table-cell p a.wechat {
-              padding: 0;
-              font-size: 1.5rem;
-              border: none 0;
-              margin-left: 0.5rem;
-              color: #fee3ce; }
+  .m-textOnImg .table-inner {
+    display: table;
+    width: 100%;
+    height: 100%; }
+  .m-textOnImg .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: '\5B8B\4F53';
+    text-align: center; }
+  .m-textOnImg h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    font-weight: normal;
+    font-family: 'didotbold'; }
+  .m-textOnImg h4 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    font-weight: normal; }
+  .m-textOnImg p {
+    padding: 0.5rem 0; }
+    .m-textOnImg p a {
+      padding: 0.2rem 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #fee3ce; }
+      .m-textOnImg p a.weibo {
+        padding: 0;
+        font-size: 1.5rem;
+        border: none 0; }
+      .m-textOnImg p a.wechat {
+        padding: 0;
+        font-size: 1.5rem;
+        border: none 0;
+        margin-left: 0.5rem; }
   .m-textOnImg img {
     display: block; }
+
+.m-textOnImg-1 a {
+  color: #32251f; }
+.m-textOnImg-1 p a {
+  border: 1px solid #32251f; }
 
 .m-textOnImg1 {
   width: 100%; }
@@ -493,11 +523,8 @@ html {
     width: 100%;
     text-align: center;
     color: #f7dcc7;
-    font-size: 1.8rem; }
-    @media screen and (width: 320px) {
-      .m-textOnImg1 .big-btn {
-        height: 120px;
-        line-height: 120px; } }
+    font-size: 2rem;
+    line-height: 6; }
   .m-textOnImg1 .menu {
     display: none; }
     .m-textOnImg1 .menu li {
@@ -506,32 +533,52 @@ html {
       .m-textOnImg1 .menu li a {
         display: block;
         font-size: 1.4rem;
-        font-weight: bold;
         line-height: 4.4rem;
         text-align: center;
         color: #9b9b9e; }
 
+.m-shoplist dl {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #7c5e50; }
+  .m-shoplist dl dt {
+    line-height: 3rem;
+    font-size: 1.4rem;
+    color: #ffe3cd; }
+    .m-shoplist dl dt span {
+      padding: 0 2rem; }
+  .m-shoplist dl dd {
+    padding-left: 4.8rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    color: #7c5e50; }
+    .m-shoplist dl dd a {
+      padding: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #7c5e50; }
+      .m-shoplist dl dd a.showDetail {
+        padding: 0 2rem;
+        color: #ffe3cd; }
+.m-shoplist .detail {
+  display: none;
+  padding: 1rem;
+  color: #ffe3cd;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem; }
+
 .g-main {
   background-color: #000; }
 
-.m-swiper-container-index .arrow-left {
-  background-color: transparent;
-  background-size: 60%; }
-.m-swiper-container-index .arrow-right {
-  background-color: transparent;
-  background-size: 60%; }
-@media only screen and (max-width: 320px) {
-  .m-swiper-container-index {
-    height: 130px;
-    margin-bottom: 1.5rem; } }
-@media only screen and (min-width: 360px) {
-  .m-swiper-container-index {
-    height: 146px;
-    margin-bottom: 1.7rem; } }
-@media only screen and (min-width: 540px) {
-  .m-swiper-container-index {
-    height: 219px;
-    margin-bottom: 2.5rem; } }
+.m-swiper-container-index {
+  margin-bottom: 1.5rem;
+  height: 13rem; }
+  .m-swiper-container-index .arrow-left {
+    background-color: transparent;
+    background-size: 60%; }
+  .m-swiper-container-index .arrow-right {
+    background-color: transparent;
+    background-size: 60%; }
 
 .g-sfashion-c {
   padding: 0 1.5rem;
@@ -540,30 +587,22 @@ html {
   background-size: cover; }
 
 .m-swiper-container-1 {
-  border: 1px solid #fff; }
-  @media only screen and (max-width: 320px) {
-    .m-swiper-container-1 {
-      height: 146px; } }
-  @media only screen and (min-width: 360px) {
-    .m-swiper-container-1 {
-      height: 167px; } }
-  @media only screen and (min-width: 540px) {
-    .m-swiper-container-1 {
-      height: 257px; } }
+  border: 1px solid #fff;
+  height: 14.5rem; }
 
 .m-swiper-container-2 {
-  border: 1px solid #fff; }
-  @media only screen and (max-width: 320px) {
-    .m-swiper-container-2 {
-      height: 427px; } }
-  @media only screen and (min-width: 360px) {
-    .m-swiper-container-2 {
-      height: 486px; } }
-  @media only screen and (min-width: 540px) {
-    .m-swiper-container-2 {
-      height: 751px; } }
+  border: 1px solid #fff;
+  height: 42.7rem; }
 
->>>>>>> mobile
+.g-shoplist {
+  position: relative;
+  padding: 1rem 3.5rem;
+  height: 100%; }
+
+.g-vip {
+  position: relative;
+  padding: 2rem; }
+
 .u-img {
   display: block;
   position: relative;
@@ -599,16 +638,15 @@ html {
 .u-share {
   padding-top: 2rem;
   padding-bottom: 0.3rem;
->>>>>>> mobile
   border-bottom: 1px #564b47 solid; }
   .u-share .share {
     float: left; }
     .u-share .share a {
       display: inline-block;
-      margin-right: 1rem; }
+      margin-right: 0.5rem; }
       .u-share .share a span {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #160b0a; }
       .u-share .share a:hover span {
         color: #6f4d38; }
@@ -616,10 +654,33 @@ html {
     float: right; }
     .u-share .paging a {
       display: inline-block;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #333333; }
       .u-share .paging a:hover {
         color: #714e38; }
+
+.u-text {
+  color: #ffe3cd;
+  line-height: 2; }
+  .u-text h1 {
+    font-size: 2.9rem;
+    font-weight: normal; }
+  .u-text h2 {
+    font-size: 1.8rem;
+    font-weight: normal; }
+  .u-text h3 {
+    font-size: 1.4rem;
+    font-weight: normal; }
+  .u-text p {
+    font-size: 1.2rem;
+    font-weight: normal; }
+
+.u-absBg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+
 /*
  * Swiper - Mobile Touch Slider CSS
  * http://www.idangero.us/sliders/swiper
