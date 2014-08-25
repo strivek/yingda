@@ -122,24 +122,25 @@
       color: #f6d2b9;
       cursor: pointer;
       padding: 0 0 10px 10px;
+      &:hover{color:#9b9b9e;}
     }
   }
   @media(min-width: 768px) {
     .bottom-years {
-      span.left {
+      .iconfont.left {
         left: 20px;
       }
-      span.right {
+      .iconfont.right {
         right: 20px;
       }
     }
   }
   @media(min-width: 1200px) {
     .bottom-years {
-      span.left {
+      .iconfont.left {
         left: 90px;
       }
-      span.right {
+      .iconfont.right {
         right: 90px;
       }
     }
