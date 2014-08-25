@@ -1,0 +1,110 @@
+@charset "utf-8";
+$font-family: '宋体';
+$color: #ffe3cd;
+
+@mixin font($font-size: 1.6rem) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+.m-moblogin-cy {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8rem;
+  margin-bottom: 20rem;
+  .title {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $color;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .login-form {
+    padding-top: 5rem;
+    .form-group {
+      margin-bottom: 2.5rem;
+      label {
+        display:inline-block;
+        padding-bottom:0.5rem;
+        @include font();
+      }
+      .form-input {
+        padding-left:1em;
+        width: 100%;
+        height: 3.4rem;
+        background: none;
+        border: 1px solid $color;
+        border-radius: 0;
+        @include font();
+      }
+    }
+    .fpwd{      border-bottom: 1px solid $color; a {
+      display:inline-block;
+      padding-bottom: 0.7rem;
+
+      @include font();
+      &:hover {
+        color: #44332c;
+      }
+    }}
+    .button {
+      margin-top: 1.2rem;
+      button {
+        width: 100%;
+        height:3.4rem;
+        background: #44332c;
+        border-radius: 0;
+        border: none;
+        color: $color;
+        font-size: 1.8rem;
+        outline: none;
+      }
+    }
+  }
+  .reg {
+    padding-top: 3.2rem;
+    .reg-label {
+      margin-bottom: 1.2rem;
+      @include font();
+    }
+    .button .btn {
+      width: 100%;
+      height:3.4rem;
+      background: #44332c;
+      border-radius: 0;
+      color: $color;
+      font-size: 1.8rem;
+      outline: none;
+      border: none;
+    }
+  }
+  .social-login {
+    padding-top: 3.2rem;
+    h3 {
+      padding-bottom: 0.7rem;
+      @include font();
+      border-bottom: 1px solid $color;
+    }
+    .social-list {
+      margin-left:-3rem;
+      margin-top: 2rem;
+      a {
+        display: inline-block;
+      }
+      a span {
+        margin-left: 3rem;
+        display: inline-block;
+        font-size: 3rem;
+        color: $color;
+        font-family: iconfont;
+      }
+
+      a:hover span {
+        color: #44332c;
+      }
+    }
+  }
+}

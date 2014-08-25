@@ -629,10 +629,6 @@ a, a:hover {
     .m-swiper-container-2 {
       height: 751px; } }
 
-.register {
-  margin: 0;
-  background: url("../images/register-bg.png") repeat-y; }
-
 .m-mobRegister {
   margin: 5rem auto;
   width: 80%; }
@@ -670,7 +666,7 @@ a, a:hover {
         display: inline-block;
         top: -6px;
         right: -9px; }
-      .m-mobRegister .form .form-list input, .m-mobRegister .form .form-list select {
+      .m-mobRegister .form .form-list input, .m-mobRegister .form .form-list .sex {
         padding-left: 10px;
         display: block;
         width: 100%;
@@ -680,6 +676,16 @@ a, a:hover {
         font-size: 1.6rem;
         color: #ffe3cd;
         outline: none; }
+    .m-mobRegister .form .warning input, .m-mobRegister .form .warning .sex {
+      border: 1px solid #ff0000; }
+    .m-mobRegister .form .warning p {
+      margin-top: 4px;
+      display: block;
+      margin-bottom: -10px;
+      text-align: right;
+      font-family: "宋体";
+      font-size: 12px;
+      color: #e60012; }
     .m-mobRegister .form .form-select {
       padding-top: 1.2rem;
       padding-bottom: 1rem;
@@ -688,23 +694,141 @@ a, a:hover {
         font-size: 1.6rem;
         color: #ffe3cd;
         font-family: "宋体";
-        font-weight: normal; }
-        .m-mobRegister .form .form-select label input {
+        font-weight: normal;
+        position: relative;
+        padding-left: 2rem; }
+        .m-mobRegister .form .form-select label .agree {
+          position: absolute;
+          top: 2px;
+          left: 0;
           border-radius: 0;
-          margin-right: 6px; }
+          margin-right: 6px;
+          border: 1px solid #ffe3cd; }
     .m-mobRegister .form .btn {
-      display: block;
-      margin: 5rem auto 0;
-      padding: 1rem 4.5rem;
-      border: none;
+      text-align: center; }
+      .m-mobRegister .form .btn .sub {
+        margin: 5rem auto 1rem;
+        padding: 1rem 4.5rem;
+        border: none;
+        background: #44332c;
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        font-family: "宋体";
+        font-weight: normal;
+        outline: none; }
+        .m-mobRegister .form .btn .sub:hover {
+          color: #714e38; }
+
+.m-moblogin-cy {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8rem;
+  margin-bottom: 20rem; }
+  .m-moblogin-cy .title {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ffe3cd;
+    text-align: center; }
+    .m-moblogin-cy .title img {
+      max-width: 100%; }
+  .m-moblogin-cy .login-form {
+    padding-top: 5rem; }
+    .m-moblogin-cy .login-form .form-group {
+      margin-bottom: 2.5rem; }
+      .m-moblogin-cy .login-form .form-group label {
+        display: inline-block;
+        padding-bottom: 0.5rem;
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        font-family: "宋体";
+        font-weight: normal; }
+      .m-moblogin-cy .login-form .form-group .form-input {
+        padding-left: 1em;
+        width: 100%;
+        height: 3.4rem;
+        background: none;
+        border: 1px solid #ffe3cd;
+        border-radius: 0;
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        font-family: "宋体";
+        font-weight: normal; }
+    .m-moblogin-cy .login-form .fpwd {
+      border-bottom: 1px solid #ffe3cd; }
+      .m-moblogin-cy .login-form .fpwd a {
+        display: inline-block;
+        padding-bottom: 0.7rem;
+        font-size: 1.6rem;
+        color: #ffe3cd;
+        font-family: "宋体";
+        font-weight: normal; }
+        .m-moblogin-cy .login-form .fpwd a:hover {
+          color: #44332c; }
+    .m-moblogin-cy .login-form .button {
+      margin-top: 1.2rem; }
+      .m-moblogin-cy .login-form .button button {
+        width: 100%;
+        height: 3.4rem;
+        background: #44332c;
+        border-radius: 0;
+        border: none;
+        color: #ffe3cd;
+        font-size: 1.8rem;
+        outline: none; }
+  .m-moblogin-cy .reg {
+    padding-top: 3.2rem; }
+    .m-moblogin-cy .reg .reg-label {
+      margin-bottom: 1.2rem;
+      font-size: 1.6rem;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal; }
+    .m-moblogin-cy .reg .button .btn {
+      width: 100%;
+      height: 3.4rem;
       background: #44332c;
+      border-radius: 0;
+      color: #ffe3cd;
+      font-size: 1.8rem;
+      outline: none;
+      border: none; }
+  .m-moblogin-cy .social-login {
+    padding-top: 3.2rem; }
+    .m-moblogin-cy .social-login h3 {
+      padding-bottom: 0.7rem;
       font-size: 1.6rem;
       color: #ffe3cd;
       font-family: "宋体";
       font-weight: normal;
-      outline: none; }
-      .m-mobRegister .form .btn:hover {
-        color: #714e38; }
+      border-bottom: 1px solid #ffe3cd; }
+    .m-moblogin-cy .social-login .social-list {
+      margin-left: -3rem;
+      margin-top: 2rem; }
+      .m-moblogin-cy .social-login .social-list a {
+        display: inline-block; }
+      .m-moblogin-cy .social-login .social-list a span {
+        margin-left: 3rem;
+        display: inline-block;
+        font-size: 3rem;
+        color: #ffe3cd;
+        font-family: iconfont; }
+      .m-moblogin-cy .social-login .social-list a:hover span {
+        color: #44332c; }
+
+.privacy {
+  background: #251f21; }
+
+.m-privacy-cy {
+  margin: 6rem auto 0;
+  width: 80%;
+  color: #ffe3cd; }
+  .m-privacy-cy .title {
+    font-size: 2.6rem;
+    margin-bottom: 5rem; }
+  .m-privacy-cy .con p {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-family: "瀹嬩綋";
+    line-height: 1.8; }
 
 .u-img {
   display: block;
@@ -761,6 +885,22 @@ a, a:hover {
       color: #333333; }
       .u-share .paging a:hover {
         color: #714e38; }
+
+.u-fullscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1; }
+
+.body_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  z-index: -1; }
 
 /*
  * Swiper - Mobile Touch Slider CSS
