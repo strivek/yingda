@@ -3,10 +3,17 @@ html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, 
   margin: 0;
   padding: 0;
 }
-html{font-size:10px;}
-*{box-sizing:border-box;
-  -moz-box-sizing:border-box; /* Firefox */
-  -webkit-box-sizing:border-box;}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box;
+}
+
 header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
   display: block;
 }
@@ -84,7 +91,3 @@ body {
   background: #fff;
 }
 
-/*
-a, a:hover {
-  color: #333;
-}*/
