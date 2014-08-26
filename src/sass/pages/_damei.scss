@@ -69,14 +69,12 @@ $primaryColor: #f6d2b9;
     }
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
    .m-product2 {
     padding-top: 0 !important;
     margin-top: 60px;
   }
 }
-
 .damei_title{
   h3{font-size: 16px; color:#f6d2b9; font-weight: normal;}
   p{color:#f6d2b9; font-size: 12px; margin-top: 50px;}
@@ -95,14 +93,14 @@ $primaryColor: #f6d2b9;
   .m-main-zt{padding: 100px 0 0}
 
 }
-
 @media (min-width: 992px) and (max-width: 1169px){
   .m-main-zt .container{width: 840px;}
   .m-main-zt{padding: 100px 0 0}
   .m-main-zt .m-bd .m-product1{padding-top: 130px}
 //  .m-main-zt .m-bd .m-hd h3{font-size: 26px;}
-
 }
 @media (max-width: 991px) {
   .m-main-zt .container{width: 720px;}
 }
+
+

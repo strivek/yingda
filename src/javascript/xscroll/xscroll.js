@@ -1,7 +1,7 @@
 /**
  * Created by GaoFei on 14/8/22.
  */
-define(['jquery', 'help'], function ($, hp) {
+define(['jquery','help'], function ($,hp) {
 
     'use strict';
 
