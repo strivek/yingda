@@ -33,7 +33,8 @@ $color: #ffe3cd;
     }
     .form-control {
       height: 38px;
-      background: none;
+      background-image:url(about:blank);
+      background-color:transparent;
       border: 1px solid $color;
       border-radius: 0;
       color: $color;
