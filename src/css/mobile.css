@@ -613,11 +613,16 @@ ul, li {
 .g-shoplist {
   position: relative;
   padding: 1rem 3.5rem;
-  height: 100%; }
+  height: 100%;
+  background: url(../images/mobile-shoplist-bg.jpg) repeat-y;
+  background-size: 100%; }
 
 .g-vip {
   position: relative;
-  padding: 2rem; }
+  padding: 2rem;
+  height: 100%;
+  background: url(../images/mobile-shoplist-bg.jpg) repeat-y;
+  background-size: 100%; }
 
 .u-img {
   display: block;
@@ -674,12 +679,6 @@ ul, li {
       color: #333333; }
       .u-share .paging a:hover {
         color: #714e38; }
-
-.u-absBg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0; }
 
 /*
  * Swiper - Mobile Touch Slider CSS
