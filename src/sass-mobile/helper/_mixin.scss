@@ -15,3 +15,10 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@mixin min-width($res){
+  @media only screen and (min-width:$res)
+  {
+    @content;
+  }
+}

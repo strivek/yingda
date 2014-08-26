@@ -11,76 +11,84 @@
   font-style: normal;
 }
 
-
 .m-textOnImg {
   position: relative;
   width: 100%;
-  color: $seasonFashion1;
+  a {
+    color: $seasonFashion1;
+  }
   .table-wrap {
     position: absolute;
     margin: 0;
     width: 100%;
     height: 100%;
-    .table-inner {
-      display: table;
-      width: 100%;
-      height: 100%;
-      .table-cell {
-        display: table-cell;
-        vertical-align: middle;
-        font-family: '\5B8B\4F53';
-        text-align: center;
-        h3 {
-          @include textOnImg();
-          font-family: 'didotbold';
-        }
-        h4 {
-          @include textOnImg();
-        }
-        a {
-          color: $seasonFashion1;
-        }
-        p {
-          padding: 0.5rem 0;
-          a {
-            padding: 0.25rem 0.75rem;
-            font-size: 1rem;
-            border: 1px solid $seasonFashion1;
-            &.weibo {
-              padding: 0;
-              font-size: 1.5rem;
-              border: none 0;
-              color: $seasonFashion1;
-            }
-            &.wechat {
-              padding: 0;
-              font-size: 1.5rem;
-              border: none 0;
-              margin-left: 0.5rem;
-              color: $seasonFashion1;
-            }
-          }
-        }
+  }
+  .table-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: '\5B8B\4F53';
+    text-align: center;
+  }
+  h3 {
+    @include textOnImg();
+    font-family: 'didotbold';
+  }
+  h4 {
+    @include textOnImg();
+  }
+  p {
+    padding: 0.5rem 0;
+    a {
+      padding: 0.2rem 0.5rem;
+      font-size: 1rem;
+      border: 1px solid $seasonFashion1;
+      &.weibo {
+        padding: 0;
+        font-size: 1.5rem;
+        border: none 0;
+      }
+      &.wechat {
+        padding: 0;
+        font-size: 1.5rem;
+        border: none 0;
+        margin-left: 0.5rem;
       }
     }
   }
-  img {display: block;}
+  img {
+    display: block;
+  }
+}
+
+.m-textOnImg-1 {
+  a {
+    color: $channelFont;
+  }
+  p {
+    a {
+      border: 1px solid $channelFont;
+    }
+  }
 }
 
 .m-textOnImg1 {
   width: 100%;
-  img {display: block;}
+  img {
+    display: block;
+  }
   .big-btn {
     position: absolute;
     display: block;
     width: 100%;
     text-align: center;
     color: $indexImgText;
-    font-size: 1.8rem;
-    @media screen and (width: 320px) {
-      height: 120px;
-      line-height: 120px;
-    }
+    font-size: 2rem;
+    line-height: 6;
   }
   .menu {
     display: none;
