@@ -6,10 +6,10 @@
     float: left;
     a {
       display: inline-block;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
       span {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #160b0a;
       }
       &:hover span {
@@ -22,7 +22,7 @@
     float: right;
     a {
       display: inline-block;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #333333;
       &:hover {
         color: #714e38;

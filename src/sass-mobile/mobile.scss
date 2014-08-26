@@ -13,14 +13,19 @@
 @import "modules/m-imgList";
 @import "modules/m-textImg";
 @import "modules/m-textOnImg";
+@import "modules/m-shopList";
+@import "modules/m-text";
 
 //页面
 @import "pages/index";
 @import "pages/seasonfashion";
 @import "pages/seasonfashion-content";
+@import "pages/shoplist";
+@import "pages/vip";
 //元件
 @import "unit/u-img";
 @import "unit/u-share";
+@import "unit/u-absBg";
 
 //框架
 @import "vendor/swiper";
