@@ -121,6 +121,7 @@
 </div>
         <div class="m-boutique-content">
             <div class="m-shop-pic">
+                <div id="dituContent"></div>
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <!--<ol class="carousel-indicators">-->
@@ -130,19 +131,19 @@
                     <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
                     <!--</ol>-->
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner" >
                         <div class="item active">
-                            <img src="../images/boutique.jpg" alt="..." class="img-responsive" width="" height="100%">
+                            <img src="../images/boutique.jpg" alt="..." class="img-responsive"  >
                         </div>
                         <div class="item">
-                            <img src="../images/boutique.jpg" alt="..." class="img-responsive" height="100%">
+                            <img src="../images/boutique.jpg" alt="..." class="img-responsive">
 
                         </div>
                         <div class="item">
-                            <img src="../images/boutique.jpg" alt="..." class="img-responsive" height="100%">
+                            <img src="../images/boutique.jpg" alt="..." class="img-responsive">
                         </div>
                         <div class="item">
-                            <img src="../images/boutique.jpg" alt="..." class="img-responsive" height="100%">
+                            <img src="../images/boutique.jpg" alt="..." class="img-responsive">
                         </div>
                     </div>
                     <!-- Controls -->
@@ -168,7 +169,7 @@
                                             <dd>
                                                 <p>地址：天津市塘沽金街777</p>
                                                 <p>电话: +852-21968259</p>
-                                                <p><a class="pr-20" href="javascript:;">在地图上寻找</a><a href="javascript:;" class="detail">详细细节</a></p>
+                                                <p><a class="pr-20 mapDetail" href="javascript:;" id="map">在地图上寻找</a><a href="javascript:;" class="detail">详细细节</a></p>
                                             </dd>
                                         </dl>
                                         <ul class="u-details">
@@ -187,7 +188,7 @@
                                             <dd>
                                                 <p>地址：天津市塘沽金街777</p>
                                                 <p>电话: +852-21968259</p>
-                                                <p><a class="pr-20" href="#">在地图上寻找</a><a href="javascript:;" class="detail">详细细节</a></p>
+                                                <p><a class="pr-20 mapDetail"  href="#" id="map1">在地图上寻找</a><a href="javascript:;" class="detail">详细细节</a></p>
                                             </dd>
                                         </dl>
                                         <ul class="u-details">
@@ -226,6 +227,7 @@
                     </div>
                 </div>
           </div>
+
 </div>
 <!--底部样式-->
 <div class="g-footer navbar-fixed-bottom">
@@ -258,5 +260,9 @@
     </div>
 </div>
 <script data-main="../javascript/main" src="../javascript/require.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="../javascript/lib/jquery.min.js"></script>
+<script src="../javascript/map.js"></script>
 </body>
 </html>
