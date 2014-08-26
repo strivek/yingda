@@ -75,5 +75,5 @@ define(['jquery','help'], function ($,hp) {
     };
     // Expose defaults and Constructor (allowing overriding of prototype methods for example)
     $.fn.xscroll.defaults = defaults;
-    $.fn.xscroll.Plugin = Plugin;
+    $.fn.xscroll.Hscroll = Hscroll;
 });

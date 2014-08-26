@@ -9,11 +9,22 @@ html, body {
   left: 0;
   width: 100%;
   z-index: 20;
+  font-family: '宋体';
+}
+
+.s-black {
+  position: fixed;
+  height:52px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
   background: #000;
   @include opacity(0.8);
-
-  height: 52px;
-  font-family: '宋体';
+}
+.m-nav{
+  position: relative;
+  z-index: 22;
 }
 
 .m-nav-list-bg {
@@ -207,4 +218,7 @@ html, body {
   .m-product{font-size: 16px;}
 
 }
+.navbar-nav > li {
+  float: left; }
+
 

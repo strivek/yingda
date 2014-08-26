@@ -16,9 +16,10 @@ $primaryColor: #f6d2b9;
         }
       }
       p {
+
+        color: $primaryColor;
         font-size: 12px;
         padding-top: 20px;
-        @extend h3;
         span {
           line-height: 1.8em;
           padding-left: 20px;
