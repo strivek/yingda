@@ -1,0 +1,61 @@
+@charset "utf-8";
+//兼容[1]：支持包括IE6在内的所有主流浏览器和设备，UI效果可能有所退化。
+//优雅[2]：在高级浏览器中有“高级”效果，在低级浏览器中有“兼容”效果，是高级版的“优雅退化”，也是兼容版的“渐进/增强”。
+//高级[3]：支持IE9+、Chrome、Safari、Firefox等主流浏览器，支持移动设备和所有智能系统，具有优越的UI效果。
+
+//base 竖直图文混排
+//兼容性：兼容
+.m-list1 {
+  padding: 1px 0 0;
+  zoom: 1;
+  ul {
+    padding-left: 0;
+    margin: -11px 0 0; //消除垂直第一个间距
+  }
+  li {
+    display: inline; //ie 6双倍外边距bug
+    float: left;
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .u-img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .txt {
+    float: right;
+    width: 100%;
+    height: 95px;
+    overflow: hidden;
+    margin-left: -110px; //补齐图片的占位，使其可以共处一行
+  }
+  h3, p {
+    margin-left: 110px; //与图片并列排列
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+
+}
+
+//m-list1-x 水平图文混排
+.m-list1-x {
+  ul {
+    margin: -11px 0 0 -10px;
+  }
+  li {
+    width: 230px;
+    margin: 10px 0 0 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

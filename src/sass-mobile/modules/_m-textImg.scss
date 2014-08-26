@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.m-textImg {
+  padding: 1rem 0;
+  width: 100%;
+  .name {
+    margin-bottom: 0;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  .line {
+    margin: 0 auto;
+    width: 1rem;
+    height: 1px;
+    background-color: $seasonFashion;
+  }
+  .date {
+    margin-bottom: 1.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .text {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+  }
+}

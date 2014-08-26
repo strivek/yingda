@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.g-sfashion-c {
+  padding: 0 1.5rem;
+  color: $seasonFashion;
+  background: url("../images/mobile-seasonfashion-bg.jpg") no-repeat center top;
+  background-size: cover;
+}
+.m-swiper-container-1 {
+  border: 1px solid #fff;
+  @media only screen and (max-width: 320px) {
+    height: 146px;
+  }
+  @media only screen and (min-width: 360px) {
+    height: 167px;
+  }
+  @media only screen and (min-width: 540px) {
+    height: 257px;
+  }
+}
+.m-swiper-container-2 {
+  border: 1px solid #fff;
+  @media only screen and (max-width: 320px) {
+    height: 427px;
+  }
+  @media only screen and (min-width: 360px) {
+    height: 486px;
+  }
+  @media only screen and (min-width: 540px) {
+    height: 751px;
+  }
+}

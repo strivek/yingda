@@ -10,7 +10,7 @@
     clear: both;
   }
   .yearbook {margin-bottom:100px;
-    li {
+    li {cursor:pointer;
       .show{   position: relative;
         height: 56px;
       a {display: block;

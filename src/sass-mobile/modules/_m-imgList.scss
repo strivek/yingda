@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.m-imgList {
+  padding: 1rem 0;
+  .title {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .imgWrap {
+    overflow: hidden;
+    .imgItem {
+      float: left;
+      position: relative;
+      width: 48%;
+      margin: 1%;
+      span {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: #000;
+        opacity: 0.6;
+        color: lighten($seasonFashion,50%);
+      }
+    }
+  }
+}
