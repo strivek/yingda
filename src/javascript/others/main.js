@@ -14,9 +14,14 @@ require(['jquery'], function ($) {
 //精品店模块贴合
 require(['jquery'], function ($) {
     function changeSize() {
-        var shop_pic = $('.m-shop-pic .carousel-inner').outerWidth(true);
+        $('.m-boutique-content').fadeIn('100');
+        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
+//      $('.m-shop-pic .item').width(shop_pic);
+
+
         var winClient = $(window).width();
         if (winClient > 1024) {
+
             var oWidth = Math.floor(shop_pic * 1.4);
         } else {
             var oWidth = shop_pic;
@@ -25,10 +30,10 @@ require(['jquery'], function ($) {
         var ml = (1 - perc) / 2 * 100 + '%';
         $('.m-boutique-content').css({'marginLeft': ml});
     }
-
     if ($('.m-shop-pic .carousel-inner').length > 0) {
         changeSize();
         $(window).resize(function () {
+
             changeSize();
         })
     }
