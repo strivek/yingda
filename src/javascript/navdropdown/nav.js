@@ -6,7 +6,7 @@ define(['jquery'], function ($) {
             $(this).find(b).show();
             $(c).show();
         } else {
-            $(c).hide();
+            $(c).delay('300').hide();
             $(this).find(b).hide();
         }
     };
@@ -15,7 +15,7 @@ define(['jquery'], function ($) {
         $(this).find(b).toggle();
 
         if ($(this).find(b).css('display') == 'none') {
-            $(c).hide();
+            $(c).delay('300').hide();
         } else {
             $(c).show();
         }

@@ -11,14 +11,15 @@ $primaryColor: #f6d2b9;
         font-size: 36px;
         color: $primaryColor;
         font-weight: normal;
-        @media (min-width: 991px) and (max-width: 1170px) {
+       @media (min-width: 991px) and (max-width: 1170px) {
           font-size: 26px;
         }
       }
       p {
+
+        color: $primaryColor;
         font-size: 12px;
         padding-top: 20px;
-        @extend h3;
         span {
           line-height: 1.8em;
           padding-left: 20px;

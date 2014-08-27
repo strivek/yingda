@@ -1,11 +1,32 @@
 @charset "utf-8";
 
 .g-vip {
-  position: relative;
-  padding: 2rem;
-  height: 100%;
+  padding: 3rem 0;
   background:url(../images/mobile-shoplist-bg.jpg) repeat-y;
   background-size:100%;
+}
+
+.m-vip {
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.8;
+  color: $shopListFont;
+  h1 {
+    @include font();
+    font-size: 2.4rem;
+  }
+  h2 {
+    @include font();
+    font-size: 1.8rem;
+  }
+  h3 {
+    @include font();
+    font-size: 1.6rem;
+  }
+  p {
+    @include font();
+    font-size: 1.4rem;
+  }
 }
 
 
