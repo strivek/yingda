@@ -33,6 +33,7 @@ $color: #ffe3cd;
     }
     .form-control {
       height: 38px;
+      //TODO-tips ie8背景透明需要有一个透明背景图片或者about:blank
       background-image:url(about:blank);
       background-color:transparent;
       border: 1px solid $color;
