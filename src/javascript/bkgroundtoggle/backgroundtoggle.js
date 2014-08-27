@@ -12,9 +12,7 @@ define(['jquery'], function ($) {
 
         request.done(function (data) {
             self.jsonData = data[0];
-            console.log("获取全部json数据成功");
             self.eventBind();
-            console.log("开始数据绑定");
         });
     };
     Backgroundtoggle.prototype.eventBind = function () {

@@ -11,7 +11,7 @@ $primaryColor: #f6d2b9;
         font-size: 36px;
         color: $primaryColor;
         font-weight: normal;
-        @media (min-width: 991px) and (max-width: 1170px) {
+       @media (min-width: 991px) and (max-width: 1170px) {
           font-size: 26px;
         }
       }
