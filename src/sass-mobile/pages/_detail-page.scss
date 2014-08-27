@@ -41,38 +41,6 @@
 /*主体区域*/
 
 //slide
-
-#animation {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.m-swiper-container-detail {
-  $mSwiperDetail: 16rem;
-  @include min-width(320px) {
-    height: $mSwiperDetail;
-  }
-  @include min-width(360px) {
-    height: $mSwiperDetail * 1.125;
-  }
-  @include min-width(400px) {
-    height: $mSwiperDetail * 1.25;
-  }
-  @include min-width(480px) {
-    height: $mSwiperDetail * 1.5;
-  }
-  @include min-width(540px) {
-    height: $mSwiperDetail * 1.6875;
-  }
-  @include min-width(640px) {
-    height: $mSwiperDetail * 2;
-  }
-  @include min-width(720px) {
-    height: $mSwiperDetail * 2.25;
-  }
-
-
 #animation{width:100%;position:relative; overflow:hidden;}
 .m-swiper-container-detail {
   $mSwiperDetail: 16rem;
