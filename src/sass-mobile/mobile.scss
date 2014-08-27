@@ -2,11 +2,11 @@
 
 //方法
 @import "helper/normalize";
+@import "helper/color";
 @import "helper/mixin";
 @import "helper/function";
 @import "helper/iconfont";
 @import "helper/reset";
-@import "helper/color";
 
 //模块
 @import "modules/m-swiper";
@@ -14,6 +14,10 @@
 @import "modules/m-textImg";
 @import "modules/m-textOnImg";
 @import "modules/m-shopList";
+
+//通用部分
+@import "partials/header";
+@import "partials/footer";
 
 //页面
 @import "pages/index";

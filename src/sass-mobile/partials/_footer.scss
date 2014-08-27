@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.m-footer {
+  padding: 1rem;
+  background-color: #000;
+  text-align: center;
+  .iconlink {
+    padding: 1rem 0 0 1rem;
+    a {
+      padding-right: 1rem;
+      width: 2.6rem;
+      height: 1.8rem;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      color: $shopListFont;
+    }
+  }
+  .textlink {
+    padding: 1rem;
+    a {
+      display: block;
+      font-size: 1rem;
+      line-height: 2.6rem;
+      color: $indexMenuText;
+    }
+  }
+  .copyright {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: $indexMenuText;
+  }
+}
