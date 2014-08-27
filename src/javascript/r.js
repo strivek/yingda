@@ -27924,8 +27924,8 @@ define('build', function (require) {
  */
 
 /*
- * Create a build.js file that has the build options you want and pass that
- * build file to this file to do the build. See example.build.js for more information.
+ * Create a build-brand.js file that has the build options you want and pass that
+ * build file to this file to do the build. See example.build-brand.js for more information.
  */
 
 /*jslint strict: false, nomen: false */
@@ -27939,7 +27939,7 @@ require({
     catchError: {
         define: true
     }
-},       ['env!env/args', 'env!env/quit', 'logger', 'build'],
+},       ['env!env/args', 'env!env/quit', 'logger', '../../build-brand'],
 function (args, quit, logger, build) {
     build(args).then(function () {}, function (err) {
         logger.error(err);
