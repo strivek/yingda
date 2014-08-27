@@ -55,7 +55,7 @@ define(['jquery','help'], function ($,hp) {
         updatedom: function () {
             var element = $(this.wrap[0]);
             this.wrap = element;
-            console.log(this.wrap.width());
+             console.log(this.wrap.width());
             this.slist = element.find(".slist");
             this.slistWidth = element.find("li").width() * element.find("li").length;
             this.movelens = this.slistWidth - this.slist.width();
