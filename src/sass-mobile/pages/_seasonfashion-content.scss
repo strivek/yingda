@@ -8,25 +8,9 @@
 }
 .m-swiper-container-1 {
   border: 1px solid #fff;
-  @media only screen and (max-width: 320px) {
-    height: 146px;
-  }
-  @media only screen and (min-width: 360px) {
-    height: 167px;
-  }
-  @media only screen and (min-width: 540px) {
-    height: 257px;
-  }
+  height: 14.5rem;
 }
 .m-swiper-container-2 {
   border: 1px solid #fff;
-  @media only screen and (max-width: 320px) {
-    height: 427px;
-  }
-  @media only screen and (min-width: 360px) {
-    height: 486px;
-  }
-  @media only screen and (min-width: 540px) {
-    height: 751px;
-  }
+  height: 42.7rem;
 }

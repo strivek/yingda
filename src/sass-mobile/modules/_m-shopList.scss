@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.m-shoplist {
+  dl {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $shopListFont1;
+    dt {
+      line-height: 3rem;
+      font-size: 1.4rem;
+      color: $shopListFont;
+      span {
+        padding: 0 2rem;
+      }
+    }
+    dd {
+      padding-left: 4.8rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+      color: $shopListFont1;
+      a {
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+        color: $shopListFont1;
+        &.showDetail {
+          padding: 0 2rem;
+          color: $shopListFont;
+        }
+      }
+    }
+  }
+  .detail {
+    display: none;
+    padding: 1rem;
+    color: $shopListFont;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+}
