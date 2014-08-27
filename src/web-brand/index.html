@@ -10,15 +10,15 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="../javascript/ie8/html5shiv.js"></script>
-    <script src="../javascript/ie8/respond.js"></script>
+    <script src="../javascript/ie8/respond.src.js"></script>
     <![endif]-->
-    
+
 </head>
 <body>
 <!--TODO-LSY 在1024到768之间应该有流畅过度，因为用户可能并列显示页面-->
 
 <div class="g-header">
- <div class="s-black"></div>
+    <div class="s-black"></div>
     <div class="container m-nav">
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
@@ -35,7 +35,7 @@
 
                         <li class="new">
                             <a href="http://www.baidu.com">应大皮草博物馆</a>
-                            <ul class="list-unstyled text-center m-menu"  >
+                            <ul class="list-unstyled text-center m-menu">
                                 <li><a href="#">EST 1992</a></li>
                                 <li><a href="#">格调典范</a></li>
                                 <li><a href="#">非凡21章</a></li>
@@ -44,7 +44,7 @@
                         </li>
                         <li>
                             <a href="javascript:;">系列精品</a>
-                            <ul class="list-unstyled text-center  m-menu" >
+                            <ul class="list-unstyled text-center  m-menu">
                                 <li><a href="#">女士</a></li>
                                 <li><a href="#">男士</a></li>
                                 <li><a href="#">皮草</a></li>
@@ -52,7 +52,7 @@
                         </li>
                         <li>
                             <a href="#">资讯潮流</a>
-                            <ul class="list-unstyled text-center  m-menu" >
+                            <ul class="list-unstyled text-center  m-menu">
                                 <li><a href="#">当季风尚</a></li>
                                 <li><a href="#">look news</a></li>
                             </ul>
@@ -60,24 +60,26 @@
 
                         <li>
                             <a href="#">精品店</a>
-                            <ul class="list-unstyled text-center  m-menu" >
+                            <ul class="list-unstyled text-center  m-menu">
                                 <li><a href="#">4s服务</a></li>
                                 <li><a href="#">店铺查询</a></li>
                             </ul>
                         </li>
-                        <li >
+                        <li>
                             <a href="#">MyYD</a>
                             <!--<ul class="list-unstyled text-center  m-menu" >-->
-                                <!--<li><a href="#">会员专享积分</a></li>-->
-                                <!--<li><a href="#">会员专属订阅</a></li>-->
-                                <!--<li><a href="#">积分礼品商城</a></li>-->
-                                <!--<li><a href="#">登陆</a></li>-->
+                            <!--<li><a href="#">会员专享积分</a></li>-->
+                            <!--<li><a href="#">会员专属订阅</a></li>-->
+                            <!--<li><a href="#">积分礼品商城</a></li>-->
+                            <!--<li><a href="#">登陆</a></li>-->
                             <!--</ul>-->
                         </li>
                         <li><a href="#">在线商城</a></li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
         </nav>
     </div>
 </div>
@@ -88,17 +90,17 @@
             <div class="table-cell">
                 <h3><a href="">Display</a></h3>
                 <h4><a href="">橱窗系列</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <a href="#"><input type="button" value="探索 &gt;"/></a>
             </div>
         </div>
-        <img src="../images/display.jpg" alt="" />
+        <img src="../images/display.jpg" alt=""/>
     </div>
     <div class="bally">
         <div class="table">
             <div class="table-cell">
                 <h3><a href="">2014 S/S</a></h3>
                 <h4><a href="">春夏广告片</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <a href="#"><input type="button" value="探索 &gt;"/></a>
             </div>
         </div>
         <img src="../images/chunad.jpg" alt=""/>
@@ -108,131 +110,151 @@
             <div class="table-cell">
                 <h3><a href="">2014 F/W</a></h3>
                 <h4><a href="">秋冬时尚女装</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <a href="#"><input type="button" value="探索 &gt;"/></a>
             </div>
         </div>
-        <img src="../images/fashionnv.jpg" alt="" />
+        <img src="../images/fashionnv.jpg" alt=""/>
     </div>
     <div class="av">
         <div class="table">
             <div class="table-cell">
                 <h3><a href="">2014 F/W</a></h3>
                 <h4><a href="">秋冬时尚男装</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <a href="#"><input type="button" value="探索 &gt;"/></a>
             </div>
         </div>
-        <img src="../images/fashionman.jpg" alt="" />
+        <img src="../images/fashionman.jpg" alt=""/>
     </div>
     <div class="hot-product">
         <div class="table">
             <div class="table-cell">
                 <h3><a href="">Social wall</a></h3>
                 <h4><a href="">社交墙</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <!--TODO LSY 8.27-->
+                <a class="pr-20" href="#"><span class="iconfont icon-yingdaicon03"></span></a><a href="#"><span
+                    class="iconfont icon-yingdaicon04"></span></a>
             </div>
         </div>
-        <img src="../images/hot_first.jpg" alt="" />
+        <img src="../images/hot_first.jpg" alt=""/>
     </div>
     <div class="sns">
         <div class="table">
             <div class="table-cell">
-                <h3><a href="">Fur World</a> </h3>
+                <h3><a href="">Fur World</a></h3>
                 <h4><a href="">皮草世界</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <a href="#"><input type="button" value="探索 &gt;"/></a>
             </div>
         </div>
-        <img src="../images/fur.jpg" alt="" />
+        <img src="../images/fur.jpg" alt=""/>
     </div>
     <div class="other-colth">
         <div class="table">
             <div class="table-cell">
                 <h3><a href="">2014 F/W</a></h3>
                 <h4><a href="">花絮</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+                <a href="#"><input type="button" value="探索 &gt;"/></a>
             </div>
         </div>
-        <img src="../images/titbit.jpg" alt="" />
+        <img src="../images/titbit.jpg" alt=""/>
     </div>
 </div>
 <!--todo-LSY 在iPad端会出现横向滚动条-->
 <div class="m-fashion visible-sm">
     <div class="fashion1">
-    <div class="table">
-    <div class="table-cell">
-    <h3><a href="">2014 S/S </a></h3>
-    <h4><a href="">春夏广告片</a></h4>
-    <a href="#"><input type="button" value="探索 &gt;" /></a>
-    </div>
-    </div>
-    <img src="../images/fashion1.jpg" alt="" />
+        <!--TODO LSY 8.27  所有table_pos-->
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">2014 S/S </a></h3>
+                    <h4><a href="">春夏广告片</a></h4>
+                    <a href="#"><input type="button" value="探索 &gt;"/></a>
+                </div>
+            </div>
+            <!--TODO LSY 8.27-->
+        </div>
+        <img src="../images/fashion1.jpg" alt=""/>
     </div>
     <div class="fashion1">
-        <div class="table">
-            <div class="table-cell">
-                <h3><a href="">2014 F/W </a></h3>
-                <h4><a href="">秋冬时尚女装</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">2014 F/W </a></h3>
+                    <h4><a href="">秋冬时尚女装</a></h4>
+                    <a href="#"><input type="button" value="探索 &gt;"/></a>
+                </div>
             </div>
         </div>
-        <img src="../images/fashion2.jpg" alt="" />
+        <img src="../images/fashion2.jpg" alt=""/>
     </div>
     <div class="fashion1">
-        <div class="table">
-            <div class="table-cell">
-                <h3><a href="">2014 F/W </a></h3>
-                <h4><a href="">秋冬时尚男装</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">2014 F/W </a></h3>
+                    <h4><a href="">秋冬时尚男装</a></h4>
+                    <a href="#"><input type="button" value="探索 &gt;"/></a>
+                </div>
             </div>
         </div>
-        <img src="../images/fashion3.jpg" alt="" />
+        <img src="../images/fashion3.jpg" alt=""/>
     </div>
     <div class="fashion1">
-        <div class="table">
-            <div class="table-cell">
-                <h3><a href="">Display  </a></h3>
-                <h4><a href="">橱窗系列 </a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">Display </a></h3>
+                    <h4><a href="">橱窗系列 </a></h4>
+                    <a href="#"><input type="button" value="探索 &gt;"/></a>
+                </div>
             </div>
         </div>
-        <img src="../images/fashion4.jpg" alt="" />
+        <img src="../images/fashion4.jpg" alt=""/>
     </div>
     <div class="fashion1">
-        <div class="table">
-            <div class="table-cell">
-                <h3><a href="">Fur World   </a></h3>
-                <h4><a href="">皮草世界</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">Fur World </a></h3>
+                    <h4><a href="">皮草世界</a></h4>
+                    <a href="#"><input type="button" value="探索 &gt;"/></a>
+                </div>
             </div>
         </div>
-        <img src="../images/fashion5.jpg" alt="" />
+        <img src="../images/fashion5.jpg" alt=""/>
     </div>
     <div class="fashion1">
-        <div class="table">
-            <div class="table-cell">
-                <h3><a href="">2014 F/W   </a></h3>
-                <h4><a href="">花絮</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">2014 F/W </a></h3>
+                    <h4><a href="">花絮</a></h4>
+                    <a href="#"><input type="button" value="探索 &gt;"/></a>
+                </div>
             </div>
         </div>
-        <img src="../images/fashion6.jpg" alt="" />
+        <img src="../images/fashion6.jpg" alt=""/>
     </div>
     <div class="fashion1">
-        <div class="table">
-            <div class="table-cell">
-                <h3><a href="">Social wall </a></h3>
-                <h4><a href="">社交墙</a></h4>
-                <a href="#"><input type="button" value="探索 &gt;" /></a>
+        <div class="table_pos">
+            <div class="table">
+                <div class="table-cell">
+                    <h3><a href="">Social wall </a></h3>
+                    <h4><a href="">社交墙</a></h4>
+                    <!--TODO LSY 8.27-->
+                    <a class="pr-20" href="#"><span class="iconfont icon-yingdaicon03"></span></a><a href="#"><span
+                        class="iconfont icon-yingdaicon04"></span></a>
+                </div>
             </div>
         </div>
-        <img src="../images/fashion7.jpg" alt="" />
+        <img src="../images/fashion7.jpg" alt=""/>
     </div>
 </div>
 <!--底部样式-->
-<div class="g-footer navbar-fixed-bottom" >
+<div class="g-footer navbar-fixed-bottom hidden-md">
     <div class="m-footer-bg"></div>
     <div class="container-fluid m-footer">
         <div class="row">
-            <div class="versions" ><p class="">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
+            <div class="versions"><p class="">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
             <div class="m-footer-nav">
                 <ul class="footer-nav list-inline text-center">
                     <li><a href="#">走进应大</a></li>
@@ -244,17 +266,17 @@
                     <li><a href="#">隐私条款</a></li>
                 </ul>
             </div>
-            <div class="versions1" ><p class="text-right">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
+            <div class="versions1"><p class="text-right">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
             <div class="m-footer-icon">
                 <ul class="footer-icon list-inline text-center">
-                    <li><a href="#"><img src="../images/youku.png" alt=""/></a></li>
-                    <li><a href="#"><img src="../images/microblog.png" alt=""/></a></li>
-                    <li><a href="#"><img src="../images/micro.png" alt=""/></a></li>
+                    <li><a href="#"><span class="iconfont icon-yingdaicon05"></span></a></li>
+                    <li><a href="#"><span class="iconfont icon-yingdaicon03"></span></a></li>
+                    <li><a href="#"><span class="iconfont icon-yingdaicon04"></span></a></li>
 
                 </ul>
             </div>
             <div class="from"><p class="text-right">中国/中文 (更改)© YD - p.iva 00900541004</p></div>
-            <div class="versions2" ><p class="text-center">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
+            <div class="versions2"><p class="text-center">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
         </div>
     </div>
 </div>

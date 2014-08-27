@@ -104,12 +104,11 @@ $font-family: "宋体";
             line-height: 32px;
             color: #4a4b4f;
             font-size: 1em;
-
           }
         }
         a.left {
           left: auto;
-          right: 33px;
+          right: 34px;
           border: 1px solid #48494c;
         }
         a.right {
@@ -136,7 +135,7 @@ $font-family: "宋体";
         color: #663e1f;
         .title, .subtitle, .info, .salelink, .num, .price, .info, .des, .aa {
           margin-top: 5px;
-          font-size: 1.4em;
+          font-size:1.4em;
           font-family: "宋体";
         }
         .title {
@@ -146,7 +145,7 @@ $font-family: "宋体";
           color: #846751;
         }
         .price {
-          font-size: 1.6em;
+          font-size:1.6em;
           font-weight: bold;
         }
         .xinxi,.online span{
