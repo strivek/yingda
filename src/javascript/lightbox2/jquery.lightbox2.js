@@ -115,8 +115,6 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             this.jsondata.prev = self.idList[id.prev];
             this.jsondata.next = self.idList[id.next];
         }
-
-
         Lightmodalbox.prototype.end = function () {
 
         };
