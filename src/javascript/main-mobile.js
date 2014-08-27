@@ -9,4 +9,6 @@ require.config({
 require(['swiper']);
 //show hide
 require(['mobileshowhide']);
+//close
+require(["mobileclose/mobileclose"]);
 

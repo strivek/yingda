@@ -11,7 +11,6 @@ header, footer, section, article, aside, nav, hgroup, address, figure, figcaptio
   display: block;
 }
 
-<<<<<<< HEAD
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -87,38 +86,4 @@ body {
 
 a, a:hover {
   color: #333;
-=======
-* {box-sizing: border-box}
-
-html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu,img{margin:0;padding:0;}
-a {text-decoration: none;}
-
-ul,li {list-style: none}
-
-html {
-  @include min-width(320px){
-    font-size: 10px;
-  }
-  @include min-width(360px){
-    font-size: 10px * 1.125;
-  }
-  @include min-width(400px){
-    font-size: 10px * 1.25;
-  }
-  @include min-width(480px){
-    font-size: 10px * 1.5;
-  }
-  @include min-width(540px){
-    font-size: 10px * 1.7;
-  }
-  @include min-width(640px){
-    font-size: 10px * 2;
-  }
-  @include min-width(720px){
-    font-size: 10px * 2.25;
-  }
-  @include min-width(960px){
-    font-size: 10px * 3;
-  }
->>>>>>> pr/63
 }
