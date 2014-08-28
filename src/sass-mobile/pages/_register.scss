@@ -9,9 +9,17 @@ $color: #ffe3cd;
   font-weight: normal;
 }
 
+.g-mobRegister {
+  //jxj add g-mobRegister and background
+  background:url(../images/register-bg.png) repeat-y;
+  background-size:100%;
+  //jxj add padding top bottom
+  padding: 5rem 0;
+}
 
 .m-mobRegister {
-  margin: 5rem auto;
+  //jxj delete margin top bottom
+  margin: 0 auto;
   width: 80%;
   .title {
     padding-bottom: 3.4rem;

@@ -24,11 +24,17 @@
   @include min-width(540px){
     height: $mSwiper1 * 1.6875;
   }
+  @include min-width(600px){
+    height: $mSwiper1 * 1.875;
+  }
   @include min-width(640px){
     height: $mSwiper1 * 2;
   }
   @include min-width(720px){
     height: $mSwiper1 * 2.25;
+  }
+  @include min-width(900px){
+    height: $mSwiper1 * 2.8125;
   }
 }
 .m-swiper-container-2 {
@@ -49,10 +55,16 @@
   @include min-width(540px){
     height: $mSwiper2 * 1.6875;
   }
+  @include min-width(600px){
+    height: $mSwiper2 * 1.875;
+  }
   @include min-width(640px){
     height: $mSwiper2 * 2;
   }
   @include min-width(720px){
     height: $mSwiper2 * 2.25;
+  }
+  @include min-width(900px){
+    height: $mSwiper2 * 2.8125;
   }
 }

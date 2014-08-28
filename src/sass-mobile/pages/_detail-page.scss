@@ -59,6 +59,9 @@
   @include min-width(540px){
     height: $mSwiperDetail * 1.6875;
   }
+  @include min-width(600px){
+    height: $mSwiperDetail * 1.875;
+  }
   @include min-width(640px){
     height: $mSwiperDetail * 2;
   }

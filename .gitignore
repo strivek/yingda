@@ -1,7 +1,7 @@
 
 
 
-
+*.map
 mobile.css
 main.css
 main.map
@@ -230,4 +230,5 @@ src/css/main.css
 src/javascript/main.js
 src/css/mobile.css.map
 *.map
+src/css/mobile.css.map
 src/css/mobile.css.map
