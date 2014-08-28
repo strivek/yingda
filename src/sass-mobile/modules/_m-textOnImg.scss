@@ -26,6 +26,7 @@
     padding: 0.4rem 0;
     font-size: 1.5rem;
     line-height: 1;
+    font-family: "didot";
     font-weight: normal;
     @media (min-width: 480px) and (max-width: 719px) {
       font-size: 1.8rem;
@@ -35,7 +36,8 @@
     }
   }
   h4 {
-    @extend h3
+    @extend h3;
+    font-family: "\5B8B\4F53";
   }
   p {
     padding: 0.5rem 0;
@@ -123,6 +125,9 @@
     }
     @include min-width(900px){
       line-height: $bigBtnSize * 2.8125;
+    }
+    span {
+      font-family: "didot";
     }
   }
   .menu {
