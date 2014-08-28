@@ -14,13 +14,17 @@ $color: #ffe3cd;
   padding-top: 50px;
   margin-bottom:200px;
   .title {
-    padding-top: 122px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid $color;
-    text-align: center;
-    img {
-      max-width: 100%;
-        }
+    .myd{
+      padding-top: 122px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid $color;
+      text-align: center;
+       img {
+         max-width: 100%;
+          }
+    }
+    p{display:none;}
+    .war{ display:block; padding-top:6px;margin-bottom:-20px; font-size:12px; color:#e60012;font-family:"宋体";}
   }
   // 登录表单
   .login-form {
