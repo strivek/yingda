@@ -570,6 +570,10 @@ a, a:hover {
     clear: both; }
 
 .g-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #f9f9f9;
   border-top: 1px solid #ada18f; }
 
@@ -613,7 +617,7 @@ a, a:hover {
 .g-main {
   margin: 46px auto 0;
   width: 1154px;
-  min-height: 1720px; }
+  /*  min-height: 1720px;*/ }
   .g-main:before, .g-main:after {
     content: " ";
     display: table; }
@@ -1287,6 +1291,7 @@ a, a:hover {
 
 .m-mainlast-cy {
   width: 862px;
+  padding-bottom: 50px;
   float: right; }
   .m-mainlast-cy:before, .m-mainlast-cy:after {
     content: " ";
