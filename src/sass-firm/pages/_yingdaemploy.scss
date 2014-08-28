@@ -5,19 +5,18 @@
   margin-bottom: 100px;
   .thead{
     margin-top: 40px;padding-bottom: 20px;border-bottom: 1px solid #c6b9ac;
-    display:table;
-    width: 100%;
-    span{display: table-cell;
-         width: 1%;
-      font-size:18px;
-       font-family: "宋体";
+    display:block;
+    span{display:inline-block;
+         width: 24%;
+         font-size:18px;
+         font-family: "宋体";
       color:#6b513c;
-      text-align: center;
+      text-align:center;
      }
   }
   .main{border-bottom: 1px solid #c6b9ac;  cursor: pointer;  background: url("../images/newslist-pic3.png")2px 26px no-repeat;
-   & > p{display:table;height:56px;  line-height: 56px;
-      span{display: table-cell; width: 1%; text-align: center; font-family: "宋体"; font-size: 14px; color:#83654c;}
+   & > p{display:block;height:56px;  line-height: 56px;
+      span{display:inline-block; width: 24%; text-align: center; font-family: "宋体"; font-size: 14px; color:#83654c;}
     }
    .con{display: none;
      h4{

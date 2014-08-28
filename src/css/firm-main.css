@@ -610,7 +610,7 @@ a, a:hover {
 .g-main {
   margin: 46px auto 0;
   width: 1154px;
-  min-height: 720px; }
+  min-height: 1720px; }
   .g-main:before, .g-main:after {
     content: " ";
     display: table; }
@@ -1121,11 +1121,10 @@ a, a:hover {
     margin-top: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #c6b9ac;
-    display: table;
-    width: 100%; }
+    display: block; }
     .m-main8-cy .thead span {
-      display: table-cell;
-      width: 1%;
+      display: inline-block;
+      width: 24%;
       font-size: 18px;
       font-family: "宋体";
       color: #6b513c;
@@ -1135,12 +1134,12 @@ a, a:hover {
     cursor: pointer;
     background: url("../images/newslist-pic3.png") 2px 26px no-repeat; }
     .m-main8-cy .main > p {
-      display: table;
+      display: block;
       height: 56px;
       line-height: 56px; }
       .m-main8-cy .main > p span {
-        display: table-cell;
-        width: 1%;
+        display: inline-block;
+        width: 24%;
         text-align: center;
         font-family: "宋体";
         font-size: 14px;
