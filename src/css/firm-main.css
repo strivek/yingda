@@ -455,6 +455,7 @@ a, a:hover {
 
 .u-toptitle {
   padding-bottom: 10px;
+  font-family: "瀹嬩綋";
   position: relative;
   border-bottom: 1px solid #d6cfc7; }
   .u-toptitle:before, .u-toptitle:after {
@@ -465,10 +466,9 @@ a, a:hover {
   .u-toptitle:after {
     clear: both; }
   .u-toptitle p {
+    display: inline-block;
     font-size: 18px;
-    color: #210700;
-    font-family: "瀹嬩綋";
-    float: left; }
+    color: #210700; }
   .u-toptitle a {
     display: inline-block;
     position: absolute;
@@ -481,6 +481,8 @@ a, a:hover {
 
 .u-title {
   height: 58px;
+  width: 100%;
+  display: block;
   line-height: 58px;
   font-size: 26px;
   color: #210700;
@@ -490,6 +492,7 @@ a, a:hover {
 
 .yh {
   width: 100%;
+  display: block;
   height: 1px;
   background: #fff; }
 
@@ -1121,7 +1124,8 @@ a, a:hover {
     margin-top: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #c6b9ac;
-    display: block; }
+    display: block;
+    cursor: default; }
     .m-main8-cy .thead span {
       display: inline-block;
       width: 24%;
