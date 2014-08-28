@@ -1,16 +1,17 @@
 .u-toptitle {
   padding-bottom: 10px;
+  font-family: "宋体";
 @include clearfix();
   &:after {
     clear: both;
   }
   position: relative;
   border-bottom: 1px solid #d6cfc7;
-  p {
+  p {display:inline-block;
     font-size: 18px;
     color: #210700;
-    font-family: "宋体";
-    float: left;
+
+
   }
   a {
     display: inline-block;
