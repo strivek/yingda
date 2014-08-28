@@ -14,6 +14,7 @@
   h1 {
     @include font();
     font-size: 2.4rem;
+    font-family: "didot";
   }
   h2 {
     @include font();
