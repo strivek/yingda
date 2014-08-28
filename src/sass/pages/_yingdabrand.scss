@@ -10,10 +10,10 @@
   .container {
     @media (min-width: 1400px){
       width: 1000px;}
-    @media (min-width: 1199px) and (max-width: 1399px) {
+    @media (min-width: 1200px) and (max-width: 1399px) {
       width: 800px;
     }
-    @media (max-width: 1200px) and (min-width: 992px){
+    @media (max-width: 1199px) and (min-width: 992px){
       width: 700px;
     }
     @media (min-width:768px) and (max-width: 991px){
@@ -40,9 +40,23 @@
   }
   .img {
     position: relative;
-    img {
+    .video,img {
       width: 100%;
+      z-index:1;
     }
+    .video{
+      height:200px;
+      @media (min-width: 1400px){
+        height: 264px;}
+      @media (min-width: 1199px) and (max-width: 1399px) {
+        height: 209px;
+      }
+      @media (max-width: 1200px) and (min-width: 992px){
+        height:180px;
+    }
+      @media (min-width:768px) and (max-width: 991px){
+        height: 208px;
+      }}
     .pic {
       margin-top: 20px;
     }
