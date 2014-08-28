@@ -1,0 +1,31 @@
+.showcase_bg {
+  background: url(../images/showcase_bg.jpg) center center no-repeat;
+}
+
+.showcase {
+  position: relative;
+  height: 30%;
+  > div {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    h2 {
+      color: #f5dac5;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}
+.m-showcase{height: 42%; width: 100%; position: relative; overflow: hidden;
+    >ul{
+      position: absolute;height: 100%; cursor: pointer; top:0;left: 0;
+      li{float: left; height: 100%; margin-right:10px;width: auto; overflow: hidden;
+        img{height: 100%; width: auto;
+
+        }
+        @include pic-scale();
+      }
+    }
+    .left{ position: absolute;top:45%;left: 0; font-size: 60px;color: #ffe3cd;display: block;height: 100%; cursor: pointer; width: 60px;}
+    .right{position: absolute;top:45%;right: 0; font-size: 60px;color: #ffe3cd;display: block;height: 100%; cursor: pointer;width: 60px;}
+}

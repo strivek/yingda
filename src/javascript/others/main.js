@@ -16,7 +16,10 @@ require(['jquery'], function ($) {
     function changeSize() {
         $('.m-boutique-content').fadeIn('100');
         var shop_pic = $('.m-shop-pic .item').outerWidth(true);
-        $('.m-shop-pic .item').width(shop_pic);
+        console.log(shop_pic);
+
+
+
 
 
         var winClient = $(window).width();
@@ -26,6 +29,7 @@ require(['jquery'], function ($) {
         } else {
             var oWidth = shop_pic;
         }
+
         var perc = oWidth / winClient;
         var ml = (1 - perc) / 2 * 100 + '%';
         $('.m-boutique-content').css({'marginLeft': ml});
@@ -37,5 +41,49 @@ require(['jquery'], function ($) {
             changeSize();
         })
     }
+});
+
+require(['jquery'], function ($) {
+        var oUl=$('.m-showcase ul').eq(0);
+        var oUlhtml=oUl.html();
+        oUl.html(oUlhtml+oUlhtml);
+        var aLi=$('.m-showcase ul li');
+        var liWid=aLi.outerWidth(true);
+        var liLen=aLi.length;
+        var timeId=null;
+        var ulWid=liWid*liLen;
+      var speed=-10;
+        oUl.width(ulWid);
+        timeId=setInterval(slider,30);
+        oUl.hover(function(){
+            clearInterval(timeId);
+        },function(){
+            timeId=setInterval(slider,30);
+        });
+
+        function slider(){
+            if(speed<0){
+                if(parseInt(oUl.css('left'))<=-ulWid/2){
+                    oUl.css('left',0);
+                }else{
+                    oUl.css({'left':'+='+speed+'px'});
+                }
+            }
+            if(speed>0){
+                if(parseInt(oUl.css('left'))>=0){
+
+                    oUl.css('left',-ulWid/2+'px');
+                }else{
+                    oUl.css({'left':'+='+speed+'px'});
+                }
+            }
+
+        }
+        $('.left').click(function(){
+            speed=-10;
+        });
+        $('.right').click(function(){
+            speed=10;
+        });
 });
 
