@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.g-progress {
+  padding-top: 52px;
+  padding-bottom: 42px;
+}
+
+.m-progressBlack {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #f6d2b9;
+  .progress-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    .progress-mid {
+      margin: 0 auto;
+      width: 31.25%;
+      h1 {
+        font-size:80px;
+        line-height: 160px;
+        span {
+          font-family: "myfont-bold";
+        }
+      }
+      p {
+        margin-top: 60px;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+      }
+      h3 {
+        margin-top: 140px;
+        font-family: "myfont-bold";
+        font-size: 20px;
+        line-height: 70px;
+        letter-spacing: 1em;
+      }
+    }
+  }
+}
+
+.m-progressImg {
+  text-align: center;
+  img {
+    vertical-align: middle;
+  }
+}
