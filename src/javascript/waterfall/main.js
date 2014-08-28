@@ -15,11 +15,11 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
         ajaxTimes: 1, 		// 只发送一次请求
         colWidth: 235,
         createHtml: function (data) {
-            return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' data-toggle="modal" data-target="#water-modal"> ' +
+            return '<div class="wf_item_inner water-modal" data-id=' + data.id + ' > ' +
                 '<a href="' + data.url + '" class="thumb" target="_blank">' +
                 '<img class="thumb_img"  src="' + data.imgSrc + '" />' +
                 '</a>' +
-                '<a style="position:absolute; right:10px; bottom:8px; display:block;color:#ffe3cd; font-size:40px;" class="iconfont icon-yingdaicon08" href="' + data.href + '" target="_blank"></a>' +
+                '<a style="position:absolute; right:10px; bottom:8px; display:block;color:#ffe3cd; font-size:40px;" class="iconfont  icon-yingdaicon08" href="' + data.href + '" target="_blank"></a>' +
                 '</div>';
         }
     })
