@@ -2,8 +2,10 @@ define(['jquery'], function ($) {
     function Backgroundtoggle() {
         this.obj = $(".bk-toggle");
         this.id = "";
-        this.img = $(".u-index-bk");
+        this.img = $(".u-index-bk.first");
+        this.imgbk = $(".u-index-bk.two");
         this.jsonData = void 0;
+        this.status = true;
         this.init();
     };
     Backgroundtoggle.prototype.init = function () {
@@ -34,9 +36,23 @@ define(['jquery'], function ($) {
         return request;
     }
     Backgroundtoggle.prototype.setbk = function () {
+
+        var self = this;
         var imgsrc = this.jsonData[this.id];
-        console.log("获取ID对应src-->" + imgsrc);
-        this.img.attr("src", imgsrc);
+        var image = document.createElement("img");
+        // For debugging, output successful preloading msg
+        image.onload = function () {
+            if(self.status){
+                self.img.attr("src", imgsrc);
+                self.imgbk.stop().fadeOut(500);
+                self.status = false;
+            }else{
+                self.imgbk.attr("src", imgsrc);
+                self.imgbk.stop().fadeIn(500);
+                self.status = true;
+            }
+        }
+        image.src = imgsrc
     }
     return new Backgroundtoggle();
 

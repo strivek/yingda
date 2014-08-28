@@ -21,10 +21,10 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
         //获取json数据，与模板绑定，构建弹出层
         Lightmodalbox.prototype.build = function () {
             $(document).ajaxStart(function(){
-                $(".u-londing").show(100);
+                $(".u-loading").fadeIn();
             })
             $(document).ajaxStop(function(){
-                $(".u-londing").hide(100);
+                $(".u-loading").stop().hide();
             })
             var self = this;
             hp.log("开始开准异步请求");
