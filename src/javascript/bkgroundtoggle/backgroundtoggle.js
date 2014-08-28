@@ -19,7 +19,6 @@ define(['jquery'], function ($) {
         var self = this;
         this.obj.on("hover.navtoggle", function (e) {
             self.id = $(this).data("nav");
-            console.log("navid-->" + self.id);
             if (self.id != null) {
                 self.setbk();
             }
