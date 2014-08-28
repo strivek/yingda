@@ -1,7 +1,12 @@
 @charset "utf-8";
 $font-family: "宋体";
-.proListWomen-body{font-size: 10px;
-  @media (min-width: 768px) and(max-width: 1400px){font-size: 6px;}}
+.rightDes .wrap {
+  font-size: 10px;
+  @media (min-width: 768px) and(max-width: 1400px) {
+    font-size: 6px;
+    padding-top: 30px;
+  }
+}
 .g-main-cy {
   @media (min-width: 1610px) {width: 70%;}
   @media (min-width: 768px) and(max-width: 1130px){width: 100%;}
