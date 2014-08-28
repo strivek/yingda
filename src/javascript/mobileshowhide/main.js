@@ -1,14 +1,12 @@
 require(['zepto'], function () {
     if($('.big-btn').length > 0){
-        $('.big-btn:not(:nth-last-child(2))').on('tap', function (e) {
-            e.preventDefault();
+        $('.big-btn:not(:nth-last-child(2))').on('tap', function () {
             $(this).siblings('.menu').toggle();
             $(this).parents().siblings().children('.menu').hide();
         })
     }
     if($('.showDetail').length > 0){
-        $('.showDetail').on('tap', function (e) {
-            e.preventDefault();
+        $('.showDetail').on('tap', function () {
             $(this).closest('dl').siblings('.detail').toggle();
         })
     }
