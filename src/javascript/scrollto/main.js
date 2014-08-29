@@ -1,26 +1,17 @@
-require(['jquery','scrollto/jquery-scrollto'], function($){
-    $('.pd1').click(function(){
-        $('#pb1').ScrollTo({
-            duration: 2000,
-            easing: 'linear'
+require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
+
+    $('.pd1').click($.proxy(scrollto,$,"#pb1"));
+
+    $('.pd2').click($.proxy(scrollto,$,"#pb2"));
+
+    $('.pd3').click($.proxy(scrollto,$,"#pb3"));
+
+    $('.pd4').click($.proxy(scrollto,$,"#pb4"));
+
+    function scrollto(obj, durating, easeing) {
+        $(obj).ScrollTo({
+            duration: durating || 1000,
+            easing: easeing || 'linear'
         });
-    });
-    $('.pd2').click(function(){
-        $('#pb2').ScrollTo({
-            duration: 2000,
-            easing: 'linear'
-        });
-    });
-    $('.pd3').click(function(){
-        $('#pb3').ScrollTo({
-            duration: 2000,
-            easing: 'linear'
-        });
-    });
-    $('.pd4').click(function(){
-        $('#pb4').ScrollTo({
-            duration: 2000,
-            easing: 'linear'
-        });
-    })
+    }
 });
