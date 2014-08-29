@@ -6,7 +6,7 @@ define(['jquery'], function ($) {
         this.imgbk = $(".u-fullscreen-index.two");
         this.jsonData = void 0;
         this.status = true;
-        this.url = "../json/nav.json",
+        this.url = "/homeImg.asp",
         this.init();
     };
     Backgroundtoggle.prototype.init = function () {
