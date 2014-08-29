@@ -18,6 +18,9 @@ $font-family: "宋体";
   float: left;
   padding-left: 40px;
   width: 16%;
+  @media (max-width: 1024px) {
+    width: 18%;
+  }
   .heng {
     height: 1px;
     width: 10px;
@@ -57,6 +60,9 @@ $font-family: "宋体";
 }
 .m-productList-main-cy {
   width: 84%;
+  @media (max-width: 1024px) {
+    width: 82%;
+  }
   float: left;
   .title-cy {
     text-align: center;
