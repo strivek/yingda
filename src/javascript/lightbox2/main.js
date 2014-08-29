@@ -1,7 +1,7 @@
 /**
  * Created by gaofei on 14/8/21.
  */
-
+//TODO-UPDAT 改为jquery插件方式
 //productListWomen.html 灯箱
 require(['jquery', 'lightbox2/jquery.lightbox2'], function ($, LightModal) {
     var LightModalOptions = (function () {
