@@ -6,6 +6,7 @@ define(['jquery'], function ($) {
         this.imgbk = $(".u-fullscreen-index.two");
         this.jsonData = void 0;
         this.status = true;
+        this.url = "../json/nav.json",
         this.init();
     };
     Backgroundtoggle.prototype.init = function () {
@@ -25,11 +26,15 @@ define(['jquery'], function ($) {
                 self.setbk();
             }
         })
+        $(".m-nav-list-bg").on("hover.hide",function(e){
+            this.status = true;
+            self.img.add(self.imgbk).attr("src",'../images/index-default.jpg');
+        })
     };
     Backgroundtoggle.prototype.getJsonData = function () {
         var self = this;
         var request = $.ajax({
-            url: "../json/nav.json",
+            url: self.url,
             type: "GET",
             dataType: "json"
         });

@@ -22,5 +22,4 @@ require(['jquery', 'bootstrap', 'navdropdown/nav'], function ($, nav) {
     $(".bk-toggle").mouseenter(function () {
         $(this).trigger("hover.navtoggle");
     });
-
 })
