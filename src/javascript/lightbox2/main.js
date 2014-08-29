@@ -4,6 +4,7 @@
 //TODO-UPDAT 改为jquery插件方式
 //productListWomen.html 灯箱
 require(['jquery', 'lightbox2/jquery.lightbox2'], function ($, LightModal) {
+    var sc = jQuery("[name=sc]").val();
     var LightModalOptions = (function () {
         function LightModalOptions() {
             this.fireClass = ".water-modal";
@@ -11,7 +12,7 @@ require(['jquery', 'lightbox2/jquery.lightbox2'], function ($, LightModal) {
             this.jsonData = "";
             this.currentId = -1;
             this.isAjaxCompleted = 1;
-            this.url = "../json/productListWomen.json";
+            this.url = "productdetails.asp?type="+sc;
         }
         return LightModalOptions;
     })();
