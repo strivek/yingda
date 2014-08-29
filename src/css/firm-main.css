@@ -389,6 +389,7 @@ a, a:hover {
       filter: alpha(opacity=70);
       z-index: 20; }
     .m-list3 > a > p {
+      z-index: 2;
       display: none;
       position: absolute;
       bottom: 0;
@@ -466,6 +467,7 @@ a, a:hover {
   .u-toptitle:after {
     clear: both; }
   .u-toptitle p {
+    cursor: default;
     display: inline-block;
     font-size: 18px;
     color: #210700; }
@@ -575,6 +577,7 @@ a, a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
   background: #f9f9f9;
   border-top: 1px solid #ada18f; }
 
@@ -630,6 +633,7 @@ a, a:hover {
   width: 184px;
   border-bottom: 1px solid #eae1d1; }
   .m-left h3 {
+    cursor: default;
     height: 56px;
     line-height: 56px;
     font-size: 20px;
@@ -650,7 +654,8 @@ a, a:hover {
 
 .m-main-cy {
   width: 862px;
-  float: right; }
+  float: right;
+  padding-bottom: 100px; }
   .m-main-cy .imglb {
     margin-bottom: 40px;
     position: relative;
@@ -801,14 +806,13 @@ a, a:hover {
       color: #210700;
       line-height: 1.5; }
   .m-main2-cy .right {
-    float: right; }
-    .m-main2-cy .right .title {
-      height: 58px;
-      line-height: 58px;
-      border-bottom: 1px solid #b7b2a8; }
+    float: right;
+    width: 350px; }
     .m-main2-cy .right .con {
-      padding-top: 30px;
-      border-top: 1px solid #fff; }
+      padding-top: 30px; }
+      .m-main2-cy .right .con img {
+        width: 350px;
+        height: 250px; }
       .m-main2-cy .right .con p {
         margin-top: 20px;
         font-size: 14px;
@@ -898,7 +902,8 @@ a, a:hover {
               background: #f9f9f9;
               width: 435px; }
               .m-main3-cy .yearbook li .detail .wrap div.wai div.nei img {
-                width: 432px; }
+                width: 432px;
+                height: auto; }
             .m-main3-cy .yearbook li .detail .wrap div.wai p {
               margin-top: 20px;
               font-size: 12px;
@@ -920,7 +925,7 @@ a, a:hover {
     .m-main4-cy .main:after {
       clear: both; }
     .m-main4-cy .main .list {
-      cursor: pointer;
+      cursor: default;
       float: left;
       margin-left: 60px;
       width: 230px; }
@@ -930,9 +935,9 @@ a, a:hover {
           font-size: 14px;
           font-family: "宋体";
           color: #755a44; }
-        .m-main4-cy .main .list .u-toptitle a:hover {
+        .m-main4-cy .main .list .u-toptitle a {
           color: #755a44;
-          cursor: text; }
+          cursor: default; }
       .m-main4-cy .main .list .pic-list {
         position: relative;
         margin-bottom: 48px; }
@@ -1045,6 +1050,9 @@ a, a:hover {
       color: #83654c; }
     .m-main6-cy .con .article {
       padding-top: 22px; }
+      .m-main6-cy .con .article img {
+        width: 863px;
+        height: 368px; }
       .m-main6-cy .con .article p {
         margin-top: 20px;
         font-size: 14px;
@@ -1078,7 +1086,8 @@ a, a:hover {
 
 .m-main7-cy {
   width: 862px;
-  float: right; }
+  float: right;
+  padding-bottom: 100px; }
   .m-main7-cy .main {
     padding-top: 30px;
     margin-left: -10px; }
@@ -1225,6 +1234,7 @@ a, a:hover {
         display: table; }
         .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video, .m-main9-cy .main .firmdet .weixin .name, .m-main9-cy .main .firmdet .weixin .erweima {
           display: table-cell;
+          cursor: pointer;
           vertical-align: middle;
           font-size: 12px;
           color: #6c513a; }
@@ -1417,7 +1427,8 @@ a, a:hover {
   .m-bestemp-cy .list {
     padding: 30px 0;
     border-bottom: 1px dotted #d1c8be;
-    cursor: pointer; }
+    cursor: pointer;
+    backgroound: red; }
     .m-bestemp-cy .list:before, .m-bestemp-cy .list:after {
       content: " ";
       display: table; }

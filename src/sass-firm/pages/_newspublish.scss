@@ -8,14 +8,14 @@
     padding-top: 48px;
 
     .list {
-      cursor:pointer;
+      cursor:default;
       float: left;
       margin-left: 60px;
       width: 230px;
       .u-toptitle {
         margin-bottom: 14px;
         p{font-size:14px; font-family:"宋体";color:#755a44;}
-        a:hover{color:#755a44; cursor:text;}
+        a{color:#755a44; cursor:default;}
       }
       .pic-list {
         position: relative;

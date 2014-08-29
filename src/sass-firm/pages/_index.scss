@@ -15,15 +15,13 @@
       }
     }
   }
- .right{float: right;
-     .title{
-       height: 58px;
-       line-height: 58px;
-       border-bottom: 1px solid #b7b2a8;
-     }
+ .right{
+   float: right;
+   width:350px;
    .con {
      padding-top: 30px;
-     border-top: 1px solid #fff;
+     img{width:350px;
+     height:250px;}
      p{margin-top: 20px;
        font-size: 14px;
        color:#210700;}
