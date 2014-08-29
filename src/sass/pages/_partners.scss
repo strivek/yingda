@@ -15,7 +15,7 @@
     width: 1153px;
     @media screen and (max-width: 1024px) {
       width: 760px;
-      .item:first-child {
+      .item-1 {
         display: none;
       }
     }
@@ -80,7 +80,7 @@
     }
   }
   img {margin-bottom: 5px;}
-  .item:last-child {
+  .item-3 {
     margin-right: 0;
     .text-cell {
       padding-left: 87px;
