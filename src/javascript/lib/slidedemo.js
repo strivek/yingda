@@ -23,7 +23,7 @@
 
 
     function init() {
-        myScroll = new IScroll('#boxscroll', { mouseWheel: true,scrollX: true, scrollY: false, bounceTime: 1200, click: true});
+        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, bounceTime: 1200, click: true});
 
         isdesktop = isDesktop();
 
