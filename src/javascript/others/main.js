@@ -52,13 +52,13 @@ require(['jquery'], function ($) {
         var liLen=aLi.length;
         var timeId=null;
         var ulWid=liWid*liLen;
-      var speed=-10;
+      var speed=-1;
         oUl.width(ulWid);
-        timeId=setInterval(slider,30);
+        timeId=setInterval(slider,3);
         oUl.hover(function(){
             clearInterval(timeId);
         },function(){
-            timeId=setInterval(slider,30);
+            timeId=setInterval(slider,3);
         });
 
         function slider(){
@@ -80,10 +80,10 @@ require(['jquery'], function ($) {
 
         }
         $('.left').click(function(){
-            speed=-10;
+            speed=-1;
         });
         $('.right').click(function(){
-            speed=10;
+            speed=1;
         });
 });
 
