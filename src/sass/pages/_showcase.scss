@@ -19,8 +19,8 @@
 .m-showcase{height: 42%; width: 100%; position: relative; overflow: hidden;
     >ul{
       position: absolute;height: 100%; cursor: pointer; top:0;left: 0;
-      li{float: left; height: 100%; margin-right:10px;width: auto; overflow: hidden;
-        img{height: 100%; width: auto;
+      li{float: left; height: 100%; width: auto; overflow: hidden;padding-right:10px;
+        img{height: 100%; width: auto; border: 0;
 
         }
         @include pic-scale();
