@@ -2,8 +2,8 @@ define(['jquery'], function ($) {
     function Backgroundtoggle() {
         this.obj = $(".bk-toggle");
         this.id = "";
-        this.img = $(".u-index-bk.first");
-        this.imgbk = $(".u-index-bk.two");
+        this.img = $(".u-fullscreen-index.first");
+        this.imgbk = $(".u-fullscreen-index.two");
         this.jsonData = void 0;
         this.status = true;
         this.init();
