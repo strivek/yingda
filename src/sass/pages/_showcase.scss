@@ -35,19 +35,6 @@
       float: left;
       margin-right: 10px;
       overflow: hidden;
-      img {
-
-        position: absolute;
-        height: 100%;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        li {
-          float: left;
-          height: 100%;
-          width: auto;
-          overflow: hidden;
-          padding-right: 10px;
           img {
             height: 100%;
             width: auto;
@@ -82,5 +69,3 @@
         width: 60px;
       }
     }
-  }
-}
