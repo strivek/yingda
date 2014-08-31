@@ -12,36 +12,36 @@ require(['jquery'], function ($) {
 
 
 //精品店模块贴合
-require(['jquery'], function ($) {
-    function changeSize() {
-        $('.m-boutique-content').fadeIn('100');
-        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
-        console.log(shop_pic);
-
-
-
-
-
-        var winClient = $(window).width();
-        if (winClient > 1024) {
-
-            var oWidth = Math.floor(shop_pic * 1.4);
-        } else {
-            var oWidth = shop_pic;
-        }
-
-        var perc = oWidth / winClient;
-        var ml = (1 - perc) / 2 * 100 + '%';
-        $('.m-boutique-content').css({'marginLeft': ml});
-    }
-    if ($('.m-shop-pic .carousel-inner').length > 0) {
-        changeSize();
-        $(window).resize(function () {
-
-            changeSize();
-        })
-    }
-});
+//require(['jquery'], function ($) {
+//    function changeSize() {
+//        $('.m-boutique-content').fadeIn('100');
+//        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
+//        console.log(shop_pic);
+//
+//
+//
+//
+//
+//        var winClient = $(window).width();
+//        if (winClient > 1024) {
+//
+//            var oWidth = Math.floor(shop_pic * 1.4);
+//        } else {
+//            var oWidth = shop_pic;
+//        }
+//
+//        var perc = oWidth / winClient;
+//        var ml = (1 - perc) / 2 * 100 + '%';
+//        $('.m-boutique-content').css({'marginLeft': ml});
+//    }
+//    if ($('.m-shop-pic .carousel-inner').length > 0) {
+//        changeSize();
+//        $(window).resize(function () {
+//
+//            changeSize();
+//        })
+//    }
+//});
 
 require(['jquery'], function ($) {
         var winWid=$(window).width();
@@ -49,7 +49,6 @@ require(['jquery'], function ($) {
     var oUlhtml=oUl.html();
     oUl.html(oUlhtml+oUlhtml);
         var aLi=$('.m-showcase ul li');
-
         imgWid=Math.floor(winWid/3);
         var aImg=$('.m-showcase ul img');
         aImg.width(imgWid);
@@ -66,7 +65,6 @@ require(['jquery'], function ($) {
       var speed=-1;
         oUl.width(ulWid);
         timeId=setInterval(slider,3);
-
         oUl.hover(function(){
             clearInterval(timeId);
         },function(){
@@ -88,7 +86,6 @@ require(['jquery'], function ($) {
                     oUl.css({'left':'+='+speed+'px'});
                 }
             }
-
         }
         $('.left').click(function(){
             speed=-1;

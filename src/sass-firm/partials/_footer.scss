@@ -1,9 +1,12 @@
 @charset "utf-8";
 .g-bottom {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
   background: #f9f9f9;
   border-top: 1px solid #ada18f;
 }
-
 .m-bottomlist {
   margin: 0 auto;
   width: 1154px;

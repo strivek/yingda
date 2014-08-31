@@ -20,17 +20,26 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
         };
         //获取json数据，与模板绑定，构建弹出层
         Lightmodalbox.prototype.build = function () {
+            $(document).ajaxStart(function(){
+                $(".u-loading").fadeIn();
+            })
+            $(document).ajaxStop(function(){
+                $(".u-loading").stop().hide();
+            })
             var self = this;
             hp.log("开始开准异步请求");
             //请求json数据
             var request = self.getJsonData();
             //回调函数
+
+
             request.done(function (data) {
 
                 //存放数据
                 hp.log("执行异步回调函数");
                 self.jsondata = data[0];
                 self.setJsonData();
+                $("#water-modal").modal("show");
             })
         };
         //监测事件，做好前期准备
@@ -41,6 +50,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             $(document).on('click',this.options.fireClass, function (e) {
                 self.getIdList();
                 self.currentId = $(this).data("id");//获取id
+                console.log(self.currentId);
                 self.build();//开始构造弹出modal
                 e.preventDefault();
             });

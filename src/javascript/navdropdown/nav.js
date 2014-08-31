@@ -16,6 +16,7 @@ define(['jquery'], function ($) {
 
         if ($(this).find(b).css('display') == 'none') {
             $(c).delay('300').hide();
+            $(c).trigger("hover.hide");
         } else {
             $(c).show();
         }

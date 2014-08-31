@@ -126,10 +126,10 @@ define(['jquery'], function ($) {
         Lightbox.prototype.start = function ($link) {
             var self = this;
             var $window = $(window);
-            //TODO:测试$.proxy的功能测试
+
             $window.on('resize', $.proxy(this.sizeOverlay, this));
 
-            $('select, object, embed').css({
+            $('select, object, embed,iframe').css({
                 visibility: "hidden"
             });
 
@@ -399,9 +399,10 @@ define(['jquery'], function ($) {
             $(window).off("resize", this.sizeOverlay);
             this.$lightbox.fadeOut(this.options.fadeDuration);
             this.$overlay.fadeOut(this.options.fadeDuration);
-            $('select, object, embed').css({
+            $('select, object, embed, iframe').css({
                 visibility: "visible"
             });
+//            $("iframe").css({visibility:"visible"});
         };
 
         return Lightbox;

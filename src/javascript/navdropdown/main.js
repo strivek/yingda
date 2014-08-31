@@ -19,7 +19,6 @@ require(['jquery', 'bootstrap', 'navdropdown/nav'], function ($, nav) {
             $(this).navshow1('.m-menu', '.m-nav-list-bg');
         }
     });
-
     $(".bk-toggle").mouseenter(function () {
         $(this).trigger("hover.navtoggle");
     });
