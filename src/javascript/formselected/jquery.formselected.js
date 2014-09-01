@@ -1,8 +1,26 @@
 define(['jquery'], function ($) {
     $.fn.down = function (oclick, aSelect, aDisplay) {
-        this.click(function () {
-            aDisplay.slideToggle();
+        this.click(function (e) {
+            //aDisplay.slideToggle();
+            if (aDisplay.css('display') == 'none') {
+                aDisplay.slideDown();
+                $(document).on("click.select", closeSelect);
+            } else {
+                aDisplay.slideUp();
+            }
+            e.preventDefault();
+            e.stopPropagation();
         });
+
+        function closeSelect() {
+            if (aDisplay.css('display') == 'block') {
+                aDisplay.slideUp();
+                var val = $(this).attr('val');
+            } else {
+                $(document).off("click.select");
+            }
+        }
+
         var That = this;
         oclick.click(function () {
             var val = $(this).attr('val');

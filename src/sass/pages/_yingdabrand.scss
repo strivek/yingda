@@ -68,6 +68,7 @@
       color: #ffe3cd;
       font-size: 4em;
       cursor: pointer;
+
     }
   }
   p {
@@ -161,3 +162,5 @@
     }
   }
 }
+.icon-yingdaicon08:hover{@include rotate_hover();}
+

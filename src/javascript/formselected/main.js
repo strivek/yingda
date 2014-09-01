@@ -11,7 +11,7 @@ require(['jquery', 'formselected/jquery.formselected'], function ($) {
     //城市
     var oSelect = $('.m-select .select1');
     var oli = $('.m-select ul li');
-    var oDisplay = $('.m-select ul')
+    var oDisplay = $('.m-select ul');
     selectBtn.down(li, aSelect, aDisplay);
     oSelect.down(oli, aSelect, oDisplay);
 

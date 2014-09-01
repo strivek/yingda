@@ -124,4 +124,20 @@ require(['jquery'], function ($) {
 //
 //    });
 });
+//滚动条
+require(['jquery'], function ($) {
+//   推荐效果
+
+    $('.m-introlist').hover(function () {
+        if($(window).width()>1024){
+        $(this).find('.title').stop().animate({'bottom': '0'});
+    }}, function () {
+        if($(window).width()>1024){
+        $(this).find('.title').stop().animate({'bottom': '-26px'});
+    }});
+    if($(window).width()<=1024){
+        $('.m-introlist').find('.title').css('bottom','0');
+    }
+
+});
 
