@@ -788,6 +788,9 @@ a, a:hover {
         font-size: 14px;
         color: #210700; }
 
+body {
+  overflow-x: scroll; }
+
 .m-main2-cy {
   width: 862px;
   float: right; }
@@ -817,6 +820,11 @@ a, a:hover {
         margin-top: 20px;
         font-size: 14px;
         color: #210700; }
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%; }
 
 .m-main3-cy {
   width: 862px;
