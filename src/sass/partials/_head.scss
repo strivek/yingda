@@ -8,7 +8,7 @@ html, body {
   top:0;
   left: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 200;
   font-family: '宋体';
 }
 
@@ -18,13 +18,13 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 200;
   background: #000;
   @include opacity(0.8);
 }
 .m-nav{
   position: relative;
-  z-index: 22;
+  z-index: 220;
 }
 
 .m-nav-list-bg {
@@ -35,7 +35,7 @@ html, body {
   background: #000;
   @include opacity(0.6);;
   width: 100%;
-  z-index: 12;
+  z-index: 120;
   display: none
 }
 
