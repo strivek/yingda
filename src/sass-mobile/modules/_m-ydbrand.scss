@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+.m-brand {
+  margin: 0 auto;
+  padding: 2.6rem 0;
+  color: $brandEstFont;
+  .text {
+    margin: 0 auto;
+    width: 84.375%;
+    @media screen and (max-width: 320px) {
+      width: 86%;
+    }
+  }
+  .aline {
+    display: block;
+    margin-bottom: 2.6rem;
+    width: 1.6rem;
+    height: 1px;
+    background-color: $brandEstFont;
+  }
+  img {
+    display: block;
+    margin: 3rem auto 0;
+  }
+  .img1 {width: 53.4375%;}
+  .img2 {width: 84.375%;}
+  .img3 {width: 43.75%;}
+  .img4 {width: 28.75%;}
+  h1 {
+    font-size: 2rem;
+    line-height: 4.5rem;
+    font-weight: normal;
+    span {
+      font-family: "didot";
+    }
+  }
+  p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    @media screen and (max-width: 480px) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+  h3 {
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+}
+
+.m-brand-1 {
+  padding: 2rem 0;
+  color: $shopListFont;
+  .aline {
+    margin-bottom: 2rem;
+    background-color: $shopListFont;
+  }
+  .date {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: "didot";
+    b {
+      font-size: 3rem;
+      font-weight: normal;
+    }
+  }
+  img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    line-height: 4.5rem;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+    font-weight: normal;
+    @media screen and (min-width: 480px) {
+      font-size: 1.4rem;
+      line-height: 3.4rem;
+    }
+  }
+  p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    @media screen and (min-width: 480px) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+  h3 {
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+}
