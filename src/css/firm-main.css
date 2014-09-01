@@ -360,7 +360,9 @@ a, a:hover {
     height: 120px; }
 
 .m-list3 {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  position: relative;
+  overflow: hidden; }
   .m-list3 h2 {
     margin-top: 30px;
     margin-bottom: 60px;
@@ -369,7 +371,6 @@ a, a:hover {
     color: #564b47;
     font-family: "瀹嬩綋"; }
   .m-list3 > a {
-    position: relative;
     display: block;
     padding-right: 1px; }
     .m-list3 > a img {
@@ -377,34 +378,35 @@ a, a:hover {
       margin-left: auto;
       margin-right: auto;
       width: 100%; }
-    .m-list3 > a > span {
-      display: none;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 20%;
+  .m-list3 .move {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    height: 20%;
+    width: 100%; }
+    .m-list3 .move > span {
+      display: block;
+      height: 100%;
       width: 100%;
       background: #4a3b34;
       opacity: 0.7;
       filter: alpha(opacity=70);
       z-index: 20; }
-    .m-list3 > a > p {
-      z-index: 2;
-      display: none;
+    .m-list3 .move > p {
       position: absolute;
-      bottom: 0;
       left: 0;
-      height: 20%;
+      top: 0;
+      display: block;
+      cursor: pointer;
+      z-index: 2;
+      height: 100%;
       width: 100%;
       line-height: 3;
       text-align: center;
       font-size: 12px;
       font-family: "瀹嬩綋";
       color: #fff;
-      z-index: 21;
-      overflow: hidden; }
-    .m-list3 > a:hover span, .m-list3 > a:hover p {
-      display: block; }
+      z-index: 21; }
 
 .u-img {
   display: block;
@@ -948,37 +950,42 @@ body {
           cursor: default; }
       .m-main4-cy .main .list .pic-list {
         position: relative;
+        overflow: hidden;
         margin-bottom: 48px; }
-        .m-main4-cy .main .list .pic-list > span {
-          display: none;
+        .m-main4-cy .main .list .pic-list > a {
+          display: block; }
+        .m-main4-cy .main .list .pic-list .move {
           position: absolute;
-          bottom: 2px;
+          bottom: -40px;
           left: 0;
-          height: 40px;
           width: 100%;
-          background: #4a3b34;
-          opacity: 0.7;
-          filter: alpha(opacity=70);
-          z-index: 20; }
-        .m-main4-cy .main .list .pic-list p {
-          position: absolute;
-          z-index: 21;
-          display: none;
-          bottom: 0;
-          left: 0;
-          height: 30px;
-          width: 100%;
-          text-align: center; }
-          .m-main4-cy .main .list .pic-list p .pic {
-            display: inline-block; }
-          .m-main4-cy .main .list .pic-list p .fit {
-            display: inline-block;
-            margin: 0 10px;
-            height: 50%;
-            width: 1px;
-            background: #fff; }
-      .m-main4-cy .main .list .pic-list:hover > span, .m-main4-cy .main .list .pic-list:hover > p {
-        display: block; }
+          height: 40px; }
+          .m-main4-cy .main .list .pic-list .move > span {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background: #4a3b34;
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            z-index: 20; }
+          .m-main4-cy .main .list .pic-list .move p {
+            position: relative;
+            margin-top: -30px;
+            display: block;
+            cursor: pointer;
+            width: 100%;
+            z-index: 21;
+            height: 30px;
+            text-align: center; }
+            .m-main4-cy .main .list .pic-list .move p .pic {
+              display: inline-block; }
+            .m-main4-cy .main .list .pic-list .move p .fit {
+              display: inline-block;
+              margin: 0 10px;
+              height: 50%;
+              width: 1px;
+              background: #fff; }
 
 .m-main5-cy {
   width: 786px;
