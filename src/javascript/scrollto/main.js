@@ -1,17 +1,26 @@
 require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
 
-    $('.pd1').click($.proxy(scrollto,$,"#pb1"));
+    $('.progress-down').click(function () {
+        var elem = $(this).closest('.screen').next(".screen");
+        if (elem.length) {
+            elem.ScrollTo({
+                duration: 1000,
+                easing: 'linear'
+            });
+        } else {
+            $(".screen").eq(0).ScrollTo({
+                duration: 1000,
+                easing: 'linear'
+            });
+        }
+    });
+});
 
-    $('.pd2').click($.proxy(scrollto,$,"#pb2"));
-
-    $('.pd3').click($.proxy(scrollto,$,"#pb3"));
-
-    $('.pd4').click($.proxy(scrollto,$,"#pb4"));
-
-    function scrollto(obj, durating, easeing) {
-        $(obj).ScrollTo({
-            duration: durating || 1000,
-            easing: easeing || 'linear'
-        });
+require(['jquery'], function ($) {
+    if ($('.m-progressImg')) {
+        var imgHeight = $('.bigImg').height();
+        var imgWrapHeight = $('.m-progressImg').height();
+        var imgMt = (imgHeight - imgWrapHeight) / 2;
+        $('.bigImg').css('marginTop', -imgMt);
     }
 });
