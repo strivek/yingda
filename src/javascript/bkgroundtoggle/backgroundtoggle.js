@@ -1,4 +1,12 @@
 define(['jquery'], function ($) {
+
+    'use strict';
+
+    var defaults = {
+
+    };
+
+
     function Backgroundtoggle() {
         this.obj = $(".bk-toggle");
         this.id = "";
@@ -7,7 +15,7 @@ define(['jquery'], function ($) {
         this.jsonData = void 0;
         this.status = true;
         this.url = "/homeImg.asp",
-        this.init();
+            this.init();
     };
     Backgroundtoggle.prototype.init = function () {
         var self = this;
@@ -26,9 +34,9 @@ define(['jquery'], function ($) {
                 self.setbk();
             }
         })
-        $(".m-nav-list-bg").on("hover.hide",function(e){
+        $(".m-nav-list-bg").on("hover.hide", function (e) {
             this.status = true;
-            self.img.add(self.imgbk).attr("src",'../images/index-default.jpg');
+            self.img.add(self.imgbk).attr("src", '../images/index-default.jpg');
         })
     };
     Backgroundtoggle.prototype.getJsonData = function () {
@@ -47,18 +55,25 @@ define(['jquery'], function ($) {
         var image = document.createElement("img");
         // For debugging, output successful preloading msg
         image.onload = function () {
-            if(self.status){
+            if (self.status) {
                 self.img.attr("src", imgsrc);
                 self.imgbk.stop().fadeOut(500);
                 self.status = false;
-            }else{
+            } else {
                 self.imgbk.attr("src", imgsrc);
                 self.imgbk.stop().fadeIn(500);
                 self.status = true;
             }
         }
         image.src = imgsrc
-    }
-    return new Backgroundtoggle();
+    };
+
+    $.fn.bktoggle = function (options) {
+        options = $.extend(true, {}, defaults, options);
+        return this.each(function () {
+            var $this = $(this);
+            $this.data('plugin', new Backgroundtoggle($this, options));
+        });
+    };
 
 })

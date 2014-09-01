@@ -1,146 +1,143 @@
-require(['jquery', 'iscroll','tweenTime','tweenLite','tweenCss','flexslider'], function ($) {
+require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'], function ($, scroll) {
 
     /**
      * Created by Administrator on 2014/5/26.
+     * Updated by GaoFei on 2014/9/1.
      */
-    (function ($) {
-       if(("#boxscroll").length > 0){
-           var isdesktop
-           var extendDoor;
-           var openDoor;
-           var flexslider;
-           var time;
+    var Slidelight = function Slidelight() {
+        this.isdesktop = "";
+        this.extendDoor = {};
+        this.openDoor = {};
+        this.flexslider = "";
+        this.time = "";
+        this.init();
+    }
 
-           init();
+    Slidelight.prototype.init = function () {
+        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, bounceTime: 1200, click: true});
 
+        this.isdesktop = this.isDesktop();
 
-           $(".list-item").click(doorOpen);
+        flexslider = $('.flexslider').flexslider({
+            slideshow: false
+        });
 
-           $(".btn-return").click(closeDoor);
+        this.eventBind();
 
-           $(".list-item").mouseenter(hoverIn).mouseleave(hoverOut);
+    }
+    Slidelight.prototype.eventBind = function () {
 
-           $(window).resize(resizeHover)
+        $(".list-item").click($.proxy(this.doorOpen, this));
+//
+        $(".btn-return").click($.proxy(this.closeDoor, this));
 
-           function init() {
-               myScroll = new IScroll('#boxscroll', { mouseWheel: true,scrollX: true, scrollY: false, bounceTime: 1200, click: true});
+        $(".list-item").mouseenter($.proxy(this.hoverIn, this)).mouseleave($.proxy(this.hoverOut, this));
 
-               isdesktop = isDesktop();
+        $(window).resize($.proxy(this.resizeHover), this);
 
+    }
+    Slidelight.prototype.isDesktop = function () {
+        return  $(window).width() > 1024 ? true : $(window).height() > 1024 ? true : false;
+    };
+    Slidelight.prototype.closeDoor = function () {
+        this.openDoor.timeScale(4).reverse();
+        $(".list-item").on("mouseenter", $.proxy(this.hoverIn, this));
+    };
+    Slidelight.prototype.doorOpen = function (event) {
+        $(".list-item").off("mouseenter", $.proxy(this.hoverIn, this));
+        $(".list-item").off("mouseout", $.proxy(this.hoverOut, this));
 
-               flexslider = $('.flexslider').flexslider({
-                   slideshow: false
-               });
-           }
+        this.openDoor = new TimelineLite({ onReverseComplete: $.proxy(this.resumehover, this)});
 
-           function isDesktop() {
-               return  $(window).width() > 1024 ? true : $(window).height() > 1024 ? true : false;
-           }
+        var index = $(event.currentTarget).index(),
+            screen = $(window).width();
+        time = 2;
+        bf = $(".list-item:lt(" + index + ")"),
+            af = $(".list-item:gt(" + index + ")"),
+            cur = $(event.currentTarget),
+            slideId = cur.attr("id").split("-")[1] - 1,
+            zindex = $(".m-sld .inner,.m-sld"),
+            backBtn = $(".btn-return"),
+            slide = $(".m-flexslider"),
+            arrBefore = [cur],
+            wrap = $(".wrap");
+        bf.length != 0 ? arrBefore.push(bf) : "";
 
-           function closeDoor() {
+        if (screen > 1440) {
 
-               openDoor.timeScale(4).reverse();
-               $(".list-item").on("mouseenter",hoverIn);
-           }
+            time = 2.5;
 
-           function doorOpen(event) {
-
-               $(".list-item").off("mouseenter",hoverIn);
-               $(".list-item").off("mouseout",hoverOut());
-
-               openDoor = new TimelineLite({ onReverseComplete: resumehover});
-
-               var index = $(this).index(),
-                   screen = $(window).width();
-               time = 2;
-
-               bf = $(".list-item:lt(" + index + ")"),
-                   af = $(".list-item:gt(" + index + ")"),
-                   cur = $(this),
-                   slideId = $(this).attr("id").split("-")[1] - 1,
-                   zindex = $(".m-sld .inner,.m-sld"),
-                   backBtn = $(".btn-return"),
-                   slide = $(".m-flexslider"),
-                   arrBefore = [cur],
-                   wrap = $(".wrap");
-               bf.length != 0 ? arrBefore.push(bf) : "";
-
-               if (screen > 1440) {
-
-                   time = 2.5;
-
-               } else if (screen > 1000) {
-                   time = 1.3;
+        } else if (screen > 1000) {
+            time = 1.3;
 
 
-               } else if (screen > 700) {
-                   time = 1.8;
-               }
-               $(".g-sld .flex-control-paging li").eq(slideId).find("a").click();
-               openDoor.to(wrap, 0, {css: {display: 'none'}})
-                   .to(arrBefore, time, {css: {left: '-' + screen}}, "open")
-                   .to(af, time, {css: {left: screen}}, "open")
-                   .to(backBtn, .2, {css: { zIndex: 110}}, "open")
-                   .to(zindex, 0, {css: {zIndex: 0}})
+        } else if (screen > 700) {
+            time = 1.8;
+        }
+        $(".g-sld .flex-control-paging li").eq(slideId).find("a").click();
+        this.openDoor.to(wrap, 0, {css: {display: 'none'}})
+            .to(arrBefore, time, {css: {left: '-' + screen}}, "open")
+            .to(af, time, {css: {left: screen}}, "open")
+            .to(backBtn, .2, {css: { zIndex: 110}}, "open")
+            .to(zindex, 0, {css: {zIndex: 0}})
 
-               event.stopPropagation();
-           }
-
-           function resumehover(e) {
-               $(".list-item").on("mouseenter", mousehover);
-           }
-
-           function hoverIn(e) {
-               console.log($(e.relatedTarget).attr("id"));
-
-               var index = $(this).index(),
-                   bf = $(".list-item:lt(" + index + ")"),
-                   af = $(".list-item:gt(" + index + ")"),
-                   cur = $(this),
-                   fromElem = $(e.relatedTarget),
-                   shade = $(this).find(".shade");
-               if (fromElem.attr("id")) {
-                   extendDoor = new TimelineLite();
-                   extendDoor.to(bf, .3, {css: {left: '-30px'}}, 'sm')
-                       .to(af, .3, {left: '-30px'}, 'sm')
-                       .to(cur, .3, {left: '-30px', width: '340px'}, 'sm')
-                       .to(fromElem, .3, {width: '310px'}, 'sm')
-                   if (isdesktop) {
-                       extendDoor.to(shade, .3, {autoAlpha: 0}, "sm");
-                   }
+        event.stopPropagation();
+    }
+    ;
+    Slidelight.prototype.resumehover = function (e) {
+        $(".list-item").on("mouseenter", mousehover);
+    };
+    Slidelight.prototype.hoverIn = function (event) {
+        var cur = $(event.currentTarget),
+            index = cur.index(),
+            bf = $(".list-item:lt(" + index + ")"),
+            af = $(".list-item:gt(" + index + ")"),
+            fromElem = $(event.relatedTarget),
+            shade = cur.find(".shade");
 
 
-               } else {
+        if (fromElem.attr("id")) {
+            this.extendDoor = new TimelineLite();
+            this.extendDoor.to(bf, .3, {css: {left: '-30px'}}, 'sm')
+                .to(af, .3, {left: '-30px'}, 'sm')
+                .to(cur, .3, {left: '-30px', width: '340px'}, 'sm')
+                .to(fromElem, .3, {width: '310px'}, 'sm');
 
-                   extendDoor = new TimelineLite();
+            if (this.isdesktop) {
+                this.extendDoor.to(shade, .3, {autoAlpha: 0}, "sm");
+            }
+        } else {
 
-                   extendDoor.to(bf, .3, {left: '-30px'}, 'sm')
-                       .to(af, .3, {left: '-30px'}, 'sm')
-                       .to(cur, .3, {left: '-30px', width: '340px'}, 'sm')
-                   if (isdesktop) {
-                       extendDoor.to(shade, .3, {autoAlpha: 0}, "sm");
-                   }
+            this.extendDoor = new TimelineLite();
 
-               }
-           }
+            this.extendDoor.to(bf, .3, {left: '-30px'}, 'sm')
+                .to(af, .3, {left: '-30px'}, 'sm')
+                .to(cur, .3, {left: '-30px', width: '340px'}, 'sm')
+            if (this.isdesktop) {
+                this.extendDoor.to(shade, .3, {autoAlpha: 0}, "sm");
+            }
+        }
+    };
+    Slidelight.prototype.hoverOut = function (event) {
+        this.extendDoor = new TimelineLite();
+        var shade = $(event.currentTarget).find(".shade");
+        if (this.isdesktop) {
+            this.extendDoor.to(shade, .3, {autoAlpha: .8});
+        }
+    }
+    Slidelight.prototype.resizeHover = function () {
+        this.isdesktop = $(window).width() > 1024 ? true : $(window).height() > 1024 ? true : false;
+        if (this.isdesktop) {
+            $(".list-item .shade").css("opacity", ".8");
+        } else {
+            $(".list-item .shade").css("opacity", ".5");
+        }
+    }
 
-           function hoverOut(e) {
-               var shade = $(this).find(".shade");
-               if (isdesktop) {
-                   extendDoor.to(shade, .3, {autoAlpha: .8});
-               }
-           }
+    if($("#boxscroll").length > 0){
+        var c = new Slidelight();
+    }
 
-           function resizeHover(e) {
-               isdesktop = $(window).width() > 1024 ? true : $(window).height() > 1024 ? true : false;
-               if (isdesktop) {
-                   $(".list-item .shade").css("opacity", ".8");
-               } else {
-                   $(".list-item .shade").css("opacity", ".5");
-               }
-           }
 
-       }
-    }(jQuery));
 
 })
