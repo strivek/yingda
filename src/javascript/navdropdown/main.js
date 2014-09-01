@@ -18,12 +18,8 @@ require(['jquery', 'bootstrap', 'navdropdown/nav'], function ($, nav) {
         if ($(window).width() > 1000) {
             $(this).navshow1('.m-menu', '.m-nav-list-bg');
         }
-    },function(){
-        if ($(window).width() > 1000) {
-            $(".bk-toggle").trigger("hover.navtoggle");
-        }
     });
     $(".bk-toggle").mouseenter(function () {
         $(this).trigger("hover.navtoggle");
-    })
+    });
 })

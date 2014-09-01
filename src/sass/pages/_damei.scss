@@ -3,6 +3,24 @@ $fontStack: '宋体';
 $primaryColor: #f6d2b9;
 .m-main-zt {
   padding: 80px 0 120px 0;
+  .container{
+    position: relative;
+    >a{
+      position: absolute; top:50%; display: block; width: 40px; height: 40px;line-height: 40px;
+      &.left{left: -50px;
+        span{font-size: 40px;color:#ffe3cd; display: block;
+          &:hover{color:#714e38;}
+        }
+        .icon-yingdaicon09:before{top:0;}
+      }
+      &.right{right:-50px;
+        span{font-size: 40px;color:#ffe3cd;
+          &:hover{color:#714e38;}
+        }
+        .icon-yingdaicon10:before{top:0;}
+      }
+    }
+  }
   .m-bd {
     .m-hd {
       margin-top: 50px;

@@ -16,16 +16,56 @@
     }
   }
 }
-.m-showcase{height: 42%; width: 100%; position: relative; overflow: hidden;
-    >ul{
-      position: absolute;height: 100%; cursor: pointer; top:0;left: 0;
-      li{float: left; height: 100%; margin-right:10px;width: auto; overflow: hidden;
-        img{height: 100%; width: auto;
+.m-showcase {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  > ul {
+    &:after {
+      clear: both;
+      display: block;
+      content: "";
+    }
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      margin-right: 10px;
+      overflow: hidden;
+          img {
+            height: 100%;
+            width: auto;
+            border: 0;
+          }
+          @media (min-width: 1025px) {
+            @include pic-scale();
+          }
 
         }
-        @include pic-scale();
+      }
+      .left {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        font-size: 60px;
+        color: #ffe3cd;
+        display: block;
+        height: 100%;
+        cursor: pointer;
+        width: 60px;
+      }
+      .right {
+        position: absolute;
+        top: 45%;
+        right: 0;
+        font-size: 60px;
+        color: #ffe3cd;
+        display: block;
+        height: 100%;
+        cursor: pointer;
+        width: 60px;
       }
     }
-    .left{ position: absolute;top:45%;left: 0; font-size: 60px;color: #ffe3cd;display: block;height: 100%; cursor: pointer; width: 60px;}
-    .right{position: absolute;top:45%;right: 0; font-size: 60px;color: #ffe3cd;display: block;height: 100%; cursor: pointer;width: 60px;}
-}

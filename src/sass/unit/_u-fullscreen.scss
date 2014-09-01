@@ -1,5 +1,12 @@
 @charset "utf-8";
 .u-fullscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.u-fullscreen-index{
   position: absolute;
   left: 50%;
   margin-left: -960px;
@@ -14,4 +21,8 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+.u-fixedbody{
+  height: 100%;
+  overflow: hidden;
 }

@@ -1,0 +1,177 @@
+body.chapter21 {
+  height: 100%;
+  background-color: #000;
+}
+
+.g-sld {
+  height: 100%;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+div.wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 99;
+}
+
+.btn-return {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  bottom: 50%;
+  width: 100px;
+  height: 36px;
+  z-index: 0;
+  background: url("../images/bk-icon.png") -40px 0px;
+}
+
+.m-sld {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 100;
+  .inner {
+    width: 6500px;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+  }
+  @media (max-width: 788px) {
+    .inner {
+      width: 5500px;
+      overflow: hidden;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+
+  .list-item {
+    float: left;
+    position: relative;
+    width: 280px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+    img {
+      height: 100%;
+    }
+
+    img {
+    }
+    &.hover-before {
+      left: -3em;
+    }
+    &.hover-after {
+      left: 3em;
+    }
+
+    &.hover {
+      width: 36em;
+      left: -3em;
+    }
+    .shade {
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      opacity: .8;
+      @media (max-width: 1025px) {
+        opacity: .4;
+      }
+
+    }
+
+  }
+
+  #step-1 {
+    background: #000000 url("../images/21chapter/01.jpg") no-repeat center;
+  }
+  #step-2 {
+    background: #000000 url("../images/21chapter/02.jpg") no-repeat center;
+  }
+  #step-3 {
+    background: #000000 url("../images/21chapter/03.jpg") no-repeat center;
+  }
+  #step-4 {
+    background: #000000 url("../images/21chapter/04.jpg") no-repeat center;
+  }
+  #step-5 {
+    background: #000000 url("../images/21chapter/05.jpg") no-repeat center;
+  }
+  #step-6 {
+    background: #000000 url("../images/21chapter/06.jpg") no-repeat center;
+  }
+  #step-7 {
+    background: #000000 url("../images/21chapter/07.jpg") no-repeat center;
+  }
+  #step-8 {
+    background: #000000 url("../images/21chapter/08.jpg") no-repeat center;
+  }
+  #step-9 {
+    background: #000000 url("../images/21chapter/09.jpg") no-repeat center;
+  }
+  #step-10 {
+    background: #000000 url("../images/21chapter/10.jpg") no-repeat center;
+  }
+  #step-11 {
+    background: #000000 url("../images/21chapter/11.jpg") no-repeat center;
+  }
+  #step-12 {
+    background: #000000 url("../images/21chapter/12.jpg") no-repeat center;
+  }
+  #step-13 {
+    background: #000000 url("../images/21chapter/13.jpg") no-repeat center;
+  }
+  #step-14 {
+    background: #000000 url("../images/21chapter/14.jpg") no-repeat center;
+  }
+  #step-15 {
+    background: #000000 url("../images/21chapter/15.jpg") no-repeat center;
+  }
+  #step-16 {
+    background: #000000 url("../images/21chapter/16.jpg") no-repeat center;
+  }
+
+  #step-17 {
+    background: #000000 url("../images/21chapter/17.jpg") no-repeat center;
+  }
+
+  #step-18 {
+    background: #000000 url("../images/21chapter/18.jpg") no-repeat center;
+  }
+  #step-19 {
+    background: #000000 url("../images/21chapter/19.jpg") no-repeat center;
+  }
+}
+
+.g-sld .flexslider {
+  background: #000;
+  position: absolute;
+  left: 0;
+  display: table;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 1;
+
+  li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .slides {
+    display: table-cell;
+    vertical-align: middle
+  }
+}
+
+
