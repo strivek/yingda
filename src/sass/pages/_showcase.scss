@@ -34,11 +34,11 @@
     li {
       float: left;
       margin-right: 10px;
-      overflow: hidden;
+
           img {
-            height: 100%;
-            width: auto;
             border: 0;
+            height: auto;
+            width: 100%;
           }
           @media (min-width: 1025px) {
             @include pic-scale();
