@@ -49,7 +49,7 @@ require(['jquery'], function ($) {
     var oUlhtml=oUl.html();
     oUl.html(oUlhtml+oUlhtml);
         var aLi=$('.m-showcase ul li');
-        imgWid=Math.floor(winWid/3);
+        imgWid=Math.floor(winWid*0.28);
         var aImg=$('.m-showcase ul img');
         aImg.width(imgWid);
         var  imgHei=aImg.height();
