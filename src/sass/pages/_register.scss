@@ -11,6 +11,7 @@ $color: #ffe3cd;
 
 .m-main-cy{
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 .m-main-cy .title {
   margin-top: 35px;
@@ -109,7 +110,7 @@ $color: #ffe3cd;
 }
 
 .wrap-select .select{
-  height: 36px; color:#ffe3cd;border: 1px solid #ffe3cd;padding-left: 10px; line-height:26px;padding-top: 5px;
+  height: 36px; color:#ffe3cd;border: 1px solid #ffe3cd;padding-left: 10px; line-height:26px;padding-top: 5px;display: block;width: 100%;cursor: pointer;
 }
 .wrap-select ul{
   display: none;
@@ -131,4 +132,9 @@ $color: #ffe3cd;
 .wrap-select ul li:hover{
   background: #d7bca0;
 }
-.privacy{text-decoration:underline; color:#ffe3cd;}
+.privacy{text-decoration:underline; color:#ffe3cd;
+
+&:hover{
+  color:#ffe3cd;
+}
+}
