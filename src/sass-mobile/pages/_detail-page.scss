@@ -14,12 +14,12 @@
 
 .m-toggle{box-sizing:border-box; width:100%; height:29.6rem; background:rgba(254,254,254,1); position:relative; padding:4.7rem 0 0 12.8125%; display:none;}
 .m-toggle .close_btn{width:1.5rem; height:1.4rem; background:url(../images/details-page-close-btn.png) no-repeat; background-size:100%;  position:absolute; right:2.8rem; top:1.4rem; -webkit-user-select:none;}
-.m-toggle>h3{font-size:1.6rem; line-height:100%; margin-bottom:0.5rem; color:#663D1D;}
-.m-toggle>p>span{display:block; margin-bottom:0.35rem; font-size:1rem; color:#663D1D;}
+.m-toggle>h3{font-size:1.6rem; line-height:100%; margin-bottom:0.5rem; color:$detailPageFont;}
+.m-toggle>p>span{display:block; margin-bottom:0.35rem; font-size:1rem; color:$detailPageFont;}
 .m-toggle>p>span.price{font-family: "didot";}
 .m-toggle>p>span:last-child{margin-bottom:0;}
-.m-toggle>h5{font-size:1rem; color:#663D1D; margin-top:1.55rem; margin-bottom:0.75rem;}
-.m-toggle>h5>a{color:#663D1D;}
+.m-toggle>h5{font-size:1rem; color:$detailPageFont; margin-top:1.55rem; margin-bottom:0.75rem;font-weight: normal}
+.m-toggle>h5>a{color:$detailPageFont;}
 .m-toggle>h5>a>img{width:1.15rem; height:1rem; vertical-align:text-bottom;}
 
 .u-viewmoreimages{width:100%; height:6.6rem; background:url(../images/detail_h2_bg.jpg) repeat-x; position:relative;}
