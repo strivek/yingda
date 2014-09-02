@@ -59,13 +59,17 @@
                     <p>组织介绍</p>
                     <a href="#">更多&gt</a>
                 </div>
+                <!--TODO update .m-list3 cy9.1-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
+                    </a>
+                    <div class="move">
                         <span></span>
 
                         <p>中秋节员工福利发放</p>
-                    </a>
+                    </div>
+
                 </div>
             </div>
             <div class="piclist">
@@ -73,13 +77,16 @@
                     <p>党务指南</p>
                     <a href="#">更多&gt</a>
                 </div>
+                <!--TODO update .m-list3 cy9.1-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
-                        <span></span>
-
-                        <p>中秋节员工福利发放</p>
                     </a>
+                    <div class="move">
+                        <span></span>
+                        <p>中秋节员工福利发放</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -89,13 +96,18 @@
                 <a href="#">更多&gt</a>
             </div>
             <div class="piclist">
+                <!--TODO update .m-list3 cy9.1-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
+                    </a>
+
+                    <div class="move">
                         <span></span>
 
                         <p>中秋节员工福利发放</p>
-                    </a>
+                    </div>
+
                 </div>
             </div>
             <div class="textlist">
@@ -128,13 +140,17 @@
                     <p>学习园地</p>
                     <a href="#">更多&gt</a>
                 </div>
+                <!--TODO update .m-list3 cy9.1-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
+                    </a>
+
+                    <div class="move">
                         <span></span>
 
                         <p>中秋节员工福利发放</p>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="piclist">
@@ -142,13 +158,16 @@
                     <p>党建活动</p>
                     <a href="#">更多&gt</a>
                 </div>
+                <!--TODO update .m-list3 cy9.1-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
-                        <span></span>
-
-                        <p>中秋节员工福利发放</p>
                     </a>
+
+                    <div class="move">
+                        <span></span>
+                        <p>中秋节员工福利发放</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,6 +185,21 @@
     </div>
 </div>
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+<!--TODO update jquery cy9.1 -->
+<script src="../javascript/ie8/jquery.min.js"></script>
+<script>
+    $(function(){
+
+        $(".m-list3").hover(function () {
+
+                    $(this).find(".move").stop().animate({bottom: '0px'});
+                },
+                function () {
+                    $(this).find(".move").stop().animate({bottom: '-40px'});
+                }
+        );
+    });
+</script>
 <script type="text/javascript">
     (function (_slides) {
         each(_slides, function (_slide, i) {
