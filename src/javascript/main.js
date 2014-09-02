@@ -11,7 +11,8 @@ require.config({
         tweenLite:"lib/greensock/TweenLite.min",
         tweenTime:"lib/greensock/TimeLineLite.min",
         tweenCss:"lib/greensock/plugins/CSSPlugin.min",
-        flexslider:"lib/jquery.flexslider-min"
+        flexslider:"lib/jquery.flexslider-min",
+        rangejs:"lib/range"
     }
 });
 

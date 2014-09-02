@@ -1,6 +1,6 @@
 /*
  * Created by GaoFei on 14/8/22.
  */
-require(["bkgroundtoggle/backgroundtoggle"], function ($) {
-
+require(['jquery',"bkgroundtoggle/backgroundtoggle"], function ($) {
+        $(".u-fullscreen-index.first").bktoggle();
 })

@@ -125,5 +125,10 @@ $primaryColor: #f6d2b9;
 @media (max-width: 991px) {
   .m-main-zt .container{width: 720px;}
 }
+.z-plus{
+  &:hover{
+    @include rotate_hover();
+  }
+}
 
 

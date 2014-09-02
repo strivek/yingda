@@ -53,6 +53,7 @@ require(['jquery'], function ($) {
         var aImg=$('.m-showcase ul img');
         aImg.width(imgWid);
         var  imgHei=aImg.height();
+        aImg.height(imgHei);
         aLi.height(imgHei);
         oUl.height(imgHei);
         $('.m-showcase').height(imgHei);
@@ -62,17 +63,17 @@ require(['jquery'], function ($) {
         var liLen=aLi.length;
         var timeId=null;
         var ulWid=liWid*liLen;
-      var speed=-1;
+      var speed=-2;
         oUl.width(ulWid);
         timeId=setInterval(slider,3);
         oUl.hover(function(){
             clearInterval(timeId);
         },function(){
-            timeId=setInterval(slider,3);
+            timeId=setInterval(slider,15);
         });
         function slider(){
             if(speed<0){
-                if(parseInt(oUl.css('left'))==-ulWid/2){
+                if(parseInt(oUl.css('left'))<=-ulWid/2){
                     oUl.css('left',0);
                 }else{
                     oUl.css({'left':'+='+speed+'px'});
@@ -123,5 +124,21 @@ require(['jquery'], function ($) {
 //
 //
 //    });
+});
+//滚动条
+require(['jquery'], function ($) {
+//   推荐效果
+
+    $('.m-introlist').hover(function () {
+        if($(window).width()>1024){
+        $(this).find('.title').stop().animate({'bottom': '0'});
+    }}, function () {
+        if($(window).width()>1024){
+        $(this).find('.title').stop().animate({'bottom': '-26px'});
+    }});
+    if($(window).width()<=1024){
+        $('.m-introlist').find('.title').css('bottom','0');
+    }
+
 });
 

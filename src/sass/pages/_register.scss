@@ -105,11 +105,12 @@ $color: #ffe3cd;
 //下拉性别
 .sexnone{display: none;}
 .wrap-select{
-  position: relative;width: 100%;
+  position: relative;width: 100%;cursor: pointer;height: 38px;
 }
 
 .wrap-select .select{
-  height: 36px; color:#ffe3cd;border: 1px solid #ffe3cd;padding-left: 10px; line-height:26px;padding-top: 5px;
+  height: 36px;width: 100%;line-height:26px; color:#ffe3cd;border: 1px solid #ffe3cd;padding-left: 10px; padding-top: 5px;cursor: pointer;position: relative;background:url(about:blank);
+
 }
 .wrap-select ul{
   display: none;
@@ -131,4 +132,9 @@ $color: #ffe3cd;
 .wrap-select ul li:hover{
   background: #d7bca0;
 }
-.privacy{text-decoration:underline; color:#ffe3cd;}
+.privacy{text-decoration:underline; color:#ffe3cd;
+
+&:hover{
+  color:#ffe3cd;
+}
+}

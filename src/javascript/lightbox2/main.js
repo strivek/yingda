@@ -12,7 +12,7 @@ require(['jquery', 'lightbox2/jquery.lightbox2'], function ($, LightModal) {
             this.jsonData = "";
             this.currentId = -1;
             this.isAjaxCompleted = 1;
-            this.url = "productdetails.asp?type="+sc;
+            this.url = "../json/productListWomen.json";
         }
         return LightModalOptions;
     })();
