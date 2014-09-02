@@ -12,7 +12,7 @@ require.config({
         tweenTime:"lib/greensock/TimeLineLite.min",
         tweenCss:"lib/greensock/plugins/CSSPlugin.min",
         flexslider:"lib/jquery.flexslider-min",
-        rangejs:"lib/range"
+        range:"lib/range"
     }
 });
 
@@ -20,8 +20,6 @@ require.config({
 require(['bkgroundtoggle']);
 
 require(['waterfall']);
-
-
 //looknews.html
 //productListWomen.html
 //productListMen.html
@@ -30,7 +28,6 @@ require(['lightbox']);
 //productListMen.html
 //productListWomen.html
 require(['lightbox2']);
-
 //register.html
 require(['formselected']);
 

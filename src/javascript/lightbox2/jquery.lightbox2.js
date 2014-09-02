@@ -1,7 +1,7 @@
 /**
  * Created by GF on 14/8/11.
  */
-define(['jquery', 'bootstrap', 'jsviews','help'], function ($, boot, jsrender, hp) {
+define(['jquery', 'bootstrap', 'jsviews','range','help'], function ($, boot, jsrender,range, hp) {
 
     var Lightmodalbox = (function () {
         function Lightmodalbox(options) {
@@ -27,7 +27,6 @@ define(['jquery', 'bootstrap', 'jsviews','help'], function ($, boot, jsrender, h
                 $(".u-loading").stop().hide();
             })
             var self = this;
-            hp.log("开始开准异步请求");
             //请求json数据
             var request = self.getJsonData();
             //回调函数

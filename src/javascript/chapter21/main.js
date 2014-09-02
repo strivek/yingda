@@ -10,18 +10,15 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.openDoor = {};
         this.flexslider = "";
         this.time = "";
+        this.backBtn = $(".btn-return");
         this.init();
+
     }
 
     Slidelight.prototype.init = function () {
         myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, bounceTime: 1200, click: true});
 
         this.isdesktop = this.isDesktop();
-
-        flexslider = $('.flexslider').flexslider({
-            slideshow: false
-        });
-
         this.eventBind();
 
     }
@@ -57,10 +54,11 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             cur = $(event.currentTarget),
             slideId = cur.attr("id").split("-")[1] - 1,
             zindex = $(".m-sld .inner,.m-sld"),
-            backBtn = $(".btn-return"),
-            slide = $(".m-flexslider"),
             arrBefore = [cur],
-            wrap = $(".wrap");
+            wrap = $(".wrap"),
+            imglink = $("#"+cur.attr("id")).data("link");
+            $(".m-slider img").attr("src",imglink);
+
         bf.length != 0 ? arrBefore.push(bf) : "";
 
         if (screen > 1440) {
@@ -74,12 +72,17 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         } else if (screen > 700) {
             time = 1.8;
         }
-        $(".g-sld .flex-control-paging li").eq(slideId).find("a").click();
-        this.openDoor.to(wrap, 0, {css: {display: 'none'}})
+
+        this.openDoor
             .to(arrBefore, time, {css: {left: '-' + screen}}, "open")
             .to(af, time, {css: {left: screen}}, "open")
             .to(backBtn, .2, {css: { zIndex: 110}}, "open")
-            .to(zindex, 0, {css: {zIndex: 0}})
+            .to(zindex, 0, {css: {zIndex: 0}});
+
+
+
+        //显示内部大图
+//        $(".g-sld .flex-control-paging li").eq(slideId).find("a").click();
 
         event.stopPropagation();
     }
