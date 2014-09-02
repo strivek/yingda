@@ -954,6 +954,9 @@ body {
         margin-bottom: 48px; }
         .m-main4-cy .main .list .pic-list > a {
           display: block; }
+          .m-main4-cy .main .list .pic-list > a img {
+            width: 230px;
+            height: 255px; }
         .m-main4-cy .main .list .pic-list .move {
           position: absolute;
           bottom: -40px;
