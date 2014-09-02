@@ -1,320 +1,212 @@
 @charset "utf-8";
-.m-progressBlack {
+.m-fullscreen {
   position: relative;
   display: table;
   width: 100%;
   height: 100%;
   background-color: #000;
   color: #f6d2b9;
-  .progress-inner {
+  .fs-inner {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    .progress-mid {
-      margin: 0 auto;
-      width: 31.25%;
-      @media screen and (max-width: 1024px){
-        width: 50%;
-      }
-      h1 {
-        font-size:80px;
-        line-height: 80px;
-        @media screen and (max-width: 1440px){
-          font-size: 60px;
-          line-height: 60px;
-        }
-        @media screen and (max-width: 1366px){
-          font-size: 50px;
-          line-height: 50px;
-        }
-        @media screen and (max-width: 1024px){
-          font-size: 40px;
-          line-height: 40px;
-        }
-        span {
-          font-family: "myfont-bold";
-        }
-      }
-      .progress-badge img {
-        display: block;
-        margin: 0 auto;
-        @media screen and (max-width: 1440px){
-          width: 268px;
-        }
-        @media screen and (max-width: 1366px){
-          width: 220px;
-        }
-        @media screen and (max-width: 1024px){
-          width: 220px;
-        }
-      }
-      p {
-        font-size: 12px;
-        line-height: 18px;
-        text-align: left;
-      }
-      h3 {
-        margin-top: 100px;
-        margin-left: 1em;
+  }
+  .fs-mid {
+    margin: 0 auto;
+    width: 31.25%;
+    font-size: 16px;
+    h1 {
+      font-size:5em;
+      line-height: 1;
+      span {
         font-family: "myfont-bold";
-        font-size: 14px;
-        line-height: 70px;
-        letter-spacing: 1em;
-        @media screen and (max-width: 1440px){
-          margin-top: 75px;
-          margin-left: 0.75em;
-          line-height: 50px;
-          letter-spacing: 0.5em;
-        }
-        @media screen and (max-width: 1366px){
-          margin-top: 70px;
-          margin-left: 0.5em;
-          line-height: 35px;
-          letter-spacing: 0.5em;
-        }
-        @media screen and (max-width: 1024px){
-          margin-top: 70px;
-          margin-left: 0.5em;
-          line-height: 35px;
-          letter-spacing: 0.5em;
-        }
       }
-      /*.progress-down {
-        display: block;
-        margin-top: 30px;
-        @media screen and (max-width: 1440px){
-          margin-top: 80px;
-        }
-        @media screen and (max-width: 1366px){
-          margin-top: 70px;
-        }
-        @media screen and (max-width: 1024px){
-          margin-top: 100px;
-        }
-        img {
-          cursor: pointer;
-        }
-      }*/
+    }
+    .fs-badge img {
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 6.25em;
+      margin-left: 1em;
+      font-family: "myfont-bold";
+      font-size: 0.875em;
+      line-height: 5;
+      letter-spacing: 1em;
     }
   }
-  .progress-down {
+  .fs-down {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
     margin-left: -21px;
     display: block;
-    @media screen and (max-width: 1024px){
-      bottom: 12%;
-    }
     img {
       cursor: pointer;
     }
   }
 }
 
-.m-progressImg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.m-fullscreen-img {
+  display: block;
   background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: #f6d2b9;
-  .bigImg {
-    width: 100%;
-    @media screen and (max-width: 1024px){
-      margin-left: -170px;
-      height: 100%;
-      width: auto;
-    }
-    @media screen and (max-width: 768px){
-      margin-left: -420px;
-      height: 100%;
-      width: auto;
-    }
-  }
-  .progress-mid {
+  a {color: #f6d2b9;}
+  .fs-mid {
     position: absolute;
+    width: auto;
     text-align: center;
-    a {color: #f6d2b9;}
-    .progress-badge img {
-      display: block;
-      margin: 0 auto;
-    }
     h1 {
-      font-size: 40px;
-      line-height: 60px;
-      @media screen and (max-width: 1440px){
-        font-size: 30px;
-        line-height: 45px;
-      }
-      @media screen and (max-width: 1366px){
-        font-size: 22px;
-        line-height: 45px;
-      }
-      @media screen and (max-width: 1024px){
-        font-size: 18px;
-        line-height: 36px;
-      }
+      font-size:2.5em;
+      line-height: 1.5;
       span {
         font-family: "myfont-bold";
       }
     }
-    p {
-      font-size: 20px;
-      line-height: 30px;
-      @media screen and (max-width: 1440px){
-        font-size: 15px;
-        line-height: 52px;
-      }
-      @media screen and (max-width: 1366px){
-        font-size: 14px;
-        line-height: 28px;
-      }
-      @media screen and (max-width: 1024px){
-        font-size: 12px;
-        line-height: 28px;
-      }
-      @media screen and (max-width: 768px){
-        font-size: 10px;
-        line-height: 22px;
-      }
-    }
-  }
-  .pm1 {
-    top: 87px;
-    right: 400px;
-    @media screen and (max-width: 1440px){
-      top: 100px;
-      right: 280px;
-      .progress-badge img {
-        width: 156px;
-      }
-    }
-    @media screen and (max-width: 1366px){
-      top: 120px;
-      right: 160px;
-      .progress-badge img {
-        width: 120px;
-      }
-    }
-    @media screen and (max-width: 1024px){
-      top: 120px;
-      right: 120px;
-      .progress-badge img {
-        width: 120px;
-      }
-    }
-    @media screen and (max-width: 768px){
-      top: 320px;
-      right: 100px;
-      .progress-badge img {
-        width: 120px;
-      }
-    }
-    color: #000;
-    a {color: #000;}
-  }
-  .pm2 {
-    top: 400px;
-    right: 400px;
-    @media screen and (max-width: 1440px){
-      top: 300px;
-      right: 300px;
-    }
-    @media screen and (max-width: 1366px){
-      top: 300px;
-      right: 300px;
-      .progress-badge img {
-        width: 124px;
-      }
-    }
-    @media screen and (max-width: 1024px){
-      top: 350px;
-      right: 200px;
-      .progress-badge img {
-        width: 124px;
-      }
-    }
-    @media screen and (max-width: 768px){
-      top: 430px;
-      right: 160px;
-      .progress-badge img {
-        width: 124px;
-      }
-    }
-    color: #000;
-    a {color: #000;}
-  }
-  .pm3 {
-    top: 400px;
-    left: 400px;
-    @media screen and (max-width: 1440px){
-      top: 300px;
-      left: 300px;
-    }
-    @media screen and (max-width: 1366px){
-      top: 280px;
-      left: 200px;
-      .progress-badge img {
-        width: 80px;
-      }
-    }
-    @media screen and (max-width: 1024px){
-      top: 280px;
-      left: 130px;
-      .progress-badge img {
-        width: 70px;
-      }
-    }
-    @media screen and (max-width: 768px){
-      top: 400px;
-      left: 100px;
-      .progress-badge img {
-        width: 60px;
-      }
-    }
-  }
-  .pm4 {
-    top: 300px;
-    right: 400px;
-    @media screen and (max-width: 1440px){
-      top: 250px;
-      right: 250px;
-    }
-    @media screen and (max-width: 1366px){
-      top: 280px;
-      right: 200px;
-      .progress-badge img {
-        width: 66px;
-      }
-    }
-    @media screen and (max-width: 1024px){
-      top: 280px;
-      right: 160px;
-      .progress-badge img {
-        width: 63px;
-      }
-    }
-    @media screen and (max-width: 768px){
-      top: 400px;
-      left: 100px;
-      right: auto;
-      .progress-badge img {
-        width: 63px;
-      }
-    }
-  }
-  .progress-down {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    margin-left: -21px;
-    display: block;
-    @media screen and (max-width: 1024px){
-      bottom: 12%;
-    }
-    img {
-      cursor: pointer;
+    h4 {
+      font-size: 1.25em;
+      line-height: 1.5;
+      font-weight: normal;
     }
   }
 }
+
+.m-fullscreen-1 {
+  background-image: url("../images/brand-progress-1.jpg");
+  color: #000;
+  a {color: #000;}
+  .fs-mid {
+    top: 10%;
+    right: 20%;
+  }
+}
+
+.m-fullscreen-2 {
+  background-image: url("../images/brand-progress-2.jpg");
+  color: #000;
+  a {color: #000;}
+  .fs-mid {
+    top: 40%;
+    right: 20%;
+  }
+}
+
+.m-fullscreen-3 {
+  background-image: url("../images/brand-progress-3.jpg");
+  .fs-mid {
+    top: 40%;
+    left: 10%;
+  }
+}
+
+.m-fullscreen-4 {
+  background-image: url("../images/brand-progress-4.jpg");
+  .fs-mid {
+    top: 40%;
+    right: 20%;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px){
+  .m-fullscreen {
+    .fs-mid {
+      width: 40%;
+      font-size: 10px;
+    }
+  }
+  .m-fullscreen-1 {
+    .fs-mid {
+      top: 10%;
+      right: 0;
+    }
+  }
+  .m-fullscreen-2 {
+    background-position: 40% center;
+    .fs-mid {
+      top: 40%;
+      right: 5%;
+    }
+  }
+  .m-fullscreen-3 {
+    .fs-mid {
+      top: 40%;
+      left: 0;
+    }
+  }
+  .m-fullscreen-4 {
+    .fs-mid {
+      top: 40%;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px){
+  .m-fullscreen {
+    .fs-mid {
+      font-size: 12px;
+    }
+  }
+  .m-fullscreen-1 {
+    .fs-mid {
+      top: 10%;
+      right: 10%;
+    }
+  }
+  .m-fullscreen-4 {
+    .fs-mid {
+      top: 40%;
+      right: 15%;
+    }
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px){
+  .m-fullscreen {
+    .fs-mid {
+      font-size: 14px;
+    }
+  }
+  .m-fullscreen-1 {
+    .fs-mid {
+      top: 10%;
+      right: 10%;
+    }
+  }
+  .m-fullscreen-4 {
+    .fs-mid {
+      top: 40%;
+      right: 15%;
+    }
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px){
+  .m-fullscreen {
+    .fs-mid {
+      font-size: 14px;
+    }
+  }
+  .m-fullscreen-1 {
+    .fs-mid {
+      top: 10%;
+      right: 15%;
+    }
+  }
+  .m-fullscreen-4 {
+    .fs-mid {
+      top: 40%;
+      right: 15%;
+    }
+  }
+}
+

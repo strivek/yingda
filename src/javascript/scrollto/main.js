@@ -1,14 +1,14 @@
 require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
 
-    $('.progress-down').click(function () {
-        var elem = $(this).closest('.screen').next(".screen");
+    $('.fs-down').click(function () {
+        var elem = $(this).closest('.m-fullscreen').next(".m-fullscreen");
         if (elem.length) {
             elem.ScrollTo({
                 duration: 1000,
                 easing: 'linear'
             });
         } else {
-            $(".screen").eq(0).ScrollTo({
+            $(".m-fullscreen").eq(0).ScrollTo({
                 duration: 1000,
                 easing: 'linear'
             });
@@ -16,7 +16,7 @@ require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
     });
 });
 
-require(['jquery'], function ($) {
+/*require(['jquery'], function ($) {
     if ($('.m-progressImg')) {
         var docWidth = $(document).width();
         var imgHeight = $('.bigImg').height();
@@ -27,4 +27,4 @@ require(['jquery'], function ($) {
             $('.bigImg').css('marginTop',-imgMt);
         }
     }
-});
+});*/
