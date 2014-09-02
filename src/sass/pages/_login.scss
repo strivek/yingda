@@ -44,6 +44,20 @@ $color: #ffe3cd;
       border-radius: 0;
       color: $color;
     }
+    .warning {
+      .form-control {
+        border: 1px solid #ff0000;
+      }
+      p {
+        margin-top: 4px;
+        display: block;
+        margin-bottom: -10px;
+        text-align: right;
+        font-family:$font-family;
+        font-size: 12px;
+        color: #e60012;
+      }
+    }
     //因m-main1-cy的唯一性，所以其子类可以尽可能的减少嵌套层级
     .fpwd a {
       display: block;
