@@ -22,7 +22,7 @@ require(['jquery'], function ($) {
         var imgHeight = $('.bigImg').height();
         var imgWrapHeight = $('.m-progressImg').height();
         var imgMt = Math.abs(imgHeight - imgWrapHeight) / 2;
-        $('.bigImg').css('marginTop',imgMt);
+        $('.bigImg').css('marginTop', imgMt);
         if(docWidth > 1902){
             $('.bigImg').css('marginTop',-imgMt);
         }
