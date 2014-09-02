@@ -10,7 +10,10 @@ $color: #ffe3cd;
 }
 
 .m-main-cy{
-  padding: 80px 0;
+  padding-top: 80px;
+  @media (max-width: 1900px) {
+    padding-bottom: 80px;
+  }
 }
 .m-main-cy .title {
   margin-top: 35px;
@@ -137,4 +140,33 @@ $color: #ffe3cd;
 &:hover{
   color:#ffe3cd;
 }
+}
+
+.m-privacy.modal{
+  width: 700px;margin: 0 auto;
+  .modal-dialog{
+   width: 100%;
+  .modal-content{
+    background: #251f20;
+    padding: 30px;
+    .modal-title{font-size: 20px;
+      color: #ffe3cd;
+      margin-bottom: 30px;
+      font-family: "宋体";
+      font-weight: normal;}
+
+  }
+  .modal-body{
+    p{
+      margin-bottom: 30px;
+      font-size: 12px;
+      color: #ffe3cd;
+      font-family: "宋体";
+      font-weight: normal;
+      line-height: 2.2;
+    }
+
+  }
+  .modal-header{border-bottom: 0; padding: 0;}
+  }
 }
