@@ -48,26 +48,21 @@
 
         }
       }
-      .left {
+      .left,.right{
         position: absolute;
-        top: 45%;
-        left: 0;
+        top: 50%;
+        margin-top:-30px ;
         font-size: 60px;
         color: #ffe3cd;
         display: block;
-        height: 100%;
+        height: 50%;
         cursor: pointer;
         width: 60px;
       }
-      .right {
-        position: absolute;
-        top: 45%;
-        right: 0;
-        font-size: 60px;
-        color: #ffe3cd;
-        display: block;
-        height: 100%;
-        cursor: pointer;
-        width: 60px;
+     .left{
+       left:0;
+      }
+      .right{
+        right:0;
       }
     }
