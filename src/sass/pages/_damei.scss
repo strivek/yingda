@@ -52,7 +52,8 @@ $primaryColor: #f6d2b9;
           position: absolute;
           right: 10px;
           bottom: 10px;
-
+          font-size:40px;
+          color:#f6d2b9;
         }
       }
       p {
@@ -74,6 +75,8 @@ $primaryColor: #f6d2b9;
           position: absolute;
           right: 10px;
           bottom: 10px;
+          font-size:40px;
+          color:#f6d2b9;
         }
       }
       p {
@@ -128,4 +131,6 @@ $primaryColor: #f6d2b9;
   }
 }
 
-
+@media (width: 1366px){           //update by qin
+  .m-product1{margin-top:-225px;}
+}
