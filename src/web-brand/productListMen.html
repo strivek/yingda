@@ -132,11 +132,11 @@
 <script id="detail-modal" type="text/x-jsrender">
  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-      {^{for imglist}}
-    <div class="item ">
-      <img src="{{:item}}" alt="...">
-    </div>
-     {{/for}}
+  {^{range imglist ^start=0 ^end=1}}
+      <div class="item active">
+        <img src="{{:item}}" alt="...">
+      </div>
+  {{/range}}
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
