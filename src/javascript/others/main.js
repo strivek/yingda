@@ -51,8 +51,9 @@ require(['jquery'], function ($) {
         var aLi=$('.m-showcase ul li');
         imgWid=Math.floor(winWid*0.28);
         var aImg=$('.m-showcase ul img');
-        aImg.width(imgWid);
+        aImg.css('width',imgWid);
         var  imgHei=aImg.height();
+      //aImg.height(imgHei);
         aLi.height(imgHei);
         oUl.height(imgHei);
         $('.m-showcase').height(imgHei);
@@ -62,17 +63,17 @@ require(['jquery'], function ($) {
         var liLen=aLi.length;
         var timeId=null;
         var ulWid=liWid*liLen;
-      var speed=-1;
+      var speed=-2;
         oUl.width(ulWid);
-        timeId=setInterval(slider,3);
+        timeId=setInterval(slider,15);
         oUl.hover(function(){
             clearInterval(timeId);
         },function(){
-            timeId=setInterval(slider,3);
+            timeId=setInterval(slider,15);
         });
         function slider(){
             if(speed<0){
-                if(parseInt(oUl.css('left'))==-ulWid/2){
+                if(parseInt(oUl.css('left'))<=-ulWid/2){
                     oUl.css('left',0);
                 }else{
                     oUl.css({'left':'+='+speed+'px'});
@@ -88,10 +89,10 @@ require(['jquery'], function ($) {
             }
         }
         $('.left').click(function(){
-            speed=-1;
+            speed=-2;
         });
         $('.right').click(function(){
-            speed=1;
+            speed=2;
         });
 //    $(window).resize(function(){
 //        clearInterval(timeId);

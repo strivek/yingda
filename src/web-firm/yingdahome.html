@@ -81,12 +81,16 @@
                     <p>员工福利</p>
                     <a href="#">更多&gt</a>
                 </div>
+                <!--TODO update .m-list3 cy-9.2-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
+                    </a>
+                    <div class="move">
                         <span></span>
                         <p>中秋节员工福利发放</p>
-                    </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -113,13 +117,19 @@
                     <p>员工福利</p>
                     <a href="#">更多&gt</a>
                 </div>
+                <!--TODO update .m-list3 cy-9.2-->
                 <div class="m-list3">
                     <a href="#">
                         <img src="../images/firm-index3.png" alt=""/>
+                    </a>
+                    <div class="move">
                         <span></span>
                         <p>中秋节员工福利发放</p>
-                    </a>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -140,8 +150,21 @@
 </div>
 <!--底部结束-->
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
-<script src="../javascript/lib/jquery.min.js"></script>
+<!--TODO update jquery-->
+<script src="../javascript/ie8/jquery.min.js"></script>
 <script type="text/javascript">
+    $(function(){
+
+        $(".m-list3").hover(function () {
+
+                    $(this).find(".move").stop().animate({bottom: '0px'});
+                },
+                function () {
+                    $(this).find(".move").stop().animate({bottom: '-40px'});
+                }
+        );
+    });
+
     (function (_slides) {
         each(_slides, function (_slide, i) {
             var _ctrls = _slide.getElementsByTagName('i');

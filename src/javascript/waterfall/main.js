@@ -23,7 +23,8 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
 require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
     var gender = jQuery("[name=sc]").val();
     $('#productList').waterfall({
-        url: 'productlist.asp?type='+gender,
+//        url: 'productlist.asp?type='+gender,
+        url:"../json/json.js",
         perNum: 5,			// 每次显示五个
         ajaxTimes: 1, 		// 只发送一次请求
         colWidth: 235,
