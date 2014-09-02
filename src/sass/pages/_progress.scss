@@ -51,6 +51,9 @@
         font-size: 12px;
         line-height: 18px;
         text-align: left;
+        @media screen and (max-width: 1024px){
+          margin-top: 4rem;
+        }
       }
       h3 {
         margin-top: 100px;
@@ -87,6 +90,9 @@
       .progress-down {
         display: block;
         margin-top: 3rem;
+        @media screen and (max-width: 1024px){
+          margin-top: 6rem;
+        }
         img {
           cursor: pointer;
         }
@@ -102,6 +108,9 @@
   overflow: hidden;
   background-color: #000;
   color: #f6d2b9;
+  .bigImg {
+    width: 100%;
+  }
   .progress-mid {
     position: absolute;
     text-align: center;
@@ -276,6 +285,9 @@
     left: 50%;
     margin-left: -21px;
     display: block;
+    @media screen and (max-width: 1024px){
+      bottom: 5%;
+    }
     img {
       cursor: pointer;
     }

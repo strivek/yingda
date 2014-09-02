@@ -18,9 +18,13 @@ require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
 
 require(['jquery'], function ($) {
     if ($('.m-progressImg')) {
+        var docWidth = $(document).width();
         var imgHeight = $('.bigImg').height();
         var imgWrapHeight = $('.m-progressImg').height();
-        var imgMt = (imgHeight - imgWrapHeight) / 2;
-        $('.bigImg').css('marginTop', -imgMt);
+        var imgMt = Math.abs(imgHeight - imgWrapHeight) / 2;
+        $('.bigImg').css('marginTop',imgMt);
+        if(docWidth > 1902){
+            $('.bigImg').css('marginTop',-imgMt);
+        }
     }
 });
