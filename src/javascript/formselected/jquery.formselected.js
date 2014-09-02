@@ -15,7 +15,8 @@ define(['jquery'], function ($) {
         function closeSelect() {
             if (aDisplay.css('display') == 'block') {
                 aDisplay.slideUp();
-                var val = $(this).attr('val');
+                var val = $(this).text();
+                alert(val)
             } else {
                 $(document).off("click.select");
             }
