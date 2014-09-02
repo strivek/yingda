@@ -1,7 +1,7 @@
 /**
  * Created by GF on 14/8/11.
  */
-define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, hp) {
+define(['jquery', 'bootstrap', 'jsviews','help'], function ($, boot, jsrender, hp) {
 
     var Lightmodalbox = (function () {
         function Lightmodalbox(options) {
@@ -39,6 +39,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
                 hp.log("执行异步回调函数");
                 self.jsondata = data[0];
                 self.setJsonData();
+                $('.carousel').carousel();
                 $("#water-modal").modal("show");
             })
         };
@@ -93,7 +94,7 @@ define(['jquery', 'bootstrap', 'jsviews', 'help'], function ($, boot, jsrender, 
             var template = $.templates("#detail-modal");
             this.setPreAndNext();
             template.link("#modal-body", this.jsondata);
-            $('.carousel').carousel();
+
         };
         Lightmodalbox.prototype.setPreAndNext = function () {
             var self = this;
