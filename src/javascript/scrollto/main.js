@@ -1,17 +1,30 @@
 require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
 
-    $('.pd1').click($.proxy(scrollto,$,"#pb1"));
-
-    $('.pd2').click($.proxy(scrollto,$,"#pb2"));
-
-    $('.pd3').click($.proxy(scrollto,$,"#pb3"));
-
-    $('.pd4').click($.proxy(scrollto,$,"#pb4"));
-
-    function scrollto(obj, durating, easeing) {
-        $(obj).ScrollTo({
-            duration: durating || 1000,
-            easing: easeing || 'linear'
-        });
-    }
+    $('.fs-down').click(function () {
+        var elem = $(this).closest('.m-fullscreen').next(".m-fullscreen");
+        if (elem.length) {
+            elem.ScrollTo({
+                duration: 1000,
+                easing: 'linear'
+            });
+        } else {
+            $(".m-fullscreen").eq(0).ScrollTo({
+                duration: 1000,
+                easing: 'linear'
+            });
+        }
+    });
 });
+
+/*require(['jquery'], function ($) {
+    if ($('.m-progressImg')) {
+        var docWidth = $(document).width();
+        var imgHeight = $('.bigImg').height();
+        var imgWrapHeight = $('.m-progressImg').height();
+        var imgMt = Math.abs(imgHeight - imgWrapHeight) / 2;
+        $('.bigImg').css('marginTop', imgMt);
+        if(docWidth > 1902){
+            $('.bigImg').css('marginTop',-imgMt);
+        }
+    }
+});*/
