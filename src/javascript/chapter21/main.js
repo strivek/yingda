@@ -10,8 +10,11 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.openDoor = {};
         this.flexslider = "";
         this.time = "";
-        this.backBtn = $(".btn-return");
         this.init();
+        this.prebtn = $(".prebtn");
+        this.nextbtn = $(".nextbtn");
+        this.backBtn = $(".btnreturn");
+        this.currId = void 0;
 
     }
 
@@ -26,9 +29,13 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
 
         $(".list-item").click($.proxy(this.doorOpen, this));
 //
-        $(".btn-return").click($.proxy(this.closeDoor, this));
+        $(".btnreturn").click($.proxy(this.closeDoor, this));
 
         $(".list-item").mouseenter($.proxy(this.hoverIn, this)).mouseleave($.proxy(this.hoverOut, this));
+
+        $(".prebtn").on("click", $.proxy(this.prebtn, this));
+
+        $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
 
         $(window).resize($.proxy(this.resizeHover), this);
 
@@ -47,17 +54,20 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.openDoor = new TimelineLite({ onReverseComplete: $.proxy(this.resumehover, this)});
 
         var index = $(event.currentTarget).index(),
-            screen = $(window).width();
-        time = 2;
-        bf = $(".list-item:lt(" + index + ")"),
+            screen = $(window).width(),
+            time = 2,
+            bf = $(".list-item:lt(" + index + ")"),
             af = $(".list-item:gt(" + index + ")"),
             cur = $(event.currentTarget),
             slideId = cur.attr("id").split("-")[1] - 1,
             zindex = $(".m-sld .inner,.m-sld"),
             arrBefore = [cur],
             wrap = $(".wrap"),
-            imglink = $("#"+cur.attr("id")).data("link");
-            $(".m-slider img").attr("src",imglink);
+            imglink = $("#" + cur.attr("id")).data("link");
+        console.log(imglink);
+        $(".m-slider img").attr("src", imglink);
+
+        this.currId = cur.attr("id");
 
         bf.length != 0 ? arrBefore.push(bf) : "";
 
@@ -76,17 +86,47 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.openDoor
             .to(arrBefore, time, {css: {left: '-' + screen}}, "open")
             .to(af, time, {css: {left: screen}}, "open")
-            .to(backBtn, .2, {css: { zIndex: 110}}, "open")
+            .to(this.backBtn, .2, {css: { zIndex: 110}}, "open")
             .to(zindex, 0, {css: {zIndex: 0}});
-
-
-
-        //显示内部大图
-//        $(".g-sld .flex-control-paging li").eq(slideId).find("a").click();
-
         event.stopPropagation();
+    };
+    Slidelight.prototype.prebtn = function (event) {
+        var url = this.GetPreUrl(this.currId);
+        this.setImgUrl(url);
+
+    };
+    Slidelight.prototype.nextbtn = function (event) {
+        var url = this.getNextUrl(this.currId);
+        console.log(url);
+        this.setImgUrl(url);
+    };
+    Slidelight.prototype.setImgUrl = function (url) {
+        $(".m-slider img").attr("src", url);
     }
-    ;
+    Slidelight.prototype.getNextUrl = function (id) {
+        console.log(this.currId);
+        var num = id.split("-")[1];
+        if (num < 21) {
+            num++;
+        } else {
+            num = 0;
+        }
+        this.currId = "step-" + num;
+        return $("#" + this.currId).data("link");
+
+    };
+    Slidelight.prototype.GetPreUrl = function (id) {
+        var num = id.split("-")[1];
+        if (num > 1) {
+            num--;
+        } else {
+            num = 21;
+        }
+        this.currId = "step-" + num;
+        return $("#" + this.currId).data("link");
+
+    };
+
     Slidelight.prototype.resumehover = function (e) {
         $(".list-item").on("mouseenter", mousehover);
     };
@@ -137,10 +177,9 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         }
     }
 
-    if($("#boxscroll").length > 0){
+    if ($("#boxscroll").length > 0) {
         var c = new Slidelight();
     }
-
 
 
 })
