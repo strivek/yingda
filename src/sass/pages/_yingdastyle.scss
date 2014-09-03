@@ -17,6 +17,11 @@
     }
   }
   .carousel-inner .item {
+    .col-md-offset-1{
+      @media (max-width: 1169px) {
+        padding-top: 20px;
+      }
+    }
     .u-video{
         width: 100%;
     }
@@ -64,6 +69,7 @@
     }
   }
   //左右箭头点击区域
+
   .carousel-control {
     width: 5%;
   }
