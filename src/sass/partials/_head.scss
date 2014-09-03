@@ -122,7 +122,11 @@ html, body {
       a{color:#ffe3cd;}
       h3{font-size:1.8em; line-height: 1.2em; font-weight: normal; font-family:'myfont-bold' }
       h4{font-size: 1.5em;line-height: 1.2em; font-weight: normal; margin-bottom: 0.5em;}
-      input{border:1px solid #ffe3cd; padding: 0.2em 0.6em; background: none; color: #ffe3cd; font-size: 0.8em;}
+      input{
+        border: none;
+        border:1px solid #ffe3cd;
+        padding: 0.2em 0.6em; background: none; color: #ffe3cd; font-size: 0.8em;
+        border-radius: 0;}
     }
   }
   >div {
@@ -186,15 +190,12 @@ html, body {
       margin-left: -228px;
     }
   }
-
 }
-
 .m-fashion{
-  padding-top: 53px; margin-bottom: 120px; width: 100%;
+  padding-top: 53px; padding-bottom: 120px; width: 100%;
   font-size: 20px;
   .fashion1{
     width: 100%; position: relative; z-index: 1; overflow: hidden;
-
   }
   img{position: relative;}
   .table_pos{position: absolute; width: 100%;height: 100%;top:0; left: 0; }
@@ -205,11 +206,10 @@ html, body {
           a{color:#ffe3cd;}
           h3{font-size:1.8em; line-height: 1.2em; font-weight: normal; font-family:'myfont-bold' }
           h4{font-size: 1.5em;line-height: 1.2em; font-weight: normal; margin-bottom: 0.5em;}
-          input{border:1px solid #ffe3cd; padding: 0.2em 0.6em; background: none; color: #ffe3cd; font-size: 0.8em;}
+          input{border:1px solid #ffe3cd; border-radius: 0; padding: 0.2em 0.6em; background: none; color: #ffe3cd; font-size: 0.8em;}
         }
       }
 }
-
 @media (min-width: 1200px)and (max-width: 1350px){
   .m-product{font-size: 18px;}
 
