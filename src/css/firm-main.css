@@ -574,6 +574,34 @@ a, a:hover {
   .m-nav:after {
     clear: both; }
 
+.hidden {
+  display: none; }
+
+.modal {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .modal .bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 999; }
+  .modal .weixin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    margin-top: -150px;
+    margin-left: -129px; }
+
 .g-bottom {
   position: fixed;
   bottom: 0;
@@ -1113,12 +1141,11 @@ body {
       .m-main7-cy .main .con .descript {
         margin: 10px 20px 20px; }
       .m-main7-cy .main .con .descript a {
+        cursor: default;
         font-size: 14px;
         font-family: "宋体";
         color: #83654c;
         line-height: 1.5; }
-        .m-main7-cy .main .con .descript a:hover {
-          color: #ab9885; }
 
 .m-main8-cy {
   width: 862px;
@@ -1202,7 +1229,7 @@ body {
         font-size: 14px;
         font-family: "宋体";
         color: #6c513a; }
-      .m-main9-cy .main .firmdet > span {
+      .m-main9-cy .main .firmdet .tel, .m-main9-cy .main .firmdet .email, .m-main9-cy .main .firmdet .fax, .m-main9-cy .main .firmdet .web {
         margin-top: 16px;
         display: inline-block;
         width: 118px;
@@ -1213,6 +1240,8 @@ body {
         color: #6c513a;
         font-family: "宋体";
         background: url("../images/contactus-pic1.png") no-repeat; }
+      .m-main9-cy .main .firmdet .email:hover, .m-main9-cy .main .firmdet .web:hover {
+        color: #333; }
       .m-main9-cy .main .firmdet .tel {
         background-position: 0 -24px; }
       .m-main9-cy .main .firmdet .email {
@@ -1233,62 +1262,24 @@ body {
         display: table; }
         .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video, .m-main9-cy .main .firmdet .weixin .name, .m-main9-cy .main .firmdet .weixin .erweima {
           display: table-cell;
-          cursor: pointer;
           vertical-align: middle;
           font-size: 12px;
           color: #6c513a; }
         .m-main9-cy .main .firmdet .weixin .name {
           width: 110px; }
         .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video {
+          cursor: pointer;
           font-size: 20px;
-          color: #967e6b; }
+          color: #967e6b;
+          font-size: 12px; }
+          .m-main9-cy .main .firmdet .weixin .wei:hover, .m-main9-cy .main .firmdet .weixin .video:hover {
+            color: #333; }
         .m-main9-cy .main .firmdet .weixin .erweima {
           display: inline-block;
           height: 76px;
           width: 76px;
           border: 1px solid #d6c2a0;
           padding: 6px; }
-  .m-main9-cy .fengongsi {
-    margin-left: -106px;
-    margin-bottom: 100px;
-    clear: both;
-    margin-top: 80px; }
-    .m-main9-cy .fengongsi:before, .m-main9-cy .fengongsi:after {
-      content: " ";
-      display: table; }
-    .m-main9-cy .fengongsi:after {
-      clear: both; }
-    .m-main9-cy .fengongsi .item {
-      float: left;
-      padding: 30px 0;
-      margin-top: -1px;
-      margin-left: 106px;
-      width: 378px;
-      border-bottom: 1px solid #d6c2a0;
-      border-top: 1px solid #d6c2a0; }
-      .m-main9-cy .fengongsi .item:before, .m-main9-cy .fengongsi .item:after {
-        content: " ";
-        display: table; }
-      .m-main9-cy .fengongsi .item:after {
-        clear: both; }
-      .m-main9-cy .fengongsi .item h3 {
-        font-size: 18px;
-        color: #6c513a;
-        font-weight: normal; }
-      .m-main9-cy .fengongsi .item .add, .m-main9-cy .fengongsi .item .num, .m-main9-cy .fengongsi .item .tel, .m-main9-cy .fengongsi .item .fax {
-        margin-top: 16px;
-        font-size: 14px;
-        color: #6c513a; }
-      .m-main9-cy .fengongsi .item .tel, .m-main9-cy .fengongsi .item .fax {
-        display: block;
-        padding-left: 34px;
-        background: url("../images/contactus-pic3.png") no-repeat; }
-      .m-main9-cy .fengongsi .item .tel {
-        float: left;
-        background-position: 0 2px; }
-      .m-main9-cy .fengongsi .item .fax {
-        float: right;
-        background-position: 0 -12px; }
 
 .m-mainlast-cy {
   width: 862px;
@@ -1426,3 +1417,5 @@ body {
       line-height: 180%;
       color: #83654c;
       font-family: "瀹嬩綋"; }
+
+/*# sourceMappingURL=firm-main.css.map */

@@ -24,13 +24,17 @@
         <div class="icon">
             <p>
                 <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="iconfont icon-yingdaicon04"></a>
+                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
                 <a href="#" class="iconfont icon-yingdaicon05"></a>
             </p>
         </div>
     </div>
 </div>
-
+<!--TODO #modal cy-->
+<div id="modal" class="hidden">
+    <div class="bg"></div>
+    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
+</div>
 <div class="g-main">
     <!--左侧栏-->
     <div class="m-left">
@@ -46,6 +50,7 @@
         <div class="left">
             <!--ToDo update .u-title和.yh-->
             <h4 class="u-title">关于我们</h4>
+
             <div class="yh"></div>
             <div class="con">
                 <p class="pra">
@@ -56,9 +61,11 @@
         </div>
         <div class="right">
             <h4 class="u-title"></h4>
+
             <div class="yh"></div>
             <div class="con">
                 <img src="../images/aboutus-pic1.png" alt="图片展示"/>
+
                 <p>应大荣誉称号</p>
             </div>
         </div>
@@ -75,5 +82,17 @@
     </div>
 </div>
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+<script src="../javascript/ie8/jquery.min.js"></script>
+<script>
+
+    $(".g-top .icon .weixin").click(function () {
+       $("#modal").removeClass("hidden").addClass("modal");
+
+    })
+    $("#modal").click(function () {
+      $(this).removeClass("modal").addClass("hidden")
+
+    });
+</script>
 </body>
 </html>
