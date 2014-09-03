@@ -3,37 +3,36 @@ body.chapter21 {
   background-color: #000;
 }
 
-
-
 .m-chapter21{
   height: 100%;
 
   .btnreturn{
-    width: 100px;
-    height: 100px;
-    background: red;
     position: absolute;
     top:10%;
-    right: 10%;
+    right: 3%;
+    width:30px;
+    height:30px;
     z-index: 300;
+    cursor:pointer;
+    background:url(../images/article-btn1.png) no-repeat;
+    &:hover{background:url(../images/article-btn.png) no-repeat;}
   }
-  .prebtn{
-    width: 100px;
-    height: 100px;
-    background: red;
+  .prebtn,.nextbtn{
+    color:#ffe3cd;
     position: absolute;
     top:50%;
-    left:10%;
     z-index: 300;
+    text-align:center;
+    cursor:pointer;
+    i{display:block; font-size:60px; vertical-align:middle;}
+    &:hover{color:#714e38;}
+  }
+
+  .prebtn{
+    left:5%;
   }
   .nextbtn{
-    width: 100px;
-    height: 100px;
-    background: red;
-    position: absolute;
-    top:50%;
-    right:10%;
-    z-index: 300;
+    right:5%;
   }
 
   .g-sld {
