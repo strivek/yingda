@@ -47,15 +47,17 @@
     <div class="m-main-cy">
         <h2 class="u-title">应大之家</h2>
         <div class="yh"></div>
+        <!--TODO update .imglb cy 9.3-->
         <div class="imglb">
             <ol class="imgList">
-                <li class="z-crt"><img src="../images/firm-index1.png" alt="图片轮播"/></li>
-                <li><img src="../images/firm-index1.png" alt="图片轮播"/></li>
-                <li><img src="../images/firm-index1.png" alt="图片轮播"/></li>
-                <li><img src="../images/firm-index1.png" alt="图片轮播"/></li>
-                <li><img src="../images/firm-index1.png" alt="图片轮播"/></li>
-                <span class="u-pointer"><i class="z-crt"></i><i></i><i></i><i></i><i></i></span>
+                <li class="active"><img src="../images/yingdabuilding1.jpg" alt="图片轮播"/></li>
+                <li><img src="../images/yingdabuilding.jpg" alt="图片轮播"/></li>
+                <li><img src="../images/yingdabuilding1.jpg" alt="图片轮播"/></li>
+                <li><img src="../images/yingdabuilding.jpg" alt="图片轮播"/></li>
+                <li><img src="../images/yingdabuilding1.jpg" alt="图片轮播"/></li>
+
             </ol>
+            <span class="u-pointer"><i class="active"></i><i></i><i></i><i></i><i></i></span>
         </div>
         <div class="left list">
             <div class="u-toptitle">
@@ -152,6 +154,7 @@
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
 <!--TODO update jquery-->
 <script src="../javascript/ie8/jquery.min.js"></script>
+<!--TODO update jquery cy 9.3-->
 <script type="text/javascript">
     $(function(){
 
@@ -165,57 +168,60 @@
         );
     });
 
-    (function (_slides) {
-        each(_slides, function (_slide, i) {
-            var _ctrls = _slide.getElementsByTagName('i');
-            var _lists = _slide.getElementsByTagName('li');
-            each(_ctrls, function (_ctrl, i) {
-                _ctrl.onclick = function () {
-                    each(_lists, function (_list, i) {
-                        delClass(_list, "z-crt");
+    <script>
+    $(function(){
+        $(function(){
+            var oul = $('.imglb ol');
+            var ali = $('.imglb ol li');
+            var numLi = $('span i');
+            var aliWidth = $('.imglb ol li').eq(0).width();
+            var _now = 0;	//这个是控制数字样式的计数器
+            var _now2 = 0;	//这个是控制图片运动距离的计数器
+            var timeId;
+            var aimg = $('.imglb ol img');
+            numLi.click(function(){
+                var index = $(this).index();
+                _now = index;
+                _now2=index;
+
+                $(this).addClass('active').siblings().removeClass();
+                oul.animate({'left':-aliWidth*index},500);
+            });
+            function slider(){
+                if(_now==numLi.size()-1){
+                    ali.eq(0).css({
+                        'position':'relative',
+                        'left': oul.width()
                     });
-                    each(_ctrls, function (_ctrl, i) {
-                        delClass(_ctrl, "z-crt");
-                    });
-                    addClass(_lists[i], "z-crt");
-                    addClass(_ctrls[i], "z-crt");
+                    _now=0;
+                }else{
+                    _now++;
                 }
+
+                _now2++;
+
+                numLi.eq(_now).addClass('active').siblings().removeClass();
+
+
+
+
+                oul.animate({'left':-aliWidth*_now2},500,function(){
+                    if(_now==0){
+                        ali.eq(0).css('position','static');
+                        oul.css('left',0);
+                        _now2=0;
+                    }
+                });
+            }
+
+            timeId = setInterval(slider,1500);
+            $('.imglb').hover(function(){
+                clearInterval(timeId);
+            },function(){
+                timeId = setInterval(slider,1500);
             });
         });
-        function hasClass(_object, _clsname) {
-            var _clsname = _clsname.replace(".", "");
-            var _sCls = " " + (_object.className) + " ";
-            return (_sCls.indexOf(" " + _clsname + " ") != -1) ? true : false;
-        }
-
-        function toClass(_str) {
-            var _str = _str.toString();
-            _str = _str.replace(/(^\s*)|(\s*$)/g, "");
-            _str = _str.replace(/\s{2,}/g, " ");
-            return _str;
-        }
-
-        function addClass(_object, _clsname) {
-            var _clsname = _clsname.replace(".", "");
-            if (!hasClass(_object, _clsname)) {
-                _object.className = toClass(_object.className + (" " + _clsname));
-            }
-        }
-
-        function delClass(_object, _clsname) {
-            var _clsname = _clsname.replace(".", "");
-            if (hasClass(_object, _clsname)) {
-                _object.className = toClass(_object.className.replace(new RegExp("(?:^|\\s)" + _clsname + "(?=\\s|$)", "g"), " "));
-            }
-        }
-
-        function each(_objects, _fn) {
-            for (var i = 0, len = _objects.length; i < len; i++) {
-                _fn(_objects[i], i);
-            }
-        }
-    })(document.getElementsByTagName('div'));
+    })
 </script>
-
 </body>
 </html>

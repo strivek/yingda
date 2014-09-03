@@ -17,6 +17,7 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
                 '</div></div>';
         }
     });
+
 });
 
 ////productListWomen.html 瀑布流
