@@ -2,7 +2,6 @@ body.chapter21 {
   height: 100%;
   background-color: #000;
 }
-
 .m-chapter21{
   height: 100%;
 
@@ -79,6 +78,7 @@ body.chapter21 {
     @media (max-width: 788px) {
       .inner {
         width: 5880px;
+
         overflow: hidden;
         height: 100%;
         z-index: 1;
