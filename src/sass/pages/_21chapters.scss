@@ -2,6 +2,9 @@ body.chapter21 {
   height: 100%;
   background-color: #000;
 }
+
+
+
 .m-chapter21{
   height: 100%;
   .g-sld {
@@ -17,8 +20,8 @@ body.chapter21 {
     position: absolute;
     top: 0;
     left: 0;
-    background: #000;
     z-index: 99;
+    background: #000000 url("../images/21chapter/1/1-1.jpg") no-repeat center;
   }
 
   .btn-return {
@@ -40,14 +43,14 @@ body.chapter21 {
     overflow-x: hidden;
     z-index: 100;
     .inner {
-      width: 6500px;
+      width: 6700px;
       overflow: hidden;
       height: 100%;
       z-index: 1;
     }
     @media (max-width: 788px) {
       .inner {
-        width: 5500px;
+        width: 6000px;
         overflow: hidden;
         height: 100%;
         z-index: 1;
@@ -151,6 +154,12 @@ body.chapter21 {
     }
     #step-19 {
       background: #000000 url("../images/21chapter/19.jpg") no-repeat center;
+    }
+    #step-20 {
+      background: #000000 url("../images/21chapter/20.jpg") no-repeat center;
+    }
+    #step-21 {
+      background: #000000 url("../images/21chapter/21.jpg") no-repeat center;
     }
   }
 

@@ -152,7 +152,7 @@
                         <input type="text" class="form-control" id="num">
                     </div>
                     <div class="form-check">
-                        <label for="check"><input type="checkbox" id="check" class="check">我已阅读并接受<a href="#" class="privacy">隐私声明</a></label>
+                        <label for="check"><input type="checkbox" id="check" class="check">我已阅读并接受<a href="#" class="privacy" data-toggle="modal" data-target=".m-privacy">隐私声明</a></label>
                     </div>
                     <p class="button">
                         <button type="submit" class="btn">建立您的账户</button>
@@ -165,7 +165,44 @@
 <!-- 全屏背景壁纸 -->
 <!--TODO LSY 8.27-->
 <img class="u-fullscreen" src="../images/register_bg.jpg" alt="背景图片">
+<!--TODO LSY 隐私条款都引用此 9.2-->
+<div class="modal fade m-privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button  type="button" class="close" data-dismiss="modal"><img src="../images/article-btn.png" alt="close"/></button>
+                <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+                <h4 class="modal-title" id="myModalLabel" >隐私条款</h4>
+            </div>
+            <div class="modal-body m-main2-cy">
 
+                <!--<div id="scrollbar2">-->
+                    <!--<div class="scrollbar">-->
+                        <!--<div class="track">-->
+                            <!--<div class="thumb">-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="viewport">-->
+                        <!--<div class="overview">-->
+                            <p>Burberry
+                                Limited，一家成立并注册于英格兰和威尔士的公司（以下简称“我们”），公司注册号码00162636，以非常慎重的态度来处理您的隐私。本隐私权声明将解释我们收集何种个人信息，如何以及何时收集该等信息，现在我们为何种目的使用该等信息，将来我们如何使用该等信息，以及我们在何种情况下会将该等信息披露给第三方。如果您对我们收集或使用您的个人信息的方式有任何疑问，但没有在本隐私权声明中找到解答，且／或您有任何投诉，请发送邮件至customerservice@burberry.com联系我们。</p>
+                            <p>在为了向Burberry购买产品或索取样品（如适用）而浏览、使用 www.burberry.com （下称本"网站")
+                                或任何其他应用程序或网站（下称“应用程序”）的同时，您承认您已经阅读，理解并同意本隐私权声明及我们的条款和条件中提到的有关使用和披露您的个人信息的做法。如您属于以下情况访问和使用本网站，请在向我们提供任何个人信息之前取得您父母或监护人的同意：</p>
+                            <p><span>在俄国且您的年龄在18岁以下；或</span>
+                                <span>在日本或台湾且您的年龄在20岁以下；或</span>
+                                <span>任何其他地方且您的年龄在16岁以下。</span></p>
+                            <p>我们收集何种信息？我们将如何使用该等信息？</p>
+                            <p class="mb0">
+                                当您向我们注册一个账户，向我们发送订单或向我们发送问询时，我们将会向您收集某些个人信息，如您的姓名、邮寄地址、电话号码、电子邮件地址、信用卡号码。我们可能还会为认证或身份确认之目的获取您的其他信息。我们使用该等信息来确认您作为一名顾客的身份、处理您的订单、运送产品、处理付款、更新我们的记录。以使网站和该等交流与您的联系更为密切。我们也可能不时要求您提供其他信息，如产品尺寸、种类偏好、您的</p>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
 <!--底部样式-->
 <div class="g-footer navbar-fixed-bottom" >
     <div class="m-footer-bg"></div>
@@ -180,7 +217,8 @@
                     <li><a href="#">招贤纳士</a></li>
                     <li><a href="#">联系我们</a></li>
                     <li><a href="#">法律声明</a></li>
-                    <li><a href="#">隐私条款</a></li>
+                    <!--TODO LSY update 隐私条款触发-->
+                    <li><a href="#" class="privacy" data-toggle="modal" data-target=".m-privacy">隐私声明</a></li>
                 </ul>
             </div>
             <div class="versions1" ><p class="text-right">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p></div>
