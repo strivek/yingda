@@ -42,16 +42,17 @@
   }
   .fs-down {
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     left: 50%;
     margin-left: -50px;
     width: 100px;
     height: 100px;
     display: block;
     cursor: pointer;
+    padding-top: 40px;
     img {
       display: block;
-      margin: 40px auto 0;
+      margin: 0 auto;
       cursor: pointer;
     }
   }
@@ -119,9 +120,9 @@
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
   .m-fullscreen {
-    .fs-down {bottom: 13%;}
+    .fs-down {bottom: 12%;}
   }
 }
 
