@@ -65,7 +65,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             wrap = $(".wrap"),
             imglink = $("#" + cur.attr("id")).data("link");
         console.log(imglink);
-        $(".m-slider img").attr("src", imglink);
+        $(".m-slider .listdetail").attr("src", imglink);
 
         this.currId = cur.attr("id");
 
@@ -101,7 +101,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.setImgUrl(url);
     };
     Slidelight.prototype.setImgUrl = function (url) {
-        $(".m-slider img").attr("src", url);
+        $(".m-slider .listdetail").attr("src", url);
     }
     Slidelight.prototype.getNextUrl = function (id) {
         console.log(this.currId);
