@@ -7,6 +7,35 @@ body.chapter21 {
 
 .m-chapter21{
   height: 100%;
+
+  .btnreturn{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top:10%;
+    right: 10%;
+    z-index: 300;
+  }
+  .prebtn{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top:50%;
+    left:10%;
+    z-index: 300;
+  }
+  .nextbtn{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top:50%;
+    right:10%;
+    z-index: 300;
+  }
+
   .g-sld {
     height: 100%;
     position: relative;
