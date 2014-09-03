@@ -153,7 +153,7 @@
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
 <!--TODO update jquery-->
 <script src="../javascript/ie8/jquery.min.js"></script>
-<script>
+<script type="text/javascript">
     $(function(){
 
         $(".m-list3").hover(function () {
@@ -165,9 +165,8 @@
                 }
         );
     });
-</script>
 
-<script>
+    <script>
     $(function(){
         $(function(){
             var oul = $('.imglb ol');
@@ -200,6 +199,10 @@
                 _now2++;
 
                 numLi.eq(_now).addClass('active').siblings().removeClass();
+
+
+
+
                 oul.animate({'left':-aliWidth*_now2},500,function(){
                     if(_now==0){
                         ali.eq(0).css('position','static');

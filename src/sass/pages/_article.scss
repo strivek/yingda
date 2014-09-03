@@ -72,19 +72,14 @@ $color: #ffe3cd;
   background: url("../images/article-scroll.png") repeat-y center top;
   cursor: pointer;
   width: 14px;
-  height: 20px;
+
   overflow: hidden;
   position: absolute;
   top: 0;
   left: -6px;
+  min-height: 1px;
 }
-#scrollbar2 .thumb .end
-{
-  background:transparent url("../images/article-scroll.png") no-repeat center top;
-overflow:hidden;
-height:5px;
-width:14px;
-}
+
 #scrollbar2 .disable
 {
 display:none;
