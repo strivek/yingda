@@ -44,9 +44,14 @@
     position: absolute;
     bottom: 10%;
     left: 50%;
-    margin-left: -21px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
     display: block;
+    cursor: pointer;
     img {
+      display: block;
+      margin: 40px auto 0;
       cursor: pointer;
     }
   }
@@ -114,7 +119,11 @@
   }
 }
 
-
+@media screen and (max-width: 1024px){
+  .m-fullscreen {
+    .fs-down {bottom: 13%;}
+  }
+}
 
 @media screen and (max-width: 1024px){
   .m-fullscreen {
