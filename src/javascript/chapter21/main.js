@@ -15,11 +15,10 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.nextbtn = $(".nextbtn");
         this.backBtn = $(".btnreturn");
         this.currId = void 0;
-
     }
 
     Slidelight.prototype.init = function () {
-        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, bounceTime: 1200, click: true});
+        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, click: true});
 
         this.isdesktop = this.isDesktop();
         this.eventBind();
@@ -28,10 +27,12 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
     Slidelight.prototype.eventBind = function () {
 
         $(".list-item").click($.proxy(this.doorOpen, this));
-//
+
         $(".btnreturn").click($.proxy(this.closeDoor, this));
 
-        $(".list-item").mouseenter($.proxy(this.hoverIn, this)).mouseleave($.proxy(this.hoverOut, this));
+        $(".list-item").mouseenter($.proxy(this.hoverIn, this));
+
+        $(".list-item").mouseleave($.proxy(this.hoverOut, this));
 
         $(".prebtn").on("click", $.proxy(this.prebtn, this));
 
@@ -65,7 +66,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             wrap = $(".wrap"),
             imglink = $("#" + cur.attr("id")).data("link");
         console.log(imglink);
-        $(".m-slider img").attr("src", imglink);
+        $(".m-slider .listdetail").attr("src", imglink);
 
         this.currId = cur.attr("id");
 
@@ -101,15 +102,14 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.setImgUrl(url);
     };
     Slidelight.prototype.setImgUrl = function (url) {
-        $(".m-slider img").attr("src", url);
+        $(".m-slider .listdetail").attr("src", url);
     }
     Slidelight.prototype.getNextUrl = function (id) {
-        console.log(this.currId);
         var num = id.split("-")[1];
         if (num < 21) {
             num++;
         } else {
-            num = 0;
+            num = 1;
         }
         this.currId = "step-" + num;
         return $("#" + this.currId).data("link");
@@ -131,7 +131,9 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         $(".list-item").on("mouseenter", mousehover);
     };
     Slidelight.prototype.hoverIn = function (event) {
+
         var cur = $(event.currentTarget),
+
             index = cur.index(),
             bf = $(".list-item:lt(" + index + ")"),
             af = $(".list-item:gt(" + index + ")"),
@@ -139,23 +141,13 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             shade = cur.find(".shade");
 
 
-        if (fromElem.attr("id")) {
+        if (fromElem.attr("id") && fromElem.hasClass("list-item")) {
             this.extendDoor = new TimelineLite();
-            this.extendDoor.to(bf, .3, {css: {left: '-30px'}}, 'sm')
-                .to(af, .3, {left: '-30px'}, 'sm')
-                .to(cur, .3, {left: '-30px', width: '340px'}, 'sm')
-                .to(fromElem, .3, {width: '310px'}, 'sm');
-
             if (this.isdesktop) {
                 this.extendDoor.to(shade, .3, {autoAlpha: 0}, "sm");
             }
         } else {
-
             this.extendDoor = new TimelineLite();
-
-            this.extendDoor.to(bf, .3, {left: '-30px'}, 'sm')
-                .to(af, .3, {left: '-30px'}, 'sm')
-                .to(cur, .3, {left: '-30px', width: '340px'}, 'sm')
             if (this.isdesktop) {
                 this.extendDoor.to(shade, .3, {autoAlpha: 0}, "sm");
             }
