@@ -1,4 +1,4 @@
-.m-channel{margin-top:52px;margin-bottom: 120px;
+.m-channel{margin-top:52px;padding-bottom: 120px;
   .channel_list{
     width: 100%;position: relative; font-size: 20px;
     @media (min-width: 1380px) and (max-width: 1679px) {
@@ -24,7 +24,7 @@
       }
       a{color:#32251f;}
       a:hover{color:#714e38;}
-      input{border:1px solid #32251f; padding: 0.2em 0.6em; background: none; font-size: 1em;
+      input{border:1px solid #32251f; padding: 0.2em 0.6em; background: none; font-size: 1em;border-radius: 0;
       &:hover{ border:1px solid #714e38;color:#714e38;
           @include hover-transition();
       }
