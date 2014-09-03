@@ -10,11 +10,13 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.openDoor = {};
         this.flexslider = "";
         this.time = "";
+        this.backBtn = $(".btn-return");
         this.init();
         this.prebtn = $(".prebtn");
         this.nextbtn = $(".nextbtn");
         this.backBtn = $(".btnreturn");
         this.currId = void 0;
+
     }
 
     Slidelight.prototype.init = function () {
@@ -64,12 +66,12 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             zindex = $(".m-sld .inner,.m-sld"),
             arrBefore = [cur],
             wrap = $(".wrap"),
+
             imglink = $("#" + cur.attr("id")).data("link");
         console.log(imglink);
         $(".m-slider .listdetail").attr("src", imglink);
 
         this.currId = cur.attr("id");
-
         bf.length != 0 ? arrBefore.push(bf) : "";
 
         if (screen > 1440) {
