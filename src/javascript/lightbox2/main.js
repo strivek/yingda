@@ -12,28 +12,8 @@ require(['jquery', 'lightbox2/jquery.lightbox2'], function ($, LightModal) {
             this.jsonData = "";
             this.currentId = -1;
             this.isAjaxCompleted = 1;
-            this.url = "../json/productListWomen.json";
+            this.url = "productdetails.asp?type="+sc+"&time="+new Date();
         }
-        return LightModalOptions;
-    })();
-    var options = new LightModalOptions();
-    var modalElem = $(options.modalId).length;
-    if (modalElem) {
-        var lightmodal = new LightModal(options);
-    }
-});
-//productListMen.html 灯箱
-require(['jquery', 'lightbox2/jquery.lightbox2'], function ($, LightModal) {
-    var LightModalOptions = (function () {
-        function LightModalOptions() {
-            this.fireClass = ".water-modal";
-            this.modalId = "#water-modal-men";
-            this.jsonData = "";
-            this.currentId = -1;
-            this.isAjaxCompleted = 1;
-            this.url = "../json/productListWomen.json";
-        }
-
         return LightModalOptions;
     })();
     var options = new LightModalOptions();

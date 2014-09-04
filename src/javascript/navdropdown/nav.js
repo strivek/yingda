@@ -15,11 +15,11 @@ define(['jquery'], function ($) {
         $(this).find(b).show();
          $(c).show();
 
+
     };
     $.fn.navshow2 = function (b, c) {
        $(b).hide();
        $(c).hide();
-
-
     };
+
 })
