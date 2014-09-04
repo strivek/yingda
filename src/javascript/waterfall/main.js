@@ -44,7 +44,7 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
                 '<a href="' + data.prId + '" class="thumb" target="_blank">' +
                 '<img class="thumb_img"  src="/uploads/product/' + data.prImg + ' " />' +
                 '</a>' +
-                '<a style="position:absolute; right:10px; bottom:8px; display:block;color:#ffe3cd; font-size:40px;" class="iconfont" href="' + data.prId + '" target="_blank">&#xe647</a>' +
+                '<a style="position:absolute; right:10px; bottom:8px; display:block;color:#ffe3cd; font-size:40px;" class="iconfont icon-yingdaicon08" href="' + data.prId + '" target="_blank"></a>' +
                 '</div>';
         }
     });
