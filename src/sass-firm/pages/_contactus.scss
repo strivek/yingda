@@ -2,43 +2,90 @@
 .m-main9-cy {
   width: 862px;
   float: right;
-.main{margin-top: 32px;
-@include clearfix();
-  .map{float: left; width: 490px; height:290px;}
-  .firmdet{margin-left: 30px; float: right; width: 340px;
-   h3{font-size:18px; font-family: "宋体";color:#6c513a; font-weight: normal; }
-   .add,.num{margin-top: 14px; font-size:14px; font-family: "宋体"; color:#6c513a;}
-    & > span{margin-top: 16px; display: inline-block;width: 118px; padding-left: 30px; height:22px; line-height:22px;font-size: 14px; color:#6c513a;font-family:"宋体";  background: url("../images/contactus-pic1.png") no-repeat;}
-    .tel{background-position: 0 -24px;}
-    .email{margin-left:40px; background-position: 0 -46px;}
-    .fax{background-position: 0 0px;}
-    .web{ margin-left:40px;background-position: 0 -70px;}
-    .weixin{margin-top:20px;padding-top: 20px; border-top: 1px solid #d6c2a0; text-align: right;  height: 100%;
-      width: 100%;
-      display: table;
-    .wei,.video,.name,.erweima{ display: table-cell;cursor:pointer;
-      vertical-align: middle;font-size:12px; color:#6c513a; }
-      .name{width: 110px;}
-    .wei,.video{font-size:20px; color: #967e6b;}
-    .erweima{display: inline-block; height: 76px; width: 76px; border: 1px solid #d6c2a0; padding: 6px;}
+  .main {
+    margin-top: 32px;
+    @include clearfix();
+    .map {
+      float: left;
+      width: 490px;
+      height: 290px;
+    }
+    .firmdet {
+      margin-left: 30px;
+      float: right;
+      width: 340px;
+      h3 {
+        font-size: 18px;
+        font-family: "宋体";
+        color: #6c513a;
+        font-weight: normal;
+      }
+      .add, .num {
+        margin-top: 14px;
+        font-size: 14px;
+        font-family: "宋体";
+        color: #6c513a;
+      }
+      .tel,.email, .fax, .web{
+        margin-top: 16px;
+        display: inline-block;
+        width: 118px;
+        padding-left: 30px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+        color: #6c513a;
+        font-family: "宋体";
+        background: url("../images/contactus-pic1.png") no-repeat;
+      }
+      .email:hover,.web:hover{color:#333;}
+      .tel {
+        background-position: 0 -24px;
+      }
+      .email {
+        margin-left: 40px;
+        background-position: 0 -46px;
+      }
+      .fax {
+        background-position: 0 0px;
+      }
+      .web {
+        margin-left: 40px;
+        background-position: 0 -70px;
+      }
+      .weixin {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #d6c2a0;
+        text-align: right;
+        height: 100%;
+        width: 100%;
+        display: table;
+        .wei, .video, .name, .erweima {
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 12px;
+          color: #6c513a;
+        }
+        .name {
+          width: 110px;
+        }
+        .wei, .video {
+          cursor: pointer;
+          font-size: 20px;
+          color: #967e6b;
+          font-size: 12px;
+          &:hover{color:#333;}
+        }
+        .erweima {
+          display: inline-block;
+          height: 76px;
+          width: 76px;
+          border: 1px solid #d6c2a0;
+          padding: 6px;
+        }
+      }
     }
   }
-}
-.fengongsi{
-  margin-left: -106px;
-  margin-bottom: 100px;
-  clear: both;
-@include clearfix();
-  margin-top: 80px;
-  .item{@include clearfix();
-    float: left; padding: 30px 0; margin-top: -1px;
-    margin-left: 106px;
-    width:378px; border-bottom:1px solid #d6c2a0; border-top:1px solid #d6c2a0;
-      h3{font-size:18px; color:#6c513a; font-weight: normal;}
-      .add,.num,.tel,.fax{margin-top: 16px; font-size:14px; color:#6c513a;}
-      .tel,.fax{display:block; padding-left:34px;  background: url("../images/contactus-pic3.png") no-repeat;}
-      .tel{ float: left;background-position:0 2px;   }
-      .fax{ float: right; background-position: 0 -12px; }
-  }
-}
+
 }

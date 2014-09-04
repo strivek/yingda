@@ -17,8 +17,8 @@
         border-bottom: 1px solid #d2c7b5;
        font-size: 14px; font-family: "宋体"; color:#83654c;}
      .descript{margin:10px 20px 20px;}
-     .descript a{font-size: 14px; font-family: "宋体"; color:#83654c; line-height: 1.5;
-     &:hover{color:#ab9885;}}
+     .descript a{cursor:default; font-size: 14px; font-family: "宋体"; color:#83654c; line-height: 1.5;
+     }
    }
   }
 }

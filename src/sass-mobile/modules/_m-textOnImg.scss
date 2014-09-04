@@ -82,6 +82,26 @@
       border: 1px solid $channelFont;
     }
   }
+  .table-bg {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    margin: 0;
+    width: 30%;
+    height: 50%;
+    background-color: #fff;
+    opacity: 0.3;
+  }
+  /*.table-wrap {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    margin: 0;
+    width: 40%;
+    height: 50%;
+    background-color: #fff;
+    opacity: 0.3;
+  }*/
 }
 
 .m-textOnImg1 {
