@@ -46,10 +46,38 @@ $font-family: '宋体';
     line-height: 24px;
   }
 }
+.vedio{
+  position:relative;
 
-.m-content3-cy .img img, .m-content4-cy .vedio iframe {
-  max-width: 100%;
 }
+
+.wrapper{
+  position:relative;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+    object,embed{
+      position:relative;
+      left:-945px;
+    }
+}
+
+
+
+.video-image{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  z-index:2;
+  cursor: pointer;
+}
+
+/*.m-content3-cy .img img, .m-content4-cy .vedio iframe {
+  max-width: 100%;
+}*/
 
 //第五屏图片列表展示
 .m-imgList {
