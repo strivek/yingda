@@ -156,10 +156,13 @@ require(['jquery'], function ($) {
 });
 
 require(['jquery'], function ($) {
+
 //  yingdabrand.html视频
     if($(".m-inner-wrapper").attr("date-havevideo") == "haveyingdabrand") {
         $(".like-video-image").click(function () {
             $(this).parent().find(".m-inner-wrapper").eq(0).css({"display": "block"});
+            $(this).closest(".img").find(".myVideo").get(0).play();
+
         });
     }
 
@@ -167,8 +170,10 @@ require(['jquery'], function ($) {
     if($(".wrapper").attr("date-havevideo") == "haveyingdastyle") {
         $(".video-image").click(function(){
             $(this).css({"display":"none"});
-            $(this).parent().find(".wrapper").eq(0).css({"z-index":"3"});
-            $(this).parent().find("object,embed").css({"left":"0"});
+            var parent = $(this).parent();
+            parent.find(".wrapper").eq(0).css({"z-index":"3"});
+            parent.find("object,embed").css({"left":"0"});
+            parent.find(".myVideo").get(0).play();
         });
     }
 
@@ -176,8 +181,10 @@ require(['jquery'], function ($) {
     if($(".wrapper").attr("date-havevideo") == "haveseasonfashion") {
         $(".video-image").click(function(){
             $(this).find("img").css({"display":"none"});
-            $(this).parent().find(".wrapper").eq(0).css({"z-index":"3"});
-            $(this).parent().find("object,embed").css({"left":"0"});
+            var parent = $(this).parent();
+            parent.find(".wrapper").eq(0).css({"z-index":"3"});
+            parent.find("object,embed").css({"left":"0"});
+            parent.find(".myVideo").get(0).play();
         });
     }
 });
