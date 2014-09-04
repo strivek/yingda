@@ -11,6 +11,7 @@ define(['jquery'], function ($) {
         this.obj = $(".bk-toggle");
         this.id = "";
         this.img = $(".u-fullscreen-index.first");
+        this.defaultimg = this.img.attr("src");
         this.imgbk = $(".u-fullscreen-index.two");
         this.jsonData = void 0;
         this.status = true;
@@ -36,7 +37,7 @@ define(['jquery'], function ($) {
         })
         $(".m-nav-list-bg").on("hover.hide", function (e) {
             this.status = true;
-            self.img.add(self.imgbk).attr("src", '../images/index-default.jpg');
+            self.img.add(self.imgbk).attr("src", defaultimg);
         })
     };
     Backgroundtoggle.prototype.getJsonData = function () {
