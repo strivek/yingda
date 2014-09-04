@@ -88,3 +88,31 @@
   }
 }
 
+.m-video{
+  position:relative;
+  .wrapper{
+    position:relative;
+    left:0;
+    top:0;
+    margin-left:-15px; margin-top:-13px;
+    object,embed{
+      position:relative;
+      left:-945px;
+    }
+    video{
+      width:100% !important;
+    }
+  }
+
+
+
+  .video-image{
+    position:absolute;
+    width:94%;
+    height:94%;
+    left:0;
+    top:0;
+    z-index:2;
+    cursor:pointer;
+  }
+}
