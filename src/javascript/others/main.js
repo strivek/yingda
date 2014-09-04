@@ -142,3 +142,16 @@ require(['jquery'], function ($) {
 
 });
 
+require(['jquery'], function ($) {
+//   推荐效果
+    if($(window).width()<=1024){
+    $('input').focus(function(){
+            $('.g-footer').fadeOut();
+    });
+    $('input').blur(function(){
+            $('.g-footer').fadeIn();
+
+    })
+    }
+});
+

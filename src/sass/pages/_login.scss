@@ -125,3 +125,8 @@ $color: #ffe3cd;
     }
   }
 }
+@media (max-width: 1024px) {
+  input:focus{
+    .g-footer{display:none;}
+  }
+}
