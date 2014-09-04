@@ -15,8 +15,8 @@ define(['jquery'], function ($) {
         this.imgbk = $(".u-fullscreen-index.two");
         this.jsonData = void 0;
         this.status = true;
-        this.url = "/homeImg.asp",
-            this.init();
+        this.url = "/homeImg.asp";
+        this.init();
     };
     Backgroundtoggle.prototype.init = function () {
         var self = this;
@@ -36,8 +36,8 @@ define(['jquery'], function ($) {
             }
         })
         $(".m-nav-list-bg").on("hover.hide", function (e) {
-            this.status = true;
-            self.img.add(self.imgbk).attr("src", defaultimg);
+            self.status = true;
+            self.img.add(self.imgbk).attr("src", self.defaultimg);
         })
     };
     Backgroundtoggle.prototype.getJsonData = function () {
