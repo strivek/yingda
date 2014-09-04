@@ -63,13 +63,13 @@ require(['jquery'], function ($) {
         var liLen=aLi.length;
         var timeId=null;
         var ulWid=liWid*liLen;
-      var speed=-2;
+      var speed=-5;
         oUl.width(ulWid);
-        timeId=setInterval(slider,15);
+        timeId=setInterval(slider,30);
         oUl.hover(function(){
             clearInterval(timeId);
         },function(){
-            timeId=setInterval(slider,15);
+            timeId=setInterval(slider,30);
         });
         function slider(){
             if(speed<0){
@@ -89,10 +89,10 @@ require(['jquery'], function ($) {
             }
         }
         $('.left').click(function(){
-            speed=-2;
+            speed=-5;
         });
         $('.right').click(function(){
-            speed=2;
+            speed=5;
         });
 //    $(window).resize(function(){
 //        clearInterval(timeId);
