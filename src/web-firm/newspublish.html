@@ -23,13 +23,16 @@
         <div class="icon">
             <p>
                 <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="iconfont icon-yingdaicon04"></a>
+                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
                 <a href="#" class="iconfont icon-yingdaicon05"></a>
             </p>
         </div>
     </div>
 </div>
-
+<div id="modal" class="hidden">
+    <div class="bg"></div>
+    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
+</div>
 <div class="g-main">
     <!--左侧栏-->
     <div class="m-left">
@@ -172,18 +175,6 @@
 </div>
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
 <!--TODO update jquery cy9.1 -->
-<script src="../javascript/ie8/jquery.min.js"></script>
-<script>
-    $(function(){
-        $(".pic-list").hover(function () {
-
-                    $(this).find(".move").stop().animate({bottom: '0px'});
-                },
-                function () {
-                    $(this).find(".move").stop().animate({bottom: '-40px'});
-                }
-        );
-    });
-</script>
+<script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>

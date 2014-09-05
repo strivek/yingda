@@ -4,8 +4,7 @@
   .list{padding:30px 0; border-bottom:1px dotted #d1c8be;
     cursor:pointer;
     @include clearfix();
-    backgroound:red;
-    .pic{display:inline-block;float:left; width:118px; height:153px;}
+    .pic{display:inline-block;float:left; width:120px; height:120px;}
     .con {display:inline-block; float:right;width:706px;
       font-size:14px; line-height:180%; color:#83654c;font-family:"宋体";
 }
