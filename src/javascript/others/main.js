@@ -215,36 +215,37 @@ require(['jquery'], function ($) {
 
 });
 require(['jquery'], function ($) {
+    if(!$(".itisvideo")) return false;
 
-//  yingdabrand.html视频
-    if($(".m-inner-wrapper").attr("date-havevideo") == "haveyingdabrand") {
-        $(".like-video-image").click(function () {
-            $(this).parent().find(".m-inner-wrapper").eq(0).css({"display": "block"});
-            $(this).closest(".img").find(".myVideo").get(0).play();
+    $(".videoevent").eq(0).on("click",function(){
+        var itisvideo = $(".itisvideo").eq(0);
+        var havevideo = itisvideo.attr("date-havevideo");
+        var objVideo = itisvideo.find("object,embed");
 
-        });
-    }
+        //yingdabrand.html视频
+        if(havevideo == "haveyingdabrand") {
+            itisvideo.css({"display": "block"});
+            itisvideo.find(".myVideo").get(0).play();
+            return false;
+        }
 
-//  yingdastyle.html视频
-    if($(".wrapper").attr("date-havevideo") == "haveyingdastyle") {
-        $(".video-image").click(function(){
+        //yingdastyle.html视频
+        if(havevideo == "haveyingdastyle") {
             $(this).css({"display":"none"});
-            var parent = $(this).parent();
-            parent.find(".wrapper").eq(0).css({"z-index":"3"});
-            parent.find("object,embed").css({"left":"0"});
-            parent.find(".myVideo").get(0).play();
-        });
-    }
+            itisvideo.css({"z-index":"3"});
+            objVideo.css({"left":"0"});
+            itisvideo.find(".myVideo").get(0).play();
+            return false;
+        }
 
-//  seasonfashion.html视频
-    if($(".wrapper").attr("date-havevideo") == "haveseasonfashion") {
-        $(".video-image").click(function(){
+        //seasonfashion.html视频
+        if(havevideo == "haveseasonfashion") {
             $(this).find("img").css({"display":"none"});
-            var parent = $(this).parent();
-            parent.find(".wrapper").eq(0).css({"z-index":"3"});
-            parent.find("object,embed").css({"left":"0"});
-            parent.find(".myVideo").get(0).play();
-        });
-    }
+            itisvideo.css({"z-index":"3"});
+            objVideo.css({"left":"0"});
+            itisvideo.find(".myVideo").get(0).play();
+            return false;
+        }
+    });
 });
 
