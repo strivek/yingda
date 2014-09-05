@@ -1,14 +1,16 @@
 require.config({
     baseUrl: "../javascript",
-    packages: ['swiper','mobileshowhide'],
+    packages: ['swiper','mobileshowhide','mobiledialog'],
     paths: {
         zepto: "lib/zepto.min"
     }
 });
-//swiper
+//swiper slide
 require(['swiper']);
-//show hide
+//nav show hide
 require(['mobileshowhide']);
-//close
+//detail page show hide
 require(["mobileclose/mobileclose"]);
+//dialog for wechat
+require(['mobiledialog']);
 

@@ -14,9 +14,16 @@ require(['jquery', 'bootstrap', 'navdropdown/nav'], function ($, nav) {
             $(this).navshow('.m-menu', '.m-nav-list-bg', _that);
         }
     });
-    obj1.hover(function () {
+    obj1.mouseenter(function () {
+
         if ($(window).width() > 1000) {
             $(this).navshow1('.m-menu', '.m-nav-list-bg');
+        }
+    });
+    obj1.mouseleave(function () {
+
+        if ($(window).width()> 1000) {
+            $(this).navshow2('.m-menu', '.m-nav-list-bg');
         }
     });
     $(".bk-toggle").mouseenter(function () {

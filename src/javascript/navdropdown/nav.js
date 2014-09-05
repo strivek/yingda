@@ -6,19 +6,18 @@ define(['jquery'], function ($) {
             $(this).find(b).show();
             $(c).show();
         } else {
-            $(c).delay('300').hide();
+            $(c).hide();
             $(this).find(b).hide();
         }
     };
     $.fn.navshow1 = function (b, c) {
         $(this).siblings().find(b).hide();
-        $(this).find(b).toggle();
+        $(this).find(b).show();
+         $(c).show();
+    };
+    $.fn.navshow2 = function (b, c) {
+       $(b).hide();
+       $(c).hide();
+    };
 
-        if ($(this).find(b).css('display') == 'none') {
-            $(c).delay('300').hide();
-            $(c).trigger("hover.hide");
-        } else {
-            $(c).show();
-        }
-    }
 })
