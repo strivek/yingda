@@ -1396,8 +1396,7 @@ body {
   .m-bestemp-cy .list {
     padding: 30px 0;
     border-bottom: 1px dotted #d1c8be;
-    cursor: pointer;
-    backgroound: red; }
+    cursor: pointer; }
     .m-bestemp-cy .list:before, .m-bestemp-cy .list:after {
       content: " ";
       display: table; }
@@ -1406,8 +1405,8 @@ body {
     .m-bestemp-cy .list .pic {
       display: inline-block;
       float: left;
-      width: 118px;
-      height: 153px; }
+      width: 120px;
+      height: 120px; }
     .m-bestemp-cy .list .con {
       display: inline-block;
       float: right;
