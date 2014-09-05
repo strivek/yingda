@@ -1,0 +1,67 @@
+html.channel {
+  $channelFontSize:10px;
+  @include min-width(320px){
+    font-size:  $channelFontSize;
+  }
+  @include min-width(360px){
+    font-size:  $channelFontSize * 1.125;
+  }
+  @include min-width(400px){
+    font-size:  $channelFontSize * 1.25;
+  }
+  @include min-width(480px){
+    font-size:  $channelFontSize * 1.5;
+  }
+  @include min-width(540px){
+    font-size:  $channelFontSize * 1.6875;
+  }
+  @include min-width(600px){
+    font-size:  $channelFontSize * 1.875;
+  }
+  @include min-width(640px){
+    font-size:  $channelFontSize * 2;
+  }
+  @include min-width(720px){
+    font-size:  $channelFontSize * 2.25;
+  }
+  @include min-width(900px){
+    font-size:  $channelFontSize * 2.8125;
+  }
+}
+.m-channel{
+  .channel_list{
+    position: relative;
+    width: 100%;
+    .channel{
+      position: absolute;
+      left: 10%;
+      top: 20%;
+      margin: 0;
+      width: 30%;
+      text-align: center;
+      h3 {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-weight: normal;
+        a {font-family: "didot";}
+      }
+      h4 {
+        @extend h3;
+      }
+      a {
+        @extend h3;
+        color: $channelFont;
+        span {
+          padding: 0.1rem 0.3rem 0.1rem 0.4rem;
+          font-size: 1rem;
+          border: 1px solid $channelFont;
+          font-family: "\5B8B\4F53";
+        }
+      }
+    }
+    .channel-r{left: auto;right: 10%;}
+    img {
+      display: block;
+    }
+  }
+}
