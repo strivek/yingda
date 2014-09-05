@@ -55,15 +55,15 @@ input[type="checkbox"] {
 }
 
 // Set the height of file controls to match text inputs
-input[type="file"] {
-  display: block;
-}
+//input[type="file"] {
+//  display: block;
+//}
 
 // Make range inputs behave like textual form controls
-input[type="range"] {
-  display: block;
-  width: 100%;
-}
+//input[type="range"] {
+//  display: block;
+//  width: 100%;
+//}
 
 // Make multiple select elements height not fixed
 select[multiple],
@@ -72,7 +72,7 @@ select[size] {
 }
 
 // Focus for file, radio, and checkbox
-input[type="file"]:focus,
+//input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   @include tab-focus();
@@ -158,9 +158,9 @@ textarea.form-control {
 // be added to `.form-control` as it's not specific enough. For details, see
 // https://github.com/twbs/bootstrap/issues/11586.
 
-input[type="search"] {
-  -webkit-appearance: none;
-}
+//input[type="search"] {
+//  -webkit-appearance: none;
+//}
 
 // Special styles for iOS temporal inputs
 //
