@@ -14,8 +14,6 @@ define(['jquery'], function ($) {
         $(this).siblings().find(b).hide();
         $(this).find(b).show();
          $(c).show();
-
-
     };
     $.fn.navshow2 = function (b, c) {
        $(b).hide();
