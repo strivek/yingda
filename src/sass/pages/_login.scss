@@ -40,13 +40,10 @@ $color: #ffe3cd;
     padding-top: 61px;
     .form-group {
       margin-bottom: 25px;
+      position:relative;
       label {
         @include font();
       }
-      p {
-        visibility: hidden;
-      }
-
       .form-control {
         height: 38px;
         //TODO-tips ie8背景透明需要有一个透明背景图片或者about:blank
@@ -57,16 +54,18 @@ $color: #ffe3cd;
         color: $color;
 
       }
+      p {position:absolute;
+        right:0;
+        bottom:-18px;
+        visibility: hidden;
+      }
     }
     .warning {
       .form-control {
         border: 1px solid #ff0000;
       }
       p {
-        display:block;
-        margin-top: 4px;
         visibility: visible;
-        margin-bottom: -10px;
         text-align: right;
         font-family: $font-family;
         font-size: 12px;
