@@ -38,6 +38,7 @@ $color: #ffe3cd;
   padding-top: 43px;
   .form-group {
     margin-bottom: 25px;
+    position:relative;
     label {
       position: relative;
       @include font();
@@ -56,7 +57,9 @@ $color: #ffe3cd;
       border-radius: 0;
       color: $color;
     }
-    p {
+    p {position:absolute;
+      right:0;
+      bottom:-20px;
       visibility:hidden;
     }
   }
@@ -65,9 +68,7 @@ $color: #ffe3cd;
       border: 1px solid #ff0000;
     }
     p {
-      margin-top: 4px;
       visibility:visible;
-      margin-bottom: -10px;
       text-align: right;
       font-family:$font-family;
       font-size: 12px;
@@ -93,7 +94,7 @@ $color: #ffe3cd;
     text-align: center;
     padding-bottom: 48px;
     .btn {
-      padding: 10px 45px;
+      padding: 1093889520/px 45px;
       background: #44332c;
       border-radius: 0px;
       color: $color;
