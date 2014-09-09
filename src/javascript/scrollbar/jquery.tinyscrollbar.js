@@ -60,6 +60,7 @@
 
         function initialize() {
             self.update();
+
             setEvents();
             //观察者
             setUpdateEvent();
@@ -73,8 +74,9 @@
                 , $overview = $container.find(".overview")
                 , $scrollbar = $container.find(".scrollbar")
                 , $track = $scrollbar.find(".track")
-                , $thumb = $scrollbar.find(".thumb")
-            self.update();
+                , $thumb = $scrollbar.find(".thumb");
+           // self.update();
+
         }
 
         function setUpdateEvent() {
