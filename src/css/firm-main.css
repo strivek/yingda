@@ -1269,8 +1269,9 @@ body {
           width: 110px; }
         .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video {
           cursor: pointer;
-          font-size: 20px;
           color: #967e6b; }
+          .m-main9-cy .main .firmdet .weixin .wei .iconfont, .m-main9-cy .main .firmdet .weixin .video .iconfont {
+            font-size: 20px; }
           .m-main9-cy .main .firmdet .weixin .wei:hover, .m-main9-cy .main .firmdet .weixin .video:hover {
             color: #333; }
         .m-main9-cy .main .firmdet .weixin .erweima {
