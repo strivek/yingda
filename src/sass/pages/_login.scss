@@ -12,19 +12,28 @@ $color: #ffe3cd;
   position: relative;
   z-index: 10;
   padding-top: 50px;
-  padding-bottom:200px;
+  padding-bottom: 200px;
   .title {
-    .myd{
+    .myd {
       padding-top: 72px;
       padding-bottom: 32px;
       border-bottom: 1px solid $color;
       text-align: center;
-       img {
-         max-width: 100%;
-          }
+      img {
+        max-width: 100%;
+      }
     }
-    p{display:none;}
-    .war{ display:block; padding-top:6px;margin-bottom:-20px; font-size:12px; color:#e60012;font-family:"宋体";}
+    p {
+      visibility:hidden;
+    }
+    .war {
+      visibility: visible;
+      padding-top: 6px;
+      margin-bottom: -20px;
+      font-size: 12px;
+      color: #e60012;
+      font-family: "宋体";
+    }
   }
   // 登录表单
   .login-form {
@@ -34,26 +43,32 @@ $color: #ffe3cd;
       label {
         @include font();
       }
-    }
-    .form-control {
-      height: 38px;
-      //TODO-tips ie8背景透明需要有一个透明背景图片或者about:blank
-      background-image:url(about:blank);
-      background-color:transparent;
-      border: 1px solid $color;
-      border-radius: 0;
-      color: $color;
+      p {
+        visibility: hidden;
+      }
+
+      .form-control {
+        height: 38px;
+        //TODO-tips ie8背景透明需要有一个透明背景图片或者about:blank
+        background-image: url(about:blank);
+        background-color: transparent;
+        border: 1px solid $color;
+        border-radius: 0;
+        color: $color;
+
+      }
     }
     .warning {
       .form-control {
         border: 1px solid #ff0000;
       }
       p {
+        display:block;
         margin-top: 4px;
-        display: block;
+        visibility: visible;
         margin-bottom: -10px;
         text-align: right;
-        font-family:$font-family;
+        font-family: $font-family;
         font-size: 12px;
         color: #e60012;
       }
@@ -77,8 +92,8 @@ $color: #ffe3cd;
         color: $color;
         font-size: 18px;
         outline: none;
-        &:hover{
-          color:#714e38;
+        &:hover {
+          color: #714e38;
         }
       }
     }
@@ -95,8 +110,8 @@ $color: #ffe3cd;
       background: #44332c;
       border-radius: 0;
       color: $color;
-      font-size:18px;
-      outline:none;
+      font-size: 18px;
+      outline: none;
     }
   }
   //第三方登录
@@ -110,14 +125,15 @@ $color: #ffe3cd;
     .social-list {
       margin-top: 20px;
       a {
-        display: inline-block;}
+        display: inline-block;
+      }
       a span {
-          padding-right: 30px;
-          display: inline-block;
-          font-size: 30px;
-          color: $color;
-          font-family: iconfont;
-        }
+        padding-right: 30px;
+        display: inline-block;
+        font-size: 30px;
+        color: $color;
+        font-family: iconfont;
+      }
 
       a:hover span {
         color: #44332c;
@@ -125,8 +141,11 @@ $color: #ffe3cd;
     }
   }
 }
+
 @media (max-width: 1024px) {
-  input:focus{
-    .g-footer{display:none;}
+  input:focus {
+    .g-footer {
+      display: none;
+    }
   }
 }

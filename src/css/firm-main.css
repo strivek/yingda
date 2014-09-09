@@ -1269,8 +1269,9 @@ body {
           width: 110px; }
         .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video {
           cursor: pointer;
-          font-size: 20px;
           color: #967e6b; }
+          .m-main9-cy .main .firmdet .weixin .wei .iconfont, .m-main9-cy .main .firmdet .weixin .video .iconfont {
+            font-size: 20px; }
           .m-main9-cy .main .firmdet .weixin .wei:hover, .m-main9-cy .main .firmdet .weixin .video:hover {
             color: #333; }
         .m-main9-cy .main .firmdet .weixin .erweima {
@@ -1411,7 +1412,10 @@ body {
       display: inline-block;
       float: right;
       width: 706px;
+      margin-top: -4px;
       font-size: 14px;
       line-height: 180%;
       color: #83654c;
       font-family: "瀹嬩綋"; }
+
+/*# sourceMappingURL=firm-main.css.map */

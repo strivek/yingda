@@ -57,7 +57,7 @@ $color: #ffe3cd;
       color: $color;
     }
     p {
-      display: none;
+      visibility:hidden;
     }
   }
   .warning {
@@ -66,7 +66,7 @@ $color: #ffe3cd;
     }
     p {
       margin-top: 4px;
-      display: block;
+      visibility:visible;
       margin-bottom: -10px;
       text-align: right;
       font-family:$font-family;
