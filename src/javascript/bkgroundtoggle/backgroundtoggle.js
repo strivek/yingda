@@ -14,14 +14,14 @@ define(['jquery'], function ($) {
             this.imgbk = $(".u-fullscreen-index.two");
             this.jsonData = void 0;
             this.status = true;
-            this.isPad = false;
+            this.ispad = false;
             this.url = "../json/nav.json";
             this.init();
         };
 
         Backgroundtoggle.prototype.isPad = function () {
 
-            this.isPad = $(window).width() < 770;
+            this.ispad = $(window).width() < 770;
         };
 
         Backgroundtoggle.prototype.init = function () {
@@ -44,7 +44,7 @@ define(['jquery'], function ($) {
 
             var self = this;
             this.obj.on("hover.navtoggle", function (e) {
-                if (!self.isPad && self.id != null) {
+                if (!self.ispad && self.id != null) {
                     self.id = $(this).data("nav");
                     self.setbk();
                 }
@@ -64,7 +64,6 @@ define(['jquery'], function ($) {
         };
 
         Backgroundtoggle.prototype.getJsonData = function () {
-
             var self = this;
             var request = $.ajax({
                 url: self.url,
