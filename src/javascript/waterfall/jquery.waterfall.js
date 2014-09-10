@@ -211,7 +211,7 @@ define(["jquery"], function ($) {
                         .css({width: opts.colWidth, left: wf_item_left, top: wf_item_top})
                         .appendTo($wf_col);
                     $wf_img = $wf_item.find('.' + opts.imgClass);
-                    $wf_img.height($wf_img.width() / data.width * data.height);
+//                    $wf_img.height($wf_img.width() / data.width * data.height);
 
                     if (opts.isAnimation) {
                         $wf_item.css({opacity: 0}).animate({

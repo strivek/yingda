@@ -1,4 +1,3 @@
-
 require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'], function ($, scroll) {
 
     /**
@@ -11,6 +10,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.openDoor = {};
         this.flexslider = "";
         this.time = "";
+        this.listItem = $(".list-item");
         this.backBtn = $(".btn-return");
         this.init();
         this.prebtn = $(".prebtn");
@@ -28,32 +28,32 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
 
     }
     Slidelight.prototype.eventBind = function () {
-
-        $(".list-item").click($.proxy(this.doorOpen, this));
-
+        //打开外层遮罩
+        listItem.click($.proxy(this.doorOpen, this));
+        //关闭外层遮罩
         $(".btnreturn").click($.proxy(this.closeDoor, this));
-
-        $(".list-item").mouseenter($.proxy(this.hoverIn, this));
-
-        $(".list-item").mouseleave($.proxy(this.hoverOut, this));
-
+        //鼠标划入
+        listItem.mouseenter($.proxy(this.hoverIn, this));
+        //鼠标划出
+        listItem.mouseleave($.proxy(this.hoverOut, this));
+        //上一张
         $(".prebtn").on("click", $.proxy(this.prebtn, this));
-
+        //下一张
         $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
-
+        //屏幕大小改变
         $(window).resize($.proxy(this.resizeHover), this);
 
     }
     Slidelight.prototype.isDesktop = function () {
-        return  $(window).width() > 1024 ? true : $(window).height() > 1024 ? true : false;
+        return  $(window).width() > 1024 ? true : $(window).height() > 1024;
     };
     Slidelight.prototype.closeDoor = function () {
         this.openDoor.timeScale(4).reverse();
         $(".list-item").on("mouseenter", $.proxy(this.hoverIn, this));
     };
     Slidelight.prototype.doorOpen = function (event) {
-        $(".list-item").off("mouseenter", $.proxy(this.hoverIn, this));
-        $(".list-item").off("mouseout", $.proxy(this.hoverOut, this));
+        listItem.off("mouseenter", $.proxy(this.hoverIn, this));
+        listItem.off("mouseout", $.proxy(this.hoverOut, this));
 
         this.openDoor = new TimelineLite({ onReverseComplete: $.proxy(this.resumehover, this)});
 
@@ -67,7 +67,6 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             zindex = $(".m-sld .inner,.m-sld"),
             arrBefore = [cur],
             wrap = $(".wrap"),
-
             imglink = $("#" + cur.attr("id")).data("link");
         console.log(imglink);
         $(".m-slider .listdetail").attr("src", imglink);

@@ -7,6 +7,7 @@ require(['jquery'], function ($) {
         $(this).toggleClass('color');
         $(this).closest('dl').siblings('.u-details').toggle();
         $(this).trigger("click.detail");
+
     })
 });
 

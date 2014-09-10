@@ -24,11 +24,15 @@
         <div class="icon">
             <p>
                 <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="iconfont icon-yingdaicon04"></a>
+                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
                 <a href="#" class="iconfont icon-yingdaicon05"></a>
             </p>
         </div>
     </div>
+</div>
+<div id="modal" class="hidden">
+    <div class="bg"></div>
+    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
 </div>
 <div class="g-main">
     <!--左侧栏-->
@@ -116,25 +120,6 @@
     </div>
 </div>
 <img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
-<!--TODO update .p-list cy-9.1-->
-<script>
-    $(document).ready(function(){
-        $(".p-list").click(function(e){
-            var $main=$(this).parent();
-            var $allmain = $(".main");
-            if($main.hasClass("line"))
-            {
-                $allmain.removeClass("line");
-            }
-            else{
-
-                $allmain.removeClass("line");
-                $main.addClass("line");
-            }
-            e.preventDefault();
-            return false;
-        });
-    });
-</script>
+<script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>
