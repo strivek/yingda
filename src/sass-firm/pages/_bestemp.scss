@@ -2,7 +2,6 @@
   width: 862px;
   float: right;
   .list{padding:30px 0; border-bottom:1px dotted #d1c8be;
-    cursor:pointer;
     @include clearfix();
     .pic{display:inline-block;float:left; width:120px; height:120px;}
     .con {display:inline-block; float:right;width:706px;margin-top:-4px;

@@ -921,8 +921,10 @@ body {
               width: 435px; }
               .m-main3-cy .yearbook li .detail .wrap div.wai div.nei img {
                 width: 432px;
-                height: auto; }
+                height: auto;
+                cursor: default; }
             .m-main3-cy .yearbook li .detail .wrap div.wai p {
+              cursor: text;
               margin-top: 20px;
               font-size: 12px;
               color: #210700;
@@ -1057,8 +1059,7 @@ body {
   float: right;
   padding-bottom: 100px; }
   .m-main6-cy .con {
-    padding-top: 30px;
-    cursor: pointer; }
+    padding-top: 30px; }
     .m-main6-cy .con .ti {
       font-size: 18px;
       color: #83654c;
@@ -1141,7 +1142,7 @@ body {
       .m-main7-cy .main .con .descript {
         margin: 10px 20px 20px; }
       .m-main7-cy .main .con .descript a {
-        cursor: default;
+        cursor: text;
         font-size: 14px;
         font-family: "宋体";
         color: #83654c;
@@ -1373,7 +1374,6 @@ body {
   .m-empbenefit-cy .list li {
     position: relative;
     padding: 18px 0 8px;
-    cursor: pointer;
     border-bottom: 1px solid #d6cfc7; }
     .m-empbenefit-cy .list li .title {
       display: inline-block;
@@ -1396,8 +1396,7 @@ body {
   float: right; }
   .m-bestemp-cy .list {
     padding: 30px 0;
-    border-bottom: 1px dotted #d1c8be;
-    cursor: pointer; }
+    border-bottom: 1px dotted #d1c8be; }
     .m-bestemp-cy .list:before, .m-bestemp-cy .list:after {
       content: " ";
       display: table; }
