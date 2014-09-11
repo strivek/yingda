@@ -16,11 +16,7 @@
         min-height: 600px;
     }
   }
-  .carousel-inner .item{
-    .wrap-img{
-   @media (min-width:993px) and(max-width:1199px){
-      padding-top:20px;
-    }}
+  .carousel-inner .item {
     .col-md-offset-1{
       @media (max-width: 1169px) {
         padding-top: 20px;
@@ -118,13 +114,11 @@
 
   .video-image{
     position:absolute;
+    width:94%;
+    height:94%;
     left:0;
-    @media (max-width:993px)and(min-width:1199px) { top:10px;}
-   top:0;
+    top:0;
     z-index:2;
     cursor:pointer;
-    img{
-      width:100%;
-    height: auto;}
   }
 }
