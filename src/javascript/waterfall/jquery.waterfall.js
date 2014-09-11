@@ -485,6 +485,8 @@ define(["jquery"], function ($) {
             } else {
                 (function (data) {
                     imgReady(data[imgUrlName], function (width, height) {
+                        console.log(data[imgUrlName]);
+                        console.log(height);
                         // 图片头数据加载就绪，保存宽高
                         data.width = width;
                         data.height = height;
