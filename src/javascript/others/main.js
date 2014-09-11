@@ -156,6 +156,64 @@ require(['jquery'], function ($) {
     }
 });
 
+
+require(['jquery'], function ($) {
+//首页预加载
+    $(function(){
+        $('.home').hide();
+            $('.home').fadeIn(2000,function(){
+               setTimeout(function(){
+                  $('.home').fadeOut(1000);
+                  $('.home-img').fadeOut(1000);
+               },1000)
+            });
+
+
+    });
+
+
+
+    });
+require(['jquery'], function ($) {
+    $(function(){
+        $('.m-main1-gf img').load(function(){
+            function picSize(){
+                var winWid=$(window).width();
+                var winHei=$(window).height();
+                var img=$('.m-main1-gf img');
+                var imgWid=img.eq(0).width();
+                var imgHei=img.eq(0).height();
+                var Wid=winWid/imgWid;
+                var Hei=winHei/imgHei;
+                if(Wid>Hei){
+
+                    img.width(winWid);
+                    img.height('auto');
+                }else{
+                    img.height(winHei);
+                    img.width('auto');
+                }
+
+            };
+
+
+
+            picSize();
+
+            $(window).resize(function(){
+
+                picSize();
+
+            })
+
+        });
+
+
+    })
+
+
+
+});
 require(['jquery'], function ($) {
     if(!$(".itisvideo")) return false;
 
