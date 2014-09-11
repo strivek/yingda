@@ -24,6 +24,7 @@ require(['jquery', 'bootstrap', 'navdropdown/nav'], function ($, nav) {
 
         if ($(window).width()> 1000) {
             $(this).navshow2('.m-menu', '.m-nav-list-bg');
+            $('.m-nav-list-bg').trigger("hover.hide");
         }
     });
     $(".bk-toggle").mouseenter(function () {

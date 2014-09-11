@@ -64,13 +64,13 @@ require(['jquery'], function ($) {
         var liLen=aLi.length;
         var timeId=null;
         var ulWid=liWid*liLen;
-      var speed=-5;
+      var speed=-1;
         oUl.width(ulWid);
-        timeId=setInterval(slider,30);
+        timeId=setInterval(slider,2);
         oUl.hover(function(){
             clearInterval(timeId);
         },function(){
-            timeId=setInterval(slider,30);
+            timeId=setInterval(slider,2);
         });
         function slider(){
             if(speed<0){
@@ -90,10 +90,10 @@ require(['jquery'], function ($) {
             }
         }
         $('.left').click(function(){
-            speed=-5;
+            speed=-1;
         });
         $('.right').click(function(){
-            speed=5;
+            speed=1;
         });
 //    $(window).resize(function(){
 //        clearInterval(timeId);
@@ -157,29 +157,37 @@ require(['jquery'], function ($) {
 });
 
 require(['jquery'], function ($) {
-//  yingdabrand.html视频
-    if($(".m-inner-wrapper").attr("date-havevideo") == "haveyingdabrand") {
-        $(".like-video-image").click(function () {
-            $(this).parent().find(".m-inner-wrapper").eq(0).css({"display": "block"});
-        });
-    }
+    if(!$(".itisvideo")) return false;
 
-//  yingdastyle.html视频
-    if($(".wrapper").attr("date-havevideo") == "haveyingdastyle") {
-        $(".video-image").click(function(){
+    $(".videoevent").eq(0).on("click",function(){
+        var itisvideo = $(".itisvideo").eq(0);
+        var havevideo = itisvideo.attr("date-havevideo");
+        var objVideo = itisvideo.find("object,embed");
+
+        //yingdabrand.html视频
+        if(havevideo == "haveyingdabrand") {
+            itisvideo.css({"display": "block"});
+            itisvideo.find(".myVideo").get(0).play();
+            return false;
+        }
+
+        //yingdastyle.html视频
+        if(havevideo == "haveyingdastyle") {
             $(this).css({"display":"none"});
-            $(this).parent().find(".wrapper").eq(0).css({"z-index":"3"});
-            $(this).parent().find("object,embed").css({"left":"0"});
-        });
-    }
+            itisvideo.css({"z-index":"3"});
+            objVideo.css({"left":"0"});
+            itisvideo.find(".myVideo").get(0).play();
+            return false;
+        }
 
-//  seasonfashion.html视频
-    if($(".wrapper").attr("date-havevideo") == "haveseasonfashion") {
-        $(".video-image").click(function(){
+        //seasonfashion.html视频
+        if(havevideo == "haveseasonfashion") {
             $(this).find("img").css({"display":"none"});
-            $(this).parent().find(".wrapper").eq(0).css({"z-index":"3"});
-            $(this).parent().find("object,embed").css({"left":"0"});
-        });
-    }
+            itisvideo.css({"z-index":"3"});
+            objVideo.css({"left":"0"});
+            itisvideo.find(".myVideo").get(0).play();
+            return false;
+        }
+    });
 });
 
