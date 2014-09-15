@@ -212,7 +212,7 @@ require(['jquery'], function ($) {
                     var marginLeft=-(img.width()-$(window).width())/2;
 //                    if()
                     img.css('marginLeft',marginLeft);
-                    console.log(marginLeft);
+//                    console.log(marginLeft);
                 }
             };
             picSize();
