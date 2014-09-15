@@ -1,2 +1,295 @@
-html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0}header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block}table{border-collapse:collapse;border-spacing:0}caption,th{text-align:left;font-weight:normal}html,body,fieldset,img,iframe,abbr{border:0}i,cite,em,var,address,dfn{font-style:normal}[hidefocus],summary{outline:0}li{list-style:none}h1,h2,h3,h4,h5,h6,small{font-size:100%}sup,sub{font-size:83%}pre,code,kbd,samp{font-family:inherit}q:before,q:after{content:none}textarea{overflow:auto;resize:none}label,summary{cursor:default}a,button{cursor:pointer}h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold}del,ins,u,s,a,a:hover{text-decoration:none}body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial, \5b8b\4f53;color:#333;outline:0}body{background:#fff}a,a:hover{color:#333}*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}html{font-size:10px}@media screen and (width: 360px){html{font-size:11.25px}}@media screen and (width: 400px){html{font-size:12.5px}}@media screen and (width: 480px){html{font-size:15px}}@media screen and (width: 540px){html{font-size:16.875px}}@media screen and (width: 600px){html{font-size:18.75px}}@media screen and (width: 640px){html{font-size:20px}}@media screen and (width: 720px){html{font-size:22.5px}}@media screen and (width: 768px){html{font-size:24px}}@media screen and (width: 800px){html{font-size:25px}}@media screen and (width: 960px){html{font-size:30px}}@media screen and (width: 1024px){html{font-size:32px}}.header{font-family:'\9ED1\4F53';position:relative;z-index:2;height:4.1rem;background-color:#11cfff}.header img{position:absolute;top:1rem;left:2.1rem;width:6.1rem;height:2.2rem}.header .menu{position:absolute;top:1.2rem;right:3rem;width:2.1rem;height:1.65rem;background:url("../images/menu.jpg") no-repeat 0 0;background-size:cover}.header .menu-box{display:none;position:absolute;top:5.5rem;right:2.5rem;padding-top:1.7rem;width:8.5rem;height:12.5rem;background-color:#fff;border-radius:2.5rem;color:#218ed2;-webkit-box-shadow:2px 2px 2px;-moz-box-shadow:2px 2px 2px;box-shadow:2px 2px 2px}.header .menu-box li{display:block;margin:0 auto;width:70%;height:2.4rem;line-height:2.4rem;font-size:1.2rem;font-weight:bold;border-bottom:1px solid #218ed2}.header .menu-box li:last-child{border-bottom:none 0}.f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:"."}.f-cb{zoom:1}body.signin{background-color:#afe9ff}.m-signin{font-family:'\9ED1\4F53';background:url("../images/signin-bg.jpg") no-repeat center top;background-size:100%}.m-signin .main-wrap{padding:10.5rem 2.5rem 2.5rem}.m-signin .main{margin-bottom:2.3rem;height:16.15rem;padding:2.06rem 0 0 3.7rem;color:#11cfff}.m-signin .profile{float:left;width:8.6rem}.m-signin .profile .avatar{padding:0.6rem 0 0 0.6rem;width:8.6rem;height:9.6rem;background:url("../images/avatar-bg.png") no-repeat 0 0;background-size:100%}.m-signin .profile .avatar img{display:block;width:90%;border-radius:50%}.m-signin .profile .user{font-size:1.1rem;line-height:1.5rem;font-weight:bold;text-align:center}.m-signin .profile .user span{display:inline-block;margin-bottom:-0.2rem;width:0.95rem;height:1rem}.m-signin .profile .user span.male{background:url("../images/male.jpg") no-repeat 0 0;background-size:100%}.m-signin .profile .user span.female{background:url("../images/female.jpg") no-repeat 0 0;background-size:100%}.m-signin .profile .position{font-size:1rem;line-height:1.5rem;text-align:center}.m-signin .profile .position span{display:inline-block;margin-bottom:-0.2rem;width:0.65rem;height:1rem;background:url("../images/position.jpg") no-repeat 0 0;background-size:100%}.m-signin .member{margin-left:9.8rem}.m-signin .member h1{height:3.3rem;line-height:3.3rem;font-size:1.6rem;font-weight:bold}.m-signin .member h2{margin-bottom:2rem;height:1.8rem;line-height:1.8rem;font-size:1.4rem;font-weight:normal}.m-signin .member h2 span{font-weight:bold}.m-signin .member .score{height:3.5rem;line-height:3.5rem;font-size:3rem}.m-signin .member .score span{font-size:1.2rem}.m-signin .btns{height:14.5rem}.m-signin .btns a{display:block;margin-bottom:2.75rem;height:4.5rem;text-indent:-999rem}body.record{background-color:#01652d}.m-record{font-family:'\9ED1\4F53';background:url("../images/record-bg.jpg") no-repeat center top;background-size:100%;padding:8.3rem 0 3.1rem 0}.m-record .date{margin-bottom:4.8rem;padding-left:13.5rem;height:7.2rem;font-size:3.5rem;color:#3bd7ff}.m-record .date .year{height:4.2rem;line-height:4.2rem;text-indent:3.8rem}.m-record .date .month,.m-record .date .day{float:left;height:3rem;line-height:3rem}.m-record .date .month{padding:0 4rem 0 1rem}.m-record .days{margin-bottom:8.8rem;padding-left:18.5rem;height:9.2rem;color:#fff;text-align:center}.m-record .days .continuous{width:5.8rem;height:4.3rem;line-height:4.3rem;font-size:4.5rem}.m-record .days .total{width:5.8rem;height:4.9rem;line-height:4.9rem;font-size:3rem}.m-record .btn{margin:0 auto;width:20.3rem;height:4.4rem}
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left;
+  font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0; }
+
+i, cite, em, var, address, dfn {
+  font-style: normal; }
+
+[hidefocus], summary {
+  outline: 0; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+sup, sub {
+  font-size: 83%; }
+
+pre, code, kbd, samp {
+  font-family: inherit; }
+
+q:before, q:after {
+  content: none; }
+
+textarea {
+  overflow: auto;
+  resize: none; }
+
+label, summary {
+  cursor: default; }
+
+a, button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: bold; }
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none; }
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 arial, \5b8b\4f53;
+  color: #333;
+  outline: 0; }
+
+body {
+  background: #fff; }
+
+a, a:hover {
+  color: #333; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box; }
+
+html {
+  font-size: 20px; }
+
+@media screen and (width: 360px) {
+  html {
+    font-size: 22.5px; } }
+@media screen and (width: 400px) {
+  html {
+    font-size: 25px; } }
+@media screen and (width: 480px) {
+  html {
+    font-size: 30px; } }
+@media screen and (width: 540px) {
+  html {
+    font-size: 33.75px; } }
+@media screen and (width: 600px) {
+  html {
+    font-size: 37.5px; } }
+@media screen and (width: 640px) {
+  html {
+    font-size: 40px; } }
+@media screen and (width: 720px) {
+  html {
+    font-size: 45px; } }
+@media screen and (width: 768px) {
+  html {
+    font-size: 48px; } }
+@media screen and (width: 800px) {
+  html {
+    font-size: 50px; } }
+@media screen and (width: 960px) {
+  html {
+    font-size: 60px; } }
+@media screen and (width: 1024px) {
+  html {
+    font-size: 64px; } }
+.header {
+  font-family: '\9ED1\4F53';
+  position: relative;
+  z-index: 2;
+  height: 4.1rem;
+  background-color: #11cfff; }
+  .header img {
+    position: absolute;
+    top: 1rem;
+    left: 2.1rem;
+    width: 6.1rem;
+    height: 2.2rem; }
+  .header .menu {
+    position: absolute;
+    top: 1.2rem;
+    right: 3rem;
+    width: 2.1rem;
+    height: 1.65rem;
+    background: url("../images/menu.jpg") no-repeat 0 0;
+    background-size: cover; }
+  .header .menu-box {
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    right: 2.5rem;
+    padding-top: 1.7rem;
+    width: 8.5rem;
+    height: 12.5rem;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    color: #218ed2;
+    -webkit-box-shadow: 2px 2px 2px;
+    -moz-box-shadow: 2px 2px 2px;
+    box-shadow: 2px 2px 2px; }
+    .header .menu-box li {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      height: 2.4rem;
+      line-height: 2.4rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-bottom: 1px solid #218ed2; }
+    .header .menu-box li:last-child {
+      border-bottom: none 0; }
+
+.f-cb:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  content: "."; }
+
+.f-cb {
+  zoom: 1; }
+
+body.signin {
+  background-color: #afe9ff; }
+
+.m-signin {
+  font-family: '\9ED1\4F53';
+  background: url("../images/signin-bg.jpg") no-repeat center top;
+  background-size: 100%; }
+  .m-signin .main-wrap {
+    padding: 10.5rem 2.5rem 2.5rem; }
+  .m-signin .main {
+    margin-bottom: 2.3rem;
+    height: 16.15rem;
+    padding: 2.06rem 0 0 3.7rem;
+    color: #11cfff; }
+  .m-signin .profile {
+    float: left;
+    width: 8.6rem; }
+    .m-signin .profile .avatar {
+      padding: 0.6rem 0 0 0.6rem;
+      width: 8.6rem;
+      height: 9.6rem;
+      background: url("../images/avatar-bg.png") no-repeat 0 0;
+      background-size: 100%; }
+      .m-signin .profile .avatar img {
+        display: block;
+        width: 90%;
+        border-radius: 50%; }
+    .m-signin .profile .user {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      font-weight: bold;
+      text-align: center; }
+      .m-signin .profile .user span {
+        display: inline-block;
+        margin-bottom: -0.2rem;
+        width: 0.95rem;
+        height: 1rem; }
+        .m-signin .profile .user span.male {
+          background: url("../images/male.jpg") no-repeat 0 0;
+          background-size: 100%; }
+        .m-signin .profile .user span.female {
+          background: url("../images/female.jpg") no-repeat 0 0;
+          background-size: 100%; }
+    .m-signin .profile .position {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center; }
+      .m-signin .profile .position span {
+        display: inline-block;
+        margin-bottom: -0.2rem;
+        width: 0.65rem;
+        height: 1rem;
+        background: url("../images/position.jpg") no-repeat 0 0;
+        background-size: 100%; }
+  .m-signin .member {
+    margin-left: 9.8rem; }
+    .m-signin .member h1 {
+      height: 3.3rem;
+      line-height: 3.3rem;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    .m-signin .member h2 {
+      margin-bottom: 2rem;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      font-size: 1.4rem;
+      font-weight: normal; }
+      .m-signin .member h2 span {
+        font-weight: bold; }
+    .m-signin .member .score {
+      height: 3.5rem;
+      line-height: 3.5rem;
+      font-size: 3rem; }
+      .m-signin .member .score span {
+        font-size: 1.2rem; }
+  .m-signin .btns {
+    height: 14.5rem; }
+    .m-signin .btns a {
+      display: block;
+      margin-bottom: 2.75rem;
+      height: 4.5rem;
+      text-indent: -999rem; }
+
+body.record {
+  background-color: #01652d; }
+
+.m-record {
+  font-family: '\9ED1\4F53';
+  background: url("../images/record-bg.jpg") no-repeat center top;
+  background-size: 100%;
+  padding: 8.3rem 0 3.1rem 0; }
+  .m-record .date {
+    margin-bottom: 4.8rem;
+    padding-left: 13.5rem;
+    height: 7.2rem;
+    font-size: 3.5rem;
+    color: #3bd7ff; }
+    .m-record .date .year {
+      height: 4.2rem;
+      line-height: 4.2rem;
+      text-indent: 3.8rem; }
+    .m-record .date .month, .m-record .date .day {
+      float: left;
+      height: 3rem;
+      line-height: 3rem; }
+    .m-record .date .month {
+      padding: 0 4rem 0 1rem; }
+  .m-record .days {
+    margin-bottom: 8.8rem;
+    padding-left: 18.5rem;
+    height: 9.2rem;
+    color: #fff;
+    text-align: center; }
+    .m-record .days .continuous {
+      width: 5.8rem;
+      height: 4.3rem;
+      line-height: 4.3rem;
+      font-size: 4.5rem; }
+    .m-record .days .total {
+      width: 5.8rem;
+      height: 4.9rem;
+      line-height: 4.9rem;
+      font-size: 3rem; }
+  .m-record .btn {
+    margin: 0 auto;
+    width: 20.3rem;
+    height: 4.4rem; }
+
 /*# sourceMappingURL=wechat.css.map */
