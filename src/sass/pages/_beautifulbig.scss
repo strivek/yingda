@@ -4,13 +4,18 @@
 //  background: url('../images/damei-bg.png') center center;
 //  overflow: hidden;
   .set_table {
-    display: table;
+//    display: table;
     height: 100%;
+    .g-maininner-gf{height: 100%
+    }
+    .carousel{height: 100%}
+    .carousel-inner{height: 100%}
+    .item{height: 100%;overflow:hidden;}
   }
 }
 .g-maininner-gf {
   height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+//  display: table-cell;
+//  vertical-align: middle;
   a.carousel-control i {font-size:40px; color:#d1b7a6;}
 }

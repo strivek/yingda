@@ -189,13 +189,17 @@ require(['jquery'], function ($) {
     $(function(){
         var img= $('.m-main1-gf img');
         var img1=$('.set_table img');
+        if(img.length>0){
+
        img.load(
             picChange(img)
-
         );
+        }
+        if(img1.length>0){
         img1.load(
             picChange(img1)
         );
+        }
     })
 
     function picChange(img){
@@ -206,6 +210,7 @@ require(['jquery'], function ($) {
             var imgHei=img.eq(0).height();
             var Wid=winWid/imgWid;
             var Hei=winHei/imgHei;
+           // alert(imgHei);
             if(Wid>Hei){
                 img.width(winWid);
                 img.height('auto');
