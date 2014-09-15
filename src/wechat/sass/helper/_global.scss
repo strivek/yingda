@@ -1,5 +1,5 @@
 @charset "utf-8";
-$rem:10px;
+$rem:20px;
 html {font-size: $rem;}
 @media screen and (width: 360px) {
   html {font-size: $rem * 1.125;}
@@ -39,34 +39,34 @@ html {font-size: $rem;}
   font-family: '\9ED1\4F53';
   position: relative;
   z-index: 2;
-  height: 4.1rem;
+  height: 2.2rem;
   background-color: #11cfff;
   img {
     position: absolute;
-    top: 1rem;
-    left: 2.1rem;
-    width: 6.1rem;
-    height: 2.2rem;
+    top: 0.6rem;
+    left: 1.4rem;
+    width: 4.8rem;
+    height: 1rem;
   }
   .menu {
     position: absolute;
-    top: 1.2rem;
-    right: 3rem;
-    width: 2.1rem;
-    height: 1.65rem;
+    top: 0.6rem;
+    right: 1.5rem;
+    width: 1.05rem;
+    height: 0.825rem;
     background: url("../images/menu.jpg") no-repeat 0 0;
     background-size: cover;
   }
   .menu-box {
     display: none;
     position: absolute;
-    top: 5.5rem;
-    right: 2.5rem;
-    padding-top: 1.7rem;
-    width: 8.5rem;
-    height: 12.5rem;
+    top: 2.75rem;
+    right: 1.25rem;
+    padding-top: 0.85rem;
+    width: 4.25rem;
+    height: 6.25rem;
     background-color: #fff;
-    border-radius: 2.5rem;
+    border-radius: 1.25rem;
     color: #218ed2;
     -webkit-box-shadow: 2px 2px 2px;
     -moz-box-shadow: 2px 2px 2px;
@@ -75,9 +75,9 @@ html {font-size: $rem;}
       display: block;
       margin: 0 auto;
       width: 70%;
-      height: 2.4rem;
-      line-height: 2.4rem;
-      font-size: 1.2rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      font-size: 0.6rem;
       font-weight: bold;
       border-bottom: 1px solid #218ed2;
     }
