@@ -111,32 +111,32 @@ html {
   font-family: '\9ED1\4F53';
   position: relative;
   z-index: 2;
-  height: 4.1rem;
+  height: 2.2rem;
   background-color: #11cfff; }
   .header img {
     position: absolute;
-    top: 1rem;
-    left: 2.1rem;
-    width: 6.1rem;
-    height: 2.2rem; }
+    top: 0.6rem;
+    left: 1.4rem;
+    width: 4.8rem;
+    height: 1rem; }
   .header .menu {
     position: absolute;
-    top: 1.2rem;
-    right: 3rem;
-    width: 2.1rem;
-    height: 1.65rem;
+    top: 0.6rem;
+    right: 1.5rem;
+    width: 1.05rem;
+    height: 0.825rem;
     background: url("../images/menu.jpg") no-repeat 0 0;
     background-size: cover; }
   .header .menu-box {
     display: none;
     position: absolute;
-    top: 5.5rem;
-    right: 2.5rem;
-    padding-top: 1.7rem;
-    width: 8.5rem;
-    height: 12.5rem;
+    top: 2.75rem;
+    right: 1.25rem;
+    padding-top: 0.85rem;
+    width: 4.25rem;
+    height: 6.25rem;
     background-color: #fff;
-    border-radius: 2.5rem;
+    border-radius: 1.25rem;
     color: #218ed2;
     -webkit-box-shadow: 2px 2px 2px;
     -moz-box-shadow: 2px 2px 2px;
@@ -145,9 +145,9 @@ html {
       display: block;
       margin: 0 auto;
       width: 70%;
-      height: 2.4rem;
-      line-height: 2.4rem;
-      font-size: 1.2rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      font-size: 0.6rem;
       font-weight: bold;
       border-bottom: 1px solid #218ed2; }
     .header .menu-box li:last-child {
@@ -172,19 +172,21 @@ body.signin {
   background: url("../images/signin-bg.jpg") no-repeat center top;
   background-size: 100%; }
   .m-signin .main-wrap {
-    padding: 10.5rem 2.5rem 2.5rem; }
+    padding: 4.8rem 1.4rem 0.4rem; }
   .m-signin .main {
-    margin-bottom: 2.3rem;
-    height: 16.15rem;
-    padding: 2.06rem 0 0 3.7rem;
+    margin-bottom: 0.4rem;
+    height: 10.8rem;
     color: #11cfff; }
   .m-signin .profile {
-    float: left;
-    width: 8.6rem; }
+    margin: 0 auto 0 8rem;
+    padding-top: 0.7rem;
+    width: 4.8rem;
+    height: 7.6rem; }
     .m-signin .profile .avatar {
-      padding: 0.6rem 0 0 0.6rem;
-      width: 8.6rem;
-      height: 9.6rem;
+      margin: 0 auto;
+      padding: 0.3rem 0 0 0.3rem;
+      width: 4.0rem;
+      height: 4.3rem;
       background: url("../images/avatar-bg.png") no-repeat 0 0;
       background-size: 100%; }
       .m-signin .profile .avatar img {
@@ -192,15 +194,16 @@ body.signin {
         width: 90%;
         border-radius: 50%; }
     .m-signin .profile .user {
-      font-size: 1.1rem;
-      line-height: 1.5rem;
+      font-size: 0.8rem;
       font-weight: bold;
-      text-align: center; }
+      text-align: center;
+      width: 4.8rem;
+      word-break: break-all; }
       .m-signin .profile .user span {
         display: inline-block;
-        margin-bottom: -0.2rem;
-        width: 0.95rem;
-        height: 1rem; }
+        margin-bottom: -0.1rem;
+        width: 0.6rem;
+        height: 0.625rem; }
         .m-signin .profile .user span.male {
           background: url("../images/male.jpg") no-repeat 0 0;
           background-size: 100%; }
@@ -208,44 +211,95 @@ body.signin {
           background: url("../images/female.jpg") no-repeat 0 0;
           background-size: 100%; }
     .m-signin .profile .position {
-      font-size: 1rem;
-      line-height: 1.5rem;
+      width: 4rem;
+      font-size: 0.6rem;
+      line-height: 0.8rem;
       text-align: center; }
       .m-signin .profile .position span {
         display: inline-block;
-        margin-bottom: -0.2rem;
-        width: 0.65rem;
-        height: 1rem;
+        margin-bottom: -0.1rem;
+        width: 0.325rem;
+        height: 0.5rem;
         background: url("../images/position.jpg") no-repeat 0 0;
         background-size: 100%; }
   .m-signin .member {
-    margin-left: 9.8rem; }
+    float: left;
+    width: 8rem; }
     .m-signin .member h1 {
-      height: 3.3rem;
-      line-height: 3.3rem;
-      font-size: 1.6rem;
-      font-weight: bold; }
-    .m-signin .member h2 {
-      margin-bottom: 2rem;
-      height: 1.8rem;
-      line-height: 1.8rem;
-      font-size: 1.4rem;
-      font-weight: normal; }
-      .m-signin .member h2 span {
-        font-weight: bold; }
+      margin-bottom: 0.4rem;
+      height: 2.3rem;
+      line-height: 2.3rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-align: center; }
+      .m-signin .member h1 span {
+        font-size: 0.7rem; }
     .m-signin .member .score {
-      height: 3.5rem;
-      line-height: 3.5rem;
-      font-size: 3rem; }
+      margin-bottom: 0.2rem;
+      height: 2.3rem;
+      line-height: 2.3rem;
+      font-size: 1.8rem;
+      text-align: center; }
       .m-signin .member .score span {
-        font-size: 1.2rem; }
-  .m-signin .btns {
-    height: 14.5rem; }
-    .m-signin .btns a {
+        font-size: 0.6rem; }
+    .m-signin .member .btn {
       display: block;
-      margin-bottom: 2.75rem;
-      height: 4.5rem;
-      text-indent: -999rem; }
+      margin-left: 1.6rem;
+      width: 5.2rem;
+      height: 1.2rem; }
+    .m-signin .member .rule {
+      display: block;
+      height: 1rem;
+      line-height: 1rem;
+      font-size: 0.4rem;
+      text-align: center;
+      color: #48b0da; }
+  .m-signin .btn3 {
+    height: 3.2rem;
+    color: #fff; }
+    .m-signin .btn3 li {
+      float: left;
+      padding: 0.25rem 0.4rem 0;
+      width: 4.4rem; }
+      .m-signin .btn3 li p {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        text-align: center;
+        font-size: 0.8rem; }
+        .m-signin .btn3 li p span {
+          font-size: 0.5rem; }
+      .m-signin .btn3 li a {
+        display: block;
+        width: 3.6rem;
+        height: 1.1rem; }
+      .m-signin .btn3 li i {
+        display: block;
+        font-style: normal;
+        padding-top: 0.15rem;
+        text-align: center;
+        font-size: 0.3rem; }
+  .m-signin .friend {
+    height: 6rem;
+    color: #1abef1; }
+    .m-signin .friend .invitation {
+      float: left;
+      width: 9rem;
+      padding: 2.3rem 0 0 1.2rem;
+      font-size: 0.45rem; }
+    .m-signin .friend .friends {
+      margin-left: 9rem;
+      margin-bottom: 0.9rem;
+      padding-top: 1.6rem;
+      font-size: 0.45rem; }
+      .m-signin .friend .friends span {
+        font-size: 0.6rem;
+        color: #48b0da;
+        font-weight: bold; }
+    .m-signin .friend .topcharts {
+      display: block;
+      margin-left: 2rem;
+      width: 9.2rem;
+      height: 1.6rem; }
 
 body.record {
   background-color: #01652d; }
