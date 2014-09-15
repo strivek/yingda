@@ -120,42 +120,143 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (width: 768px){
   .m-fullscreen {
-    .fs-down {bottom: 12%;}
+    display: block;
+    .fs-inner {
+      display: block;
+      vertical-align: top;
+      padding-top: 160px;
+      .fs-mid {
+        width: 58%;
+        h1 {
+          font-size: 3em;
+        }
+        .fs-badge img {
+          width: 70%;
+        }
+        h3 {
+          margin-top: 2em;
+        }
+      }
+    }
+    .fs-down {
+      bottom: 20%;
+    }
   }
-}
-
-@media screen and (max-width: 1024px){
-  .m-fullscreen {
+  .m-fullscreen-img {
     .fs-mid {
-      width: 40%;
-      font-size: 10px;
+      .fs-badge img {
+        width: 70%;
+      }
+      h1 {
+        font-size:1.5em;
+        line-height: 1.5;
+        span {
+          font-family: "myfont-bold";
+        }
+      }
+      h4 {
+        font-size: 1em;
+        line-height: 1.2;
+        font-weight: normal;
+      }
     }
   }
   .m-fullscreen-1 {
     .fs-mid {
-      top: 10%;
-      right: 0;
+      top: 15%;
+      right: 10%;
     }
   }
   .m-fullscreen-2 {
     background-position: 40% center;
     .fs-mid {
-      top: 40%;
-      right: 5%;
+      top: 35%;
+      right: 10%;
     }
   }
   .m-fullscreen-3 {
     .fs-mid {
-      top: 40%;
-      left: 0;
+      top: 35%;
+      left: 10%;
     }
   }
   .m-fullscreen-4 {
     .fs-mid {
-      top: 40%;
-      right: 0;
+      top: 35%;
+      right: 10%;
+    }
+  }
+}
+
+@media screen and (width: 1024px){
+  .m-fullscreen {
+    display: block;
+    .fs-inner {
+      display: block;
+      vertical-align: top;
+      padding-top: 100px;
+      .fs-mid {
+        width: 40%;
+        font-size: 10px;
+        h1 {
+          font-size: 4em;
+        }
+        .fs-badge img {
+          width: 70%;
+        }
+        h3 {
+          margin-top: 2em;
+        }
+      }
+    }
+    .fs-down {
+      bottom: 12%;
+    }
+  }
+  .m-fullscreen-img {
+    .fs-mid {
+      .fs-badge img {
+        width: 70%;
+      }
+      h1 {
+        font-size:1.5em;
+        line-height: 1.5;
+        span {
+          font-family: "myfont-bold";
+        }
+      }
+      h4 {
+        font-size: 1em;
+        line-height: 1.2;
+        font-weight: normal;
+      }
+    }
+  }
+  .m-fullscreen-1 {
+    .fs-mid {
+      top: 15%;
+      right: 10%;
+    }
+  }
+  .m-fullscreen-2 {
+    background-position: 40% center;
+    .fs-mid {
+      top: 35%;
+      right: 10%;
+    }
+  }
+  .m-fullscreen-3 {
+    .fs-mid {
+      top: 35%;
+      left: 10%;
+    }
+  }
+  .m-fullscreen-4 {
+    .fs-mid {
+      top: 35%;
+      right: 10%;
     }
   }
 }

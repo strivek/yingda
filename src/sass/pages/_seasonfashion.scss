@@ -35,10 +35,14 @@ $font-family: '宋体';
     border: 4px solid #fff;
   }
   //轮播左右箭头背景色改变
-  .images a span.glyphicon, .images a span.glyphicon {
+  .images a span.glyphicon {
+    padding-top:10px;
+    padding-bottom: 10px;
     background: #392e24;
     color: #cdb398;
-    font-size: 50px;
+    font-size: 30px;
+    text-align: center;
+
   }
   .paragraph {
     margin-top: 34px;

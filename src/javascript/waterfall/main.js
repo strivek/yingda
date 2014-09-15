@@ -4,7 +4,10 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
         url: 'news.asp',
         perNum: 5,	 // 每次显示五个
         ajaxTimes: 1, 	 // 只发送一次请求
+        imgUrlName: 'coImg',
+        baseUrl:'/uploads/',
         createHtml:function(data){
+//            alert("11");
             if(data.coImg==null){
                 return '<div class="wf_item_inner">' +
                     '<div class="waterfall-content">' +
@@ -29,28 +32,31 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
     });
 });
 
-////productList.html 瀑布流
+////productListWomen.html 瀑布流
 require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
     var gender = $("[name=sc]").val();
-    var ser =$("[name=ser]").val();
+    var ser = encodeURI($("[name=ser]").val());
+//    alert(ser);
+//    alert(gender);
+//    alert(encodeURI(ser));
 
     $('#productList').waterfall({
         url: 'productlist.asp?type='+gender+"&coSer="+ser+"&time="+new Date(),
         perNum: 5,	 // 每次显示五个
         ajaxTimes: 1, 	 // 只发送一次请求
         colWidth: 235,
+        imgUrlName: 'prImg',
+        baseUrl:'/uploads/product/s',
         createHtml: function (data) {
             return '<div class="wf_item_inner water-modal" data-id=' + data.prId + ' data-toggle="modal" data-target="#water-modal"> ' +
                 '<a href="' + data.prId + '" class="thumb" target="_blank">' +
-                '<img class="thumb_img"  src="/uploads/product/' + data.prImg + ' " />' +
+                '<img class="thumb_img"  src="/uploads/product/s' + data.prImg + ' " />' +
                 '</a>' +
                 '<a style="position:absolute; right:10px; bottom:8px; display:block;color:#ffe3cd; font-size:40px;" class="iconfont icon-yingdaicon08" href="' + data.prId + '" target="_blank"></a>' +
                 '</div>';
         }
     });
-
 });
-
 
 /**
  * Created by seven on 14/8/21.

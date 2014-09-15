@@ -75,7 +75,11 @@
                 , $scrollbar = $container.find(".scrollbar")
                 , $track = $scrollbar.find(".track")
                 , $thumb = $scrollbar.find(".thumb");
-           // self.update();
+           self.update();
+            $thumb.css(posiLabel,thumbPosition);
+           $overview.css(posiLabel,overviewTop);
+            //alert($overview.css(posiLabel));
+
 
         }
 
@@ -92,6 +96,7 @@
             this.thumbSize = Math.min(this.trackSize, Math.max(0, (this.options.thumbSize || (this.trackSize * this.contentRatio))));
             this.trackRatio = this.options.thumbSize ? (this.contentSize - this.viewportSize) / (this.trackSize - this.thumbSize) : (this.contentSize / this.trackSize);
             mousePosition = $track.offset().top;
+
 
             $scrollbar.toggleClass("disable", this.contentRatio >= 1);
             switch (scrollTo) {
@@ -119,6 +124,7 @@
             $scrollbar.css(sizeLabel, self.trackSize);
             $track.css(sizeLabel, self.trackSize);
             $thumb.css(sizeLabel, self.thumbSize);
+
         }
 
         function setEvents() {
@@ -154,7 +160,7 @@
 
             mousePosition = isHorizontal ? event.pageX : event.pageY;
             self.thumbPosition = parseInt($thumb.css(posiLabel), 10) || 0;
-
+//
             if (hasTouchEvents) {
                 document.ontouchmove = function (event) {
                     event.preventDefault();
@@ -169,7 +175,8 @@
             }
 
         }
-
+        var thumbPosition='';
+        var overviewTop='';
         function wheel(event) {
             if (self.contentRatio < 1) {
                 var evntObj = event || window.event
@@ -183,8 +190,11 @@
                 $container.trigger("move");
 
                 $thumb.css(posiLabel, self.contentPosition / self.trackRatio);
-                $overview.css(posiLabel, -self.contentPosition);
+                 thumbPosition=$thumb.css(posiLabel);
 
+                $overview.css(posiLabel, -self.contentPosition);
+                overviewTop= $overview.css(posiLabel);
+                //console.log($overview.css(posiLabel));
                 if (self.options.wheelLock || (self.contentPosition !== (self.contentSize - self.viewportSize) && self.contentPosition !== 0)) {
                     evntObj = $.event.fix(evntObj);
                     evntObj.preventDefault();
@@ -208,7 +218,9 @@
                 $container.trigger("move");
 
                 $thumb.css(posiLabel, thumbPositionNew);
+                thumbPosition=$thumb.css(posiLabel);
                 $overview.css(posiLabel, -self.contentPosition);
+                overviewTop= $overview.css(posiLabel);
             }
         }
 
