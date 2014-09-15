@@ -5,21 +5,23 @@ body.signin {background-color: #afe9ff;}
   background: url("../images/signin-bg.jpg") no-repeat center top;
   background-size: 100%;
   .main-wrap {
-    padding: 5.25rem 1.25rem 1.25rem;
+    padding: 4.8rem 1.4rem 0.4rem;
   }
   .main {
-    margin-bottom: 1.15rem;
-    height: 8.075rem;
-    padding: 1.03rem 0 0 1.85rem;
+    margin-bottom: 0.4rem;
+    height: 10.8rem;
     color: #11cfff;
   }
   .profile {
-    float: left;
-    width: 4.3rem;
+    margin: 0 auto 0 8rem;
+    padding-top: 0.7rem;
+    width: 4.8rem;
+    height: 7.6rem;
     .avatar {
+      margin: 0 auto;
       padding: 0.3rem 0 0 0.3rem;
-      width: 4.3rem;
-      height: 4.8rem;
+      width: 4.0rem;
+      height: 4.3rem;
       background: url("../images/avatar-bg.png") no-repeat 0 0;
       background-size: 100%;
       img {
@@ -29,15 +31,16 @@ body.signin {background-color: #afe9ff;}
       }
     }
     .user {
-      font-size: 0.55rem;
-      line-height: 0.75rem;
+      font-size: 0.8rem;
       font-weight: bold;
       text-align: center;
+      width: 4.8rem;
+      word-break: break-all;
       span {
         display: inline-block;
         margin-bottom: -0.1rem;
-        width: 0.475rem;
-        height: 0.5rem;
+        width: 0.6rem;
+        height: 0.625rem;
         &.male {
           background: url("../images/male.jpg") no-repeat 0 0;
           background-size: 100%;
@@ -49,8 +52,9 @@ body.signin {background-color: #afe9ff;}
       }
     }
     .position {
-      font-size: 0.5rem;
-      line-height: 0.75rem;
+      width: 4rem;
+      font-size: 0.6rem;
+      line-height: 0.8rem;
       text-align: center;
       span {
         display: inline-block;
@@ -63,39 +67,99 @@ body.signin {background-color: #afe9ff;}
     }
   }
   .member {
-    margin-left: 4.9rem;
+    float: left;
+    width: 8rem;
     h1 {
-      height: 1.65rem;
-      line-height: 1.65rem;
-      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+      height: 2.3rem;
+      line-height: 2.3rem;
+      font-size: 0.9rem;
       font-weight: bold;
-    }
-    h2 {
-      margin-bottom: 1rem;
-      height: 0.9rem;
-      line-height: 0.9rem;
-      font-size: 0.7rem;
-      font-weight: normal;
+      text-align: center;
       span {
-        font-weight: bold;
+        font-size: 0.7rem;
       }
     }
     .score {
-      height: 1.75rem;
-      line-height: 1.75rem;
-      font-size: 1.5rem;
+      margin-bottom: 0.2rem;
+      height: 2.3rem;
+      line-height: 2.3rem;
+      font-size: 1.8rem;
+      text-align: center;
       span {
         font-size: 0.6rem;
       }
     }
-  }
-  .btns {
-    height: 7.25rem;
-    a {
+    .btn {
       display: block;
-      margin-bottom: 1.375rem;
-      height: 2.25rem;
-      text-indent: -999rem;
+      margin-left: 1.6rem;
+      width: 5.2rem;
+      height: 1.2rem;
+    }
+    .rule {
+      display: block;
+      height: 1rem;
+      line-height: 1rem;
+      font-size: 0.4rem;
+      text-align: center;
+      color: #48b0da;
+    }
+  }
+  .btn3 {
+    height: 3.2rem;
+    color: #fff;
+    li {
+      float: left;
+      padding: 0.25rem 0.4rem 0;
+      width: 4.4rem;
+      p {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        text-align: center;
+        font-size: 0.8rem;
+        span {
+          font-size: 0.5rem;
+        }
+      }
+      a {
+        display: block;
+        width: 3.6rem;
+        height: 1.1rem;
+      }
+      i {
+        display: block;
+        font-style: normal;
+        padding-top: 0.15rem;
+        text-align: center;
+        font-size: 0.3rem;
+      }
+    }
+  }
+  .friend {
+    height: 6rem;
+    color: #1abef1;
+    .invitation {
+      float: left;
+      width: 9rem;
+      padding: 2.3rem 0 0 1.2rem;
+      font-size: 0.45rem;
+    }
+    .friends {
+      margin-left: 9rem;
+      margin-bottom: 0.9rem;
+      padding-top: 1.6rem;
+      font-size: 0.45rem;
+      span {
+        font-size: 0.6rem;
+        color: #48b0da;
+        font-weight: bold;
+      }
+    }
+    .topcharts {
+      display: block;
+      margin-left: 2rem;
+      width: 9.2rem;
+      height: 1.6rem;
     }
   }
 }
