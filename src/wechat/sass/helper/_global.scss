@@ -1,5 +1,5 @@
 @charset "utf-8";
-$rem:10px;
+$rem:20px;
 html {font-size: $rem;}
 @media screen and (width: 360px) {
   html {font-size: $rem * 1.125;}
