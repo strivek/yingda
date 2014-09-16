@@ -169,7 +169,7 @@ body.signin {
 
 .m-signin {
   font-family: '\9ED1\4F53';
-  background: url("../images/signin-bg.jpg") no-repeat center top;
+  background: url("../images/update-signin.png") no-repeat center top;
   background-size: 100%; }
   .m-signin .main-wrap {
     padding: 4.8rem 1.4rem 0.4rem; }
@@ -346,4 +346,74 @@ body.record {
       width: 100%;
       height: 100%; }
 
-/*# sourceMappingURL=wechat.css.map */
+body {
+  margin: 0;
+  padding: 0; }
+
+.rank-main {
+  position: relative;
+  width: 100%;
+  height: 42.8rem;
+  background: url(../images/rank-top2.png) no-repeat 0 0;
+  background-size: 100%; }
+  .rank-main .ranklist {
+    margin-left: -0.3rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 8.625rem;
+    width: 82.5%; }
+    .rank-main .ranklist li {
+      height: 1.6rem;
+      line-height: 100%;
+      font-size: 0.7rem;
+      font-weight: bold;
+      text-align: center; }
+      .rank-main .ranklist li a {
+        float: left;
+        width: 33.333%;
+        color: #10CAFB; }
+
+.m-jifen {
+  background: url("../images/update-jifen1.png") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 15.5rem;
+  position: relative; }
+  .m-jifen span {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    left: 3.6rem;
+    top: 3.45rem; }
+  .m-jifen img {
+    position: absolute;
+    left: 9.4rem;
+    top: 1.9rem;
+    width: 3.85rem;
+    height: 4.175rem; }
+  .m-jifen h3 {
+    font-size: 0.8rem;
+    color: #fff;
+    position: absolute;
+    left: 9.8rem;
+    top: 6.2rem; }
+  .m-jifen p {
+    font-size: 0.6rem;
+    color: #31b7e4;
+    position: absolute;
+    left: 6.4rem; }
+    .m-jifen p.ji1 {
+      top: 8.25rem; }
+    .m-jifen p.ji2 {
+      top: 9.8rem; }
+    .m-jifen p.ji3 {
+      top: 11.45rem; }
+    .m-jifen p.ji4 {
+      top: 13rem; }
+
+.m-rule {
+  width: 100%; }
+  .m-rule img {
+    width: 100%; }
