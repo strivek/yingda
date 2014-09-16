@@ -308,7 +308,8 @@ body.record {
   font-family: '\9ED1\4F53';
   background: #01652d url("../images/record-bg.jpg") no-repeat center top;
   background-size: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 2.5rem; }
   .m-record .year {
     margin-top: 7.6rem;
     display: block;
@@ -338,7 +339,7 @@ body.record {
         font-size: 1.5rem;
         padding: 0 1.2rem; }
   .m-record .btn {
-    margin: 3.6rem auto 0;
+    margin: 3.6rem auto 1rem;
     width: 10rem;
     height: 2.2rem; }
     .m-record .btn a {
