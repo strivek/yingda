@@ -8,6 +8,7 @@ body.record {
   background: #01652d url("../images/record-bg.jpg") no-repeat center top;
   background-size: 100%;
   overflow: hidden;
+  padding-bottom:2.5rem;
   .year {
     margin-top: 7.6rem;
     display: block;
@@ -43,7 +44,7 @@ body.record {
     }
   }
   .btn {
-    margin: 3.6rem auto 0;
+    margin: 3.6rem auto 1rem;
     width: 10rem;
     height: 2.2rem;
     a {
