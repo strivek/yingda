@@ -45,7 +45,10 @@
       border: 1px solid #fff;
     }
   }
-  .list {
+  .emp{
+    &:after,&:before{display: table; content: "";}
+    &:after{clear: both;}
+    .list {
     width: 400px;
     .showpic {
       margin-top: 20px;
@@ -56,22 +59,32 @@
       float: left;
       margin-left: 20px;
       p a{ display: block;
-      line-height: 30px;
-      height: 30px;
-      text-align: center;
-      font-size:14px;
-      color:#210700;
-      font-family: "宋体";
-      &:hover{color:#714e38;}}
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        font-size:14px;
+        color:#210700;
+        font-family: "宋体";
+        &:hover{color:#714e38;}}
     }
-    .changemargin{margin-top: 40px;}
-    .changemargin .m-list3{margin-top: 20px;}
+
   }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }}
+
+.rBottom{
+  &:after,&:before{display: table; content: "";}
+  &:after{clear: both;}
+  .changemargin{margin-top: 40px;}
   .left {
     float: left;
   }
   .right {
     float: right;
   }
-
+  .changemargin .m-list3{margin-top: 20px;}}
 }

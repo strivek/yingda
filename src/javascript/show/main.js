@@ -24,7 +24,6 @@ require(['jquery'], function ($) {
                 $allmain.removeClass("line");
             }
             else{
-
                 $allmain.removeClass("line");
                 $main.addClass("line");
             }

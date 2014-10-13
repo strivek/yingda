@@ -719,20 +719,25 @@ a, a:hover {
       border: 1px solid #fff; }
     .m-main-cy .imglb .u-pointer i.active {
       border: 1px solid #fff; }
-  .m-main-cy .list {
+  .m-main-cy .emp:after, .m-main-cy .emp:before {
+    display: table;
+    content: ""; }
+  .m-main-cy .emp:after {
+    clear: both; }
+  .m-main-cy .emp .list {
     width: 400px; }
-    .m-main-cy .list .showpic {
+    .m-main-cy .emp .list .showpic {
       margin-top: 20px;
       margin-left: -20px; }
-      .m-main-cy .list .showpic:before, .m-main-cy .list .showpic:after {
+      .m-main-cy .emp .list .showpic:before, .m-main-cy .emp .list .showpic:after {
         content: " ";
         display: table; }
-      .m-main-cy .list .showpic:after {
+      .m-main-cy .emp .list .showpic:after {
         clear: both; }
-    .m-main-cy .list .showpic li {
+    .m-main-cy .emp .list .showpic li {
       float: left;
       margin-left: 20px; }
-      .m-main-cy .list .showpic li p a {
+      .m-main-cy .emp .list .showpic li p a {
         display: block;
         line-height: 30px;
         height: 30px;
@@ -740,16 +745,25 @@ a, a:hover {
         font-size: 14px;
         color: #210700;
         font-family: "宋体"; }
-        .m-main-cy .list .showpic li p a:hover {
+        .m-main-cy .emp .list .showpic li p a:hover {
           color: #714e38; }
-    .m-main-cy .list .changemargin {
-      margin-top: 40px; }
-    .m-main-cy .list .changemargin .m-list3 {
-      margin-top: 20px; }
-  .m-main-cy .left {
+  .m-main-cy .emp .left {
     float: left; }
-  .m-main-cy .right {
+  .m-main-cy .emp .right {
     float: right; }
+  .m-main-cy .rBottom:after, .m-main-cy .rBottom:before {
+    display: table;
+    content: ""; }
+  .m-main-cy .rBottom:after {
+    clear: both; }
+  .m-main-cy .rBottom .changemargin {
+    margin-top: 40px; }
+  .m-main-cy .rBottom .left {
+    float: left; }
+  .m-main-cy .rBottom .right {
+    float: right; }
+  .m-main-cy .rBottom .changemargin .m-list3 {
+    margin-top: 20px; }
 
 .m-main1-cy {
   width: 862px;
@@ -864,6 +878,8 @@ body {
           .m-main3-cy .yearbook li .show a:hover {
             color: #714e38; }
         .m-main3-cy .yearbook li .show p {
+          overflow: hidden;
+          width: 660px;
           float: left;
           padding-left: 44px;
           margin: 0;
