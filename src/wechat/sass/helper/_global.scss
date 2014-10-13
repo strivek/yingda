@@ -1,9 +1,13 @@
 @charset "utf-8";
 <<<<<<< HEAD
+<<<<<<< HEAD
 $rem:20px;
 =======
 $rem:10px;
 >>>>>>> tempwechat
+=======
+$rem:20px;
+>>>>>>> 字体改变
 html {font-size: $rem;}
 @media screen and (width: 360px) {
   html {font-size: $rem * 1.125;}
