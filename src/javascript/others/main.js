@@ -156,21 +156,6 @@ require(['jquery'], function ($) {
     }
 });
 
-
-require(['jquery'], function ($) {
-//首页预加载
-    $(function(){
-        $('.home').hide();
-            $('.home').fadeIn(2000,function(){
-               setTimeout(function(){
-                  $('.home').fadeOut(1000);
-                  $('.home-img').fadeOut(1000);
-               },1000)
-            });
-
-
-    });
-    });
 require(['jquery'], function ($) {
     var img=$('<img>');
     var oDiv=$('<div>');
@@ -179,10 +164,20 @@ require(['jquery'], function ($) {
     oDiv.addClass('Divbg');
     $('body').append(oDiv);
     $('body').append(img);
-    $('img').load(function(){
+    $('img').eq($('img').length-1).load(function(){
+
         oDiv.hide();
         img.hide();
+
+        $('.home').fadeIn(2000,function(){
+            setTimeout(function(){
+                $('.home').fadeOut(1000);
+                $('.home-img').fadeOut(1000);
+            },1000)
+        });
     })
+
+
 
 });
 require(['jquery'], function ($) {
@@ -191,9 +186,9 @@ require(['jquery'], function ($) {
         var img1=$('.set_table img');
         if(img.length>0){
 
-       img.load(
-            picChange(img)
-        );
+
+            picChange(img);
+
         }
         if(img1.length>0){
         img1.load(
@@ -221,6 +216,7 @@ require(['jquery'], function ($) {
                 img.height(winHei);
                 img.width('auto');
                 // alert(img.width());
+
                 var marginLeft=-(img.width()-$(window).width())/2;
 //                    if()
                 img.css('marginLeft',marginLeft);
