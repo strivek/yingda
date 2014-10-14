@@ -11,11 +11,16 @@ require(['jquery'], function ($) {
         );
     });
     $(function(){
-        $(function(){
+
             var oul = $('.imglb ol');
             var ali = $('.imglb ol li');
+            var alien=ali.length;
+            var olWid=ali.outerWidth()*alien;
+            oul.width(olWid);
+
+
             var numLi = $('span i');
-            var aliWidth = $('.imglb ol li').eq(0).width();
+            var aliWidth = ali.eq(0).width();
             var _now = 0;	//这个是控制数字样式的计数器
             var _now2 = 0;	//这个是控制图片运动距离的计数器
             var timeId;
@@ -32,7 +37,7 @@ require(['jquery'], function ($) {
                 if(_now==numLi.size()-1){
                     ali.eq(0).css({
                         'position':'relative',
-                        'left': oul.width()
+                        'left': olWid
                     });
                     _now=0;
                 }else{
@@ -42,10 +47,6 @@ require(['jquery'], function ($) {
                 _now2++;
 
                 numLi.eq(_now).addClass('active').siblings().removeClass();
-
-
-
-
                 oul.animate({'left':-aliWidth*_now2},500,function(){
                     if(_now==0){
                         ali.eq(0).css('position','static');
@@ -62,5 +63,5 @@ require(['jquery'], function ($) {
                 timeId = setInterval(slider,1500);
             });
         });
-    })
+
 });

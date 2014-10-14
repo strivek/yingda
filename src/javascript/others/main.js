@@ -195,7 +195,7 @@ require(['jquery'], function ($) {
             picChange(img1)
         );
         }
-    })
+    });
 
     function picChange(img){
         function picSize(){
@@ -263,4 +263,12 @@ require(['jquery'], function ($) {
         }
     });
 });
+
+
+//21章移动页面
+
+
+
+
+
 

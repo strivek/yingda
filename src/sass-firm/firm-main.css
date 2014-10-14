@@ -694,6 +694,7 @@ a, a:hover {
     height: 300px;
     overflow: hidden; }
     .m-main-cy .imglb .imgList {
+      width: 4300px;
       position: absolute; }
     .m-main-cy .imglb ol, .m-main-cy .imglb li {
       float: left; }
