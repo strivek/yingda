@@ -693,37 +693,41 @@ a, a:hover {
     width: 100%;
     height: 300px;
     overflow: hidden; }
+<<<<<<< HEAD
     .m-main-cy .imglb .items {
+=======
+    .m-main-cy .imglb .imgList .items {
+>>>>>>> origin/master
       position: absolute;
       float: left;
       background: none;
       list-style: none;
       padding: 0px;
       margin: 0px; }
-      .m-main-cy .imglb .items li {
+      .m-main-cy .imglb .imgList .items li {
         float: left;
         background: none;
         list-style: none;
         padding: 0px;
         margin: 0px; }
-        .m-main-cy .imglb .items li a {
+        .m-main-cy .imglb .imgList .items li a {
           float: left;
           line-height: normal; }
-          .m-main-cy .imglb .items li a img {
+          .m-main-cy .imglb .imgList .items li a img {
             display: block;
             border: none; }
-    .m-main-cy .imglb .tips {
+    .m-main-cy .imglb .imgList .tips {
       position: absolute;
       bottom: 0px;
       width: 100%;
       height: 20px;
       overflow: hidden; }
-      .m-main-cy .imglb .tips .nums {
+      .m-main-cy .imglb .imgList .tips .nums {
         position: absolute;
         right: 10px;
         top: 0px;
         height: 100%; }
-        .m-main-cy .imglb .tips .nums a {
+        .m-main-cy .imglb .imgList .tips .nums a {
           display: inline-block;
           float: left;
           width: 8px;
@@ -731,7 +735,7 @@ a, a:hover {
           text-indent: -99999px;
           margin: 0px 4px 0px 0px;
           background: #8d735d; }
-        .m-main-cy .imglb .tips .nums .active {
+        .m-main-cy .imglb .imgList .tips .nums .active {
           border: 1px solid #fff; }
   .m-main-cy .emp:after, .m-main-cy .emp:before {
     display: table;
