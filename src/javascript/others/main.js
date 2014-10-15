@@ -157,25 +157,29 @@ require(['jquery'], function ($) {
 });
 
 require(['jquery'], function ($) {
-    var img=$('<img>');
-    var oDiv=$('<div>');
-    img.attr('src','../images/44.gif');
-    img.addClass('imgload');
-    oDiv.addClass('Divbg');
-    $('body').append(oDiv);
-    $('body').append(img);
-    $('img').eq($('img').length-1).load(function(){
+//    var img=$('<img>');
+//    var oDiv=$('<div>');
+//    img.attr('src','../images/44.gif');
+//    img.addClass('imgload');
+//    oDiv.addClass('Divbg');
+//    $('body').prepend(oDiv);
+//    $('body').prepend(img);
+    if($('img').eq($('img').length-1).height()>0){
 
-        oDiv.hide();
-        img.hide();
+        $('.Divbg').hide();
+        $('.imgload').hide();
+        if($('.Divbg').is(':hidden')){
+            $('.home').fadeIn(2000,function(){
+                setTimeout(function(){
+                    $('.home').fadeOut(1000);
+                    $('.home-img').fadeOut(1000);
+                },1000)
+            });
+        }
+    }
 
-        $('.home').fadeIn(2000,function(){
-            setTimeout(function(){
-                $('.home').fadeOut(1000);
-                $('.home-img').fadeOut(1000);
-            },1000)
-        });
-    })
+
+
 
 
 
@@ -195,7 +199,7 @@ require(['jquery'], function ($) {
             picChange(img1)
         );
         }
-    })
+    });
 
     function picChange(img){
         function picSize(){
@@ -263,4 +267,12 @@ require(['jquery'], function ($) {
         }
     });
 });
+
+
+//21章移动页面
+
+
+
+
+
 
