@@ -10,23 +10,58 @@
     width: 100%;
     height: 300px;
     overflow:hidden;
-    .items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;
-      li{ float:left; background:none; list-style:none; padding:0px; margin:0px;
-         a{ float:left; line-height:normal ;
-         img{display:block; border:none;}
-         }
-       }
-    }
- .tips{ position:absolute; bottom:0px; width:100%; height:20px;overflow:hidden;
-    .nums{ position:absolute; right:10px; top:0px; height:100%;
-      a{ display:inline-block; float:left; width:8px; height:8px;text-indent:-99999px; margin:0px 4px 0px 0px; background: #8d735d;
+      .items {
+        position: absolute;
+        float: left;
+        background: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li {
+          float: left;
+          background: none;
+          list-style: none;
+          padding: 0px;
+          margin: 0px;
+          a {
+            float: left;
+            line-height: normal;
+            img {
+              display: block;
+              border: none;
+            }
+          }
+        }
+      }
 
-      .active {
+      .tips {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        .nums {
+          position: absolute;
+          right: 10px;
+          top: 0px;
+          height: 100%;
+          a {
+            display: inline-block;
+            float: left;
+            width: 8px;
+            height: 8px;
+            text-indent: -99999px;
+            margin: 0px 4px 0px 0px;
+            background: #8d735d;
+
+          }
+          .active {
             border: 1px solid #fff;
           }
         }
       }
   }
+
   .emp{
     &:after,&:before{display: table; content: "";}
     &:after{clear: both;}
@@ -69,4 +104,4 @@
     float: right;
   }
   .changemargin .m-list3{margin-top: 20px;}}
-}}
+}
