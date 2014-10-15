@@ -70,7 +70,7 @@ body.chapter21 {
     overflow-x: hidden;
     z-index: 100;
     .inner {
-      width: 7840px;
+      width: 5880px;
       position: absolute;
       left: 0;
       overflow: hidden;
@@ -79,7 +79,7 @@ body.chapter21 {
     }
     @media (max-width: 788px) {
       .inner {
-        width: 7840px;
+        width: 5880px;
         position: absolute;left: 0;
 
         overflow: hidden;

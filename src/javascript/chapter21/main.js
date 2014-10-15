@@ -46,48 +46,65 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         //下一张
         $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
         //屏幕大小改变
-        $(window).resize($.proxy(this.resizeHover), this);
+//        $(window).resize($.proxy(this.resizeHover), this);
+        $(window).on('resize',$.proxy(this.resizeHover),$.proxy(this.parent), this);
 
     };
     Slidelight.prototype.parent = function () {
         var This=this.listItem;
-        var preHtml=This.parent().html();
-
         var Itemlength=This.length;
         var animateWid=this.listItem.width()*3;
-
-
         var screen=$(window).width();
-
+        var disT=screen+animateWid;
         var totalWid=Itemlength*this.listItem.width();
-
         var maxNum=Itemlength;
+        sport();
 
-        $('.arrow-center .icon-yingdaicon10').click(function(){
-            setAnimate1()
-        });
-        $('.arrow-center .icon-yingdaicon09').click(function(){
-            setAnimate2()
+        function sport(){
+            $('.arrow-center .icon-yingdaicon10').click(function(){
+                setAnimate1()
+            });
+            $('.arrow-center .icon-yingdaicon09').click(function(){
+                setAnimate2()
+            });
+            function setAnimate1(){
+                if(! This.parent().is(":animated")) {
+                    if (parseInt(This.parent().css('left')) <= disT - totalWid) {
 
 
-        })
+                        This.parent().animate({'left': -totalWid + screen + 'px'}, 500);
 
-//        timer=setInterval(setAnimate,2000);
 
-        function setAnimate1(){
-                if(This.parent().css('left')==-5880+'px'){
-                    This.parent().css('left',0);
+                    } else {
+
+                        This.parent().animate({'left': '-=' + animateWid + 'px'}, 500)
+
+                    }
+
+
                 }
-                This.parent().animate({'left':'-='+animateWid+'px'},500)
+            };
+            function setAnimate2(){
+                if(! This.parent().is(":animated")) {
+                    if (parseInt(This.parent().css('left')) > -animateWid) {
+                        This.parent().animate({'left': 0}, 500)
+                    } else {
+                        This.parent().animate({'left': '+=' + animateWid + 'px'}, 500)
+                    }
+                }
 
-
-        };
-        function setAnimate2(){
-            if(parseInt(This.parent().css('left'))<0){
-                This.parent().animate({'left':'+='+animateWid+'px'},500)
             }
-
         }
+
+
+//        $(window).on（(function(){
+//            alert(1);
+////            screen=$(window).width();
+////            disT=screen+animateWid;
+////            sport();
+//        })
+
+
 
     }
 
