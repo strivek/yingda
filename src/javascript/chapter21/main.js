@@ -59,6 +59,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         var animateWid=this.listItem.width()*3;
         var screen=$(window).width();
         var disT=screen+animateWid;
+        var Itemlength=This.length;
         var totalWid=Itemlength*this.listItem.width();
         sport();
         //调用
