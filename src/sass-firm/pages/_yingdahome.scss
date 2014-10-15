@@ -10,6 +10,7 @@
     width: 100%;
     height: 300px;
     overflow:hidden;
+
     .items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;
       li{ float:left; background:none; list-style:none; padding:0px; margin:0px;
          a{ float:left; line-height:normal ;
@@ -27,39 +28,6 @@
     }
   }
 
-    /*.imgList {
-      position:absolute;
-    }
-    ol,li {
-      float:left;
-    }
-
-    .u-pointer {
-      position: absolute;
-      bottom: 10px;
-      right: 14px;
-      z-index: 50;
-      text-align: center;
-      line-height: 0;
-    }
-    .u-pointer i {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      margin: 0 0 0 2px;
-      cursor: pointer;
-      background: #8d735d;
-      border: 1px solid transparent;
-    }
-    .u-pointer i:first-child {
-      margin-left: 0;
-    }
-    .u-pointer i:hover {
-      border: 1px solid #fff;
-    }
-    .u-pointer i.active {
-      border: 1px solid #fff;
-    }*/
   }
   .emp{
     &:after,&:before{display: table; content: "";}
