@@ -5,6 +5,7 @@ body.signin {background-color: #afe9ff;}
   background: url("../images/signin-bg.jpg") no-repeat center top;
   background-size: 100%;
   .main-wrap {
+<<<<<<< HEAD
     padding: 4.8rem 1.4rem 0.4rem;
   }
   .main {
@@ -22,6 +23,23 @@ body.signin {background-color: #afe9ff;}
       padding: 0.3rem 0 0 0.3rem;
       width: 4.0rem;
       height: 4.3rem;
+=======
+    padding: 10.5rem 2.5rem 2.5rem;
+  }
+  .main {
+    margin-bottom: 2.3rem;
+    height: 16.15rem;
+    padding: 2.06rem 0 0 3.7rem;
+    color: #11cfff;
+  }
+  .profile {
+    float: left;
+    width: 8.6rem;
+    .avatar {
+      padding: 0.6rem 0 0 0.6rem;
+      width: 8.6rem;
+      height: 9.6rem;
+>>>>>>> tempwechat
       background: url("../images/avatar-bg.png") no-repeat 0 0;
       background-size: 100%;
       img {
@@ -31,6 +49,7 @@ body.signin {background-color: #afe9ff;}
       }
     }
     .user {
+<<<<<<< HEAD
       font-size: 0.8rem;
       font-weight: bold;
       text-align: center;
@@ -41,6 +60,17 @@ body.signin {background-color: #afe9ff;}
         margin-bottom: -0.1rem;
         width: 0.6rem;
         height: 0.625rem;
+=======
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      span {
+        display: inline-block;
+        margin-bottom: -0.2rem;
+        width: 0.95rem;
+        height: 1rem;
+>>>>>>> tempwechat
         &.male {
           background: url("../images/male.jpg") no-repeat 0 0;
           background-size: 100%;
@@ -52,6 +82,7 @@ body.signin {background-color: #afe9ff;}
       }
     }
     .position {
+<<<<<<< HEAD
       width: 4rem;
       font-size: 0.6rem;
       line-height: 0.8rem;
@@ -61,12 +92,23 @@ body.signin {background-color: #afe9ff;}
         margin-bottom: -0.1rem;
         width: 0.325rem;
         height: 0.5rem;
+=======
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      span {
+        display: inline-block;
+        margin-bottom: -0.2rem;
+        width: 0.65rem;
+        height: 1rem;
+>>>>>>> tempwechat
         background: url("../images/position.jpg") no-repeat 0 0;
         background-size: 100%;
       }
     }
   }
   .member {
+<<<<<<< HEAD
     float: left;
     width: 8rem;
     h1 {
@@ -160,6 +202,41 @@ body.signin {background-color: #afe9ff;}
       margin-left: 2rem;
       width: 9.2rem;
       height: 1.6rem;
+=======
+    margin-left: 9.8rem;
+    h1 {
+      height: 3.3rem;
+      line-height: 3.3rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    h2 {
+      margin-bottom: 2rem;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      font-size: 1.4rem;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    }
+    .score {
+      height: 3.5rem;
+      line-height: 3.5rem;
+      font-size: 3rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .btns {
+    height: 14.5rem;
+    a {
+      display: block;
+      margin-bottom: 2.75rem;
+      height: 4.5rem;
+      text-indent: -999rem;
+>>>>>>> tempwechat
     }
   }
 }
