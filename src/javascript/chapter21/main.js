@@ -33,6 +33,8 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
     }
 
     Slidelight.prototype.eventBind = function () {
+        var That=this;
+        //指向问题存储
         //打开外层遮罩
         this.listItem.click($.proxy(this.doorOpen, this));
         //关闭外层遮罩
@@ -47,65 +49,46 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
         //屏幕大小改变
 //        $(window).resize($.proxy(this.resizeHover), this);
-        $(window).on('resize',$.proxy(this.resizeHover),$.proxy(this.parent), this);
-
+        $(window).on('resize',function(){
+            That.resizeHover();
+            That.parent();
+        });
     };
     Slidelight.prototype.parent = function () {
         var This=this.listItem;
-        var Itemlength=This.length;
         var animateWid=this.listItem.width()*3;
         var screen=$(window).width();
         var disT=screen+animateWid;
         var totalWid=Itemlength*this.listItem.width();
-        var maxNum=Itemlength;
         sport();
-
+        //调用
         function sport(){
+            //左右键控制运动
             $('.arrow-center .icon-yingdaicon10').click(function(){
-                setAnimate1()
+                setAnimate1();
             });
             $('.arrow-center .icon-yingdaicon09').click(function(){
-                setAnimate2()
+                setAnimate2();
             });
             function setAnimate1(){
                 if(! This.parent().is(":animated")) {
                     if (parseInt(This.parent().css('left')) <= disT - totalWid) {
-
-
                         This.parent().animate({'left': -totalWid + screen + 'px'}, 500);
-
-
                     } else {
-
                         This.parent().animate({'left': '-=' + animateWid + 'px'}, 500)
-
                     }
-
-
                 }
             };
             function setAnimate2(){
-                if(! This.parent().is(":animated")) {
+                if(!This.parent().is(":animated")) {
                     if (parseInt(This.parent().css('left')) > -animateWid) {
                         This.parent().animate({'left': 0}, 500)
                     } else {
                         This.parent().animate({'left': '+=' + animateWid + 'px'}, 500)
                     }
                 }
-
             }
         }
-
-
-//        $(window).on（(function(){
-//            alert(1);
-////            screen=$(window).width();
-////            disT=screen+animateWid;
-////            sport();
-//        })
-
-
-
     }
 
     Slidelight.prototype.isDesktop = function () {
