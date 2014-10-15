@@ -692,33 +692,94 @@ a, a:hover {
     position: relative;
     width: 100%;
     height: 300px;
-    overflow: hidden; }
-    .m-main-cy .imglb .imgList {
-      width: 4310px;
-      position: absolute; }
-    .m-main-cy .imglb ol, .m-main-cy .imglb li {
-      float: left; }
-    .m-main-cy .imglb .u-pointer {
+    overflow: hidden;
+    /*.imgList {
+      position:absolute;
+    }
+    ol,li {
+      float:left;
+    }
+
+    .u-pointer {
       position: absolute;
       bottom: 10px;
       right: 14px;
       z-index: 50;
       text-align: center;
-      line-height: 0; }
-    .m-main-cy .imglb .u-pointer i {
+      line-height: 0;
+    }
+    .u-pointer i {
       display: inline-block;
       width: 8px;
       height: 8px;
       margin: 0 0 0 2px;
       cursor: pointer;
       background: #8d735d;
-      border: 1px solid transparent; }
-    .m-main-cy .imglb .u-pointer i:first-child {
-      margin-left: 0; }
-    .m-main-cy .imglb .u-pointer i:hover {
-      border: 1px solid #fff; }
-    .m-main-cy .imglb .u-pointer i.active {
-      border: 1px solid #fff; }
+      border: 1px solid transparent;
+    }
+    .u-pointer i:first-child {
+      margin-left: 0;
+    }
+    .u-pointer i:hover {
+      border: 1px solid #fff;
+    }
+    .u-pointer i.active {
+      border: 1px solid #fff;
+    }*/ }
+    .m-main-cy .imglb .items {
+      position: absolute;
+      float: left;
+      background: none;
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .m-main-cy .imglb .items li {
+        float: left;
+        background: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px; }
+        .m-main-cy .imglb .items li a {
+          float: left;
+          line-height: normal; }
+          .m-main-cy .imglb .items li a img {
+            display: block;
+            border: none; }
+    .m-main-cy .imglb div.slideBox div.tips {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 50px;
+      background-color: #000;
+      overflow: hidden; }
+    .m-main-cy .imglb div.slideBox div.tips div.title {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%; }
+    .m-main-cy .imglb div.slideBox div.tips div.title a {
+      color: #FFF;
+      font-size: 18px;
+      line-height: 50px;
+      margin-left: 10px;
+      text-decoration: none; }
+    .m-main-cy .imglb div.slideBox div.tips div.title a:hover {
+      text-decoration: underline !important; }
+    .m-main-cy .imglb div.slideBox div.tips div.nums {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%; }
+    .m-main-cy .imglb div.slideBox div.tips div.nums a {
+      display: inline-block;
+      float: left;
+      width: 20px;
+      height: 20px;
+      background-color: #FFF;
+      text-indent: -99999px;
+      margin: 15px 10px 0px 0px; }
+    .m-main-cy .imglb div.slideBox div.tips div.nums a.active {
+      background-color: #093; }
   .m-main-cy .emp:after, .m-main-cy .emp:before {
     display: table;
     content: ""; }
