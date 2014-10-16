@@ -156,33 +156,32 @@ require(['jquery'], function ($) {
     }
 });
 
-
 require(['jquery'], function ($) {
-//首页预加载
-    $(function(){
-        $('.home').hide();
+//    var img=$('<img>');
+//    var oDiv=$('<div>');
+//    img.attr('src','../images/44.gif');
+//    img.addClass('imgload');
+//    oDiv.addClass('Divbg');
+//    $('body').prepend(oDiv);
+//    $('body').prepend(img);
+    if($('img').eq($('img').length-1).height()>0){
+
+        $('.Divbg').hide();
+        $('.imgload').hide();
+        if($('.Divbg').is(':hidden')){
             $('.home').fadeIn(2000,function(){
-               setTimeout(function(){
-                  $('.home').fadeOut(1000);
-                  $('.home-img').fadeOut(1000);
-               },1000)
+                setTimeout(function(){
+                    $('.home').fadeOut(1000);
+                    $('.home-img').fadeOut(1000);
+                },1000)
             });
+        }
+    }
 
 
-    });
-    });
-require(['jquery'], function ($) {
-    var img=$('<img>');
-    var oDiv=$('<div>');
-    img.attr('src','../images/44.gif');
-    img.addClass('imgload');
-    oDiv.addClass('Divbg');
-    $('body').append(oDiv);
-    $('body').append(img);
-    $('img').load(function(){
-        oDiv.hide();
-        img.hide();
-    })
+
+
+
 
 });
 require(['jquery'], function ($) {
@@ -191,16 +190,16 @@ require(['jquery'], function ($) {
         var img1=$('.set_table img');
         if(img.length>0){
 
-       img.load(
-            picChange(img)
-        );
+
+            picChange(img);
+
         }
         if(img1.length>0){
         img1.load(
             picChange(img1)
         );
         }
-    })
+    });
 
     function picChange(img){
         function picSize(){
@@ -221,6 +220,7 @@ require(['jquery'], function ($) {
                 img.height(winHei);
                 img.width('auto');
                 // alert(img.width());
+
                 var marginLeft=-(img.width()-$(window).width())/2;
 //                    if()
                 img.css('marginLeft',marginLeft);
@@ -267,4 +267,12 @@ require(['jquery'], function ($) {
         }
     });
 });
+
+
+//21章移动页面
+
+
+
+
+
 

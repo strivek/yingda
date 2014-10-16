@@ -1,66 +1,24 @@
-require(['jquery'], function ($) {
-    $(function(){
-
+require(['jquery','crsFirm/crsFirm'], function ($) {
+    $(function () {
         $(".m-list3").hover(function () {
-
                 $(this).find(".move").stop().animate({bottom: '0px'});
             },
             function () {
                 $(this).find(".move").stop().animate({bottom: '-40px'});
             }
         );
-    });
-    $(function(){
-        $(function(){
-            var oul = $('.imglb ol');
-            var ali = $('.imglb ol li');
-            var numLi = $('span i');
-            var aliWidth = $('.imglb ol li').eq(0).width();
-            var _now = 0;	//这个是控制数字样式的计数器
-            var _now2 = 0;	//这个是控制图片运动距离的计数器
-            var timeId;
-            var aimg = $('.imglb ol img');
-            numLi.click(function(){
-                var index = $(this).index();
-                _now = index;
-                _now2=index;
-
-                $(this).addClass('active').siblings().removeClass();
-                oul.animate({'left':-aliWidth*index},500);
-            });
-            function slider(){
-                if(_now==numLi.size()-1){
-                    ali.eq(0).css({
-                        'position':'relative',
-                        'left': oul.width()
-                    });
-                    _now=0;
-                }else{
-                    _now++;
-                }
-
-                _now2++;
-
-                numLi.eq(_now).addClass('active').siblings().removeClass();
 
 
-
-
-                oul.animate({'left':-aliWidth*_now2},500,function(){
-                    if(_now==0){
-                        ali.eq(0).css('position','static');
-                        oul.css('left',0);
-                        _now2=0;
-                    }
-                });
+        $('#demo3').slideBox(
+            {
+                duration: 0.3,//滚动持续时间，单位：秒
+                easing: 'linear',//swing,linear//滚动特效
+                delay: 5,//滚动延迟时间，单位：秒
+                hideClickBar: false,//不自动隐藏点选按键
+                clickBarRadius: 10
             }
-
-            timeId = setInterval(slider,1500);
-            $('.imglb').hover(function(){
-                clearInterval(timeId);
-            },function(){
-                timeId = setInterval(slider,1500);
-            });
-        });
+        );
     })
 });
+
+

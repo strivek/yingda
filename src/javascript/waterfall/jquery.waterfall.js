@@ -280,7 +280,7 @@ define(["jquery"], function ($) {
             }
 
             // 返回顶部按钮位置
-            backTop_left = $wf_col.offset().left + ($wf_col.width() + $wf_box.width()) / 2 - $backTop.width();
+            backTop_left = $wf_col.offset().left + ($wf_col.width() + $wf_box.width()) ;
 
             fixedPosition($backTop[0], {
                 left: backTop_left,

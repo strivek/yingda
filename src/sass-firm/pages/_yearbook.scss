@@ -26,6 +26,8 @@ body{ overflow-y: scroll; overflow-x:hidden; width:100%;}
         &:hover{color:#714e38;}
       }
       p{
+        overflow: hidden;
+        width: 660px;
         float: left;
         padding-left: 44px;
         margin: 0;
