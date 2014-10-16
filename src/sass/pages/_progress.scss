@@ -13,30 +13,26 @@
   }
   .fs-mid {
     margin: 0 auto;
-    width: 31.25%;
     font-size: 16px;
     h1 {
       font-size:5em;
-      line-height: 1;
       span {
         font-family: "myfont-bold";
       }
     }
-    .fs-badge img {
-      display: block;
-      margin: 0 auto;
-    }
     p {
-      font-size: 12px;
+      margin: 0 auto;
+      padding-top: 2.5%;
+      width: 31.25%;
+      font-size: 0.75em;
       line-height: 1.5;
       text-align: left;
     }
     h3 {
-      margin-top: 6.25em;
+      padding-top: 10%;
       margin-left: 1em;
       font-family: "myfont-bold";
-      font-size: 14px;
-      line-height: 5;
+      font-size: 1em;
       letter-spacing: 1em;
     }
   }
@@ -78,7 +74,7 @@
     }
     h4 {
       font-size: 1.25em;
-      line-height: 1.5;
+      line-height: 4;
       font-weight: normal;
     }
   }
@@ -89,8 +85,8 @@
   color: #000;
   a {color: #000;}
   .fs-mid {
-    top: 10%;
-    right: 20%;
+    top: 18%;
+    right: 22%;
   }
 }
 
@@ -99,7 +95,7 @@
   color: #000;
   a {color: #000;}
   .fs-mid {
-    top: 40%;
+    top: 42%;
     right: 20%;
   }
 }
@@ -107,16 +103,16 @@
 .m-fullscreen-3 {
   background-image: url("../images/brand-progress-3.jpg");
   .fs-mid {
-    top: 40%;
-    left: 10%;
+    top: 52%;
+    left: 20%;
   }
 }
 
 .m-fullscreen-4 {
   background-image: url("../images/brand-progress-4.jpg");
   .fs-mid {
-    top: 40%;
-    right: 20%;
+    top: 52%;
+    right: 25%;
   }
 }
 
@@ -128,39 +124,25 @@
       vertical-align: top;
       padding-top: 160px;
       .fs-mid {
-        width: 58%;
         h1 {
+          padding-top: 5%;
           font-size: 3em;
         }
         .fs-badge img {
           width: 70%;
         }
+        p {
+          padding-top: 15%;
+          width: 75%;
+        }
         h3 {
+          padding-top: 30%;
           margin-top: 2em;
         }
       }
     }
     .fs-down {
       bottom: 20%;
-    }
-  }
-  .m-fullscreen-img {
-    .fs-mid {
-      .fs-badge img {
-        width: 70%;
-      }
-      h1 {
-        font-size:1.5em;
-        line-height: 1.5;
-        span {
-          font-family: "myfont-bold";
-        }
-      }
-      h4 {
-        font-size: 1em;
-        line-height: 1.2;
-        font-weight: normal;
-      }
     }
   }
   .m-fullscreen-1 {
@@ -198,14 +180,11 @@
       vertical-align: top;
       padding-top: 100px;
       .fs-mid {
-        width: 40%;
-        font-size: 10px;
         h1 {
+          padding-top: 5%;
           font-size: 4em;
         }
-        .fs-badge img {
-          width: 70%;
-        }
+        p {width: 40%;}
         h3 {
           margin-top: 2em;
         }
@@ -213,25 +192,6 @@
     }
     .fs-down {
       bottom: 12%;
-    }
-  }
-  .m-fullscreen-img {
-    .fs-mid {
-      .fs-badge img {
-        width: 70%;
-      }
-      h1 {
-        font-size:1.5em;
-        line-height: 1.5;
-        span {
-          font-family: "myfont-bold";
-        }
-      }
-      h4 {
-        font-size: 1em;
-        line-height: 1.2;
-        font-weight: normal;
-      }
     }
   }
   .m-fullscreen-1 {
@@ -262,11 +222,6 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1366px){
-  .m-fullscreen {
-    .fs-mid {
-      font-size: 12px;
-    }
-  }
   .m-fullscreen-1 {
     .fs-mid {
       top: 10%;
@@ -283,34 +238,48 @@
 
 @media (min-width: 1367px) and (max-width: 1440px){
   .m-fullscreen {
-    .fs-mid {
-      font-size: 14px;
+    .fs-inner {
+      .fs-mid {
+        p {width: 40%;}
+      }
     }
   }
   .m-fullscreen-1 {
     .fs-mid {
-      top: 10%;
-      right: 10%;
+      top: 15%;
+      right: 15%;
+    }
+  }
+  .m-fullscreen-3 {
+    .fs-mid {
+      left: 12%;
     }
   }
   .m-fullscreen-4 {
     .fs-mid {
-      top: 40%;
-      right: 15%;
+      top: 45%;
+      right: 20%;
     }
   }
 }
 
 @media (min-width: 1441px) and (max-width: 1600px){
   .m-fullscreen {
-    .fs-mid {
-      font-size: 14px;
+    .fs-inner {
+      .fs-mid {
+        p {width: 40%;}
+      }
     }
   }
   .m-fullscreen-1 {
     .fs-mid {
-      top: 10%;
-      right: 15%;
+      top: 15%;
+      right: 18%;
+    }
+  }
+  .m-fullscreen-3 {
+    .fs-mid {
+      left: 15%;
     }
   }
   .m-fullscreen-4 {
