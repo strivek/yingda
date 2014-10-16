@@ -1,7 +1,7 @@
 require.config({
     baseUrl: "../javascript",
     packages: ['waterfall', 'lightbox', 'lightbox2', 'formselected', 'scrollbar', 'bkgroundtoggle', 'navdropdown'
-        , 'carousel', 'others', 'xscroll', 'scrollto','chapter21'],
+        , 'carousel', 'others', 'xscroll', 'scrollto','chapter21','brandmap'],
     paths: {
         jquery: 'lib/jquery.min',
         bootstrap: 'lib/bootstrap',
@@ -12,7 +12,8 @@ require.config({
         tweenTime:"lib/greensock/TimeLineLite.min",
         tweenCss:"lib/greensock/plugins/CSSPlugin.min",
         flexslider:"lib/jquery.flexslider-min",
-        range:"lib/range"
+        range:"lib/range",
+        'async': 'lib/async'
     }
 });
 
@@ -44,4 +45,5 @@ require(['others']);
 //progress.html
 require(['scrollto']);
 require(['chapter21']);
+require(['brandmap']);
 
