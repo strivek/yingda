@@ -99,6 +99,7 @@ initMap();//创建和初始化地图
 //alert("当前地图中心点：" + map.getCenter().lng + "," + map.getCenter().lat);
 $('.mapDetail').click(
 function(){
+    $(this).html('返回');
     $('#dituContent').show();
     var mapId=$(this).attr('id');
     //alert(mapId);

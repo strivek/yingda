@@ -1,6 +1,6 @@
 {
     "map":[{
-
+        "img":"../images/boutique.jpg",
         "title": "北海公园",
         "content": "我的最爱",
         "point": "116.394831|39.933842",
@@ -16,6 +16,7 @@
     }],
     "map1": [
         {
+            "img":"../images/look2.jpg",
             "title": "天安门",
             "content": "天安门一日游",
             "point": "116.403848|39.915279",

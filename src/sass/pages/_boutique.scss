@@ -83,6 +83,7 @@
 .m-shop-pic {
   position: relative;
   min-height: 1px;
+  overflow: hidden;
   padding-left: 15px;
   padding-right: 0px;
   float: left;
@@ -92,6 +93,19 @@
     width: 100%;
     padding-right: 15px;
 
+  }
+  @media (min-width: 992px) and (max-width: 1400px) {
+    height: 414px;
+
+  }
+  .shop_pic{
+    width: 802px;height: 100%;position: absolute; z-index: 100;left: 15px;top:0; display: none;
+    @media (min-width: 992px) and (max-width: 1400px) {
+      width: 662px;
+
+
+    }
+    @media (max-width: 991px){left:15px; right:15px; width:auto;}
   }
 
   .u-arrow {
@@ -146,7 +160,9 @@
         font-size: 12px;
         line-height: 20px;
         color: #7c5e50;
+
       }
+      .mapDetail,.showPic{width: 92px; display: inline-block;}
       .color {
         color: #ffe3cd;
       }
@@ -209,7 +225,7 @@
   }
   @media (min-width: 992px) and (max-width: 1400px) {
     #scrollbar1 .viewport {
-      height: 415px;
+      height: 414px;
     }
   }
   #scrollbar1 .overview {
@@ -314,11 +330,15 @@
 #dituContent {
   position: absolute;
   height: 100%;
-  width:100%;
-  left:0px;
+  width:802px;
+  left:15px;
   top: 0;
   z-index: 1;
   display: none;
+  @media (min-width: 992px) and (max-width: 1400px) {
+    width: 662px;
+
+  }
   @media (max-width: 991px){left:15px; right:15px; width:auto;}
 }
 .pop .bottom{box-sizing: content-box ;}
