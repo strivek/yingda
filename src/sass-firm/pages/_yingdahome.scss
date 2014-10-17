@@ -23,14 +23,14 @@
           list-style: none;
           padding: 0px;
           margin: 0px;
-          a {
-            float: left;
-            line-height: normal;
+
             img {
+              width:860px;
+              height: 300px;
               display: block;
               border: none;
             }
-          }
+
         }
       }
 
@@ -75,6 +75,8 @@
     .showpic li {
       float: left;
       margin-left: 20px;
+      img{width: 120px;
+      height: 120px;}
       p a{ display: block;
         line-height: 30px;
         height: 30px;
@@ -103,5 +105,7 @@
   .right {
     float: right;
   }
-  .changemargin .m-list3{margin-top: 20px;}}
+  .changemargin .m-list3{margin-top: 20px;
+    img{width:400px;height: 200px;}
+  }}
 }
