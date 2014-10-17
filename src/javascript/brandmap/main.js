@@ -107,6 +107,8 @@ require(['jquery','async!http://api.map.baidu.com/api?key=&v=1.1&services=true']
         function(){
             if($(this).attr('class')=='pr-20 mapDetail'){
                 $('#dituContent').show();
+                var oParentSib= $(this).closest('.col-md-12').siblings('.col-md-12');
+                oParentSib.find('.mapDetail').attr('class','pr-20 mapDetail').html('在地图上查找');
 
                 $('.shop_pic').hide();
                 var mapId=$(this).attr('id');
@@ -128,6 +130,7 @@ require(['jquery','async!http://api.map.baidu.com/api?key=&v=1.1&services=true']
 //                   alert("title"+":"+data[index]['title']);
 //               };
 //            })
+                    $('.shop_pic').html('<img src="'+data[mapId][0].img+'" alt="..." class="img-responsive" width="100%">');
                     markerArr = data[mapId];
                     var str=data[mapId][0].point;
                     var arr=str.split('|');
@@ -150,21 +153,8 @@ require(['jquery','async!http://api.map.baidu.com/api?key=&v=1.1&services=true']
 
                 $(this).removeClass('showpic').addClass('returnList').html('返回列表');
                 $('#dituContent').hide();
-                var mapId=$(this).attr('id');
-                var orequest= $.ajax({
-                    type:"GET",
-                    url: '../json/map.json'
 
-                });
-                orequest.done(function (data){
-
-                    $('.shop_pic').html('<img src="'+data[mapId][0].img+'" alt="..." class="img-responsive" width="100%">');
                     $('.shop_pic').show();
-                })
-
-
-
-
 
             }else if($(this).hasClass('returnList')){
                 $('.shop_pic').hide();
