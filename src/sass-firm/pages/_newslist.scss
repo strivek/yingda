@@ -9,7 +9,7 @@
       @include clearfix();
       padding: 20px 0;
       border-bottom: 1px dotted #b7b2a8;
-      .img {float: left; width: 192px; height: 112px;}
+      .img {float: left; width: 192px; height: 112px; img{width: 192px; height: 112px;}}
       .con{float: right; width: 563px;
         .ti a{font-size: 16px; font-family: "宋体"; color:#83654c; font-weight: normal;
             &:hover{color:#210700;}}

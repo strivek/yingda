@@ -706,12 +706,11 @@ a, a:hover {
         list-style: none;
         padding: 0px;
         margin: 0px; }
-        .m-main-cy .imglb .items li a {
-          float: left;
-          line-height: normal; }
-          .m-main-cy .imglb .items li a img {
-            display: block;
-            border: none; }
+        .m-main-cy .imglb .items li img {
+          width: 860px;
+          height: 300px;
+          display: block;
+          border: none; }
     .m-main-cy .imglb .tips {
       position: absolute;
       bottom: 0px;
@@ -751,6 +750,9 @@ a, a:hover {
     .m-main-cy .emp .list .showpic li {
       float: left;
       margin-left: 20px; }
+      .m-main-cy .emp .list .showpic li img {
+        width: 120px;
+        height: 120px; }
       .m-main-cy .emp .list .showpic li p a {
         display: block;
         line-height: 30px;
@@ -778,6 +780,9 @@ a, a:hover {
     float: right; }
   .m-main-cy .rBottom .changemargin .m-list3 {
     margin-top: 20px; }
+    .m-main-cy .rBottom .changemargin .m-list3 img {
+      width: 400px;
+      height: 200px; }
 
 .m-main1-cy {
   width: 862px;
@@ -821,6 +826,9 @@ a, a:hover {
     .m-main1-cy .right .con {
       padding-top: 30px;
       border-top: 1px solid #fff; }
+      .m-main1-cy .right .con img {
+        width: 350px;
+        height: 250px; }
       .m-main1-cy .right .con p {
         margin-top: 20px;
         font-size: 14px;
@@ -1050,6 +1058,9 @@ body {
         float: left;
         width: 192px;
         height: 112px; }
+        .m-main5-cy .main .newslist .img img {
+          width: 192px;
+          height: 112px; }
       .m-main5-cy .main .newslist .con {
         float: right;
         width: 563px; }
@@ -1340,32 +1351,46 @@ body {
     width: 100%;
     height: 300px;
     overflow: hidden; }
-    .m-mainlast-cy .imglb .imgList {
-      width: 4310px;
-      position: absolute; }
-    .m-mainlast-cy .imglb ol, .m-mainlast-cy .imglb li {
-      float: left; }
-    .m-mainlast-cy .imglb .u-pointer {
+    .m-mainlast-cy .imglb .items {
       position: absolute;
-      bottom: 10px;
-      right: 14px;
-      z-index: 50;
-      text-align: center;
-      line-height: 0; }
-    .m-mainlast-cy .imglb .u-pointer i {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      margin: 0 0 0 2px;
-      cursor: pointer;
-      background: #8d735d;
-      border: 1px solid transparent; }
-    .m-mainlast-cy .imglb .u-pointer i:first-child {
-      margin-left: 0; }
-    .m-mainlast-cy .imglb .u-pointer i:hover {
-      border: 1px solid #fff; }
-    .m-mainlast-cy .imglb .u-pointer i.active {
-      border: 1px solid #fff; }
+      float: left;
+      background: none;
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .m-mainlast-cy .imglb .items li {
+        float: left;
+        background: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px; }
+        .m-mainlast-cy .imglb .items li a {
+          float: left;
+          line-height: normal; }
+          .m-mainlast-cy .imglb .items li a img {
+            display: block;
+            border: none; }
+    .m-mainlast-cy .imglb .tips {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 20px;
+      overflow: hidden; }
+      .m-mainlast-cy .imglb .tips .nums {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        height: 100%; }
+        .m-mainlast-cy .imglb .tips .nums a {
+          display: inline-block;
+          float: left;
+          width: 8px;
+          height: 8px;
+          text-indent: -99999px;
+          margin: 0px 4px 0px 0px;
+          background: #8d735d; }
+        .m-mainlast-cy .imglb .tips .nums .active {
+          border: 1px solid #fff; }
   .m-mainlast-cy .list {
     margin-left: -60px; }
     .m-mainlast-cy .list:before, .m-mainlast-cy .list:after {
@@ -1380,6 +1405,9 @@ body {
       .m-mainlast-cy .list .piclist .m-list3 {
         margin-top: 20px;
         margin-bottom: 30px; }
+        .m-mainlast-cy .list .piclist .m-list3 img {
+          width: 400px;
+          height: 200px; }
   .m-mainlast-cy .list2 > .u-toptitle {
     margin-left: 60px; }
   .m-mainlast-cy .list2 .textlist {
