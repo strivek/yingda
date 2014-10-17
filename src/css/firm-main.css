@@ -1143,6 +1143,9 @@ body {
       float: left;
       margin-left: 24px;
       width: 197px; }
+      .m-main6-cy .piclist .pic img {
+        width: 197px;
+        height: 112px; }
       .m-main6-cy .piclist .pic a {
         margin-top: 12px;
         display: inline-block;
