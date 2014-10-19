@@ -1,4 +1,7 @@
+
+
 @charset "utf-8";
+
 $fontStack: '宋体';
 $primaryColor: #f6d2b9;
 .m-main-zt {
@@ -12,42 +15,14 @@ $primaryColor: #f6d2b9;
         //          &:hover{color:#714e38;}
       }
       .icon-yingdaicon09:before{top:0;}
-      &.left{/*left: -50px;*/
-        z-index:9999;
-        position: fixed;
-        left: 16.43%;
-        @media screen and (width:768px){
-          left:1.43%;
-        }
-        @media screen and (width:1024px){
-          left:4.43%;
-        }
-        @media screen and (width: 1280px){
-          left:6.43%;
-        }
-        @media screen and (min-width:1355px) and (max-width:1367px){
-          left:8.43%;
+      &.left{left: -50px;
+        @media (max-width: 1023px) {
+          left: 0px;
         }
       }
-      &.right{/*right:-50px;*/
-        z-index:9999;
-        position: fixed;
-        right:12.63%;
-        @media screen and (width:1440px){
-          right:0.63%;
-        }
-        @media screen and (width:1280px){
-          right:5.63%;
-        }
-        @media screen and (width:1024px){
-          right:5.43%;
-        }
-        @media screen and (width:768px){
-          right:-0.37%;
-          top:49%;
-        }
-        @media screen and (min-width:1355px) and (max-width:1367px){
-          right:10%;
+      &.right{right:-50px;
+        @media (max-width: 1023px) {
+          right: -20px;
         }
       }
     }
@@ -122,63 +97,24 @@ $primaryColor: #f6d2b9;
       }
     }
   }
+  .m-md-main{
+    height:670px;
+    overflow:auto;
+    .main-item{
+      float:left;
+      height:626px;
+    }
+  }
 }
-.main-right>div{
-  float: left;
-  width:100%;
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
   .m-product2 {
     padding-top: 0 !important;
     margin-top: 60px;
   }
-  .w-main{
-    margin-left:-100px;
-  }
-  .main-right {
-    margin-bottom: 80px
-  }
 }
 .damei_title{
-  position: fixed;
-  left:20.15%;
-  top:8.89%;
-  @media screen and (width:1024px){
-    left:7.76%;
-  }
-  @media screen and (width:1280px){
-    left:10%;
-  }
-  @media screen and (min-width:1355px) and (max-width:1367px){
-    left:12.76%;
-  }
-  h3{
-    font-size: 16px; color:#f6d2b9; font-weight: normal;
-    @media screen and (width:1280px){
-      padding-top:12px;
-    }
-  }
+  h3{font-size: 16px; color:#f6d2b9; font-weight: normal;}
   p{color:#f6d2b9; font-size: 12px; margin-top: 50px;}
-}
-.damei_text {
-  position: fixed;
-  left: 19.76%;
-  top: 17.56%;
-  @media screen and (width:1024px){
-    left:7.76%;
-  }
-  @media screen and (width:1280px){
-    left:10%;
-  }
-  @media screen and (min-width:1355px) and (max-width:1367px){
-    left:12.76%;
-  }
-}
-.damei_text.col-md-4{
-  @media screen and (min-width: 992px){
-    width:27.633%;
-  }
 }
 .damei_bg{background: url("../images/damei-bg.png") center center no-repeat;}
 
@@ -208,45 +144,7 @@ $primaryColor: #f6d2b9;
     @include rotate_hover();
   }
 }
-@media screen and (min-width:1024px) and (max-width: 1366px){
-  .w-main{
-    margin-left:-100px;
-  }
-}
 
-@media screen and (width:1366px){
-  .m-product1{
-    margin-top:-225px;
-  }
-}
-
-@media screen and (max-width:992px){
-  .m-main-zt .main-right{
-    top:0;
-  }
-  .damei_title,.damei_text{
-    position: relative;
-    margin-left:-73px;
-  }
-}
-
-@media screen and (width:1280px){
-  .m-main-zt .main-right {
-    left:-69px;
-    margin-bottom: 72px
-  }
-}
-
-@media screen and (width:1024px){
-  .m-main-zt .main-right {
-    left:-68px;
-    margin-bottom: 120px
-  }
-}
-
-@media screen and (min-width:1355px) and (max-width: 1377px){
-  .m-main-zt .main-right{
-    margin-bottom: 100px;
-    left:-78px;
-  }
+@media (width: 1366px){           //update by qin
+  .m-product1{margin-top:-225px;}
 }
