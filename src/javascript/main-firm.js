@@ -6,7 +6,6 @@ require.config({
         'async': 'lib/async'
     }
 });
-
 require(['pop2D']);
 require(['bdmap']);
 require(['popDes']);

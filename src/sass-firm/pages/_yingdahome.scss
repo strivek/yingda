@@ -10,42 +10,62 @@
     width: 100%;
     height: 300px;
     overflow:hidden;
-    .imgList {
-      width:4310px;
-      position:absolute;
-    }
-    ol,li {
-      float:left;
-    }
+      .items {
+        position: absolute;
+        float: left;
+        background: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li {
+          float: left;
+          background: none;
+          list-style: none;
+          padding: 0px;
+          margin: 0px;
 
-    .u-pointer {
-      position: absolute;
-      bottom: 10px;
-      right: 14px;
-      z-index: 50;
-      text-align: center;
-      line-height: 0;
-    }
-    .u-pointer i {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      margin: 0 0 0 2px;
-      cursor: pointer;
-      background: #8d735d;
-      border: 1px solid transparent;
-    }
-    .u-pointer i:first-child {
-      margin-left: 0;
-    }
-    .u-pointer i:hover {
-      border: 1px solid #fff;
-    }
-    .u-pointer i.active {
-      border: 1px solid #fff;
-    }
+            img {
+              width:860px;
+              height: 300px;
+              display: block;
+              border: none;
+            }
+
+        }
+      }
+
+      .tips {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        .nums {
+          position: absolute;
+          right: 10px;
+          top: 0px;
+          height: 100%;
+          a {
+            display: inline-block;
+            float: left;
+            width: 8px;
+            height: 8px;
+            text-indent: -99999px;
+            margin: 0px 4px 0px 0px;
+            background: #8d735d;
+
+          }
+          .active {
+            border: 1px solid #fff;
+          }
+        }
+      }
   }
-  .list {
+
+  .emp{
+    &:after,&:before{display: table; content: "";}
+    &:after{clear: both;}
+    .list {
     width: 400px;
     .showpic {
       margin-top: 20px;
@@ -55,23 +75,37 @@
     .showpic li {
       float: left;
       margin-left: 20px;
+      img{width: 120px;
+      height: 120px;}
       p a{ display: block;
-      line-height: 30px;
-      height: 30px;
-      text-align: center;
-      font-size:14px;
-      color:#210700;
-      font-family: "宋体";
-      &:hover{color:#714e38;}}
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        font-size:14px;
+        color:#210700;
+        font-family: "宋体";
+        &:hover{color:#714e38;}}
     }
-    .changemargin{margin-top: 40px;}
-    .changemargin .m-list3{margin-top: 20px;}
+
   }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }}
+
+.rBottom{
+  &:after,&:before{display: table; content: "";}
+  &:after{clear: both;}
+  .changemargin{margin-top: 40px;}
   .left {
     float: left;
   }
   .right {
     float: right;
   }
-
+  .changemargin .m-list3{margin-top: 20px;
+    img{width:400px;height: 200px;}
+  }}
 }

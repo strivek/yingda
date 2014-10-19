@@ -156,33 +156,67 @@ require(['jquery'], function ($) {
     }
 });
 
-
 require(['jquery'], function ($) {
-//首页预加载
-    $(function(){
-        $('.home').hide();
+//    var img=$('<img>');
+//    var oDiv=$('<div>');
+//    img.attr('src','../images/44.gif');
+//    img.addClass('imgload');
+//    oDiv.addClass('Divbg');
+//    $('body').prepend(oDiv);
+//    $('body').prepend(img);
+    var t_img; // 定时器
+    var isLoad = true; // 控制变量
+
+// 判断图片加载状况，加载完成后回调
+    isImgLoad(function(){
+        // 加载完成
+        $('.Divbg').hide();
+        $('.imgload').hide();
+        if($('.Divbg').is(':hidden')){
             $('.home').fadeIn(2000,function(){
-               setTimeout(function(){
-                  $('.home').fadeOut(1000);
-                  $('.home-img').fadeOut(1000);
-               },1000)
+                setTimeout(function(){
+                    $('.home').fadeOut(1000);
+                    $('.home-img').fadeOut(1000);
+                },1000)
             });
+        }
+    });
+
+// 判断图片加载的函数
+    function isImgLoad(callback){
+        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+        // 查找所有封面图，迭代处理
+        $('img').each(function(){
+            // 找到为0就将isLoad设为false，并退出each
+            if(this.height === 0){
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完毕
+        if(isLoad){
+            clearTimeout(t_img); // 清除定时器
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
+        }else{
+            isLoad = true;
+            t_img = setTimeout(function(){
+                isImgLoad(callback); // 递归扫描
+            },500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+        }
+    }
+//        if($('img:last').height()>0){
+//
+//
+//        }
 
 
-    });
-    });
-require(['jquery'], function ($) {
-    var img=$('<img>');
-    var oDiv=$('<div>');
-    img.attr('src','../images/44.gif');
-    img.addClass('imgload');
-    oDiv.addClass('Divbg');
-    $('body').append(oDiv);
-    $('body').append(img);
-    $('img').load(function(){
-        oDiv.hide();
-        img.hide();
-    })
+
+
+
+
+
 
 });
 require(['jquery'], function ($) {
@@ -191,16 +225,16 @@ require(['jquery'], function ($) {
         var img1=$('.set_table img');
         if(img.length>0){
 
-       img.load(
-            picChange(img)
-        );
+
+            picChange(img);
+
         }
         if(img1.length>0){
         img1.load(
             picChange(img1)
         );
         }
-    })
+    });
 
     function picChange(img){
         function picSize(){
@@ -221,6 +255,7 @@ require(['jquery'], function ($) {
                 img.height(winHei);
                 img.width('auto');
                 // alert(img.width());
+
                 var marginLeft=-(img.width()-$(window).width())/2;
 //                    if()
                 img.css('marginLeft',marginLeft);
