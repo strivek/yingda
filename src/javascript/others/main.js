@@ -268,3 +268,27 @@ require(['jquery'], function ($) {
     });
 });
 
+
+
+
+
+
+//大美之旅新增上下滑动JS
+require(['jquery'], function ($) {
+    var slideTopWrap = $(".m-w-slideTop");
+    var slideTop = $(".m-w-slideTop .m-slideTop");
+
+/*    for(var i=0; i<slideTop.length; i++){
+
+        slideTop[i].style.top = (slideTopWrap.get(0).offsetHeight * i) + "px";
+
+    }*/
+
+/*    for(var j=0; j<slideTop.length; j++){
+        if(slideTop[j].offsetTop != "0"){
+            slideTop[j].style.display = "none"
+        }
+    }*/
+
+});
+//大美之旅新增上下滑动JS End
