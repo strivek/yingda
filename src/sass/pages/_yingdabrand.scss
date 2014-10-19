@@ -6,6 +6,50 @@
     @media (max-width: 999px) {
           padding-bottom: 200px;
     }
+    .m-YD-main{
+      position: relative;
+      .item{
+        float: left;
+        height: 574px;
+      }
+      .viewport{
+        height:574px;
+        overflow: hidden;
+        position: relative;
+      }
+      .overview{
+        position: absolute;
+        left: 0;
+      }
+      .scrollbar{
+        background-position: 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 5px;
+        //      height:80px;
+        z-index: 100;
+        background-color: #333333;
+        .track{
+          background-color: #000;
+          position: relative;
+          width: 2px;
+
+        }
+        .thumb{
+          background:url("../images/article-scroll.png") repeat-y scroll 50% 100% transparent;
+          cursor: pointer;
+          left:-5px;
+          overflow: hidden;
+          position: absolute;
+          width: 14px;
+        }
+      }
+    }
+
+    .brand-text{
+      margin-bottom:40px;
+    }
   }
   .container {
     @media (min-width: 1400px){
@@ -20,7 +64,10 @@
       width: 600px;
     }
     @media (max-width: 768px) {
-      width: 500px;
+      width: 90%;
+      .brand-text{
+        margin-bottom:40px;
+      }
     }
 
   }
