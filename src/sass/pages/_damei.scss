@@ -19,10 +19,20 @@ $primaryColor: #f6d2b9;
         @media (max-width: 1023px) {
           left: 0px;
         }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+          left: -2.3%;
+        }
       }
       &.right{right:-50px;
         @media (max-width: 1023px) {
           right: -20px;
+        }
+        @media screen and (min-width: 801px) and (max-width: 1023px){
+          right:-4.5%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 800px){
+          right: -2.2%;
+          top:47.6%;
         }
       }
     }
@@ -98,6 +108,11 @@ $primaryColor: #f6d2b9;
     }
   }
   .m-md-main{
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
     position: relative;
     height:670px;
 //    overflow:hidden;
@@ -123,6 +138,12 @@ $primaryColor: #f6d2b9;
 //      height:80px;
       z-index: 100;
       background-color: #333333;
+      @media screen and (max-width: 991px){
+        right:2%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 800px){
+        right: 3%;
+      }
       .track{
         background-color: #000;
         position: relative;
