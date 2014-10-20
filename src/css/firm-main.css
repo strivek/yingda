@@ -1088,6 +1088,7 @@ body {
           margin-top: 10px;
           line-height: 1.6; }
         .m-main5-cy .main .newslist .con .more {
+          margin-top: 8px;
           display: block;
           text-align: right;
           fotn-size: 10px;
@@ -1259,7 +1260,7 @@ body {
     .m-main9-cy .main .map {
       float: left;
       width: 490px;
-      height: 290px; }
+      height: 360px; }
     .m-main9-cy .main .firmdet {
       margin-left: 30px;
       float: right;
@@ -1274,7 +1275,7 @@ body {
         font-size: 14px;
         font-family: "宋体";
         color: #6c513a; }
-      .m-main9-cy .main .firmdet .tel, .m-main9-cy .main .firmdet .email, .m-main9-cy .main .firmdet .fax, .m-main9-cy .main .firmdet .web {
+      .m-main9-cy .main .firmdet .tel, .m-main9-cy .main .firmdet .email, .m-main9-cy .main .firmdet .fax, .m-main9-cy .main .firmdet .web, .m-main9-cy .main .firmdet .you {
         margin-top: 16px;
         display: inline-block;
         width: 118px;
@@ -1291,12 +1292,14 @@ body {
         background-position: 0 -24px; }
       .m-main9-cy .main .firmdet .email {
         margin-left: 40px;
-        background-position: 0 -46px; }
+        background-position: 0 -48px; }
       .m-main9-cy .main .firmdet .fax {
         background-position: 0 0px; }
       .m-main9-cy .main .firmdet .web {
         margin-left: 40px;
-        background-position: 0 -70px; }
+        background-position: 0 -72px; }
+      .m-main9-cy .main .firmdet .you {
+        background-position: 0 -96px; }
       .m-main9-cy .main .firmdet .weixin {
         margin-top: 20px;
         padding-top: 20px;
@@ -1305,7 +1308,6 @@ body {
         width: 100%;
         display: table; }
         .m-main9-cy .main .firmdet .weixin .sina, .m-main9-cy .main .firmdet .weixin .ten, .m-main9-cy .main .firmdet .weixin .yuku {
-          float: left;
           position: relative; }
           .m-main9-cy .main .firmdet .weixin .sina .name, .m-main9-cy .main .firmdet .weixin .ten .name, .m-main9-cy .main .firmdet .weixin .yuku .name {
             position: absolute;
@@ -1319,18 +1321,20 @@ body {
             width: 76px;
             border: 1px solid #d6c2a0;
             padding: 6px; }
-        .m-main9-cy .main .firmdet .weixin .sina .name {
-          top: 0;
-          left: 0; }
-        .m-main9-cy .main .firmdet .weixin .sina .erweima {
-          margin-left: 42px; }
+        .m-main9-cy .main .firmdet .weixin .sina {
+          float: left; }
+          .m-main9-cy .main .firmdet .weixin .sina .name {
+            top: 0;
+            left: 0; }
+          .m-main9-cy .main .firmdet .weixin .sina .erweima {
+            margin-left: 42px; }
         .m-main9-cy .main .firmdet .weixin .ten {
           float: right; }
           .m-main9-cy .main .firmdet .weixin .ten .name {
             top: 0;
             left: -82px; }
         .m-main9-cy .main .firmdet .weixin .yuku {
-          margin-top: 30px; }
+          margin-bottom: 30px; }
           .m-main9-cy .main .firmdet .weixin .yuku .name {
             position: static; }
           .m-main9-cy .main .firmdet .weixin .yuku .wang a {
