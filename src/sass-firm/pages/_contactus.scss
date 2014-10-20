@@ -8,7 +8,7 @@
     .map {
       float: left;
       width: 490px;
-      height: 290px;
+      height: 360px;
     }
     .firmdet {
       margin-left: 30px;
@@ -26,7 +26,7 @@
         font-family: "宋体";
         color: #6c513a;
       }
-      .tel,.email, .fax, .web{
+      .tel,.email, .fax, .web,.you{
         margin-top: 16px;
         display: inline-block;
         width: 118px;
@@ -44,15 +44,19 @@
       }
       .email {
         margin-left: 40px;
-        background-position: 0 -46px;
+        background-position: 0 -48px;
       }
       .fax {
         background-position: 0 0px;
       }
       .web {
         margin-left: 40px;
-        background-position: 0 -70px;
+        background-position: 0 -72px;
       }
+      .you{
+        background-position: 0 -96px;
+      }
+
       .weixin {
         margin-top: 20px;
         padding-top: 20px;
@@ -60,7 +64,7 @@
         height: 100%;
         width: 100%;
         display: table;
-       .sina,.ten,.yuku{ float:left; position: relative;
+       .sina,.ten,.yuku{ position: relative;
          .name ,{position: absolute; margin-right:10px;font-size:14px; font-family: "宋体"; color:#6c513a;}
          .erweima {
            display: inline-block;
@@ -71,12 +75,12 @@
          }
 
        }
-        .sina{.name{top:0; left:0;}
+        .sina{float:left; .name{top:0; left:0;}
           .erweima{margin-left: 42px;}
          }
-        .ten{float:right;.name{top:0; left:-82px;} }
-        .yuku{margin-top:30px; .name{position: static; }
-          .wang a{font-size:14px; font-family: "宋体"; color:#6c513a;}
+        .ten{ float:right;.name{top:0; left:-82px;} }
+        .yuku{margin-bottom:30px; .name{position: static; }
+          .wang a{font-size:18px; font-family: "宋体"; color:#6c513a;}
         }
 
 
