@@ -561,7 +561,7 @@ a, a:hover {
   .m-nav .icon {
     margin-top: 100px;
     float: right;
-    padding-left: 22px; }
+    padding-left: 10px; }
   .m-nav .icon a {
     padding-right: 10px;
     color: #967e6b;
@@ -706,12 +706,11 @@ a, a:hover {
         list-style: none;
         padding: 0px;
         margin: 0px; }
-        .m-main-cy .imglb .items li a {
-          float: left;
-          line-height: normal; }
-          .m-main-cy .imglb .items li a img {
-            display: block;
-            border: none; }
+        .m-main-cy .imglb .items li img {
+          width: 860px;
+          height: 300px;
+          display: block;
+          border: none; }
     .m-main-cy .imglb .tips {
       position: absolute;
       bottom: 0px;
@@ -751,6 +750,9 @@ a, a:hover {
     .m-main-cy .emp .list .showpic li {
       float: left;
       margin-left: 20px; }
+      .m-main-cy .emp .list .showpic li img {
+        width: 120px;
+        height: 120px; }
       .m-main-cy .emp .list .showpic li p a {
         display: block;
         line-height: 30px;
@@ -778,6 +780,9 @@ a, a:hover {
     float: right; }
   .m-main-cy .rBottom .changemargin .m-list3 {
     margin-top: 20px; }
+    .m-main-cy .rBottom .changemargin .m-list3 img {
+      width: 400px;
+      height: 200px; }
 
 .m-main1-cy {
   width: 862px;
@@ -821,6 +826,9 @@ a, a:hover {
     .m-main1-cy .right .con {
       padding-top: 30px;
       border-top: 1px solid #fff; }
+      .m-main1-cy .right .con img {
+        width: 350px;
+        height: 250px; }
       .m-main1-cy .right .con p {
         margin-top: 20px;
         font-size: 14px;
@@ -1050,6 +1058,9 @@ body {
         float: left;
         width: 192px;
         height: 112px; }
+        .m-main5-cy .main .newslist .img img {
+          width: 192px;
+          height: 112px; }
       .m-main5-cy .main .newslist .con {
         float: right;
         width: 563px; }
@@ -1132,6 +1143,9 @@ body {
       float: left;
       margin-left: 24px;
       width: 197px; }
+      .m-main6-cy .piclist .pic img {
+        width: 197px;
+        height: 112px; }
       .m-main6-cy .piclist .pic a {
         margin-top: 12px;
         display: inline-block;
@@ -1287,30 +1301,42 @@ body {
         margin-top: 20px;
         padding-top: 20px;
         border-top: 1px solid #d6c2a0;
-        text-align: right;
         height: 100%;
         width: 100%;
         display: table; }
-        .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video, .m-main9-cy .main .firmdet .weixin .name, .m-main9-cy .main .firmdet .weixin .erweima {
-          display: table-cell;
-          vertical-align: middle;
-          font-size: 12px;
-          color: #6c513a; }
-        .m-main9-cy .main .firmdet .weixin .name {
-          width: 110px; }
-        .m-main9-cy .main .firmdet .weixin .wei, .m-main9-cy .main .firmdet .weixin .video {
-          cursor: pointer;
-          color: #967e6b; }
-          .m-main9-cy .main .firmdet .weixin .wei .iconfont, .m-main9-cy .main .firmdet .weixin .video .iconfont {
-            font-size: 20px; }
-          .m-main9-cy .main .firmdet .weixin .wei:hover, .m-main9-cy .main .firmdet .weixin .video:hover {
-            color: #333; }
-        .m-main9-cy .main .firmdet .weixin .erweima {
-          display: inline-block;
-          height: 76px;
-          width: 76px;
-          border: 1px solid #d6c2a0;
-          padding: 6px; }
+        .m-main9-cy .main .firmdet .weixin .sina, .m-main9-cy .main .firmdet .weixin .ten, .m-main9-cy .main .firmdet .weixin .yuku {
+          float: left;
+          position: relative; }
+          .m-main9-cy .main .firmdet .weixin .sina .name, .m-main9-cy .main .firmdet .weixin .ten .name, .m-main9-cy .main .firmdet .weixin .yuku .name {
+            position: absolute;
+            margin-right: 10px;
+            font-size: 14px;
+            font-family: "宋体";
+            color: #6c513a; }
+          .m-main9-cy .main .firmdet .weixin .sina .erweima, .m-main9-cy .main .firmdet .weixin .ten .erweima, .m-main9-cy .main .firmdet .weixin .yuku .erweima {
+            display: inline-block;
+            height: 76px;
+            width: 76px;
+            border: 1px solid #d6c2a0;
+            padding: 6px; }
+        .m-main9-cy .main .firmdet .weixin .sina .name {
+          top: 0;
+          left: 0; }
+        .m-main9-cy .main .firmdet .weixin .sina .erweima {
+          margin-left: 42px; }
+        .m-main9-cy .main .firmdet .weixin .ten {
+          float: right; }
+          .m-main9-cy .main .firmdet .weixin .ten .name {
+            top: 0;
+            left: -82px; }
+        .m-main9-cy .main .firmdet .weixin .yuku {
+          margin-top: 30px; }
+          .m-main9-cy .main .firmdet .weixin .yuku .name {
+            position: static; }
+          .m-main9-cy .main .firmdet .weixin .yuku .wang a {
+            font-size: 14px;
+            font-family: "宋体";
+            color: #6c513a; }
 
 .m-mainlast-cy {
   width: 862px;
@@ -1328,32 +1354,46 @@ body {
     width: 100%;
     height: 300px;
     overflow: hidden; }
-    .m-mainlast-cy .imglb .imgList {
-      width: 4310px;
-      position: absolute; }
-    .m-mainlast-cy .imglb ol, .m-mainlast-cy .imglb li {
-      float: left; }
-    .m-mainlast-cy .imglb .u-pointer {
+    .m-mainlast-cy .imglb .items {
       position: absolute;
-      bottom: 10px;
-      right: 14px;
-      z-index: 50;
-      text-align: center;
-      line-height: 0; }
-    .m-mainlast-cy .imglb .u-pointer i {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      margin: 0 0 0 2px;
-      cursor: pointer;
-      background: #8d735d;
-      border: 1px solid transparent; }
-    .m-mainlast-cy .imglb .u-pointer i:first-child {
-      margin-left: 0; }
-    .m-mainlast-cy .imglb .u-pointer i:hover {
-      border: 1px solid #fff; }
-    .m-mainlast-cy .imglb .u-pointer i.active {
-      border: 1px solid #fff; }
+      float: left;
+      background: none;
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .m-mainlast-cy .imglb .items li {
+        float: left;
+        background: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px; }
+        .m-mainlast-cy .imglb .items li a {
+          float: left;
+          line-height: normal; }
+          .m-mainlast-cy .imglb .items li a img {
+            display: block;
+            border: none; }
+    .m-mainlast-cy .imglb .tips {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 20px;
+      overflow: hidden; }
+      .m-mainlast-cy .imglb .tips .nums {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        height: 100%; }
+        .m-mainlast-cy .imglb .tips .nums a {
+          display: inline-block;
+          float: left;
+          width: 8px;
+          height: 8px;
+          text-indent: -99999px;
+          margin: 0px 4px 0px 0px;
+          background: #8d735d; }
+        .m-mainlast-cy .imglb .tips .nums .active {
+          border: 1px solid #fff; }
   .m-mainlast-cy .list {
     margin-left: -60px; }
     .m-mainlast-cy .list:before, .m-mainlast-cy .list:after {
@@ -1368,6 +1408,9 @@ body {
       .m-mainlast-cy .list .piclist .m-list3 {
         margin-top: 20px;
         margin-bottom: 30px; }
+        .m-mainlast-cy .list .piclist .m-list3 img {
+          width: 400px;
+          height: 200px; }
   .m-mainlast-cy .list2 > .u-toptitle {
     margin-left: 60px; }
   .m-mainlast-cy .list2 .textlist {

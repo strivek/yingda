@@ -31,7 +31,7 @@
   .b-title{font-size:22px;}
   .piclist{ padding-top: 30px; margin-bottom: 100px; margin-left: -24px;
     @include clearfix();
-  .pic{ float: left; margin-left: 24px; width: 197px;
+  .pic{ float: left; margin-left: 24px; width: 197px; img{ width: 197px; height:112px; }
     a{margin-top:12px; display:inline-block; line-height:1.5;font-size:14px; font-family: "宋体";color:#83654c;
       &:hover{color:#ab9885;}}
 
