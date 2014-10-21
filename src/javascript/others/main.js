@@ -2,159 +2,159 @@
  * Created by GaoFei on 14/8/22.
  */
 //boutique.html 精品店下拉
-require(['jquery'], function ($) {
-    $('.m-shop-detail dl .detail').click(function () {
-        $(this).toggleClass('color');
-        $(this).closest('dl').siblings('.u-details').toggle();
-        $(this).trigger("click.detail");
-
-    })
-});
-
-
-//精品店模块贴合
 //require(['jquery'], function ($) {
-//    function changeSize() {
-//        $('.m-boutique-content').fadeIn('100');
-//        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
-//        console.log(shop_pic);
+//    $('.m-shop-detail dl .detail').click(function () {
+//        $(this).toggleClass('color');
+//        $(this).closest('dl').siblings('.u-details').toggle();
+//        $(this).trigger("click.detail");
 //
-//
-//
-//
-//
-//        var winClient = $(window).width();
-//        if (winClient > 1024) {
-//
-//            var oWidth = Math.floor(shop_pic * 1.4);
-//        } else {
-//            var oWidth = shop_pic;
-//        }
-//
-//        var perc = oWidth / winClient;
-//        var ml = (1 - perc) / 2 * 100 + '%';
-//        $('.m-boutique-content').css({'marginLeft': ml});
-//    }
-//    if ($('.m-shop-pic .carousel-inner').length > 0) {
-//        changeSize();
-//        $(window).resize(function () {
-//
-//            changeSize();
-//        })
-//    }
+//    })
 //});
-
-require(['jquery'], function ($) {
-        var winWid=$(window).width();
-    var oUl=$('.m-showcase ul').eq(0);
-    var oUlhtml=oUl.html();
-    oUl.html(oUlhtml+oUlhtml);
-        var aLi=$('.m-showcase ul li');
-        imgWid=Math.floor(winWid*0.28);
-        var aImg=$('.m-showcase ul img');
-        aImg.css('width',imgWid);
-        var  imgHei=aImg.height();
-      //aImg.height(imgHei);
-        aLi.height(imgHei);
-        oUl.height(imgHei);
-        $('.m-showcase').height(imgHei);
-       // alert( $('.m-showcase').height());
-        aLi.width(imgWid);
-        var liWid=aLi.outerWidth(true);
-        var liLen=aLi.length;
-        var timeId=null;
-        var ulWid=liWid*liLen;
-      var speed=-1;
-        oUl.width(ulWid);
-        timeId=setInterval(slider,2);
-        oUl.hover(function(){
-            clearInterval(timeId);
-        },function(){
-            timeId=setInterval(slider,2);
-        });
-        function slider(){
-            if(speed<0){
-                if(parseInt(oUl.css('left'))<=-ulWid/2){
-                    oUl.css('left',0);
-                }else{
-                    oUl.css({'left':'+='+speed+'px'});
-                }
-            }
-            if(speed>0){
-                if(parseInt(oUl.css('left'))>=0){
-
-                    oUl.css('left',-ulWid/2+'px');
-                }else{
-                    oUl.css({'left':'+='+speed+'px'});
-                }
-            }
-        }
-        $('.left').click(function(){
-            speed=-1;
-        });
-        $('.right').click(function(){
-            speed=1;
-        });
-//    $(window).resize(function(){
-//        clearInterval(timeId);
 //
 //
+////精品店模块贴合
+////require(['jquery'], function ($) {
+////    function changeSize() {
+////        $('.m-boutique-content').fadeIn('100');
+////        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
+////        console.log(shop_pic);
+////
+////
+////
+////
+////
+////        var winClient = $(window).width();
+////        if (winClient > 1024) {
+////
+////            var oWidth = Math.floor(shop_pic * 1.4);
+////        } else {
+////            var oWidth = shop_pic;
+////        }
+////
+////        var perc = oWidth / winClient;
+////        var ml = (1 - perc) / 2 * 100 + '%';
+////        $('.m-boutique-content').css({'marginLeft': ml});
+////    }
+////    if ($('.m-shop-pic .carousel-inner').length > 0) {
+////        changeSize();
+////        $(window).resize(function () {
+////
+////            changeSize();
+////        })
+////    }
+////});
 //
+//require(['jquery'], function ($) {
 //        var winWid=$(window).width();
-//        var oUl=$('.m-showcase ul').eq(0);
-//        var oUlhtml=oUl.html();
-//        oUl.html(oUlhtml+oUlhtml);
+//    var oUl=$('.m-showcase ul').eq(0);
+//    var oUlhtml=oUl.html();
+//    oUl.html(oUlhtml+oUlhtml);
 //        var aLi=$('.m-showcase ul li');
-//
-//        imgWid=Math.floor(winWid/3);
+//        imgWid=Math.floor(winWid*0.28);
 //        var aImg=$('.m-showcase ul img');
-//        aImg.width(imgWid);
+//        aImg.css('width',imgWid);
 //        var  imgHei=aImg.height();
+//      //aImg.height(imgHei);
 //        aLi.height(imgHei);
 //        oUl.height(imgHei);
 //        $('.m-showcase').height(imgHei);
-//        // alert( $('.m-showcase').height());
+//       // alert( $('.m-showcase').height());
 //        aLi.width(imgWid);
-//        var liWid=aLi.width();
+//        var liWid=aLi.outerWidth(true);
 //        var liLen=aLi.length;
-//
+//        var timeId=null;
 //        var ulWid=liWid*liLen;
-//
+//      var speed=-1;
 //        oUl.width(ulWid);
-//        timeId=setInterval(slider,3);
+//        timeId=setInterval(slider,2);
+//        oUl.hover(function(){
+//            clearInterval(timeId);
+//        },function(){
+//            timeId=setInterval(slider,2);
+//        });
+//        function slider(){
+//            if(speed<0){
+//                if(parseInt(oUl.css('left'))<=-ulWid/2){
+//                    oUl.css('left',0);
+//                }else{
+//                    oUl.css({'left':'+='+speed+'px'});
+//                }
+//            }
+//            if(speed>0){
+//                if(parseInt(oUl.css('left'))>=0){
 //
+//                    oUl.css('left',-ulWid/2+'px');
+//                }else{
+//                    oUl.css({'left':'+='+speed+'px'});
+//                }
+//            }
+//        }
+//        $('.left').click(function(){
+//            speed=-1;
+//        });
+//        $('.right').click(function(){
+//            speed=1;
+//        });
+////    $(window).resize(function(){
+////        clearInterval(timeId);
+////
+////
+////
+////        var winWid=$(window).width();
+////        var oUl=$('.m-showcase ul').eq(0);
+////        var oUlhtml=oUl.html();
+////        oUl.html(oUlhtml+oUlhtml);
+////        var aLi=$('.m-showcase ul li');
+////
+////        imgWid=Math.floor(winWid/3);
+////        var aImg=$('.m-showcase ul img');
+////        aImg.width(imgWid);
+////        var  imgHei=aImg.height();
+////        aLi.height(imgHei);
+////        oUl.height(imgHei);
+////        $('.m-showcase').height(imgHei);
+////        // alert( $('.m-showcase').height());
+////        aLi.width(imgWid);
+////        var liWid=aLi.width();
+////        var liLen=aLi.length;
+////
+////        var ulWid=liWid*liLen;
+////
+////        oUl.width(ulWid);
+////        timeId=setInterval(slider,3);
+////
+////
+////    });
+//});
+////滚动条
+//require(['jquery'], function ($) {
+////   推荐效果
 //
+//    $('.m-introlist').hover(function () {
+//        if($(window).width()>1024){
+//        $(this).find('.title').stop().animate({'bottom': '0'});
+//    }}, function () {
+//        if($(window).width()>1024){
+//        $(this).find('.title').stop().animate({'bottom': '-26px'});
+//    }});
+//    if($(window).width()<=1024){
+//        $('.m-introlist').find('.title').css('bottom','0');
+//    }
+//
+//});
+//
+//require(['jquery'], function ($) {
+////   推荐效果
+//    if($(window).width()<=1024){
+//    $('input').focus(function(){
+//            $('.g-footer').fadeOut();
 //    });
-});
-//滚动条
-require(['jquery'], function ($) {
-//   推荐效果
-
-    $('.m-introlist').hover(function () {
-        if($(window).width()>1024){
-        $(this).find('.title').stop().animate({'bottom': '0'});
-    }}, function () {
-        if($(window).width()>1024){
-        $(this).find('.title').stop().animate({'bottom': '-26px'});
-    }});
-    if($(window).width()<=1024){
-        $('.m-introlist').find('.title').css('bottom','0');
-    }
-
-});
-
-require(['jquery'], function ($) {
-//   推荐效果
-    if($(window).width()<=1024){
-    $('input').focus(function(){
-            $('.g-footer').fadeOut();
-    });
-    $('input').blur(function(){
-            $('.g-footer').fadeIn();
-
-    })
-    }
-});
+//    $('input').blur(function(){
+//            $('.g-footer').fadeIn();
+//
+//    })
+//    }
+//});
 
 require(['jquery'], function ($) {
 //    var img=$('<img>');
@@ -164,52 +164,34 @@ require(['jquery'], function ($) {
 //    oDiv.addClass('Divbg');
 //    $('body').prepend(oDiv);
 //    $('body').prepend(img);
-    var t_img; // 定时器
-    var isLoad = true; // 控制变量
 
-// 判断图片加载状况，加载完成后回调
-    isImgLoad(function(){
-        // 加载完成
-        $('.Divbg').hide();
-        $('.imgload').hide();
-        if($('.Divbg').is(':hidden')){
-            $('.home').fadeIn(2000,function(){
-                setTimeout(function(){
-                    $('.home').fadeOut(1000);
-                    $('.home-img').fadeOut(1000);
-                },1000)
-            });
-        }
-    });
+        var timer=null;
+        timer=setInterval(
+            loading
+        ,300);
 
-// 判断图片加载的函数
-    function isImgLoad(callback){
-        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
-        // 查找所有封面图，迭代处理
-        $('img').each(function(){
-            // 找到为0就将isLoad设为false，并退出each
-            if(this.height === 0){
-                isLoad = false;
-                return false;
+
+    function loading(){
+
+
+        if($('img:last').height()>0){
+
+            clearInterval(timer);
+            $('.Divbg').hide();
+            $('.imgload').hide();
+            if($('.Divbg').is(':hidden')){
+                $('.home').fadeIn(2000,function(){
+                    setTimeout(function(){
+                        $('.home').fadeOut(1000);
+                        $('.home-img').fadeOut(1000);
+                    },1000)
+                });
             }
-        });
-        // 为true，没有发现为0的。加载完毕
-        if(isLoad){
-            clearTimeout(t_img); // 清除定时器
-            // 回调函数
-            callback();
-            // 为false，因为找到了没有加载完成的图，将调用定时器递归
-        }else{
-            isLoad = true;
-            t_img = setTimeout(function(){
-                isImgLoad(callback); // 递归扫描
-            },500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
-        }
     }
-//        if($('img:last').height()>0){
-//
-//
-//        }
+    }
+
+
+
 
 
 
