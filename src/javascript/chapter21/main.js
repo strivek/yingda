@@ -4,7 +4,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
      * Created by Administrator on 2014/5/26.
      * Updated by GaoFei on 2014/9/1.
      */
-
+    var screen=$(window).width();
     var Slidelight = function Slidelight() {
 
         this.isdesktop = "";
@@ -13,23 +13,30 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.flexslider = "";
         this.time = "";
         this.listItem = $(".list-item");
+        this.animateWid=this.listItem.width()*3;
         this.backBtn = $(".btn-return");
-        this.init();
+
         this.prebtn = $(".prebtn");
         this.nextbtn = $(".nextbtn");
         this.backBtn = $(".btnreturn");
         this.currId = void 0;
+        this.screen=$(window).width();
+       this.Itemlength=this.listItem.length;
+        this.totalWid= this.Itemlength*this.listItem.width();
+        this.pLeft=-this.totalWid+this.screen;
+        this.init();
 
     }
 
     Slidelight.prototype.init = function () {
-        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, click: true});
-
+        //取消滑动
+//        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, click: true});
+//        this.screen=$(window).width();
+       this.disT=this.screen+this.animateWid;
         this.isdesktop = this.isDesktop();
         this.eventBind();
-        this.parent();
-
-
+//        this.parent();
+        $.proxy(this.parent(), this)
     }
 
     Slidelight.prototype.eventBind = function () {
@@ -50,46 +57,77 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         //屏幕大小改变
 //        $(window).resize($.proxy(this.resizeHover), this);
         $(window).on('resize',function(){
+            screen=$(window).width();
+//            alert(disT);
             That.resizeHover();
-            That.parent();
+//            That.parent();
+            That.UpdateData();
+//            That.listItem.parent().css('left','0');
         });
     };
+    Slidelight.prototype.UpdateData = function(){
+//        this.screen  = $(window).width();
+//        this.aaa = $(kkdkd).width();
+        this.screen=$(window).width();
+        this.Itemlength=this.listItem.length;
+
+        this.totalWid= this.Itemlength*this.listItem.width();
+        this.pLeft=-this.totalWid+this.screen;
+    }
+
     Slidelight.prototype.parent = function () {
+
         var This=this.listItem;
-        var animateWid=this.listItem.width()*3;
-        var screen=$(window).width();
-        var disT=screen+animateWid;
-        var Itemlength=This.length;
-        var totalWid=Itemlength*this.listItem.width();
-        sport();
+        var That=this;
         //调用
-        function sport(){
+            console.log("屏幕宽度"+screen);
+
+
+       alert(this.screen);
+//        alert(this.animateWid)
+//            var Itemlength=This.length;
+//
+//            var totalWid=Itemlength*This.width();
+//            var pLeft=-totalWid+screen;
+//            console.log(pLeft);
+//        alert(pLeft);
             //左右键控制运动
-            $('.arrow-center .icon-yingdaicon10').click(function(){
-                setAnimate1();
-            });
-            $('.arrow-center .icon-yingdaicon09').click(function(){
+//            $('.arrow-center .icon-yingdaicon10').click(function(){
+//                setAnimate1();
+//                console.log(1);
+//            });
+            $('.arrow-center .icon-yingdaicon10').on('click',function(){
+            setAnimate1();
+            console.log(1);
+        });
+
+            $('.arrow-center .icon-yingdaicon09').on('click',function(){
                 setAnimate2();
+
             });
             function setAnimate1(){
+
                 if(! This.parent().is(":animated")) {
-                    if (parseInt(This.parent().css('left')) <= disT - totalWid) {
-                        This.parent().animate({'left': -totalWid + screen + 'px'}, 500);
+                    var parentLeft = parseInt(This.parent().css('left'));
+                    var remainLens = That.disT - That.totalWid;
+                    if ( parentLeft <= remainLens) {
+                        This.parent().animate({'left':That.pLeft + 'px'}, 500);
+                        console.log(That.pLeft);
                     } else {
-                        This.parent().animate({'left': '-=' + animateWid + 'px'}, 500)
+                        This.parent().animate({'left': '-=' +That.animateWid + 'px'}, 500)
                     }
                 }
             };
             function setAnimate2(){
                 if(!This.parent().is(":animated")) {
-                    if (parseInt(This.parent().css('left')) > -animateWid) {
+                    if (parseInt(This.parent().css('left')) > -That.animateWid) {
                         This.parent().animate({'left': 0}, 500)
                     } else {
-                        This.parent().animate({'left': '+=' + animateWid + 'px'}, 500)
+                        This.parent().animate({'left': '+=' +That.animateWid + 'px'}, 500)
                     }
                 }
             }
-        }
+
     }
 
     Slidelight.prototype.isDesktop = function () {
@@ -97,11 +135,13 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
     };
     Slidelight.prototype.closeDoor = function () {
         this.openDoor.timeScale(4).reverse();
+        $('.arrow-center').show();
         $(".list-item").on("mouseenter", $.proxy(this.hoverIn, this));
     };
     Slidelight.prototype.doorOpen = function (event) {
-        listItem.off("mouseenter", $.proxy(this.hoverIn, this));
-        listItem.off("mouseout", $.proxy(this.hoverOut, this));
+        $('.arrow-center').hide();
+        this.listItem.off("mouseenter", $.proxy(this.hoverIn, this));
+        this.listItem.off("mouseout", $.proxy(this.hoverOut, this));
 
         this.openDoor = new TimelineLite({ onReverseComplete: $.proxy(this.resumehover, this)});
 
