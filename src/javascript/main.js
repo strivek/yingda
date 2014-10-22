@@ -1,7 +1,7 @@
 require.config({
     baseUrl: "../javascript",
     packages: ['waterfall', 'lightbox', 'lightbox2', 'formselected', 'scrollbar', 'bkgroundtoggle', 'navdropdown'
-        , 'carousel', 'others', 'xscroll', 'scrollto','chapter21','brandmap'],
+        , 'carousel', 'others', 'xscroll', 'scrollto','chapter21','brandmap','loading'],
     paths: {
         jquery: 'lib/jquery.min',
         bootstrap: 'lib/bootstrap',
@@ -46,4 +46,6 @@ require(['others']);
 require(['scrollto']);
 require(['chapter21']);
 require(['brandmap']);
+//加载
+require(['loading']);
 
