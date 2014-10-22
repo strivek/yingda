@@ -4,9 +4,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
      * Created by Administrator on 2014/5/26.
      * Updated by GaoFei on 2014/9/1.
      */
-    var screen=$(window).width();
     var Slidelight = function Slidelight() {
-
         this.isdesktop = "";
         this.extendDoor = {};
         this.openDoor = {};
@@ -25,20 +23,14 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.totalWid= this.Itemlength*this.listItem.width();
         this.pLeft=-this.totalWid+this.screen;
         this.init();
-
-    }
-
+    };
     Slidelight.prototype.init = function () {
         //取消滑动
-//        myScroll = new IScroll('#boxscroll', { mouseWheel: true, scrollX: true, scrollY: false, click: true});
-//        this.screen=$(window).width();
        this.disT=this.screen+this.animateWid;
         this.isdesktop = this.isDesktop();
         this.eventBind();
-//        this.parent();
-        $.proxy(this.parent(), this)
-    }
-
+       this.parent();
+    };
     Slidelight.prototype.eventBind = function () {
         var That=this;
         //指向问题存储
@@ -55,22 +47,16 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         //下一张
         $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
         //屏幕大小改变
-//        $(window).resize($.proxy(this.resizeHover), this);
         $(window).on('resize',function(){
             screen=$(window).width();
-//            alert(disT);
             That.resizeHover();
-//            That.parent();
             That.UpdateData();
-//            That.listItem.parent().css('left','0');
         });
     };
     Slidelight.prototype.UpdateData = function(){
-//        this.screen  = $(window).width();
-//        this.aaa = $(kkdkd).width();
+        //改变窗口 时更新数据
         this.screen=$(window).width();
         this.Itemlength=this.listItem.length;
-
         this.totalWid= this.Itemlength*this.listItem.width();
         this.pLeft=-this.totalWid+this.screen;
     }
@@ -80,33 +66,13 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         var This=this.listItem;
         var That=this;
         //调用
-            console.log("屏幕宽度"+screen);
-
-
-       alert(this.screen);
-//        alert(this.animateWid)
-//            var Itemlength=This.length;
-//
-//            var totalWid=Itemlength*This.width();
-//            var pLeft=-totalWid+screen;
-//            console.log(pLeft);
-//        alert(pLeft);
-            //左右键控制运动
-//            $('.arrow-center .icon-yingdaicon10').click(function(){
-//                setAnimate1();
-//                console.log(1);
-//            });
             $('.arrow-center .icon-yingdaicon10').on('click',function(){
-            setAnimate1();
-            console.log(1);
+            setAnimateLeft();
         });
-
             $('.arrow-center .icon-yingdaicon09').on('click',function(){
-                setAnimate2();
-
+                setAnimateRight();
             });
-            function setAnimate1(){
-
+            function setAnimateLeft(){
                 if(! This.parent().is(":animated")) {
                     var parentLeft = parseInt(This.parent().css('left'));
                     var remainLens = That.disT - That.totalWid;
@@ -117,8 +83,8 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
                         This.parent().animate({'left': '-=' +That.animateWid + 'px'}, 500)
                     }
                 }
-            };
-            function setAnimate2(){
+            }
+            function setAnimateRight(){
                 if(!This.parent().is(":animated")) {
                     if (parseInt(This.parent().css('left')) > -That.animateWid) {
                         This.parent().animate({'left': 0}, 500)
@@ -127,9 +93,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
                     }
                 }
             }
-
     }
-
     Slidelight.prototype.isDesktop = function () {
         return  $(window).width() > 1024 ? true : $(window).height() > 1024;
     };
@@ -142,9 +106,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         $('.arrow-center').hide();
         this.listItem.off("mouseenter", $.proxy(this.hoverIn, this));
         this.listItem.off("mouseout", $.proxy(this.hoverOut, this));
-
         this.openDoor = new TimelineLite({ onReverseComplete: $.proxy(this.resumehover, this)});
-
         var index = $(event.currentTarget).index(),
             screen = $(window).width(),
             time = 2,
@@ -163,17 +125,12 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         bf.length != 0 ? arrBefore.push(bf) : "";
 
         if (screen > 1440) {
-
             time = 2.5;
-
         } else if (screen > 1000) {
             time = 1.3;
-
-
         } else if (screen > 700) {
             time = 1.8;
         }
-
         this.openDoor
             .to(arrBefore, time, {css: {left: '-' + screen}}, "open")
             .to(af, time, {css: {left: screen}}, "open")
@@ -184,7 +141,6 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
     Slidelight.prototype.prebtn = function (event) {
         var url = this.GetPreUrl(this.currId);
         this.setImgUrl(url);
-
     };
     Slidelight.prototype.nextbtn = function (event) {
         var url = this.getNextUrl(this.currId);
@@ -193,7 +149,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
     };
     Slidelight.prototype.setImgUrl = function (url) {
         $(".m-slider .listdetail").attr("src", url);
-    }
+    };
     Slidelight.prototype.getNextUrl = function (id) {
         var num = id.split("-")[1];
         if (num < 21) {
@@ -203,7 +159,6 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         }
         this.currId = "step-" + num;
         return $("#" + this.currId).data("link");
-
     };
     Slidelight.prototype.GetPreUrl = function (id) {
         var num = id.split("-")[1];
@@ -214,9 +169,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         }
         this.currId = "step-" + num;
         return $("#" + this.currId).data("link");
-
     };
-
     Slidelight.prototype.resumehover = function (e) {
         $(".list-item").on("mouseenter", mousehover);
     };
@@ -230,9 +183,6 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             af = $(".list-item:gt(" + index + ")"),
             fromElem = $(event.relatedTarget),
             shade = cur.find(".shade");
-
-//            clearInterval(timer);
-//        alert(index);
         if (fromElem.attr("id") && fromElem.hasClass("list-item")) {
             this.extendDoor = new TimelineLite();
             if (this.isdesktop) {
@@ -251,8 +201,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         if (this.isdesktop) {
             this.extendDoor.to(shade, .3, {autoAlpha: .8});
         }
-//        this.parent();
-    }
+    };
     Slidelight.prototype.resizeHover = function () {
         this.isdesktop = $(window).width() > 1024 ? true : $(window).height() > 1024 ? true : false;
         if (this.isdesktop) {
@@ -260,12 +209,9 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         } else {
             $(".list-item .shade").css("opacity", ".5");
         }
-    }
-
+    };
     if ($("#boxscroll").length > 0) {
         var c = new Slidelight();
     }
-
-
-})
+});
 
