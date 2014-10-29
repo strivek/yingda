@@ -14,8 +14,8 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.animateWid=this.listItem.width()*3;
         this.backBtn = $(".btn-return");
 
-        this.prebtn = $(".prebtn");
-        this.nextbtn = $(".nextbtn");
+//        this.prebtn = $(".prebtn");
+//        this.nextbtn = $(".nextbtn");
         this.backBtn = $(".btnreturn");
         this.currId = void 0;
         this.screen=$(window).width();
@@ -32,7 +32,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
        this.parent();
     };
     Slidelight.prototype.eventBind = function () {
-        var That=this;
+       var That=this;
         //指向问题存储
         //打开外层遮罩
         this.listItem.click($.proxy(this.doorOpen, this));
@@ -43,7 +43,8 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         //鼠标划出
         this.listItem.mouseleave($.proxy(this.hoverOut, this));
         //上一张
-        $(".prebtn").on("click", $.proxy(this.prebtn, this));
+        $(".prebtn").click($.proxy(this.prebtn, this));
+
         //下一张
         $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
         //屏幕大小改变
@@ -78,7 +79,7 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
                     var remainLens = That.disT - That.totalWid;
                     if ( parentLeft <= remainLens) {
                         This.parent().animate({'left':That.pLeft + 'px'}, 500);
-                        console.log(That.pLeft);
+//                        console.log(That.pLeft);
                     } else {
                         This.parent().animate({'left': '-=' +That.animateWid + 'px'}, 500)
                     }
@@ -118,7 +119,6 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             arrBefore = [cur],
             wrap = $(".wrap"),
             imglink = $("#" + cur.attr("id")).data("link");
-        console.log(imglink);
         $(".m-slider .listdetail").attr("src", imglink);
 
         this.currId = cur.attr("id");
@@ -138,13 +138,16 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
             .to(zindex, 0, {css: {zIndex: 0}});
         event.stopPropagation();
     };
-    Slidelight.prototype.prebtn = function (event) {
+    Slidelight.prototype.prebtn = function () {
+//        alert(111111);
         var url = this.GetPreUrl(this.currId);
         this.setImgUrl(url);
     };
+
     Slidelight.prototype.nextbtn = function (event) {
+
         var url = this.getNextUrl(this.currId);
-        console.log(url);
+//        console.log(url);
         this.setImgUrl(url);
     };
     Slidelight.prototype.setImgUrl = function (url) {
