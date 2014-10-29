@@ -7,7 +7,7 @@ require(['jquery'], function ($) {
 //    $('body').prepend(oDiv);
 //    $('body').prepend(img);
 
-
+    var num=$('img').length-1;
         var timer = null;
         timer = setInterval(
             function(){
@@ -15,13 +15,7 @@ require(['jquery'], function ($) {
             }
             ,300);
         function loading(){
-//                console.log("loading..");
-//            alert($('img').length);
-            var num=$('img').length-2;
-//            alert($('img').last().attr('src'));
-//                console.log($('.u-fullscreen-index').last().height());
             if ($('img').eq(num).height()> 0) {
-                alert(2222);
                 clearInterval(timer);
                 $('.Divbg').hide();
                 $('.imgload').hide();
