@@ -818,21 +818,20 @@ a, a:hover {
       color: #210700;
       line-height: 1.5; }
   .m-main1-cy .right {
-    float: right; }
+    z-index: 1000;
+    position: absolute;
+    right: 380px;
+    top: 160px; }
     .m-main1-cy .right .title {
       height: 58px;
-      line-height: 58px;
-      border-bottom: 1px solid #b7b2a8; }
-    .m-main1-cy .right .con {
-      padding-top: 30px;
-      border-top: 1px solid #fff; }
-      .m-main1-cy .right .con img {
-        width: 350px;
-        height: 250px; }
-      .m-main1-cy .right .con p {
-        margin-top: 20px;
-        font-size: 14px;
-        color: #210700; }
+      line-height: 58px; }
+    .m-main1-cy .right .con img {
+      width: 320px;
+      height: 200px; }
+    .m-main1-cy .right .con p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #210700; }
 
 body {
   overflow-x: scroll; }
