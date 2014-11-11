@@ -231,3 +231,59 @@ require(['jquery'], function ($) {
         }
     });
 });
+
+require(['jquery'], function ($) {
+    var concealStateBox = $(".m-privacy").eq(0);
+
+    if(!concealStateBox) return false;
+
+    $(document).click(function(event){
+        var target = event.target;
+
+        if(target.className == "modal-backdrop fade in"){
+
+            $(concealStateBox).modal('hide');
+
+        }
+    });
+
+});
+
+require(['jquery'], function ($) {
+    var conbtn = $(".m-main1-cy .j-con-btn > a");
+
+    if(!conbtn.eq(0)) return false;
+
+    var right = $(".m-main1-cy .right").eq(0);
+    var oldHtml = right.html();
+
+    var request= $.ajax({
+        type:"GET",
+        url: '../json/publicintereset.json'
+    });
+    request.done(function (data){
+
+        for(var k=0; k<conbtn.length; k++){
+            conbtn[k].Index = k+1;
+            conbtn[k].onmouseenter = function(){
+                right.html('');
+                for(var i=0; i<data[this.Index].length; i++){
+                    right.html(right.html() + '<h4 class="title"></h4><div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
+                }
+            }
+        }
+
+    });
+
+    var oldTop = right.position().top;
+
+    $(document).scroll(function(){
+        if($(document).scrollTop() > oldTop){
+            right.animate({"top":$(document).scrollTop()},{
+                duration:30
+            });
+        }
+    });
+
+
+});

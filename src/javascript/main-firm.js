@@ -1,6 +1,6 @@
 require.config({
     baseUrl: "../javascript",
-    packages: ["pop2D","bdmap","popDes","show","crsFirm"],
+    packages: ["pop2D","bdmap","popDes","show","crsFirm","others"],
     paths: {
         jquery: 'lib/jquery.min',
         'async': 'lib/async'
@@ -11,3 +11,4 @@ require(['bdmap']);
 require(['popDes']);
 require(['show']);
 require(['crsFirm']);
+require(['others']);
