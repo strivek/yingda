@@ -27,7 +27,7 @@
 .waterfall-content .time{padding-left: 16px;color: #242222; font-size: 12px; }
 .wf_item .thumb{background:#E9E9E9;position:relative;display:block;overflow:hidden;font-size:0;}
 .wf_item .thumb_img{width:100%;max-width:100%;-ms-interpolation-mode:bicubic;/*解决IE7缩放图片会失真*/}
-.wf_item .title{height:27px;margin:7px 0 0;color:#538700;font-size:17px;font-family:\5FAE\8F6F\96C5\9ED1;}
+.wf_item .title{line-height:26px; margin:7px 0 0;color:#538700;font-size:17px;font-family:\5FAE\8F6F\96C5\9ED1;}
 
 .wf_item .title a{ font-size: 18px; font-weight: normal;}
 .wf_item a:hover{color:#d7bca0;}
