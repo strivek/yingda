@@ -44,6 +44,9 @@ require(['jquery', 'iscroll', 'tweenTime', 'tweenLite', 'tweenCss', 'flexslider'
         this.listItem.mouseleave($.proxy(this.hoverOut, this));
         //上一张
         $(".prebtn").click($.proxy(this.prebtn, this));
+//        $(".prebtn").click(function(){
+//            That.prebtn();
+//        });
 
         //下一张
         $(".nextbtn").on("click", $.proxy(this.nextbtn, this));
