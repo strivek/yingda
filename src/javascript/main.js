@@ -48,4 +48,5 @@ require(['chapter21']);
 require(['brandmap']);
 //加载
 require(['loading']);
+require(['bootstrap']);
 
