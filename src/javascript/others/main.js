@@ -252,7 +252,7 @@ require(['jquery'], function ($) {
 require(['jquery'], function ($) {
     var conbtn = $(".m-main1-cy .j-con-btn > a");
 
-    if(!conbtn.eq(0)) return false;
+    if(conbtn.length < 1) return false;
 
     var right = $(".m-main1-cy .right").eq(0);
     var oldHtml = right.html();
