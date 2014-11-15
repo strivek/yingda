@@ -4,6 +4,12 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  @media screen and (max-width: 768px) {
+    img.visible-sm{
+      margin-top: 52px;
+      margin-left:0 !important;
+    }
+  }
 }
 .home-img{
 //  @include opacity(0.3);
@@ -11,3 +17,5 @@
 
 }
 img.home{position: absolute; top:0;left: 0;right: 0;bottom:0;margin: auto;z-index: 1000;}
+
+
