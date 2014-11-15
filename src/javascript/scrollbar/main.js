@@ -5,9 +5,10 @@
 
 require(['jquery', 'scrollbar/jquery.tinyscrollbar'], function ($) {
     $("#scrollbar1").tinyscrollbar();
+    $("#scrollbar2").tinyscrollbar();
 });
 require(['jquery', 'scrollbar/jquery.tinyscrollbar'], function ($) {
-    $("#scrollbar2").tinyscrollbar();
+
 });
 
 

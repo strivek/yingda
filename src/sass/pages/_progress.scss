@@ -291,7 +291,7 @@
     }
    }
   .m-fullscreen-first {
-    .fs-badge img {width: 300px;}
+    .fs-badge img {display: block;margin: 0 auto; width: 358px; height: 236px;}
   }
   .m-fullscreen-1 {
     .fs-mid {
@@ -394,3 +394,4 @@
     }
   }
 }
+.fs-badge img {display: block;margin: 0 auto; width: 358px; height: 236px;}
