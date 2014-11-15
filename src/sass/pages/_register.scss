@@ -145,8 +145,10 @@ $color: #ffe3cd;
 }
 
 .m-privacy.modal{
-  width: 700px;margin: 0 auto;
+  width: 52.65625%;
+  margin: 0 auto;
   .modal-dialog{
+    margin-top: 70px;
    width: 100%;
   .modal-content{
     background: #251f20;
@@ -159,6 +161,12 @@ $color: #ffe3cd;
 
   }
   .modal-body{
+    .s-modal-call{
+      line-height: 21px;
+      font-weight: normal;
+      font-size: 14px;
+      color: #FFE3CD;
+    }
     p{
       margin-bottom: 30px;
       font-size: 12px;
@@ -166,6 +174,9 @@ $color: #ffe3cd;
       font-family: "宋体";
       font-weight: normal;
       line-height: 2.2;
+      &.first-p{
+        text-indent: 2em;
+      }
     }
 
   }
