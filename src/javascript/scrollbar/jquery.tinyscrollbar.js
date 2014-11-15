@@ -13,6 +13,7 @@
 (function ($) {
     "use strict";
 
+
     var pluginName = "tinyscrollbar"
         , defaults =
         {
@@ -69,7 +70,7 @@
         }
 
         function heightChangeUpdate() {
-            $container = $("#scrollbar1");
+//            $container = $("#scrollbar2");
             $viewport = $container.find(".viewport")
                 , $overview = $container.find(".overview")
                 , $scrollbar = $container.find(".scrollbar")

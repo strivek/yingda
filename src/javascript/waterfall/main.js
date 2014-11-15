@@ -11,7 +11,7 @@ require(['jquery', 'waterfall/jquery.waterfall'], function ($) {
             if(data.coImg==null){
                 return '<div class="wf_item_inner">' +
                     '<div class="waterfall-content">' +
-                    '<h3 class="title"><a href="newsdetails.asp?id=' + data.coId + '" target="_blank">' + data.coTitle + '</a></h3>' +
+                    '<h3 class="title"><a href="newsdetails.asp?id=' + data.title + '" target="_blank">' + data.title + '</a></h3>' +
                     '<p class="time-line"><span class="time">' + data.coTime + '</span></p>' +
                     '<p class="desc">' + data.coDescribe + '</p>' +
                     '<p class="text-right" style="text-align: right"><a href="newsdetails.asp?id=' + data.coId + '" target="_blank">' + '详情>' + '</a></p>' +
