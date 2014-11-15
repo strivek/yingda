@@ -250,40 +250,45 @@ require(['jquery'], function ($) {
 });
 
 require(['jquery'], function ($) {
+
     var conbtn = $(".m-main1-cy .j-con-btn > a");
 
-    if(!conbtn.eq(0)) return false;
+//    if(!conbtn.eq(0)) return false;
+   if(conbtn.length>0){
 
-    var right = $(".m-main1-cy .right").eq(0);
-    var oldHtml = right.html();
+       var right = $(".m-main1-cy .right").eq(0);
+       var oldHtml = right.html();
 
-    var request= $.ajax({
-        type:"GET",
-        url: '../json/publicintereset.json'
-    });
-    request.done(function (data){
+       var request= $.ajax({
+           type:"GET",
+           url: '../json/publicintereset.json'
+       });
+       request.done(function (data){
 
-        for(var k=0; k<conbtn.length; k++){
-            conbtn[k].Index = k+1;
-            conbtn[k].onmouseenter = function(){
-                right.html('');
-                for(var i=0; i<data[this.Index].length; i++){
-                    right.html(right.html() + '<h4 class="title"></h4><div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
-                }
-            }
-        }
+           for(var k=0; k<conbtn.length; k++){
+               conbtn[k].Index = k+1;
+               conbtn[k].onmouseenter = function(){
+                   right.html('');
+                   for(var i=0; i<data[this.Index].length; i++){
+                       right.html(right.html() + '<h4 class="title"></h4><div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
+                   }
+               }
+           }
 
-    });
+       });
 
-    var oldTop = right.position().top;
+       var oldTop = right.position().top;
 
-    $(document).scroll(function(){
-        if($(document).scrollTop() > oldTop){
-            right.animate({"top":$(document).scrollTop()},{
-                duration:30
-            });
-        }
-    });
+
+       $(document).scroll(function(){
+           if($(document).scrollTop() > oldTop){
+               right.animate({"top":$(document).scrollTop()},{
+                   duration:30
+               });
+           }
+       });
+   }
+
 
 
 });
