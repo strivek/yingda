@@ -198,7 +198,7 @@ require(['jquery'], function ($) {
     }
 });
 require(['jquery'], function ($) {
-    if(!$(".itisvideo")) return false;
+    if($(".itisvideo").langth < 1) return false;
 
     $(".videoevent").eq(0).on("click",function(){
         var itisvideo = $(".itisvideo").eq(0);
@@ -235,7 +235,7 @@ require(['jquery'], function ($) {
 require(['jquery'], function ($) {
     var concealStateBox = $(".m-privacy").eq(0);
 
-    if(!concealStateBox) return false;
+    if(concealStateBox.length < 1) return false;
 
     $(document).click(function(event){
         var target = event.target;
