@@ -3,13 +3,25 @@
  */
 //boutique.html 精品店下拉
 require(['jquery'], function ($) {
-    $('.m-shop-detail dl .detail').click(function () {
-        $(this).toggleClass('color');
-        $(this).closest('dl').siblings('.u-details').toggle();
-        $(this).trigger("click.detail");
 
-   })
+//    $('.m-shop-detail dl .detail').click(function () {
+//        $(this).toggleClass('color');
+//        $(this).closest('dl').siblings('.u-details').toggle();
+//        $(this).trigger("click.detail");
+//
+//   })
+    //店铺
+    var detail='.m-shop-detail dl .detail';
+    $('body').on('click',detail,show);
 });
+
+
+function show() {
+    $(this).toggleClass('color');
+    $(this).closest('dl').siblings('.u-details').toggle();
+    $(this).trigger("click.detail");
+
+}
 
 ////精品店模块贴合
 require(['jquery'], function ($) {
