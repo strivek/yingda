@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.g-pg-main{
+  padding-top: 46px;
+  @media screen and (max-width: 992px){
+    padding-top: 0;
+  }
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 50px;
+  }
+//  >.cnt{
+//    margin: 0 auto;
+//    @include containerMedia();
+//    height: auto;
+//  }
+}
