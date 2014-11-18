@@ -1,7 +1,4 @@
-
-
 @charset "utf-8";
-
 $fontStack: '宋体';
 $primaryColor: #f6d2b9;
 .m-main-zt {
@@ -114,11 +111,11 @@ $primaryColor: #f6d2b9;
     -o-user-select:none;
     user-select:none;
     position: relative;
-    height:670px;
+//    height:670px;
 //    overflow:hidden;
     .main-item{
       float:left;
-      height:626px;
+//      height:626px;
     }
     .viewport{
       height:670px;
@@ -188,7 +185,7 @@ $primaryColor: #f6d2b9;
 }
 @media (min-width: 992px) and (max-width: 1169px){
   .m-main-zt .container{width: 840px;}
-  .m-main-zt{padding: 100px 0 0}
+  .m-main-zt{padding: 100px 0}
   .m-main-zt .m-bd .m-product1{padding-top: 130px}
   //  .m-main-zt .m-bd .m-hd h3{font-size: 26px;}
 }
@@ -203,4 +200,13 @@ $primaryColor: #f6d2b9;
 
 @media (width: 1366px){           //update by qin
   .m-product1{margin-top:-225px;}
+}
+.fixed{
+  position: fixed;top: 200px;width: 360px;
+  @media (min-width: 1026px) and(max-width: 1160px){
+    width: 330px;
+  }
+  @media (max-width: 1169px){
+    position: relative;top:0;left: 0;width: 100%;
+  }
 }

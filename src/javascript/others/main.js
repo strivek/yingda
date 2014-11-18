@@ -306,3 +306,27 @@ require(['jquery'], function ($) {
 
 
 });
+
+
+
+
+
+require(['jquery'], function ($) {
+    var marLeft
+  if($('.fixed').length>0){
+      if($(window).width()>1169){
+          marLeft=$('.container').css('marginLeft');
+          $('.fixed').css('left',marLeft+30);
+          $(window).resize(function(){
+              marLeft=$('.container').css('marginLeft');
+              $('.fixed').css('left',marLeft+30);
+          })
+      }
+
+  }
+
+});
+
+
+
+
