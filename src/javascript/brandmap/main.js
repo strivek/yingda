@@ -102,7 +102,7 @@ require(['jquery','async!http://api.map.baidu.com/api?key=&v=1.1&services=true']
 //    alert($('.mapDetail').length);
 
 
-    $('.mapDetail').click(
+    $('body').on('click','.mapDetail',
 
         function(){
             if($(this).attr('class')=='pr-20 mapDetail'){

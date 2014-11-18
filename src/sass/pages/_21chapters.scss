@@ -48,7 +48,9 @@ body.chapter21 {
     top: 0;
     left: 0;
     z-index: 99;
-    background: #000000 url("../images/21chapter/1/1-1.jpg") no-repeat center;
+    background: #000000
+//    url("../images/21chapter/1/1-1.jpg") no-repeat center
+  ;
   }
 
   .btn-return {
@@ -194,7 +196,11 @@ body.chapter21 {
       background: #000000 url("../images/21chapter/21.jpg") no-repeat center;
     }
   }
-
+  .g-slider{
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
   .g-sld .flexslider {
     background: #000;
     position: absolute;
@@ -216,12 +222,12 @@ body.chapter21 {
     }
   }
   .m-slider{
-    width: 100%;
-    height: 100%;
+   display: table-cell;
+    vertical-align: middle;
   }
   .listdetail{
     width: 100%;
-    height: 100%;
+
   }
 
 
