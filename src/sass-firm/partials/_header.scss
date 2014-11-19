@@ -114,4 +114,9 @@
       *word-spacing: normal;
     }
   }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }

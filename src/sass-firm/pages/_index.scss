@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.m-pg-index{
+  @media screen and (max-width: 992px){
+    text-align: center;
+  }
+  .pra,.pra1{
+    margin-top: 26px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #210700;
+  }
+  .pra1{
+    @media screen and (max-width: 992px) {
+      margin-top: 24px;
+    }
+  }
+  .right{
+    margin-top: 30px;
+    img{
+      width: 100%;
+      max-height: 250px;
+      max-width: 350px;
+    }
+    p{
+      margin-top: 20px;
+      @media screen and (max-width: 992px) {
+        margin-top: 10px;
+      }
+      font-size: 14px;
+      color: #210700;
+    }
+  }
+  @media screen and (max-width: 992px){
+    margin-bottom: 150px;
+  }
+}

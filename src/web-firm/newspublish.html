@@ -4,178 +4,243 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>新闻中心-出版物</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
 </head>
-<body>
-<!--TODO-CY 适当的地方加cursor:pointer-->
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <li><a href="#">首页</a></li>
+<body class="pg-firms">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <img src="../images/yingdafirm-logo.png" alt="应大logo"/>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <!--ToDo update .icon-->
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <!--左侧栏-->
-    <div class="m-left">
-        <h3>新闻中心</h3>
-        <ul>
-            <li><a href="#">最新动态</a></li>
-            <li><a href="#">视频</a></li>
-            <li><a href="#">出版物</a></li>
-        </ul>
-    </div>
-    <div class="m-main4-cy">
-        <h2 class="u-title">出版物</h2>
 
-        <div class="yh"></div>
-        <div class="main">
-            <div class="list">
-                <div class="u-toptitle">
-                    <p>2014年企业员工手册</p>
-                    <a href="#">PDF</a>
-                </div>
-                <div class="pic-list">
-                    <a href="#"><img src="../images/newspublish-pic1.png" alt=""/></a>
-                    <div class="move">
-                    <span></span>
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
 
-                    <p><a class="pic"><img src="../images/newspublish-pic2.png" alt="查看"/></a>
-                        <span class="fit"></span>
-                        <a class="pic"><img src="../images/newspublish-pic3.png" alt="下载"/></a>
-                    </p>
+<div class="g-pg-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>新闻中心</span></h3>
+
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a href="#">最新动态</a> <!--s-grey是对已选中链接的样式，后端看这里-->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a href="#">视频</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a class="s-grey" href="#">出版物</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="list">
-                <div class="u-toptitle">
-                    <p>2014年企业员工手册</p>
-                    <a href="#">PDF</a>
-                </div>
-                <div class="pic-list">
-                    <a href="#"><img src="../images/newspublish-pic1.png" alt=""/></a>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">出版物</h2>
+                <div class="yh"></div>
 
-                    <div class="move">
-                        <span></span>
+                <!--当前页面html-->
 
-                        <p><a class="pic"><img src="../images/newspublish-pic2.png" alt="查看"/></a>
-                            <span class="fit"></span>
-                            <a class="pic"><img src="../images/newspublish-pic3.png" alt="下载"/></a>
-                        </p>
+                <div class="m-pg-newspublish">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <div class="list">
+                                <div class="u-toptitle">
+                                    <p>2014年企业员工手册</p>
+                                    <a href="#">PDF</a>
+                                </div>
+                                <div class="pic-list">
+                                    <a href="#"><img alt="" src="../images/newspublish-pic1.png"></a>
+                                    <div class="move" style="bottom: -40px;">
+                                        <span></span>
+
+                                        <p><a class="pic"><img alt="查看" src="../images/newspublish-pic2.png"></a>
+                                            <span class="fit"></span>
+                                            <a class="pic"><img alt="下载" src="../images/newspublish-pic3.png"></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <div class="list">
+                                <div class="u-toptitle">
+                                    <p>2014年企业员工手册</p>
+                                    <a href="#">PDF</a>
+                                </div>
+                                <div class="pic-list">
+                                    <a href="#"><img alt="" src="../images/newspublish-pic1.png"></a>
+
+                                    <div class="move" style="bottom: -40px;">
+                                        <span></span>
+
+                                        <p><a class="pic"><img alt="查看" src="../images/newspublish-pic2.png"></a>
+                                            <span class="fit"></span>
+                                            <a class="pic"><img alt="下载" src="../images/newspublish-pic3.png"></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <div class="list">
+                                <div class="u-toptitle">
+                                    <p>2014年企业员工手册</p>
+                                    <a href="#">PDF</a>
+                                </div>
+                                <div class="pic-list">
+                                    <a href="#"><img alt="" src="../images/newspublish-pic1.png"></a>
+
+                                    <div class="move">
+                                        <span></span>
+
+                                        <p><a class="pic"><img alt="查看" src="../images/newspublish-pic2.png"></a>
+                                            <span class="fit"></span>
+                                            <a class="pic"><img alt="下载" src="../images/newspublish-pic3.png"></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="u-toptitle">
-                    <p>2014年企业员工手册</p>
-                    <a href="#">PDF</a>
-                </div>
-                <div class="pic-list">
-                    <a href="#"><img src="../images/newspublish-pic1.png" alt=""/></a>
 
-                    <div class="move">
-                        <span></span>
+                    <!--<div class="list">-->
+                        <!--<div class="u-toptitle">-->
+                            <!--<p>2014年企业员工手册</p>-->
+                            <!--<a href="#">PDF</a>-->
+                        <!--</div>-->
+                        <!--<div class="pic-list">-->
+                            <!--<a href="#"><img alt="" src="../images/newspublish-pic1.png"></a>-->
 
-                        <p><a class="pic"><img src="../images/newspublish-pic2.png" alt="查看"/></a>
-                            <span class="fit"></span>
-                            <a class="pic"><img src="../images/newspublish-pic3.png" alt="下载"/></a>
-                        </p>
-                    </div>
+                            <!--<div class="move" style="bottom: -40px;">-->
+                                <!--<span></span>-->
+
+                                <!--<p><a class="pic"><img alt="查看" src="../images/newspublish-pic2.png"></a>-->
+                                    <!--<span class="fit"></span>-->
+                                    <!--<a class="pic"><img alt="下载" src="../images/newspublish-pic3.png"></a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="list">-->
+                        <!--<div class="u-toptitle">-->
+                            <!--<p>2014年企业员工手册</p>-->
+                            <!--<a href="#">PDF</a>-->
+                        <!--</div>-->
+                        <!--<div class="pic-list">-->
+                            <!--<a href="#"><img alt="" src="../images/newspublish-pic1.png"></a>-->
+
+                            <!--<div class="move" style="bottom: -40px;">-->
+                                <!--<span></span>-->
+
+                                <!--<p><a class="pic"><img alt="查看" src="../images/newspublish-pic2.png"></a>-->
+                                    <!--<span class="fit"></span>-->
+                                    <!--<a class="pic"><img alt="下载" src="../images/newspublish-pic3.png"></a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="list">-->
+                        <!--<div class="u-toptitle">-->
+                            <!--<p>2014年企业员工手册</p>-->
+                            <!--<a href="#">PDF</a>-->
+                        <!--</div>-->
+                        <!--<div class="pic-list">-->
+
+                            <!--<a href="#"><img alt="" src="../images/newspublish-pic1.png"></a>-->
+
+                            <!--<div class="move" style="bottom: -40px;">-->
+                                <!--<span></span>-->
+
+                                <!--<p><a class="pic"><img alt="查看" src="../images/newspublish-pic2.png"></a>-->
+                                    <!--<span class="fit"></span>-->
+                                    <!--<a class="pic"><img alt="下载" src="../images/newspublish-pic3.png"></a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
                 </div>
-            </div>
-            <div class="list">
-                <div class="u-toptitle">
-                    <p>2014年企业员工手册</p>
-                    <a href="#">PDF</a>
-                </div>
-                <div class="pic-list">
-                    <a href="#"><img src="../images/newspublish-pic1.png" alt=""/></a>
 
-                    <div class="move">
-                        <span></span>
+                <!--当前页面html End-->
 
-                        <p><a class="pic"><img src="../images/newspublish-pic2.png" alt="查看"/></a>
-                            <span class="fit"></span>
-                            <a class="pic"><img src="../images/newspublish-pic3.png" alt="下载"/></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="u-toptitle">
-                    <p>2014年企业员工手册</p>
-                    <a href="#">PDF</a>
-                </div>
-                <div class="pic-list">
-                    <a href="#"><img src="../images/newspublish-pic1.png" alt=""/></a>
-
-                    <div class="move">
-                        <span></span>
-
-                        <p><a class="pic"><img src="../images/newspublish-pic2.png" alt="查看"/></a>
-                            <span class="fit"></span>
-                            <a class="pic"><img src="../images/newspublish-pic3.png" alt="下载"/></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="u-toptitle">
-                    <p>2014年企业员工手册</p>
-                    <a href="#">PDF</a>
-                </div>
-                <div class="pic-list">
-
-                    <a href="#"><img src="../images/newspublish-pic1.png" alt=""/></a>
-
-                    <div class="move">
-                        <span></span>
-
-                        <p><a class="pic"><img src="../images/newspublish-pic2.png" alt="查看"/></a>
-                            <span class="fit"></span>
-                            <a class="pic"><img src="../images/newspublish-pic3.png" alt="下载"/></a>
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="u-page"><a href="#" class="pre">上一页</a> <a href="#" class="pagef">1</a> <a href="#"
-                                                                                               class="pagef">2</a><a
-                href="#" class="pagef">3</a> <a href="#" class="next">下一页</a></div>
+    </div>
+
+    <div class="container">
+        <div class="u-page">
+            <a class="pre" href="#">上一页</a>
+            <a class="pagef" href="#">1</a>
+            <a class="pagef" href="#">2</a>
+            <a class="pagef" href="#">3</a>
+            <a class="pagef" href="#">4</a>
+            <a class="pagef" href="#">5</a>
+            <a class="next" href="#">下一页</a>
+        </div>
     </div>
 
 </div>
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
+
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
+        </div>
     </div>
 </div>
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
-<!--TODO update jquery cy9.1 -->
+
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
+
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>

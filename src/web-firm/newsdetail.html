@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>最新动态详情页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
 </head>
-<body>
-<!--TODO-CY 对于页头页尾命名，采用g-hd,g-ft 比top和bottom更合适 g-main 可以缩写为g-mn-->
-<!--TODO-CY 对于侧边栏m-left 稍显不妥帖，用g-side 的缩写 g-sd侧栏更贴切-->
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <li><a href="#">首页</a></li>
+<body class="pg-firms">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <a href="#"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
@@ -22,77 +30,141 @@
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
-        </div>
-    </div>
-</div>
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <!--左侧栏-->
-    <div class="m-left">
-        <h3>企业文化</h3>
-        <ul>
-            <li><a href="#">应大之家</a></li>
-            <li><a href="#">在线党建</a></li>
-        </ul>
-    </div>
-    <div class="m-main6-cy">
-        <h2 class="u-title">最新动态</h2>
-        <div class="yh"></div>
-        <div class="con">
-            <h3 class="ti">同心共筑中国梦 第三届榜样天津-民企篇活动在我公司举行</h3>
-            <span class="time">2013-3-3</span><span class="author">发布者</span>
-            <div class="article">
-                <img src="../images/newsdetail-pic1.png" alt="图片展示"/>
-                <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
-                <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
-                <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
-                <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
-            </div>
-        </div>
-        <div class="u-page"><a href="#" class="pre">上一篇</a><a href="#" class="next">下一篇</a></div>
-        <h2 class="u-title b-title">更多推荐</h2>
-        <div class="yh"></div>
-        <div class="piclist">
-            <div class="pic">
-                <img src="../images/newadetail-pic2.png" alt="图片"/>
-                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
-            </div>
-            <div class="pic">
-                <img src="../images/newadetail-pic2.png" alt="图片"/>
-                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
-            </div>
-            <div class="pic">
-                <img src="../images/newadetail-pic2.png" alt="图片"/>
-                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
-            </div>
-            <div class="pic">
-                <img src="../images/newadetail-pic2.png" alt="图片"/>
-                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
-            </div>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
 
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
+
+<div class="g-pg-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>企业文化</span></h3>
+
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a class="s-grey" href="#">最新动态</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a href="#">视频</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a href="#">出版物</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">最新动态</h2>
+                <div class="yh"></div>
+
+
+            <div class="m-pg-newsdetail">
+                <h3 class="ti">同心共筑中国梦 第三届榜样天津-民企篇活动在我公司举行</h3>
+                <span class="time">2013-3-3</span>
+                <span class="author">发布者</span>
+                <div class="article">
+                    <img alt="图片展示" src="../images/newsdetail-pic1.png">
+                    <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
+                    <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
+                    <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
+                    <p>天津市政协副主席、市工商联主席黎昌晋出席活动并讲话，天津市委统战部常务副部长刘剑英，市委统战部副部长、市工商联党组书记李广文，天津日报总编辑王宏，天津市工商联副主席耿伟、副主席娄杰、秘书长牛予其、副巡视员范学义等出席。天津市各区县委统战部分管副部长、工商联党组书记、非公经济组织工委书记，行业商会、异地商会会长及秘书长，市工商联机关干部百余人参加活动。活动由李广文主持。</p>
+                </div>
+
+                <div class="u-page">
+                    <a class="pre" href="#">上一篇</a>
+                    <a class="next" href="#">下一篇</a>
+                </div>
+
+                <h2 class="u-bot-title">更多推荐</h2>
+
+                <div class="piclist">
+
+                    <div class="row">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="pic">
+                                <img alt="图片" src="../images/newadetail-pic2.png">
+                                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="pic">
+                                <img alt="图片" src="../images/newadetail-pic2.png">
+                                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="pic">
+                                <img alt="图片" src="../images/newadetail-pic2.png">
+                                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="pic">
+                                <img alt="图片" src="../images/newadetail-pic2.png">
+                                <a href="#">“应大杯”第四届中国时尚皮装设计大赛总决赛圆满落幕</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
+        </div>
     </div>
 </div>
-<!--底部结束-->
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
+
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>

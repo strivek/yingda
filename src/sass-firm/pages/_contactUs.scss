@@ -1,0 +1,131 @@
+@charset "utf-8";
+.m-pg-contact {
+  .main {
+    margin-top: 32px;
+    .map {
+      height: 290px;
+    }
+    .firmdet {
+      @media screen and (max-width: 992px){
+        padding-bottom: 40px;
+      }
+//      @media screen and (max-width: 992px){
+//        text-align: center;
+//      }
+      @include letrSpacing0();
+      h3 {
+        width: 100%;
+        font-size: 18px;
+        font-family: "宋体";
+        color: #6c513a;
+        font-weight: normal;
+        @include letrSpacingMormal();
+        @media screen and (max-width: 992px){
+          padding-top: 22px;
+          line-height: 26px;
+        }
+      }
+      .add, .num {
+        width: 100%;
+        margin-top: 14px;
+        font-size: 14px;
+        font-family: "宋体";
+        color: #6c513a;
+        @include letrSpacingMormal();
+      }
+      .add{
+        @media screen and (max-width: 992px){
+//          width: 82.65%;
+          @include inline-blk();
+          margin-top:7px;
+        }
+      }
+//      .num{
+//        @media screen and (max-width: 992px){
+//          width: 17.35%;
+//          @include inline-blk();
+//        }
+//      }
+      .tel,.email, .fax, .web{
+        width: 50%;
+        @include boxSizing();
+        margin-top: 16px;
+        @include inline-blk();
+        @include letrSpacingMormal();
+        padding-left: 30px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+        color: #6c513a;
+        font-family: "宋体";
+        background: url("../images/contactus-pic1.png") no-repeat;
+      }
+      .email:hover,.web:hover{color:#333;}
+      .tel {
+        background-position: 0 -24px;
+      }
+      .email {
+        background-position: 0 -46px;
+      }
+      .fax {
+        background-position: 0 0px;
+      }
+      .web {
+        background-position: 0 -70px;
+      }
+      .weixin {
+        margin-top: 8px;
+        @media screen and (max-width: 992px){
+          margin-top: 28px;
+        }
+        padding-top: 20px;
+        border-top: 1px solid #d6c2a0;
+        height: auto;
+        .sina,.ten{
+          @include inline-blk();
+          width: 50%;
+        }
+        .ten{
+          @media screen and (max-width: 360px){
+            position: relative;
+            left: 10px;
+          }
+        }
+       .sina,.ten,.yuku{
+         position: relative;
+         .name{
+//           float: left;
+//           position: absolute;
+//           left: 0;
+           vertical-align: top;
+           font-size:14px;
+           font-family: "宋体";
+           color:#6c513a;
+           @include letrSpacingMormal();
+         }
+         .erweima {
+           position: relative;
+           left: 10px;
+//          float: left;
+//           position: absolute;
+//           right: 0;
+           @include inline-blk();
+           height: 90px;
+           border: 1px solid #d6c2a0;
+           padding: 6px;
+         }
+       }
+        .yuku{
+          margin-top:30px;
+          .wang a{
+            font-size:14px;
+            font-family: "宋体";
+            color:#6c513a;
+            @include letrSpacingMormal();
+          }
+        }
+      }
+    }
+  }
+
+}
