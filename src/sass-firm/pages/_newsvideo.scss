@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.m-pg-newsvideo{
+  .main{
+    padding-top:30px;
+    margin-left:-10px;
+  }
+  .con{
+    margin-left:10px;
+    margin-bottom:30px;
+    background:none repeat scroll 0 0 #F9F9F9;
+  }
+  .time{
+    padding-top:18px;
+    margin: 0 20px;
+    display:block;
+    padding-bottom:10px;
+    border-bottom:1px solid #D2C7B5;
+    font-size:14px;
+    color: #83654C;
+  }
+  .descript{
+    margin:10px 20px 20px;
+    a{
+      cursor: text;
+      font-size: 14px;
+      color: #83654C;
+      line-height: 1.5;
+    }
+  }
+}
