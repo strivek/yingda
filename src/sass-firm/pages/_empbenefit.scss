@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.m-pg-empbenefit{
+  .list li {
+    border-bottom: 1px solid #d6cfc7;
+    padding: 18px 0 8px;
+    position: relative;
+    @include letrSpacing0();
+  }
+  .list li .title {
+    color: #210700;
+    @include inline-blk();
+    @include letrSpacingMormal();
+    font-family: "瀹嬩綋";
+    font-size: 16px;
+  }
+  .list li .more {
+    bottom: 8px;
+    color: #83654c;
+    @include inline-blk();
+    @include letrSpacingMormal();
+    font-family: "瀹嬩綋";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+  }
+  .list li .more:hover {
+    color: #210700;
+  }
+}

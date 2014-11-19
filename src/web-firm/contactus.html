@@ -4,118 +4,130 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>联系我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
-    <style type="text/css">
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .iw_poi_title {
-            color: #CC5522;
-            font-size: 14px;
-            font-weight: bold;
-            overflow: hidden;
-            padding-right: 13px;
-            white-space: nowrap
-        }
-
-        .iw_poi_content {
-            font: 12px arial, sans-serif;
-            overflow: visible;
-            padding-top: 4px;
-            white-space: -moz-pre-wrap;
-            word-wrap: break-word
-        }
-    </style>
-
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
 </head>
-<body>
-<!--TODO-CY 地图不够完善，有多余坐标，并且标记不清晰-->
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <li><a href="#">首页</a></li>
+<body class="pg-firms">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <img src="../images/yingdafirm-logo.png" alt="应大logo"/>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <!--ToDo update .icon-->
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <!--左侧栏-->
-    <div class="m-left">
-        <h3>联系我们</h3>
-        <ul>
-            <li><a href="#">合作加盟</a></li>
-        </ul>
-    </div>
-    <!--左侧栏结束-->
-    <!--  右侧主要内容-->
-    <div class="m-main9-cy">
-        <h2 class="u-title">联系我们</h2>
 
-        <div class="yh"></div>
-        <div class="main">
-            <div class="map" id="dituContent"></div>
-            <div class="firmdet">
-                <h3>天津应大股份有限公司</h3>
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
 
-                <p class="add">天津市 空港经济区 十一道135号（中心大道交口）</p>
+<div class="g-pg-main m-pg-bestemp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>联系我们</span></h3>
 
-                <p class="num">300308</p>
-                <span class="tel">022-24966666</span>
-                <a href="" class="email">yingda@mail.com</a>
-                <span class="fax">022-24968888</span>
-                <a href="" class="web">www.yingda.cn</a>
- <!--TODO update .weixin by chy 2014.10.16-->
-                <div class="weixin">
-                    <div class="sina">
-                        <span class="name">微博</span>
-                        <span class="erweima"><img src="../images/sina.png" alt=""/></span>
+                    <div class="col-md-12 col-sm-6 col-xs-6 hidden-sm hidden-xs">
+                        <div class="item">
+                            <a class="s-grey" href="#">合作加盟</a> <!--s-grey是对已选中链接的样式，后端看这里-->
+                        </div>
                     </div>
-                    <div class="ten">
-                        <span class="name">微信二维码</span>
-                        <span class="erweima"><img src="../images/contactus-pic2.png" alt=""/></span>
-                    </div>
-                    <div class="yuku">
-                        <span class="name">优酷</span>
-                        <span class="wang"><a href="www.youku.com/yingda">www.youku.com/yingda</a></span>
-                    </div>
+
                 </div>
             </div>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">联系我们</h2>
+                <div class="yh"></div>
 
+                <!--当前页面html-->
+
+                <div class="m-pg-contact">
+
+                    <div class="main">
+                        <div class="col-md-7 col-sm-12 col-xs-12 map" id="dituContent"></div>
+                        <div class="firmdet col-md-5 col-sm-12 col-xs-12">
+                            <h3>天津应大股份有限公司</h3>
+
+                            <p class="add">天津市 空港经济区 十一道135号（中心大道交口）</p>
+
+                            <p class="num">300308</p>
+                            <span class="tel">022-24966666</span>
+                            <a href="" class="email">yingda@mail.com</a>
+                            <span class="fax">022-24968888</span>
+                            <a href="" class="web">www.yingda.cn</a>
+                            <!--TODO update .weixin by chy 2014.10.16-->
+                            <div class="weixin">
+                                <div class="sina">
+                                    <span class="name">微博</span>
+                                    <span class="erweima"><img src="../images/sina.png" alt=""/></span>
+                                </div>
+                                <div class="ten">
+                                    <span class="name">微信</span>
+                                    <span class="erweima"><img src="../images/contactus-pic2.png" alt=""/></span>
+                                </div>
+                                <div class="yuku">
+                                    <span class="name">优酷</span>
+                                    <span class="wang"><a href="www.youku.com/yingda">www.youku.com/yingda</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--当前页面html End-->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
         </div>
     </div>
 </div>
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
-    </div>
-</div>
-<!--底部结束-->
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
+
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>
