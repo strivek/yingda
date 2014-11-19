@@ -183,3 +183,38 @@ $color: #ffe3cd;
   .modal-header{border-bottom: 0; padding: 0;}
   }
 }
+
+@media screen and (max-width:1600px){
+  #autoScroll {
+    padding-right: 20px;
+    height: 600px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width:1366px){
+  #autoScroll {
+    padding-right: 20px;
+    height: 500px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width:1024px){
+  #autoScroll {
+    padding-right: 20px;
+    height: 460px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (orientation:portrait){
+  .m-privacy.modal {
+    width: 80%;
+  }
+  #autoScroll {
+    padding-right: 20px;
+    height: 660px;
+    overflow-y: scroll;
+  }
+}
