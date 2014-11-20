@@ -1274,12 +1274,7 @@ a, a:hover {
           line-height: 56px;
           font-size: 20px;
           font-family: "宋体";
-          color: #210700;
-          -o-user-select: none;
-          -ms-user-select: none;
-          -moz-user-select: none;
-          -webkit-user-select: none;
-          user-select: none; }
+          color: #210700; }
         .m-pg-yearbook .m-list li .show span {
           display: block;
           position: absolute;
@@ -1432,7 +1427,7 @@ a, a:hover {
   .m-pg-yingdaemploy .line .con {
     display: block; }
 
-.m-pg-yingdabuilding > #carousel-example-generic {
+.m-pg-yingdabuilding > #myCarousel {
   margin-top: 20px; }
 .m-pg-yingdabuilding > .list .piclist {
   margin-bottom: 0; }
@@ -1524,6 +1519,9 @@ a, a:hover {
     letter-spacing: normal;
     *word-spacing: normal;
     font-size: 12px; }
+    @media screen and (max-width: 992px) {
+      .m-pg-yingdabuilding .u-toptitle a {
+        bottom: 6px; } }
 .m-pg-yingdabuilding .u-toptitle-outer {
   clear: both;
   margin-left: 15px;
@@ -1617,5 +1615,82 @@ a, a:hover {
   @media screen and (min-width: 993px) {
     .m-pg-yingdabuilding .textlist {
       margin-top: 25px; } }
+
+.m-pg-yingdahome .list1 .m-partyStyle .m-list4 {
+  margin-top: 6px; }
+  .m-pg-yingdahome .list1 .m-partyStyle .m-list4 > a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.m-pg-yingdahome .m-staff {
+  text-align: center; }
+  .m-pg-yingdahome .m-staff .showpic {
+    margin-top: 20px; }
+    .m-pg-yingdahome .m-staff .showpic p {
+      text-align: center;
+      line-height: 30px;
+      height: 30px; }
+      .m-pg-yingdahome .m-staff .showpic p a {
+        font-size: 14px;
+        color: #333; }
+        .m-pg-yingdahome .m-staff .showpic p a:hover {
+          color: #333; }
+    .m-pg-yingdahome .m-staff .showpic > .row > div:nth-child(1) {
+      text-align: left; }
+    .m-pg-yingdahome .m-staff .showpic > .row > div:nth-child(2) {
+      text-align: center; }
+    .m-pg-yingdahome .m-staff .showpic > .row > div:nth-child(3) {
+      text-align: right; }
+    .m-pg-yingdahome .m-staff .showpic > .row p {
+      text-align: center; }
+  .m-pg-yingdahome .m-staff img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    display: inline-block; }
+  .m-pg-yingdahome .m-staff .u-toptitle {
+    text-align: left;
+    margin-top: 40px; }
+.m-pg-yingdahome .list3 {
+  margin-top: 29px; }
+
+.m-pg-publicintereset {
+  padding-top: 8px; }
+  .m-pg-publicintereset .con .j-con-btn {
+    margin-top: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "myfont";
+    font-style: italic; }
+    .m-pg-publicintereset .con .j-con-btn a {
+      color: #210700; }
+      .m-pg-publicintereset .con .j-con-btn a:hover {
+        color: #978e85; }
+  .m-pg-publicintereset .con > span {
+    background: none repeat scroll 0 0 #84746b;
+    display: block;
+    height: 1px;
+    width: 18px;
+    margin-top: 14px;
+    margin-bottom: 14px; }
+  .m-pg-publicintereset .con > p {
+    line-height: 1.5;
+    color: #210700;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ceb996; }
+    @media screen and (min-width: 993px) {
+      .m-pg-publicintereset .con > p {
+        border-width: 0; } }
+  .m-pg-publicintereset img {
+    max-width: 100%;
+    width: 100%;
+    height: auto; }
+  @media screen and (min-width: 992px) {
+    .m-pg-publicintereset .m-yearInfo {
+      position: absolute;
+      right: -5000px; } }
 
 /*# sourceMappingURL=firm-main.css.map */

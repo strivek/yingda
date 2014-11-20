@@ -263,36 +263,35 @@ require(['jquery'], function ($) {
 
 require(['jquery'], function ($) {
 
-    var conbtn = $(".m-main1-cy .j-con-btn > a");
+    var conbtn = $(".m-pg-publicintereset .j-con-btn > a");
 
 
    if(conbtn.length>0){
 
-       var right = $(".m-main1-cy .right").eq(0);
-       var oldHtml = right.html();
+//       var right = $(".m-pg-publicintereset .right").eq(0);
+//       var oldHtml = right.html();
 
-       var request= $.ajax({
-           type:"GET",
-           url: '../json/publicintereset.json'
-       });
-       request.done(function (data){
-
-           for(var k=0; k<conbtn.length; k++){
-               conbtn[k].Index = k+1;
-               conbtn[k].onmouseenter = function(){
-                   right.html('');
-                   for(var i=0; i<data[this.Index].length; i++){
-                       right.html(right.html() + '<h4 class="title"></h4><div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
-                   }
-               }
-           }
-
-
-
-       });
+//       var request= $.ajax({
+//           type:"GET",
+//           url: '../json/publicintereset.json'
+//       });
+//       request.done(function (data){
+//
+//           for(var k=0; k<conbtn.length; k++){
+//               conbtn[k].Index = k+1;
+//               conbtn[k].onmouseenter = function(){
+//                   right.html('');
+//                   for(var i=0; i<data[this.Index].length; i++){
+//                       right.html(right.html() + '<div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
+//                   }
+//               }
+//           }
+//
+//
+//
+//       });
 
        var oldTop = right.position().top;
-
 
        $(document).scroll(function(){
            if($(document).scrollTop() > oldTop){
@@ -319,3 +318,24 @@ require(['jquery'], function ($) {
     });
 
 });
+
+//require(['jquery'], function ($) {
+//    if($(".m-pg-publicintereset").length < 1) return false;
+//
+//    var imgsW = $(".m-pg-publicintereset .m-yearInfo");
+//
+//    for(var i=0; i<imgsW.length; i++){
+//        var thatImgW = imgsW[i];
+//        var thatImgs = thatImgW.getElementsByTagName("img");
+//        for(var j=0; j<thatImgs.length; j++){
+//            if(thatImgs.length === 1){
+//                thatImgW.getElementsByClassName("imgw")
+//            }
+//            if(thatImgs.length === 2){
+//
+//            }
+//        }
+//
+//    }
+//
+//});

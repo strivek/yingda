@@ -1,6 +1,6 @@
 @charset "utf-8";
 .m-pg-yingdabuilding {
-  >#carousel-example-generic{
+  >#myCarousel{
     margin-top: 20px;
   }
   >.list{
@@ -91,6 +91,9 @@
       @include inline-blk();
       @include letrSpacingMormal();
       font-size: 12px;
+      @media screen and (max-width: 992px) {
+        bottom: 6px;
+      }
     }
   }
   .u-toptitle-outer{
