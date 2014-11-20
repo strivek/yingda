@@ -1077,12 +1077,10 @@ a, a:hover {
           margin-top: 10px; } }
 
 .m-pg-newspublish {
-  padding-top: 48px;
-  margin-left: -60px; }
+  padding-top: 48px; }
   .m-pg-newspublish .list {
     width: 100%;
-    cursor: default;
-    margin-left: 60px; }
+    cursor: default; }
   .m-pg-newspublish .u-toptitle {
     max-width: 230px;
     width: 100%;
@@ -1094,6 +1092,9 @@ a, a:hover {
       color: #755a44;
       font-family: "宋体";
       font-size: 14px; }
+      @media screen and (max-width: 382px) {
+        .m-pg-newspublish .u-toptitle p {
+          font-size: 12px; } }
     .m-pg-newspublish .u-toptitle a {
       position: absolute;
       right: 0;
@@ -1101,11 +1102,17 @@ a, a:hover {
       font-size: 12px;
       color: #755a44;
       cursor: default; }
+      @media screen and (max-width: 382px) {
+        .m-pg-newspublish .u-toptitle a {
+          right: -5px; } }
   .m-pg-newspublish .pic-list {
     width: 100%;
     margin-bottom: 48px;
     overflow: hidden;
     position: relative; }
+    @media screen and (max-width: 992px) {
+      .m-pg-newspublish .pic-list > a:nth-child(1) {
+        pointer-events: none; } }
     .m-pg-newspublish .pic-list a {
       display: block;
       height: 100%; }
@@ -1120,6 +1127,12 @@ a, a:hover {
       left: 0;
       position: absolute;
       width: 100%; }
+      @media screen and (max-width: 992px) {
+        .m-pg-newspublish .pic-list .move {
+          z-index: -1;
+          position: static;
+          opacity: 1;
+          height: 44px; } }
       .m-pg-newspublish .pic-list .move > span {
         background: none repeat scroll 0 0 #4a3b34;
         display: block;
@@ -1129,6 +1142,9 @@ a, a:hover {
         max-width: 230px;
         width: 100%;
         z-index: 20; }
+        @media screen and (max-width: 992px) {
+          .m-pg-newspublish .pic-list .move > span {
+            display: none; } }
       .m-pg-newspublish .pic-list .move p {
         cursor: pointer;
         display: block;
@@ -1143,6 +1159,10 @@ a, a:hover {
         letter-spacing: -0.307em;
         *letter-spacing: normal;
         *word-spacing: -1px; }
+        @media screen and (max-width: 992px) {
+          .m-pg-newspublish .pic-list .move p {
+            margin-top: 0;
+            height: 100%; } }
         .m-pg-newspublish .pic-list .move p .pic {
           display: -moz-inline-stack;
           display: inline-block;
@@ -1161,11 +1181,36 @@ a, a:hover {
           height: 50%;
           margin: 0 10px;
           width: 1px; }
+          @media screen and (max-width: 992px) {
+            .m-pg-newspublish .pic-list .move p .fit {
+              display: none; } }
+      @media screen and (max-width: 992px) {
+        .m-pg-newspublish .pic-list .move a {
+          display: block;
+          margin-top: 4px;
+          width: 100%;
+          height: 18px;
+          background-color: #83654c; }
+          .m-pg-newspublish .pic-list .move a img {
+            vertical-align: middle;
+            width: 16px;
+            height: 11px; }
+          .m-pg-newspublish .pic-list .move a:nth-child(1):after {
+            content: "点击查看";
+            vertical-align: middle;
+            color: #FFFFFF;
+            font-size: 12px; }
+          .m-pg-newspublish .pic-list .move a:nth-child(3):after {
+            content: "点击下载";
+            vertical-align: middle;
+            color: #FFFFFF;
+            font-size: 12px; } }
 
 .m-pg-newsvideo .main {
   padding-top: 30px;
   margin-left: -10px; }
 .m-pg-newsvideo .con {
+  padding-bottom: 1px;
   margin-left: 10px;
   margin-bottom: 30px;
   background: none repeat scroll 0 0 #F9F9F9; }
@@ -1184,5 +1229,248 @@ a, a:hover {
     font-size: 14px;
     color: #83654C;
     line-height: 1.5; }
+
+.pg-yearbook {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%; }
+
+.m-pg-yearbook {
+  width: 862px;
+  float: right; }
+  .m-pg-yearbook:after, .m-pg-yearbook:before {
+    display: table;
+    content: ""; }
+  .m-pg-yearbook:after {
+    clear: both; }
+  .m-pg-yearbook .m-list {
+    margin-bottom: 100px; }
+    .m-pg-yearbook .m-list li {
+      cursor: pointer; }
+      .m-pg-yearbook .m-list li .show {
+        position: relative;
+        height: 56px; }
+        .m-pg-yearbook .m-list li .show a {
+          display: block;
+          float: left;
+          width: 156px;
+          height: 56px;
+          line-height: 56px;
+          border-right: 1px solid #fff;
+          font-size: 22px;
+          font-style: italic;
+          color: #210700; }
+          .m-pg-yearbook .m-list li .show a:hover {
+            color: #714e38; }
+        .m-pg-yearbook .m-list li .show p {
+          overflow: hidden;
+          width: 660px;
+          float: left;
+          padding-left: 44px;
+          margin: 0;
+          border-left: 1px solid #b7b2a8;
+          height: 56px;
+          line-height: 56px;
+          font-size: 20px;
+          font-family: "宋体";
+          color: #210700;
+          -o-user-select: none;
+          -ms-user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          user-select: none; }
+        .m-pg-yearbook .m-list li .show span {
+          display: block;
+          position: absolute;
+          left: 152px;
+          top: 23px;
+          width: 10px;
+          height: 10px;
+          background: #b7b2a8; }
+      .m-pg-yearbook .m-list li .detail {
+        display: none; }
+        .m-pg-yearbook .m-list li .detail li {
+          position: relative; }
+          .m-pg-yearbook .m-list li .detail li:after, .m-pg-yearbook .m-list li .detail li:before {
+            display: table;
+            content: ""; }
+          .m-pg-yearbook .m-list li .detail li:after {
+            clear: both; }
+        .m-pg-yearbook .m-list li .detail p.year {
+          float: left;
+          text-align: right;
+          padding-right: 20px;
+          height: 100%;
+          width: 136px;
+          font-size: 16px;
+          font-style: italic;
+          color: #210700; }
+        .m-pg-yearbook .m-list li .detail span {
+          display: block;
+          position: absolute;
+          top: 2px;
+          left: 153px;
+          width: 8px;
+          height: 7px;
+          background: #b7b2a8; }
+        .m-pg-yearbook .m-list li .detail .wrap {
+          border-left: 1px solid #fff;
+          float: left;
+          width: 700px; }
+          .m-pg-yearbook .m-list li .detail .wrap div.wai {
+            padding-bottom: 20px;
+            border-left: 1px solid #b7b2a8; }
+            .m-pg-yearbook .m-list li .detail .wrap div.wai div.nei {
+              margin-left: 44px;
+              padding: 20px 15px;
+              background: #f9f9f9;
+              width: 435px; }
+              .m-pg-yearbook .m-list li .detail .wrap div.wai div.nei img {
+                width: 432px;
+                height: auto;
+                cursor: default; }
+            .m-pg-yearbook .m-list li .detail .wrap div.wai p {
+              cursor: text;
+              margin-top: 20px;
+              font-size: 12px;
+              color: #210700;
+              font-family: "宋体";
+              line-height: 1.5; }
+      .m-pg-yearbook .m-list li .showdetail {
+        display: block; }
+
+@media screen and (max-width: 992px) {
+  .m-pg-yingdaemploy {
+    padding-bottom: 80px; } }
+.m-pg-yingdaemploy .thead {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c6b9ac;
+  display: block;
+  cursor: default;
+  font-size: 0;
+  letter-spacing: -0.307em;
+  *letter-spacing: normal;
+  *word-spacing: -1px; }
+  .m-pg-yingdaemploy .thead span {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    letter-spacing: normal;
+    *word-spacing: normal;
+    width: 24%;
+    font-size: 18px;
+    font-family: "宋体";
+    color: #6b513c;
+    text-align: center; }
+    @media screen and (max-width: 992px) {
+      .m-pg-yingdaemploy .thead span {
+        font-size: 16px; } }
+.m-pg-yingdaemploy .main {
+  border-bottom: 1px solid #c6b9ac;
+  cursor: pointer;
+  background: url("../images/newslist-pic3.png") 2px 26px no-repeat; }
+  @media screen and (max-width: 992px) {
+    .m-pg-yingdaemploy .main {
+      background-position: -1px center; } }
+  .m-pg-yingdaemploy .main > p {
+    display: block;
+    height: 56px;
+    line-height: 56px;
+    font-size: 0;
+    letter-spacing: -0.307em;
+    *letter-spacing: normal;
+    *word-spacing: -1px;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; }
+    .m-pg-yingdaemploy .main > p span {
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline;
+      letter-spacing: normal;
+      *word-spacing: normal;
+      width: 24%;
+      text-align: center;
+      font-family: "宋体";
+      font-size: 14px;
+      color: #83654c; }
+  .m-pg-yingdaemploy .main .con {
+    display: none; }
+    .m-pg-yingdaemploy .main .con h4 {
+      margin-top: 22px;
+      padding-left: 40px;
+      font-size: 14px;
+      font-family: "宋体";
+      color: #83654c;
+      font-weight: normal; }
+    .m-pg-yingdaemploy .main .con p {
+      margin-top: 12px;
+      padding-left: 70px;
+      padding-bottom: 20px;
+      line-height: 1.8;
+      font-size: 14px;
+      font-family: "宋体";
+      color: #83654c; }
+    @media screen and (max-width: 992px) {
+      .m-pg-yingdaemploy .main .con h4, .m-pg-yingdaemploy .main .con p {
+        padding-left: 1em; } }
+.m-pg-yingdaemploy .line {
+  background: #dbd2c8 url("../images/yingdaemploy.png") 40px 24px no-repeat; }
+  @media screen and (max-width: 992px) {
+    .m-pg-yingdaemploy .line {
+      background-position: -1px 1.8em; } }
+  .m-pg-yingdaemploy .line .con {
+    display: block; }
+
+.m-pg-yingdabuilding .imglb {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 40px; }
+  .m-pg-yingdabuilding .imglb .items {
+    position: absolute;
+    float: left;
+    background: none repeat scroll 0 0 transparent; }
+    .m-pg-yingdabuilding .imglb .items li {
+      background: none repeat scroll 0 0 transparent;
+      float: left; }
+  .m-pg-yingdabuilding .imglb .tips {
+    bottom: 0;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%; }
+    .m-pg-yingdabuilding .imglb .tips .nums {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      height: 100%;
+      font-size: 0;
+      letter-spacing: -0.307em;
+      *letter-spacing: normal;
+      *word-spacing: -1px; }
+      .m-pg-yingdabuilding .imglb .tips .nums a {
+        background: none repeat scroll 0 0 #8d735d;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        zoom: 1;
+        *display: inline;
+        float: left;
+        height: 8px;
+        margin: 0 4px 0 0;
+        text-indent: -99999px;
+        width: 8px;
+        color: #333; }
 
 /*# sourceMappingURL=firm-main.css.map */

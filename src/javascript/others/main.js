@@ -306,3 +306,16 @@ require(['jquery'], function ($) {
 
 
 });
+
+
+require(['jquery'], function ($) {
+    if($(".m-pg-yingdabuilding").length < 1) return false;
+    $(document).ready(function () {
+        $('.carousel').carousel({
+            interval: 3000
+        });
+
+        $('.carousel').carousel('cycle');
+    });
+
+});

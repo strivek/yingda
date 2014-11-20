@@ -4,149 +4,188 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>应大年鉴</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
-    <script src="../javascript/ie8/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
 </head>
-<body>
-<!--头部开始-->
-<!--TODO-CY 适当的地方加上cursor:pointer-->
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <!--TODO insert 首页 by chy 2014.10.13-->
-            <li><a href="#">首页</a></li>
+<body class="pg-firms pg-yearbook">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <img src="../images/yingdafirm-logo.png" alt="应大logo"/>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <!--ToDo update .icon-->
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
-<!--头部结束-->
-<!--中间主题部分开始-->
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <div class="m-left">
-        <h3>走进应大</h3>
-        <ul>
-            <li><a href="#">关于我们</a></li>
-            <li><a href="#">应大年鉴</a></li>
-            <li><a href="#">公益慈善</a></li>
-        </ul>
-    </div>
-    <div class="m-main3-cy">
-        <h3 class="u-title">应大年鉴</h3>
 
-        <div class="yh"></div>
-        <!--分阶段年鉴-->
-        <ul class="yearbook">
-            <li>
-                <div class="show"><a href="#">2010至今</a> <span></span>
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
 
-                    <p>应大集团股份有限公司——多品牌运作，集团化发展应大集团股份有限公司——多品牌运作，集团化发展应大集团</p>
+<div class="g-pg-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>走进应大</span></h3>
+
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a href="#">关于我们</a> <!--s-grey是对已选中链接的样式，后端看这里-->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a class="s-grey" href="#">应大年鉴</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a href="#">公益慈善</a>
+                        </div>
+                    </div>
                 </div>
-                <!--每年年鉴展开详细内容-->
-                <ul class="detail">
-                    <li>
-                        <p class="year">2014</p>
-                        <span></span>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">应大年鉴</h2>
 
-                        <div class="wrap">
-                            <div class="wai">
-                                <div class="nei">
-                                    <img src="../images/yearbook-pic1.png" alt="图片展示"/>
+                <div class="yh"></div>
 
-                                    <p>
-                                        2014年3月24日，以“时光至美”的优雅灵感，于北京饭店拉开本季秋冬高级成衣大秀，呈现JZ玖姿的服装设计与品牌品格的雅致互动，以点亮这一季最温暖迷人的时光之炬。JZ玖姿与光阴荏苒交织十四年，随时光优雅流变至今，服装设计传承中国传统服饰美学与现代都市女性的从容身姿，塑造出“最懂修饰女性身形的时尚专家”的品牌美誉。</p>
-                                </div>
+                <!--当前页面html-->
+
+                <div class="m-pg-yearbook">
+
+                    <ul class="m-list">
+                        <li>
+                            <div class="show"><a href="#">2010至今</a> <span></span>
+
+                                <p>应大集团股份有限公司&mdash;&mdash;多品牌运作，集团化发展应大集团股份有限公司&mdash;&mdash;多品牌运作，集团化发展应大集团</p>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="year">2013</p>
-                        <span></span>
+                            <!--每年年鉴展开详细内容-->
+                            <ul class="detail">
+                                <li>
+                                    <p class="year">2014</p>
+                                    <span></span>
 
-                        <div class="wrap">
-                            <div class="wai">
-                                <div class="nei">
-                                    <img src="../images/yearbook-pic1.png" alt="图片展示"/>
+                                    <div class="wrap">
+                                        <div class="wai">
+                                            <div class="nei">
+                                                <img alt="图片展示" src="../images/yearbook-pic1.png">
 
-                                    <p>
-                                        2014年3月24日，以“时光至美”的优雅灵感，于北京饭店拉开本季秋冬高级成衣大秀，呈现JZ玖姿的服装设计与品牌品格的雅致互动，以点亮这一季最温暖迷人的时光之炬。JZ玖姿与光阴荏苒交织十四年，随时光优雅流变至今，服装设计传承中国传统服饰美学与现代都市女性的从容身姿，塑造出“最懂修饰女性身形的时尚专家”的品牌美誉。</p>
-                                </div>
+                                                <p>
+                                                    2014年3月24日，以“时光至美”的优雅灵感，于北京饭店拉开本季秋冬高级成衣大秀，呈现JZ玖姿的服装设计与品牌品格的雅致互动，以点亮这一季最温暖迷人的时光之炬。JZ玖姿与光阴荏苒交织十四年，随时光优雅流变至今，服装设计传承中国传统服饰美学与现代都市女性的从容身姿，塑造出“最懂修饰女性身形的时尚专家”的品牌美誉。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="year">2013</p>
+                                    <span></span>
+
+                                    <div class="wrap">
+                                        <div class="wai">
+                                            <div class="nei">
+                                                <img alt="图片展示" src="../images/yearbook-pic1.png">
+
+                                                <p>
+                                                    2014年3月24日，以“时光至美”的优雅灵感，于北京饭店拉开本季秋冬高级成衣大秀，呈现JZ玖姿的服装设计与品牌品格的雅致互动，以点亮这一季最温暖迷人的时光之炬。JZ玖姿与光阴荏苒交织十四年，随时光优雅流变至今，服装设计传承中国传统服饰美学与现代都市女性的从容身姿，塑造出“最懂修饰女性身形的时尚专家”的品牌美誉。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show">
+                                <a href="#">2001-2010</a>
+                                <span></span>
+
+                                <p>应大集团股份有限公司&mdash;&mdash;多品牌运作，集团化发展</p>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <div class="show">
-                    <a href="#">2001-2010</a>
-                    <span></span>
+                            <ul class="detail">
+                                <li>
+                                    <p class="year">2001</p>
+                                    <span></span>
 
-                    <p>应大集团股份有限公司——多品牌运作，集团化发展</p>
+                                    <div class="wrap">
+                                        <div class="wai">
+                                            <div class="nei">
+                                                <img alt="图片展示" src="../images/yearbook-pic1.png">
+
+                                                <p>
+                                                    2014年3月24日，以“时光至美”的优雅灵感，于北京饭店拉开本季秋冬高级成衣大秀，呈现JZ玖姿的服装设计与品牌品格的雅致互动，以点亮这一季最温暖迷人的时光之炬。JZ玖姿与光阴荏苒交织十四年，随时光优雅流变至今，服装设计传承中国传统服饰美学与现代都市女性的从容身姿，塑造出“最懂修饰女性身形的时尚专家”的品牌美誉。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show"><a href="#">1995-2001</a> <span></span>
+
+                                <p>应大集团股份有限公司&mdash;&mdash;多品牌运作，集团化发展</p></div>
+                        </li>
+                        <li>
+                            <div class="show"><a href="#">1992-1995</a> <span></span>
+
+                                <p>应大集团股份有限公司&mdash;&mdash;多品牌运作，集团化发展</p></div>
+                        </li>
+                    </ul>
+
                 </div>
-                <ul class="detail">
-                    <li>
-                        <p class="year">2001</p>
-                        <span></span>
 
-                        <div class="wrap">
-                            <div class="wai">
-                                <div class="nei">
-                                    <img src="../images/yearbook-pic1.png" alt="图片展示"/>
+                <!--当前页面html End-->
 
-                                    <p>
-                                        2014年3月24日，以“时光至美”的优雅灵感，于北京饭店拉开本季秋冬高级成衣大秀，呈现JZ玖姿的服装设计与品牌品格的雅致互动，以点亮这一季最温暖迷人的时光之炬。JZ玖姿与光阴荏苒交织十四年，随时光优雅流变至今，服装设计传承中国传统服饰美学与现代都市女性的从容身姿，塑造出“最懂修饰女性身形的时尚专家”的品牌美誉。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <div class="show"><a href="#">1995-2001</a> <span></span>
+            </div>
+        </div>
+    </div>
 
-                    <p>应大集团股份有限公司——多品牌运作，集团化发展</p></div>
-            </li>
-            <li>
-                <div class="show"><a href="#">1992-1995</a> <span></span>
 
-                    <p>应大集团股份有限公司——多品牌运作，集团化发展</p></div>
-            </li>
-        </ul>
-        <!--分阶段年鉴结束-->
+</div>
+
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
+        </div>
     </div>
 </div>
-<!--中间主题部分结束-->
 
-<!--底部开始-->
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
-    </div>
-</div>
-<!--底部结束-->
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
+
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>
