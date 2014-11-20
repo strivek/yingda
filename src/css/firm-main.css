@@ -601,6 +601,7 @@ a, a:hover {
       padding-bottom: 46px; } }
 
 .g-footer {
+  z-index: 200;
   position: relative;
   overflow: hidden;
   border-top: 1px solid #ADA18F;
