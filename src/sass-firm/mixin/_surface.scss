@@ -1,0 +1,7 @@
+@mixin propprefix($propName,$value){
+  -o-#{$propName}:$value;
+  -ms-#{$propName}:$value;
+  -moz-#{$propName}:$value;
+  -webkit-#{$propName}:$value;
+  #{$propName}:$value;
+}
