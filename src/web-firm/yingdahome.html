@@ -1,151 +1,231 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>应大-应大之家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.carousel.css"/>
 </head>
-<body>
-<!--头部-->
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <li><a href="#">首页</a></li>
+<body class="pg-firms">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <img src="../images/yingdafirm-logo.png" alt="应大logo"/>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <!--ToDo update .icon-->
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
 
-<!--头部结束-->
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
 
-<!--中间部分-->
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <!--左侧栏-->
-    <div class="m-left">
-        <h3>企业文化</h3>
-        <ul>
-            <li><a href="#">应大之家</a></li>
-            <li><a href="#">在线党建</a></li>
-        </ul>
-    </div>
-<!--左侧栏结束-->
-  <!--  右侧主要内容-->
-    <div class="m-main-cy">
-        <h2 class="u-title">应大之家</h2>
-        <div class="yh"></div>
-        <!--TODO update .imglb cy 10.15-->
-        <div class="slideBox imglb" id="demo3">
-            <ul class="items">
-                <li><img src="../images/yingdabuilding.jpg"></li>
-                <li><img src="../images/yingdabuilding1.jpg"></li>
-                <li><img src="../images/yingdabuilding.jpg"></li>
-                <li><img src="../images/yingdabuilding1.jpg"></li>
-            </ul>
-        </div>
-        <!--TODO insert .emp by chy 2014.10.13-->
-        <div class="emp">
-         <div class="left list">
-            <div class="u-toptitle">
-                <p>最佳员工</p>
-                <a href="#">更多&gt</a>
-            </div>
-            <ul class="showpic">
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
+<div class="g-pg-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>企业文化</span></h3>
 
-                    <p><a href="">张三</a></p>
-                </li>
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-
-                    <p><a href="">张三</a></p>
-                </li>
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-
-                    <p><a href="">张三</a></p>
-                </li>
-            </ul>
-
-          </div>
-         <div class="right list">
-            <div class="u-toptitle">
-                <p>最佳员工</p>
-                <a href="#">更多&gt</a>
-            </div>
-            <ul class="showpic">
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-                    <p><a href="">张三</a></p>
-                </li>
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-
-                    <p><a href="">张三</a></p>
-                </li>
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-
-                    <p><a href="">张三</a></p>
-                </li>
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-
-                    <p><a href="">张三</a></p>
-                </li>
-                <li><a href=""><img src="../images/firm-index2.png" alt="人物展示"/></a>
-
-                    <p><a href="">张三</a></p>
-                </li>
-            </ul>
-
-         </div>
-        </div>
-        <!--TODO insert .rBottom by chy 2014.10.13-->
-        <div class="rBottom">
-            <div class="changemargin left">
-                <div class="u-toptitle">
-                    <p>员工福利</p>
-                    <a href="#">更多&gt</a>
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a class="s-grey" href="#">应大之家</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a href="#">在线党建</a>
+                        </div>
+                    </div>
                 </div>
-                <!--TODO update .m-list3 cy-9.2-->
-                <div class="m-list3">
-                    <a href="#">
-                        <img src="../images/firm-index3.png" alt=""/>
-                    </a>
-                    <div class="move">
-                        <span></span>
-                        <p>中秋节员工福利发放</p>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">应大之家</h2>
+
+                <div class="yh"></div>
+
+
+                <div class="m-pg-yingdabuilding m-pg-yingdahome">
+
+
+                    <div id="myCarousel" class="carousel slide" data-interval="2000">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0"
+                                class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../images/yingdabuilding.jpg" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img src="../images/yingdabuilding1.jpg" alt="Second slide">
+                            </div>
+                            <div class="item">
+                                <img src="../images/yingdabuilding.jpg" alt="Third slide">
+                            </div>
+                            <div class="item">
+                                <img src="../images/yingdabuilding1.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="carousel-control left" href="#myCarousel"
+                           data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel"
+                           data-slide="next">&rsaquo;</a>
                     </div>
 
-                </div>
-            </div>
-            <div class="changemargin right">
-                <div class="u-toptitle">
-                    <p>员工福利</p>
-                    <a href="#">更多&gt</a>
-                </div>
-                <!--TODO update .m-list3 cy-9.2-->
-                <div class="m-list3">
-                    <a href="#">
-                        <img src="../images/firm-index3.png" alt=""/>
-                    </a>
-                    <div class="move">
-                        <span></span>
-                        <p>中秋节员工福利发放</p>
+                    <div class="m-staff">
+
+
+                        <div class="row">
+                            <div class="clearfix">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="u-toptitle">
+                                        <p>最佳员工</p>
+                                        <a href="#">更多&gt;</a>
+                                    </div>
+
+                                    <div class="showpic">
+                                        <div class="row">
+
+                                            <div class="col-md-4 col-sm-4 col-xs-4"><a href=""><img alt="人物展示" src="../images/firm-index2.png"></a>
+
+                                                <p><a href="">张三</a></p>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-4 col-xs-4"><a href=""><img alt="人物展示" src="../images/firm-index2.png"></a>
+
+                                                <p><a href="">张三</a></p>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-4 col-xs-4"><a href=""><img alt="人物展示" src="../images/firm-index2.png"></a>
+
+                                                <p><a href="">张三</a></p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="u-toptitle">
+                                        <p>员工心声</p>
+                                        <a href="#">更多&gt;</a>
+                                    </div>
+
+                                    <div class="showpic">
+                                        <div class="row">
+
+                                            <div class="col-md-4 col-sm-4 col-xs-4"><a href=""><img alt="人物展示" src="../images/firm-index2.png"></a>
+
+                                                <p><a href="">张三</a></p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4"><a href=""><img alt="人物展示" src="../images/firm-index2.png"></a>
+
+                                                <p><a href="">张三</a></p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4"><a href=""><img alt="人物展示" src="../images/firm-index2.png"></a>
+
+                                                <p><a href="">张三</a></p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+
+                    <div class="list list1 list3">
+
+                        <div class="row">
+
+                            <div class="clearfix m-partyStyle">
+                                <div class="piclist col-md-6 col-sm-6 col-xs-12 center-block">
+                                    TODO update .m-list3 cy9.1
+                                    <div class="u-toptitle">
+                                    <p>组织介绍</p>
+                                    <a href="#">更多&gt;</a>
+                                    </div>
+
+                                    <div class="m-list3 m-list4">
+                                        <a href="#">
+                                            <img alt="" src="../images/firm-index3.png">
+                                        </a>
+
+                                        <div class="move" style="bottom: -40px;">
+                                            <span></span>
+
+                                            <p>中秋节员工福利发放</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="piclist col-md-6 col-sm-6 col-xs-12 center-block">
+                                    TODO update .m-list3 cy9.1
+                                    <div class="u-toptitle">
+                                    <p>组织介绍</p>
+                                    <a href="#">更多&gt;</a>
+                                    </div>
+
+                                    <div class="m-list3 m-list4">
+                                        <a href="#">
+                                            <img alt="" src="../images/firm-index3.png">
+                                        </a>
+
+                                        <div class="move" style="bottom: -40px;">
+                                            <span></span>
+
+                                            <p>中秋节员工福利发放</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
@@ -153,24 +233,25 @@
             </div>
         </div>
     </div>
-  <!--  右侧主要内容结束-->
 
 </div>
-<!--中间部分结束-->
-<!--底部内容开始-->
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
+
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
+        </div>
     </div>
 </div>
-<!--底部结束-->
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
 
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
+
 </body>
 </html>

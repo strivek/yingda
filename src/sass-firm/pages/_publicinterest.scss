@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.m-pg-publicintereset {
+  padding-top: 8px;
+  .con{
+    .j-con-btn{
+      margin-top: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      font-family: "myfont";
+      font-style: italic;
+      a{
+        color: #210700;
+        &:hover{
+          color: #978e85;
+        }
+      }
+    }
+    >span{
+      background: none repeat scroll 0 0 #84746b;
+      display: block;
+      height: 1px;
+      width: 18px;
+      margin-top: 14px;
+      margin-bottom: 14px;
+    }
+    >p{
+//      margin-top: 16px;
+      line-height: 1.5;
+      color: #210700;
+      font-size: 14px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ceb996;
+      @media screen and (min-width: 993px){
+        border-width: 0;
+      }
+    }
+  }
+  img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .m-yearInfo{
+    @media screen and (min-width: 992px){
+      position: absolute;
+      right: -5000px;
+    }
+  }
+}
