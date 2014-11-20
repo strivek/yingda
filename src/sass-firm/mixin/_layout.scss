@@ -15,8 +15,8 @@
 }
 
 @mixin letrSpacingMormal(){
-  letter-spacing: normal;
-  *word-spacing: normal;
+  letter-spacing: normal !important;
+  *word-spacing: normal !important;
 }
 
 @mixin containerMedia(){
