@@ -10,6 +10,7 @@
 }
 
 .g-footer{
+  z-index:200 ;
   position: relative;
   @media screen and (min-width: 320px) {
     position: fixed;
