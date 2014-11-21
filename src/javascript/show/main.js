@@ -32,3 +32,22 @@ require(['jquery'], function ($) {
         });
         });
 });
+
+require(['jquery'], function ($) {
+
+    if($(".m-pg-yearbook").length < 1) return false;
+
+    var btns = $(".m-show-1");
+    var cnt = $(".m-detail");
+
+    for(var i=0; i<btns.length; i++){
+        btns[i].index = i;
+        btns[i].onclick = function(){
+            for(var j=0; j<cnt.length; j++){
+                cnt[j].style.display = "none";
+            }
+            cnt[this.index].style.display = "block";
+        };
+    }
+
+});
