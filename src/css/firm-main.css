@@ -1689,8 +1689,21 @@ a, a:hover {
     width: 100%;
     height: auto; }
   @media screen and (min-width: 992px) {
-    .m-pg-publicintereset .m-yearInfo {
+    .m-pg-publicintereset .m-yearInfo > div {
       position: absolute;
       right: -5000px; } }
+  @media screen and (min-width: 992px) and (min-width: 993px) {
+    .m-pg-publicintereset .m-yearInfo > div {
+      width: 90%; } }
+
+  .m-pg-publicintereset .m-yearInfo p {
+    line-height: 34px;
+    color: #000000;
+    font-size: 14px; }
+  @media screen and (min-width: 993px) {
+    .m-pg-publicintereset .m-left > div:nth-child(1) .m-yearInfo > div {
+      right: -454px; }
+      .m-pg-publicintereset .m-left > div:nth-child(1) .m-yearInfo > div:nth-child(2) {
+        top: 300px; } }
 
 /*# sourceMappingURL=firm-main.css.map */

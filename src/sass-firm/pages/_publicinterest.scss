@@ -44,8 +44,34 @@
   }
   .m-yearInfo{
     @media screen and (min-width: 992px){
-      position: absolute;
-      right: -5000px;
+      >div{
+        position: absolute;
+        right: -5000px;
+        @media screen and (min-width: 993px){
+          width: 90%;
+        }
+      }
+    }
+    p{
+      line-height: 34px;
+      color: #000000;
+      font-size: 14px;
+    }
+  }
+  .m-left{
+    >div{
+      @media screen and (min-width: 993px){
+        &:nth-child(1){
+          .m-yearInfo{
+            >div{
+              right: -454px;
+              &:nth-child(2){
+                top:300px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
