@@ -1237,103 +1237,148 @@ a, a:hover {
   width: 100%; }
 
 .m-pg-yearbook {
-  width: 862px;
-  float: right; }
-  .m-pg-yearbook:after, .m-pg-yearbook:before {
-    display: table;
-    content: ""; }
-  .m-pg-yearbook:after {
-    clear: both; }
-  .m-pg-yearbook .m-list {
-    margin-bottom: 100px; }
-    .m-pg-yearbook .m-list li {
-      cursor: pointer; }
-      .m-pg-yearbook .m-list li .show {
-        position: relative;
-        height: 56px; }
-        .m-pg-yearbook .m-list li .show a {
-          display: block;
-          float: left;
-          width: 156px;
-          height: 56px;
-          line-height: 56px;
-          border-right: 1px solid #fff;
-          font-size: 22px;
-          font-style: italic;
-          color: #210700; }
-          .m-pg-yearbook .m-list li .show a:hover {
-            color: #714e38; }
-        .m-pg-yearbook .m-list li .show p {
-          overflow: hidden;
-          width: 660px;
-          float: left;
-          padding-left: 44px;
-          margin: 0;
-          border-left: 1px solid #b7b2a8;
-          height: 56px;
-          line-height: 56px;
-          font-size: 20px;
-          font-family: "宋体";
-          color: #210700; }
-        .m-pg-yearbook .m-list li .show span {
-          display: block;
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto; }
+  .m-pg-yearbook ul {
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    height: auto; }
+    @media screen and (max-width: 992px) {
+      .m-pg-yearbook ul {
+        border-width: 0; } }
+    .m-pg-yearbook ul .m-show-1 .left, .m-pg-yearbook .m-show-1 ul .left, .m-pg-yearbook ul .m-detail .left, .m-pg-yearbook .m-detail ul .left {
+      position: relative;
+      float: left;
+      height: auto;
+      width: 16.6%;
+      font-style: italic;
+      word-break: break-all; }
+      .m-pg-yearbook ul .m-show-1 .left .u-dit, .m-pg-yearbook .m-show-1 ul .left .u-dit, .m-pg-yearbook ul .m-detail .left .u-dit, .m-pg-yearbook .m-detail ul .left .u-dit {
+        z-index: 2;
+        position: absolute;
+        background-color: #b7b2a8; }
+    .m-pg-yearbook ul .m-show-1 .right, .m-pg-yearbook .m-show-1 ul .right, .m-pg-yearbook ul .m-detail .right, .m-pg-yearbook .m-detail ul .right {
+      position: relative;
+      margin-left: 20%;
+      height: auto;
+      word-break: break-all; }
+      .m-pg-yearbook ul .m-show-1 .right .u-border, .m-pg-yearbook .m-show-1 ul .right .u-border, .m-pg-yearbook ul .m-detail .right .u-border, .m-pg-yearbook .m-detail ul .right .u-border {
+        z-index: 1;
+        position: absolute;
+        left: -4.35345%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-left: 1px solid #FFFFFF; }
+        @media screen and (max-width: 992px) {
+          .m-pg-yearbook ul .m-show-1 .right .u-border, .m-pg-yearbook .m-show-1 ul .right .u-border, .m-pg-yearbook ul .m-detail .right .u-border, .m-pg-yearbook .m-detail ul .right .u-border {
+            border-color: transparent;
+            border-color: transparent; } }
+        .m-pg-yearbook ul .m-show-1 .right .u-border:before, .m-pg-yearbook .m-show-1 ul .right .u-border:before, .m-pg-yearbook ul .m-detail .right .u-border:before, .m-pg-yearbook .m-detail ul .right .u-border:before {
+          content: "";
           position: absolute;
-          left: 152px;
-          top: 23px;
-          width: 10px;
-          height: 10px;
-          background: #b7b2a8; }
-      .m-pg-yearbook .m-list li .detail {
-        display: none; }
-        .m-pg-yearbook .m-list li .detail li {
-          position: relative; }
-          .m-pg-yearbook .m-list li .detail li:after, .m-pg-yearbook .m-list li .detail li:before {
-            display: table;
-            content: ""; }
-          .m-pg-yearbook .m-list li .detail li:after {
-            clear: both; }
-        .m-pg-yearbook .m-list li .detail p.year {
-          float: left;
-          text-align: right;
-          padding-right: 20px;
+          left: 0;
+          top: 0;
+          width: 1px;
           height: 100%;
-          width: 136px;
-          font-size: 16px;
-          font-style: italic;
-          color: #210700; }
-        .m-pg-yearbook .m-list li .detail span {
-          display: block;
-          position: absolute;
-          top: 2px;
-          left: 153px;
-          width: 8px;
-          height: 7px;
-          background: #b7b2a8; }
-        .m-pg-yearbook .m-list li .detail .wrap {
-          border-left: 1px solid #fff;
-          float: left;
-          width: 700px; }
-          .m-pg-yearbook .m-list li .detail .wrap div.wai {
-            padding-bottom: 20px;
-            border-left: 1px solid #b7b2a8; }
-            .m-pg-yearbook .m-list li .detail .wrap div.wai div.nei {
-              margin-left: 44px;
-              padding: 20px 15px;
-              background: #f9f9f9;
-              width: 435px; }
-              .m-pg-yearbook .m-list li .detail .wrap div.wai div.nei img {
-                width: 432px;
-                height: auto;
-                cursor: default; }
-            .m-pg-yearbook .m-list li .detail .wrap div.wai p {
-              cursor: text;
-              margin-top: 20px;
-              font-size: 12px;
-              color: #210700;
-              font-family: "宋体";
-              line-height: 1.5; }
-      .m-pg-yearbook .m-list li .showdetail {
-        display: block; }
+          background-color: #b7b2a8; }
+  .m-pg-yearbook li {
+    height: auto;
+    width: 100%; }
+  .m-pg-yearbook .m-show-1 {
+    line-height: 56px;
+    height: auto;
+    width: 100%;
+    cursor: pointer; }
+    .m-pg-yearbook .m-show-1:before, .m-pg-yearbook .m-show-1:after {
+      content: " ";
+      display: table; }
+    .m-pg-yearbook .m-show-1:after {
+      clear: both; }
+    .m-pg-yearbook .m-show-1 .left {
+      font-size: 22px; }
+      @media screen and (max-width: 992px) {
+        .m-pg-yearbook .m-show-1 .left {
+          padding-top: 8px;
+          font-size: 18px; } }
+      @media screen and (max-width: 640px) {
+        .m-pg-yearbook .m-show-1 .left {
+          line-height: 1.5;
+          font-size: 16px; } }
+      .m-pg-yearbook .m-show-1 .left .u-dit {
+        right: -5px;
+        top: 50%;
+        margin-top: -5px;
+        width: 10px;
+        height: 10px; }
+      .m-pg-yearbook .m-show-1 .left a {
+        color: #210700; }
+        .m-pg-yearbook .m-show-1 .left a:hover {
+          color: #714738; }
+    .m-pg-yearbook .m-show-1 .right {
+      font-size: 20px; }
+      @media screen and (max-width: 992px) {
+        .m-pg-yearbook .m-show-1 .right {
+          padding-top: 8px;
+          font-size: 14px; } }
+      @media screen and (max-width: 640px) {
+        .m-pg-yearbook .m-show-1 .right {
+          padding-bottom: 8px;
+          line-height: 1.5;
+          font-size: 14px; } }
+    .m-pg-yearbook .m-show-1 p {
+      color: #210700; }
+  .m-pg-yearbook .m-detail {
+    display: none;
+    height: auto;
+    width: 100%; }
+    .m-pg-yearbook .m-detail:before, .m-pg-yearbook .m-detail:after {
+      content: " ";
+      display: table; }
+    .m-pg-yearbook .m-detail:after {
+      clear: both; }
+    .m-pg-yearbook .m-detail .left {
+      text-align: right;
+      font-size: 16px; }
+      @media screen and (max-width: 992px) {
+        .m-pg-yearbook .m-detail .left {
+          font-size: 16px; } }
+      @media screen and (max-width: 640px) {
+        .m-pg-yearbook .m-detail .left {
+          line-height: 1.5;
+          font-size: 14px; } }
+      .m-pg-yearbook .m-detail .left .u-dit {
+        right: -4px;
+        top: 50%;
+        margin-top: -3px;
+        width: 8px;
+        height: 7px; }
+      .m-pg-yearbook .m-detail .left .num {
+        padding-right: 20px;
+        color: #210700; }
+        @media screen and (max-width: 360px) {
+          .m-pg-yearbook .m-detail .left .num {
+            margin-left: -0.5em; } }
+    .m-pg-yearbook .m-detail .right {
+      padding-bottom: 20px; }
+    .m-pg-yearbook .m-detail .cnt {
+      padding: 20px 15px;
+      background-color: #f9f9f9;
+      width: 65.45%; }
+      @media screen and (max-width: 992px) {
+        .m-pg-yearbook .m-detail .cnt {
+          width: 100%; } }
+    .m-pg-yearbook .m-detail img {
+      max-width: 100%;
+      width: 100%;
+      height: auto; }
+    .m-pg-yearbook .m-detail p {
+      margin-top: 20px;
+      line-height: 1.5;
+      font-size: 12px;
+      color: #210700;
+      cursor: text; }
 
 @media screen and (max-width: 992px) {
   .m-pg-yingdaemploy {
