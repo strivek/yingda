@@ -2,6 +2,7 @@
 
 .m-pg-publicintereset {
   padding-top: 8px;
+  padding-bottom: 50px;
   .con{
     .j-con-btn{
       margin-top: 18px;
@@ -32,7 +33,7 @@
       padding-top: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid #ceb996;
-      @media screen and (min-width: 993px){
+      @media screen and (min-width: 1025px){
         border-width: 0;
       }
     }
@@ -42,10 +43,45 @@
     width: 100%;
     height: auto;
   }
+  >.row{
+    >div{
+      @media screen and (min-width: 1025px){
+        width: 50%;
+      }
+    }
+  }
   .m-yearInfo{
-    @media screen and (min-width: 992px){
-      position: absolute;
-      right: -5000px;
+    @media screen and (min-width: 1025px){
+      >div{
+        position: absolute;
+        right: -5000px;
+        @media screen and (min-width: 1025px){
+          width: 90%;
+        }
+      }
+    }
+    p{
+      line-height: 34px;
+      color: #000000;
+      font-size: 14px;
+    }
+  }
+  .m-left{
+    >div{
+      @media screen and (min-width: 1025px){
+        .j-right{
+          >div{
+            right: -99%;
+            &:nth-child(1){
+              top:15px;
+            }
+            &:nth-child(2){
+              top:250px;
+            }
+          }
+          p{display: block !important;}
+        }
+      }
     }
   }
 }
