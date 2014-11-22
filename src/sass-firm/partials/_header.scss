@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.g-page-top{
+  width: 100%;
+  overflow: hidden;
+  background-color: #FAFAFA;
+}
+
+.header{
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+//  width: 60.64%;
+//  @media screen and (max-width: 1300px){
+//    width: 80%;
+//  }
+//  @media screen and (max-width: 768px){
+//    width: 100%;
+//  }
+  height: auto;
+  overflow: visible;
+  @include letrSpacing0();
+  .logo{
+    text-align: right;
+    vertical-align: middle;
+    width: 13.8%;
+    @media screen and (min-width: 1131px){
+      width: 9%;
+    }
+    @media screen and (max-width: 640px){
+      text-align: center;
+      width: 100%;
+    }
+    height: auto;
+    @include inline-blk();
+    img{
+      max-width: 106px;
+      min-width: 69px;
+      width: auto;
+      min-height: 55px;
+      max-height: 81px;
+      height: auto;
+      @include inline-blk();
+    }
+  }
+  .m-nav{
+    vertical-align: middle;
+    line-height: 1;
+    width: 77.2%;
+    height: auto;
+    @include inline-blk();
+    @media screen and (min-width: 1131px){
+      width: 84%;
+    }
+    @media screen and (max-width: 640px) {
+      margin-top: 6px;
+      line-height: 2;
+      width: 100%;
+      border-top:1px solid #afa28d;
+    }
+  }
+  li{
+    text-align: center;
+    width: 17.6%;
+    &.first{
+      width: 12%;
+    }
+    height: auto;
+    border-right: 1px solid #a6917f;
+    &.last{
+      border-right-width: 0;
+    }
+    @media screen and (max-width: 640px){
+      border-right-width: 0;
+    }
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    @include inline-blk();
+    a{
+      font-size: 14px;
+      @media screen and (max-width: 640px){
+        font-size: 12px;
+      }
+      font-weight: 700;
+      font-family:"宋体";
+      color: #83654c;
+      letter-spacing: normal;
+      *word-spacing: normal;
+    }
+  }
+  .icon{
+    margin-left:-6px;
+    vertical-align: middle;
+    line-height: 1;
+    width: 9%;
+    height: 23px;
+    @include inline-blk();
+    white-space: nowrap;
+    @media screen and (min-width: 1131px){
+      width: 7%;
+    }
+    @media screen and (max-width: 640px){
+      display: none;
+//      border-top:1px solid #afa28d;
+//      line-height: 2;
+//      width: 22.8%;
+//      text-align: right;
+    }
+    a{
+      padding-right: 8%;
+      font-size: 20px;
+      color: #967e6b;
+      letter-spacing: normal;
+      *word-spacing: normal;
+    }
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

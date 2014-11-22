@@ -1,95 +1,165 @@
 @charset "utf-8";
-body{ overflow-y: scroll; overflow-x:hidden; width:100%;}
-.m-main3-cy {
-  width: 862px;
-  float: right;
-  &:after, &:before {
-    display: table;
-    content: "";
-  }
-  &:after {
-    clear: both;
-  }
-  .yearbook {margin-bottom:100px;
-    li {cursor:pointer;
-      .show{   position: relative;
-        height: 56px;
-      a {display: block;
-        float: left;
-        width: 156px;
-        height: 56px;
-        line-height: 56px;
-        border-right: 1px solid #fff;
-        font-size: 22px;
-        font-style: italic;
-        color: #210700;
-        &:hover{color:#714e38;}
-      }
-      p{
-        overflow: hidden;
-        width: 660px;
-        float: left;
-        padding-left: 44px;
-        margin: 0;
-        border-left: 1px solid #b7b2a8;
-        height: 56px;
-        line-height: 56px;
-        font-size:20px;
-        font-family: "宋体";
-        color:#210700;
+.pg-yearbook{overflow-y: scroll; overflow-x:hidden; width:100%;}
 
-      }
-        //年鉴方块
-      span{display: block;
-        position: absolute;
-        left:152px;
-        top: 23px;
-        width:10px;
-        height: 10px;
-        background: #b7b2a8;}
+.m-pg-yearbook {
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  ul{
+    border-top: 1px solid #FFFFFF;
+    @media screen and (max-width: 992px) {
+      border-width: 0;
     }
-      //应大年鉴展开详细内容
-
-      .detail{display: none;
-        li{position: relative;
-          &:after, &:before {
-          display: table;
+    width: 100%;
+    height: auto;
+    %left{
+      position: relative;
+      float: left;
+      height: auto;
+      width: 16.6%;
+      font-style: italic;
+      word-break: break-all;
+      .u-dit{
+        z-index:2;
+        position: absolute;
+        background-color: #b7b2a8;
+      }
+    }
+    %right{
+      position: relative;
+      margin-left:20%;
+      height: auto;
+      word-break: break-all;
+      .u-border{
+        z-index: 1;
+        position: absolute;
+        left: -4.35345%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-left: 1px solid #FFFFFF;
+        @media screen and (max-width: 992px){
+          border-color:rgba(0,0,0,0);
+          border-color: transparent;
+        }
+        &:before{
           content: "";
-        }
-          &:after {
-            clear: both;
-          }}
-        //左边年份
-        p.year{float: left;
-          text-align: right;
-          padding-right: 20px;
-          height: 100%;
-          width: 136px;
-          font-size: 16px;
-          font-style: italic;
-          color:#210700;
-        }
-        //小方块
-        span{display: block;
           position: absolute;
-          top:2px;
-          left: 153px;
-        width:8px;
-        height: 7px;
-        background: #b7b2a8;}
-        //右边年份主要事迹
-        .wrap{border-left:1px solid #fff;float: left;
-          width: 700px;
-         div.wai{ padding-bottom:20px;
-          border-left: 1px solid #b7b2a8;
-          div.nei{margin-left: 44px;padding: 20px 15px; background: #f9f9f9;
-                   width:435px;
-            img{ width: 432px;height:auto;cursor:default;}}
-          p{cursor:text; margin-top:20px;font-size:12px; color:#210700; font-family: "宋体"; line-height: 1.5;}
-        }
+          left: 0;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background-color: #b7b2a8;
         }
       }
-      .showdetail{ display:block;}
+    }
+  }
+  li{
+    height: auto;
+    width: 100%;
+  }
+  .m-show-1{
+    line-height: 56px;
+    height: auto;
+    width: 100%;
+    @include clearfix();
+    cursor: pointer;
+    .left{
+      @extend %left;
+      font-size: 22px;
+      @media screen and (max-width: 992px){
+        padding-top: 8px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 640px){
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      .u-dit{
+        right: -5px;
+        top:50%;
+        margin-top: -5px;
+        width: 10px;
+        height: 10px;
+      }
+      a{
+        color: #210700;
+        &:hover{
+          color: #714738;
+        }
+      }
+    }
+    .right{
+      @extend %right;
+      font-size: 20px;
+      @media screen and (max-width: 992px){
+        padding-top: 8px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 640px){
+        padding-bottom:8px;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+    }
+    p{
+      color: #210700;
+    }
+  }
+  .m-detail{
+    display: none;
+    height: auto;
+    width: 100%;
+    @include clearfix();
+    .left{
+      text-align: right;
+      @extend %left;
+      font-size: 16px;
+      @media screen and (max-width: 992px){
+        font-size: 16px;
+      }
+      @media screen and (max-width: 640px){
+        line-height: 1.5;
+        font-size: 14px;
+      }
+      .u-dit{
+        right: -4px;
+        top:50%;
+        margin-top: -3px;
+        width: 8px;
+        height: 7px;
+      }
+      .num{
+        padding-right: 20px;
+        color: #210700;
+        @media screen and (max-width: 360px){
+          margin-left: -0.5em;
+        }
+      }
+    }
+    .right{
+      padding-bottom: 20px;
+      @extend %right;
+    }
+    .cnt{
+      padding: 20px 15px;
+      background-color: #f9f9f9;
+      width: 65.45%;
+      @media screen and (max-width: 992px){
+        width: 100%;
+      }
+    }
+    img{
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    p{
+      margin-top: 20px;
+      line-height: 1.5;
+      font-size: 12px;
+      color: #210700;
+      cursor: text;
     }
   }
 }

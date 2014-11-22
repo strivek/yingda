@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.m-pg-builddetail{
+  padding-top: 30px;
+  .ti{
+    font-weight: normal;
+    font-size: 18px;
+    color: #83654c;
+  }
+  %timeAndAuthor{
+    margin-top: 16px;
+    font-size: 14px;
+    display: inline-block;
+    color: #83654c;
+  }
+  .time{
+    margin-right: 26px;
+  }
+  .author{
+    @extend %timeAndAuthor;
+  }
+  .article{
+    padding-top: 22px;
+//    img{
+//      max-width: 863px;
+//      width: 100%;
+//      max-height: 368px;
+//      height: auto;
+//    }
+    p{
+      margin-top: 20px;
+      line-height: 1.5;
+      color: #83654c;
+      font-size: 14px;
+    }
+  }
+}

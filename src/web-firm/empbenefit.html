@@ -4,77 +4,133 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>员工福利列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="../javascript/ie8/html5shiv.js"></script>
+    <script src="../javascript/ie8/respond.src.js"></script>
+    <![endif]-->
 </head>
-<body>
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <li><a href="#">首页</a></li>
+<body class="pg-firms">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <img src="../images/yingdafirm-logo.png" alt="应大logo"/>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <!--ToDo update .icon-->
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <!--左侧栏-->
-    <div class="m-left">
-        <h3>走进应大</h3>
-        <ul>
-            <li><a href="#">企业文化</a></li>
-            <li><a href="#">应大之家</a></li>
-            <li><a href="#">在线党建</a></li>
-        </ul>
+
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
+
+<div class="g-pg-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>企业文化</span></h3>
+
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a class="s-grey" href="#">应大之家</a> <!--s-grey是对已选中链接的样式，后端看这里-->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-6">
+                        <div class="item">
+                            <a href="#">在线党建</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">员工福利</h2>
+                <div class="yh"></div>
+
+                <!--当前页面html-->
+
+                <div class="m-pg-empbenefit">
+                    <ul class="list">
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                        <li><span class="title">发展党员程序</span><a class="more" href="#">查看详情</a></li>
+                    </ul>
+                </div>
+
+                <!--当前页面html End-->
+
+            </div>
+        </div>
     </div>
 
-    <div class="m-empbenefit-cy">
-        <h4 class="u-title">员工福利</h4>
-        <div class="yh"></div>
-        <ul class="list">
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-            <li><span class="title">发展党员程序</span><a href="#" class="more">查看详情</a></li>
-        </ul>
-        <div class="u-page"><a href="#" class="pre">上一页</a> <a href="#" class="pagef">1</a> <a href="#" class="pagef">2</a><a href="#" class="pagef">3</a><a href="#" class="pagef">4</a><a href="#" class="pagef">5</a> <a href="#" class="next">下一页</a></div>
+    <div class="container">
+        <div class="u-page">
+            <a class="pre" href="#">上一页</a>
+            <a class="pagef" href="#">1</a>
+            <a class="pagef" href="#">2</a>
+            <a class="pagef" href="#">3</a>
+            <a class="pagef" href="#">4</a>
+            <a class="pagef" href="#">5</a>
+            <a class="next" href="#">下一页</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
+        </div>
     </div>
 </div>
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
-    </div>
-</div>
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
+
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
 </body>
 </html>

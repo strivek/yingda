@@ -1,11 +1,26 @@
-.m-bestemp-cy {
-  width: 862px;
-  float: right;
-  .list{padding:30px 0; border-bottom:1px dotted #d1c8be;
-    @include clearfix();
-    .pic{display:inline-block;float:left; width:120px; height:120px;}
-    .con {display:inline-block; float:right;width:706px;margin-top:-4px;
-      font-size:14px; line-height:180%; color:#83654c;font-family:"宋体";
-}
+@charset "utf-8";
+
+.m-pg-bestemp{
+  .lists{
+    .list{
+      border-bottom: 1px dotted #d1c8be;
+      @media screen and (max-width: 992px){
+        border-color: #83654c;
+      }
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .pic{
+      margin-right: 20px;
+      margin-bottom: 3px;
+      width: 120px;
+      height: 120px;
+    }
+    .con{
+      margin-top: -4px;
+      line-height:180%;
+      font-size:14px;
+      color: #83654c;
+    }
   }
 }

@@ -263,47 +263,107 @@ require(['jquery'], function ($) {
 
 require(['jquery'], function ($) {
 
-    var conbtn = $(".m-main1-cy .j-con-btn > a");
-
+    var conbtn = $(".m-pg-publicintereset .j-con-btn > a");
 
    if(conbtn.length>0){
 
-       var right = $(".m-main1-cy .right").eq(0);
-       var oldHtml = right.html();
+//       var right = $(".m-pg-publicintereset .right").eq(0);
+//       var oldHtml = right.html();
 
-       var request= $.ajax({
-           type:"GET",
-           url: '../json/publicintereset.json'
-       });
-       request.done(function (data){
+//       var request= $.ajax({
+//           type:"GET",
+//           url: '../json/publicintereset.json'
+//       });
+//       request.done(function (data){
+//
+//           for(var k=0; k<conbtn.length; k++){
+//               conbtn[k].Index = k+1;
+//               conbtn[k].onmouseenter = function(){
+//                   right.html('');
+//                   for(var i=0; i<data[this.Index].length; i++){
+//                       right.html(right.html() + '<div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
+//                   }
+//               }
+//           }
+//
+//
+//
+//       });
 
-           for(var k=0; k<conbtn.length; k++){
-               conbtn[k].Index = k+1;
-               conbtn[k].onmouseenter = function(){
-                   right.html('');
-                   for(var i=0; i<data[this.Index].length; i++){
-                       right.html(right.html() + '<h4 class="title"></h4><div class="con"><img src="../images/'+data[this.Index][i]+'" alt="图片展示"/><p>应大向四川受灾地区捐款。</p></div>');
+       var right = $(".m-pg-publicintereset .j-right").find("div");
+       var oldTop2 = right.eq(0).position().top;
+       var oldW = right[0].clientWidth;
+       var oldH = right.eq(0).height();
+       var thisRight = null;
+
+       function ScrollTop(){
+           if(($(document).width() - 17) > 1024){
+
+               function thisTop(ele){
+                   if($(document).scrollTop() > oldTop2){
+                       for(var m=0; m<ele.length; m++){
+                           ele.eq(m).css({"position":"absolute","right":"-99%"});
+                       }
+                       ele.eq(0).css({"top": $(document).scrollTop() - 120});
+                       ele.eq(1).css({"top": $(document).scrollTop() + 110});
+                   }else{
+                       for(var n=0; n<ele.length; n++) {
+                           ele.eq(n).css({"position": "absolute", "right": "-99%", "width": "90%"});
+                       }
+                       ele.eq(0).css({"top": "15px"});
+                       ele.eq(1).css({"top": "255px"});
                    }
                }
-           }
 
+               for(var k= 0,btn = document.getElementsByClassName("j-con-btn"); k<btn.length; k++){
+                   btn[k].index = k;
+                   btn[k].onmouseenter = function(){
+                       var yearInfo = $(".m-yearInfo");
+                       thisRight = yearInfo.eq(this.index).find("div");
+                       yearInfo.eq(0).removeClass("j-right");
+                       for(var l=0; l<yearInfo.length; l++){
+                           yearInfo.eq(l).find("div").css({"right":"-5000px"});
+                           yearInfo.eq(l).find("p").css({"display":"block"});
+                       }
+                       thisTop(thisRight);
+                   };
+                   btn[k].onmouseleave = function(){
+                       for(var p=0; p<yearInfo.length; p++){
+                           yearInfo.eq(p).find("p").css({"display":"none"});
+                       }
+                   };
+               }
 
-
-       });
-
-       var oldTop = right.position().top;
-
-
-       $(document).scroll(function(){
-           if($(document).scrollTop() > oldTop){
-               right.animate({"top":$(document).scrollTop()},{
-                   duration:30
+               $(document).scroll(function(){
+                   if($(".m-yearInfo").hasClass("j-right")){
+                       thisTop(right);
+                   }
+                   if(thisRight !== null){
+                       thisTop(thisRight);
+                   }
                });
+
            }
-       });
+       }
+
+       ScrollTop();
+
    }
 
 
+
+});
+
+
+require(['jquery'], function ($) {
+    if($(".m-pg-yingdabuilding").length < 1) return false;
+    $(document).ready(function () {
+        $('.carousel').carousel({
+            interval: 3000
+        });
+
+        $('.carousel').carousel('cycle');
+    });
 
 });
 

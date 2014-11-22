@@ -1,45 +1,86 @@
 @charset "utf-8";
-.g-bottom {
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
-  z-index:9999;
-  background: #f9f9f9;
-  border-top: 1px solid #ada18f;
-}
-.m-bottomlist {
-  margin: 0 auto;
-  width: 1154px;
-  @include clearfix();
-  .list {
-    float: left;
-    @include clearfix();
-    li {
-      float: left;
-    }
-    .first a {
-      padding-left: 0;
-    }
-    li > a {
-      padding: 0 30px;
-      border-right: 1px solid #a79281;
-      height: 44px;
-      line-height: 44px;
-      font-size: 14px;
-      font-family: "宋体";
-      color: #83654c;
-    }
-    .last a{border-right:none;}
+
+.pg-firms{      /*这个是body上的类*/
+  @media screen and (max-width: 992px){
+    padding-bottom: 75px;
   }
-  .reserved {
-    float: right;
-    height: 44px;
+  @media screen and (min-width: 993px){
+    padding-bottom: 46px;
+  }
+}
+
+.g-footer{
+  z-index:200 ;
+  position: relative;
+  @media screen and (min-width: 320px) {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  @media screen and (max-width: 992px){
+    &:after{
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 25px;
+      background-color: #dfd7ca;
+    }
+  }
+  overflow: hidden;
+  border-top: 1px solid #ADA18F;
+  width: 100%;
+  height: auto;
+  background-color: #F9F9F9;
+  %ulAndp{
+    line-height: 44px;
+    height: auto;
+  }
+  ul{
+    text-align: left;
+    @extend %ulAndp;
+    @media screen and (max-width: 992px){
+      text-align: center;
+      @include letrSpacing0();
+    }
+  }
+  li{
+    @include inline-blk();
+    &.first{
+      a{
+        padding-left: 0;
+      }
+    }
+    &.last{
+      a{
+        border-right-width: 0;
+        padding-right: 0;
+      }
+    }
+    a{
+      padding-right: 2em;
+      padding-left: 2em;
+      line-height: 44px;
+      border-right: 1px solid #a79281;
+      font-size: 14px;
+      color: #83654c;
+      @include letrSpacingMormal();
+    }
+  }
+  p{
+    text-align: right;
+    @extend %ulAndp;
     line-height: 44px;
     font-size: 14px;
-    font-family: "宋体";
-    color: #967e6b;
+    color: #83654c;
+    @media screen and (max-width: 992px){
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      line-height: 25px;
+      font-size: 12px;
+    }
   }
-
 }
-

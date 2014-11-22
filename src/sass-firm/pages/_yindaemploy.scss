@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.m-pg-yingdaemploy {
+//  width: 862px;
+//  float: right;
+//  margin-bottom: 100px;
+  @media screen and (max-width: 992px){
+    padding-bottom: 80px;
+  }
+  .thead{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c6b9ac;
+    display:block;
+    cursor:default;
+    @include letrSpacing0();
+    span{
+      @include inline-blk();
+      @include letrSpacingMormal();
+      width: 24%;
+      font-size:18px;
+      @media screen and (max-width: 992px){
+        font-size: 16px;
+      }
+      font-family: "宋体";
+      color:#6b513c;
+      text-align:center;
+    }
+  }
+  .main{
+    border-bottom: 1px solid #c6b9ac;
+    cursor: pointer;
+    background: url("../images/newslist-pic3.png")2px 26px no-repeat;
+    @media screen and (max-width: 992px){
+      background-position: -1px center;
+    }
+    & > p{
+      display:block;
+      height:56px;
+      line-height: 56px;
+      @include letrSpacing0();
+      span{
+        @include inline-blk();
+        @include letrSpacingMormal();
+        width: 24%;
+        text-align: center;
+        font-family: "宋体";
+        font-size: 14px;
+        color:#83654c;
+      }
+      @include propprefix(user-select,none);
+    }
+    .con{
+      display: none;
+      h4{
+        margin-top: 22px;
+        padding-left: 40px;
+        @extend %paddingLeft1em;
+        font-size: 14px;
+        font-family: "宋体";
+        color:#83654c;
+        font-weight: normal;
+      }
+      p{
+        margin-top: 12px;
+        padding-left: 70px;
+        @extend %paddingLeft1em;
+        padding-bottom:20px;
+        line-height: 1.8;
+        font-size: 14px;
+        font-family: "宋体";
+        color:#83654c;
+      }
+      %paddingLeft1em{
+        @media screen and (max-width: 992px){
+          padding-left: 1em;
+        }
+      }
+    }
+  }
+  .line{
+    background: #dbd2c8 url("../images/yingdaemploy.png")40px 24px no-repeat;
+    @media screen and (max-width: 992px){
+      background-position: -1px 1.8em;
+    }
+    .con{
+      display: block;
+    }
+  }
+}

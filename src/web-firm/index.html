@@ -2,88 +2,124 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <!--TODO 所有页面加上以下两行meta标签-->
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>应大企业站-关于我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title>最佳员工列表</title>
     <link rel="stylesheet" href="../css/firm-main.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="../javascript/ie8/html5shiv.js"></script>
+    <script src="../javascript/ie8/respond.src.js"></script>
+    <![endif]-->
 </head>
-<body>
-<!--TODO-CY 所有页面底部，通用尾部没有完全处于底部，露出了部分背景色-->
-<div class="g-top">
-    <div class="m-nav">
-        <div class="logo"><a href="index.html"><img src="../images/yingdafirm-logo.png" alt="应大logo"/></a></div>
-        <ul class="list">
-            <li><a href="#">首页<
+<body class="pg-firms">
+
+<div class="g-page-top hidden-xs">
+    <div class="header container">
+        <div class="logo">
+            <img src="../images/yingdafirm-logo.png" alt="应大logo"/>
+        </div>
+        <ul class="m-nav">
+            <li class="first"><a href="#">首页</a></li>
             <li><a href="#">走进应大</a></li>
             <li><a href="#">企业文化</a></li>
             <li><a href="#">新闻中心</a></li>
             <li><a href="#">招贤纳士</a></li>
             <li class="last"><a href="#">联系我们</a></li>
         </ul>
-        <!--ToDo update .icon-->
         <div class="icon">
-            <p>
-                <a href="#" class="iconfont icon-yingdaicon03"></a>
-                <a href="#" class="weixin iconfont icon-yingdaicon04"></a>
-                <a href="#" class="iconfont icon-yingdaicon05"></a>
-            </p>
+            <a class="iconfont icon-yingdaicon03" href="#"></a>
+            <a class="iconfont icon-yingdaicon04" href="#"></a>
+            <a class="iconfont icon-yingdaicon05" href="#"></a>
         </div>
     </div>
 </div>
-<!--TODO #modal cy-->
-<div id="modal" class="hidden">
-    <div class="bg"></div>
-    <div class="weixin"><img src="../images/wxewm.jpg" alt=""/></div>
-</div>
-<div class="g-main">
-    <!--左侧栏-->
-    <div class="m-left">
-        <h3>走进应大</h3>
-        <ul>
-            <li><a href="#">关于我们</a></li>
-            <li><a href="#">应答年鉴</a></li>
-            <li><a href="#">公益慈善</a></li>
-        </ul>
-    </div>
 
-    <div class="m-main2-cy">
-        <div class="left">
-            <!--ToDo update .u-title和.yh-->
-            <h4 class="u-title">关于我们</h4>
+<header class="m-header visible-xs-block">
+    <img src="../images/mobile-logo.jpg" alt="YINGDAK" class="moblie-logo"/>
+    <span class="menu-btn"></span>
+    <ul class="mainMenu">
+        <li><a href="#" title="首页">首页</a></li>
+        <li><a href="#" title="走进应大">走进应大</a></li>
+        <li><a href="#" title="企业文化">企业文化</a></li>
+        <li><a href="#" title="新闻中心">新闻中心</a></li>
+        <li><a href="#" title="招贤纳士">招贤纳士</a></li>
+        <li><a href="#" title="联系我们">联系我们</a></li>
+    </ul>
+</header>
 
-            <div class="yh"></div>
-            <div class="con">
-                <p class="pra">
-                    应大公司始创于1992年，经过多年潜心经营，于2005年推出具有国际水准的百万巨制——"中华衣王"，在中国时尚界引起极大轰动；同年，胡锦涛总书记考察天津时来到应大，寄予了"应大应大，应该发展壮大"的厚望。此后，应大开始建立皮衣工业园，并多次荣登“中国500最具价值品牌排行榜”。</p>
+<div class="g-pg-main m-pg-bestemp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 m-pg-left">
+                <div class="row">
+                    <h3 class="col-md-12"><span>走进应大</span></h3>
 
-                <p class="pra1">在卓力打造皮衣服饰文化的同时，应大始终坚持"百年应大，诚信应大，创新应大，激情应大"的企业精神，向着"创建中华民族的世界品牌"的宏伟目标迈进。</p>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a class="s-grey" href="#">关于我们</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a href="#">应答年鉴</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-4">
+                        <div class="item">
+                            <a href="#">公益慈善</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12 m-pg-right">
+                <h2 class="clum-title">关于我们</h2>
+                <div class="yh"></div>
+
+
+                <div class="m-pg-index">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 pull-right right">
+                            <img alt="图片展示" src="../images/aboutus-pic1.png">
+
+                            <p>应大创意产业园全景</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <p class="pra">天津应大股份有限公司成立于1992年，以经营“应大”品牌为主，是一家集品牌经营、研发设计、生产销售为一体的专业化、现代化的皮衣皮草公司，拥有国内首家皮衣皮草博物馆和国内最大的皮衣皮草产业园。</p>
+
+                            <p class="pra1">公司自成立之日起，秉承“百年应大、诚信应大、创新应大、激情应大”的企业精神，连续多年皮革市场综合占有率居全国第一；先后荣获“中国名牌”、“中国驰名商标”和“国家免检产品”荣誉称号；连续六次获得“中国真皮衣王”；连续八次代表中国皮装行业发布流行趋势，成为行业风向标。应大的快速发展也得到了党和政府的肯定。2005年10月1日，胡锦涛总书记在接见应泽从董事长时，寄语应大“应大应大，应该发展壮大”。我们将锐意进取，将应大打造成世界上最好的皮衣皮草品牌。</p>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-        <div class="right">
-            <h4 class="u-title"></h4>
+    </div>
 
-            <div class="yh"></div>
-            <div class="con">
-                <img src="../images/aboutus-pic1.png" alt="图片展示"/>
+</div>
 
-                <p>应大荣誉称号</p>
-            </div>
+<div class="g-footer">
+    <div class="container">
+        <div class="row">
+            <ul class="col-md-6 col-sm-12 col-xs-12">
+                <li class="first"><a href="#">应大年鉴</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li class="last"><a href="#">法律申明</a></li>
+            </ul>
+            <p class="col-md-6 col-sm-12 col-xs-12"> 津ICP备 11005051号-1</p>
         </div>
     </div>
 </div>
-<div class="g-bottom">
-    <div class="m-bottomlist">
-        <ul class="list">
-            <li class="first"><a href="#">应大年鉴</a></li>
-            <li><a href="#">合作加盟</a></li>
-            <li class="last"><a href="#">法律申明</a></li>
-        </ul>
-        <p class="reserved">ALL RIGHTS RESERVED. COPYRIGHT © 2014 YINGDAK</p>
-    </div>
-</div>
-<img src="../images/firm-bg.png" class="body_bg" alt="背景"/>
+
+<img alt="背景" class="body_bg" src="../images/firm-bg.png">
+
 <script data-main="../javascript/main-firm" src="../javascript/require.js"></script>
-
 </body>
 </html>
