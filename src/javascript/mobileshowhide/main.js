@@ -23,3 +23,36 @@ require(['zepto'], function () {
     });
 });
 
+
+//手机端回到顶部
+require(['zepto'], function () {
+
+    var backTop=$('.backTop');
+    var scrollTop;
+    var mobileHei=$(window).height();
+    if(backTop.length>0){
+        $(window).scrollTop=300;
+        alert($(window).scrollTop());
+    $(window).scroll(function(){
+        scrollTop=$(window).scrollTop();
+        if(scrollTop>mobileHei){
+            backTop.show();
+
+                backTop.on('click',function(){
+                   $(this).hide();
+
+                })
+
+
+
+        }else{
+            backTop.hide();
+        }
+    });
+    }
+
+
+
+
+});
+
