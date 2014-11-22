@@ -48,6 +48,7 @@
   }
   li{
     @include inline-blk();
+    display: inline\0;
     &.first{
       a{
         padding-left: 0;
