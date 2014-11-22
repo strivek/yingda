@@ -784,7 +784,11 @@ a, a:hover {
       margin-top: 8px;
       padding-top: 20px;
       border-top: 1px solid #d6c2a0;
-      height: auto; }
+      height: auto;
+      font-size: 0;
+      letter-spacing: -0.307em;
+      *letter-spacing: normal;
+      *word-spacing: -1px; }
       @media screen and (max-width: 992px) {
         .m-pg-contact .main .firmdet .weixin {
           margin-top: 28px; } }
@@ -800,6 +804,9 @@ a, a:hover {
         .m-pg-contact .main .firmdet .weixin .ten {
           position: relative;
           left: 10px; } }
+      @media screen and (width: 360px) {
+        .m-pg-contact .main .firmdet .weixin .ten {
+          margin-left: -8px; } }
       .m-pg-contact .main .firmdet .weixin .sina, .m-pg-contact .main .firmdet .weixin .ten, .m-pg-contact .main .firmdet .weixin .yuku {
         position: relative; }
         .m-pg-contact .main .firmdet .weixin .sina .name, .m-pg-contact .main .firmdet .weixin .ten .name, .m-pg-contact .main .firmdet .weixin .yuku .name {
@@ -1225,6 +1232,14 @@ a, a:hover {
 .m-pg-newsvideo .main {
   padding-top: 30px;
   margin-left: -10px; }
+  @media screen and (max-width: 992px) {
+    .m-pg-newsvideo .main div.row > div {
+      width: 50%;
+      float: left; } }
+  @media screen and (max-width: 508px) {
+    .m-pg-newsvideo .main div.row > div {
+      width: 100%;
+      float: left; } }
 .m-pg-newsvideo .con {
   padding-bottom: 1px;
   margin-left: 10px;
