@@ -305,6 +305,7 @@ require(['jquery'], function ($) {
        var oldW = right[0].clientWidth;
        var oldH = right.eq(0).height();
        var thisRight = null;
+       var timer = null;
 
        function ScrollTop(){
            if(($(document).width() - 17) > 1024){
@@ -325,7 +326,7 @@ require(['jquery'], function ($) {
                    }
                }
 
-               for(var k= 0,btn = document.getElementsByClassName("j-con-btn"); k<btn.length; k++){
+               for(var k= 0,btn = $(".j-con-btn"); k<btn.length; k++){
                    btn[k].index = k;
                    btn[k].onmouseenter = function(){
                        var yearInfo = $(".m-yearInfo");
@@ -344,13 +345,19 @@ require(['jquery'], function ($) {
                    };
                }
 
-               $(document).scroll(function(){
-                   if($(".m-yearInfo").hasClass("j-right")){
-                       thisTop(right);
+               $(window).scroll(function(){
+                   if(timer !== null){
+                       clearTimeout(timer);
                    }
-                   if(thisRight !== null){
-                       thisTop(thisRight);
-                   }
+
+                   timer = setTimeout(function(){
+                       if($(".m-yearInfo").hasClass("j-right")){
+                           thisTop(right);
+                       }
+                       if(thisRight !== null){
+                           thisTop(thisRight);
+                       }
+                   },10);
                });
 
            }
