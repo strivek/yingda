@@ -641,7 +641,8 @@ a, a:hover {
     vertical-align: middle;
     *vertical-align: auto;
     zoom: 1;
-    *display: inline; }
+    *display: inline;
+    display: inline\0; }
     .g-footer li.first a {
       padding-left: 0; }
     .g-footer li.last a {
@@ -905,7 +906,9 @@ a, a:hover {
     color: #83654c;
     font-family: "宋体";
     font-size: 18px;
-    font-weight: normal; }
+    font-weight: normal;
+    letter-spacing: normal;
+    *word-spacing: normal; }
   .m-pg-newsdetail .time {
     color: #83654c;
     display: -moz-inline-stack;
@@ -916,7 +919,9 @@ a, a:hover {
     *display: inline;
     font-size: 14px;
     margin-right: 26px;
-    margin-top: 16px; }
+    margin-top: 16px;
+    letter-spacing: normal;
+    *word-spacing: normal; }
   .m-pg-newsdetail .author {
     color: #83654c;
     display: -moz-inline-stack;
@@ -926,7 +931,9 @@ a, a:hover {
     zoom: 1;
     *display: inline;
     font-size: 14px;
-    margin-top: 16px; }
+    margin-top: 16px;
+    letter-spacing: normal;
+    *word-spacing: normal; }
   .m-pg-newsdetail .article {
     width: 100%;
     padding-top: 22px; }
@@ -935,7 +942,9 @@ a, a:hover {
       font-family: "宋体";
       font-size: 14px;
       line-height: 1.5;
-      margin-top: 20px; }
+      margin-top: 20px;
+      letter-spacing: normal;
+      *word-spacing: normal; }
 
 .b-title {
   font-size: 22px; }
@@ -947,7 +956,9 @@ a, a:hover {
   border-bottom: 1px solid #b7b2a8;
   font-size: 22px;
   font-weight: normal;
-  color: #210700; }
+  color: #210700;
+  letter-spacing: normal;
+  *word-spacing: normal; }
 
 .piclist {
   width: 100%;
@@ -1062,7 +1073,9 @@ a, a:hover {
       color: #83654c;
       font-size: 13px;
       line-height: 1.6;
-      margin-top: 10px; }
+      margin-top: 10px;
+      letter-spacing: normal;
+      *word-spacing: normal; }
     .m-pg-newslist .list .more {
       line-height: 13.6833px;
       height: 13px;
@@ -1070,7 +1083,9 @@ a, a:hover {
       display: block;
       text-align: right;
       font-size: 12px;
-      text-decoration: none; }
+      text-decoration: none;
+      letter-spacing: normal;
+      *word-spacing: normal; }
       .m-pg-newslist .list .more:hover {
         color: #ab9885; }
       @media screen and (max-width: 400px) {
@@ -1703,6 +1718,9 @@ a, a:hover {
 .m-pg-publicintereset {
   padding-top: 8px;
   padding-bottom: 50px; }
+  @media screen and (min-width: 1025px) {
+    .m-pg-publicintereset {
+      padding-bottom: 260px; } }
   .m-pg-publicintereset .con .j-con-btn {
     margin-top: 18px;
     font-size: 22px;
