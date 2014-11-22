@@ -166,42 +166,52 @@ require(['jquery'], function ($) {
     $(function(){
         var img= $('.m-main1-gf img');
         var img1=$('.set_table img');
+
         if(img.length>0){
-            picChange(img);
+
+                picChange(img);
+
+
 
         }
         if(img1.length>0){
-        img1.load(
-            picChange(img1)
-        );
+
+                picChange(img1);
+
         }
     });
 
     function picChange(img){
         function picSize(){
-            var winWid=$(window).width();
+            var winWid=parseInt($(window).width());
             var winHei=$(window).height();
-            var imgWid=img.eq(0).width();
+            var imgWid=parseInt(img.eq(0).width());
             var imgHei=img.eq(0).height();
             var Wid=winWid/imgWid;
             var Hei=winHei/imgHei;
            // alert(imgHei);
-            if(Wid>Hei){
-                img.width(winWid);
-                img.height('auto');
-                // alert(img.height());
-                img.css('marginLeft',0);
-            }else{
+            if(winWid>=1024){
+                console.log('我是111');
+                if(Wid>Hei){
+                    img.width(winWid);
+                    img.height('auto');
+                    // alert(img.height());
+                    img.css('marginLeft',0);
+                }else{
 
-                img.height(winHei);
-                img.width('auto');
-                // alert(img.width());
+                    img.height(winHei);
+                    img.width('auto');
+                    // alert(img.width());
 
-                var marginLeft=-(img.width()-$(window).width())/2;
+                    var marginLeft=-(img.width()-$(window).width())/2;
 //                    if()
-                img.css('marginLeft',marginLeft);
+                    img.css('marginLeft',marginLeft);
 //                   aaaaaaaaaaaaaaaaa
+                }
+            }else{
+                img.css('marginLeft',0);
             }
+
         };
         picSize();
         $(window).resize(function(){
@@ -366,3 +376,30 @@ require(['jquery'], function ($) {
     });
 
 });
+
+
+
+
+
+
+
+
+require(['jquery'], function ($) {
+    var marLeft
+  if($('.fixed').length>0){
+      if($(window).width()>1169){
+          marLeft=$('.container').css('marginLeft');
+          $('.fixed').css('left',marLeft+30);
+          $(window).resize(function(){
+              marLeft=$('.container').css('marginLeft');
+              $('.fixed').css('left',marLeft+30);
+          })
+      }
+
+  }
+
+});
+
+
+
+
