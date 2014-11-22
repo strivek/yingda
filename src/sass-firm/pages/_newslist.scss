@@ -52,6 +52,7 @@
       font-size: 13px;
       line-height: 1.6;
       margin-top: 10px;
+      @include letrSpacingMormal();
     }
     .more{
       line-height: 13.6833px;
@@ -62,6 +63,7 @@
       text-align: right;
       font-size: 12px;
       text-decoration: none;
+      @include letrSpacingMormal();
       &:hover{
         color: #ab9885;
       }

@@ -8,6 +8,7 @@
     font-family: "宋体";
     font-size: 18px;
     font-weight: normal;
+    @include letrSpacingMormal();
   }
   .time{
     color: #83654c;
@@ -15,12 +16,14 @@
     font-size: 14px;
     margin-right: 26px;
     margin-top: 16px;
+    @include letrSpacingMormal();
   }
   .author{
     color: #83654c;
     @include inline-blk();
     font-size: 14px;
     margin-top: 16px;
+    @include letrSpacingMormal();
   }
   .article {
     width: 100%;
@@ -37,6 +40,7 @@
       font-size: 14px;
       line-height: 1.5;
       margin-top: 20px;
+      @include letrSpacingMormal();
     }
   }
 }
@@ -53,6 +57,7 @@
   font-size: 22px;
   font-weight: normal;
   color: #210700;
+  @include letrSpacingMormal();
 }
 
 .piclist{
