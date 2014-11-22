@@ -1785,9 +1785,9 @@ a, a:hover {
   @media screen and (min-width: 1025px) {
     .m-pg-publicintereset .m-left > div .j-right > div {
       right: -99%; }
-      .m-pg-publicintereset .m-left > div .j-right > div:nth-child(1) {
+      .m-pg-publicintereset .m-left > div .j-right > div:first-child {
         top: 15px; }
-      .m-pg-publicintereset .m-left > div .j-right > div:nth-child(2) {
+      .m-pg-publicintereset .m-left > div .j-right > div:first-child + div {
         top: 250px; }
     .m-pg-publicintereset .m-left > div .j-right p {
       display: block !important; } }
