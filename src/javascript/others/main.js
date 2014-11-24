@@ -300,10 +300,10 @@ require(['jquery'], function ($) {
 //
 //       });
 
-       var right = $(".m-pg-publicintereset .j-right").find("div");
-       var oldTop2 = right.eq(0).position().top;
-       var oldW = right[0].clientWidth;
-       var oldH = right.eq(0).height();
+       var right = $(".m-pg-publicintereset .m-yearInfo.row").eq(0);
+       var oldTop2 = right.position().top;
+       var oldW = right.clientWidth;
+       var oldH = right.height();
        var thisRight = null;
        var timer = null;
 
@@ -351,7 +351,7 @@ require(['jquery'], function ($) {
                    }
 
                    timer = setTimeout(function(){
-                       if($(".m-yearInfo").hasClass("j-right")){
+                       if($(".m-yearInfo").hasClass("j-right")){   /*j-right类暂时已删除，第一张图片默认不显示*/
                            thisTop(right);
                        }
                        if(thisRight !== null){
