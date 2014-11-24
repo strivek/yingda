@@ -276,6 +276,10 @@ a, a:hover {
   src: url("../font/Didot.eot?#iefix") format("embedded-opentype"), url("../font/Didot.woff") format("woff"), url("../font/Didot.ttf") format("truetype"), url("../font/Didot.svg#FontName") format("svg");
   font-style: 14px;
   font-weight: normal; }
+@media screen and (max-width: 640px) {
+  .g-pg-main {
+    background-color: #CFC3B0; } }
+
 .body_bg {
   z-index: -1;
   position: fixed;

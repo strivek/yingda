@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+.g-pg-main{
+  @media screen and (max-width: 640px){
+    background-color: #CFC3B0;
+  }
+}
+
 .body_bg{
   z-index: -1;
   position: fixed;
