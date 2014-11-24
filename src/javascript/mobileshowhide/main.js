@@ -47,9 +47,32 @@ require(['zepto'], function () {
         });
     }
 
-//    backTop.on("click",function(){
-//       window.scrollTop(0);
-//        alert($(window).scrollTop());
-//    })
+
+
+
+
+
+    function scroll(scrollTo, time) {
+        var scrollFrom = parseInt(document.body.scrollTop),
+            i = 0,
+            runEvery = 5; // run every 5ms
+
+        scrollTo = parseInt(scrollTo);
+        time /= runEvery;
+
+        var interval = setInterval(function () {
+            i++;
+
+            document.body.scrollTop = (scrollTo - scrollFrom) / time * i + scrollFrom;
+
+            if (i >= time) {
+                clearInterval(interval);
+            }
+        }, runEvery);
+    }
+    backTop.on('click',function(){
+        scroll('0', 2000);
+    })
+
 });
 
