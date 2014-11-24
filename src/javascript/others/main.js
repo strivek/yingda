@@ -268,10 +268,12 @@ require(['jquery'], function ($) {
 //
 //
 //       });
-       var right = $(".m-pg-publicintereset .m-yearInfo.row").eq(0);
-       var oldTop2 = right.position().top;
-       var oldW = right.clientWidth;
-       var oldH = right.height();
+
+
+       var right = $(".m-pg-publicintereset .j-right > div");
+       var oldTop2 = right.eq(0).position().top;
+       var oldW = right.eq(0).clientWidth;
+       var oldH = right.eq(0).height();
        var thisRight = null;
        var timer = null;
 
