@@ -209,7 +209,7 @@ require(['jquery'], function ($) {
 //                   aaaaaaaaaaaaaaaaa
                 }
             }else{
-                img.css('marginLeft',0);
+                img.css({'marginLeft':"0",'width':'100%','height':'auto'});
             }
 
         };
