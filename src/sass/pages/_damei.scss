@@ -166,7 +166,14 @@ $primaryColor: #f6d2b9;
   }
 }
 .damei_title{
-  h3{font-size: 16px; color:#f6d2b9; font-weight: normal;}
+  h3{
+    font-size: 16px;
+    font-weight: normal;
+    color:#f6d2b9;
+    a{
+      color:#f6d2b9;
+    }
+  }
   p{color:#f6d2b9; font-size: 12px; margin-top: 50px;}
 }
 .damei_bg{background: url("../images/damei-bg.jpg") center center no-repeat;}

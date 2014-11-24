@@ -29,16 +29,12 @@ require(['jquery'], function ($) {
        $('.m-boutique-content').fadeIn('100');
        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
        console.log(shop_pic);
-
-
         var winClient = $(window).width();
         if (winClient > 1024) {
-
-            var oWidth = Math.floor(shop_pic * 1.4);
+            var oWidth =Math.floor(shop_pic * 1.4);
         } else {
-            var oWidth = shop_pic;
+            var oWidth =shop_pic;
         }
-
         var perc = oWidth / winClient;
         var ml = (1 - perc) / 2 * 100 + '%';
        $('.m-boutique-content').css({'marginLeft': ml});
@@ -46,12 +42,10 @@ require(['jquery'], function ($) {
     if ($('.m-shop-pic .carousel-inner').length > 0) {
        changeSize();
        $(window).resize(function () {
-
            changeSize();
        })
     }
 });
-
 require(['jquery'], function ($) {
         var winWid=$(window).width();
     var oUl=$('.m-showcase ul').eq(0);
@@ -105,9 +99,6 @@ require(['jquery'], function ($) {
         });
     $(window).resize(function(){
         clearInterval(timeId);
-
-
-
         var winWid=$(window).width();
         var oUl=$('.m-showcase ul').eq(0);
        var oUlhtml=oUl.html();
@@ -241,28 +232,18 @@ require(['jquery'], function ($) {
         }
     });
 });
-
 require(['jquery'], function ($) {
     var concealStateBox = $(".m-privacy").eq(0);
-
     if(concealStateBox.length < 1) return false;
-
     $(document).click(function(event){
         var target = event.target;
-
         if(target.className == "modal-backdrop fade in"){
-
             $(concealStateBox).modal('hide');
-
         }
     });
-
 });
-
 require(['jquery'], function ($) {
-
     var conbtn = $(".m-pg-publicintereset .j-con-btn > a");
-
    if(conbtn.length>0){
 
 //       var right = $(".m-pg-publicintereset .right").eq(0);
@@ -287,12 +268,12 @@ require(['jquery'], function ($) {
 //
 //
 //       });
-
-       var right = $(".m-pg-publicintereset .j-right").find("div");
-       var oldTop2 = right.eq(0).position().top;
-       var oldW = right[0].clientWidth;
-       var oldH = right.eq(0).height();
+       var right = $(".m-pg-publicintereset .m-yearInfo.row").eq(0);
+       var oldTop2 = right.position().top;
+       var oldW = right.clientWidth;
+       var oldH = right.height();
        var thisRight = null;
+       var timer = null;
 
        function ScrollTop(){
            if(($(document).width() - 17) > 1024){
@@ -313,7 +294,7 @@ require(['jquery'], function ($) {
                    }
                }
 
-               for(var k= 0,btn = document.getElementsByClassName("j-con-btn"); k<btn.length; k++){
+               for(var k= 0,btn = $(".j-con-btn"); k<btn.length; k++){
                    btn[k].index = k;
                    btn[k].onmouseenter = function(){
                        var yearInfo = $(".m-yearInfo");
@@ -332,13 +313,19 @@ require(['jquery'], function ($) {
                    };
                }
 
-               $(document).scroll(function(){
-                   if($(".m-yearInfo").hasClass("j-right")){
-                       thisTop(right);
+               $(window).scroll(function(){
+                   if(timer !== null){
+                       clearTimeout(timer);
                    }
-                   if(thisRight !== null){
-                       thisTop(thisRight);
-                   }
+
+                   timer = setTimeout(function(){
+                       if($(".m-yearInfo").hasClass("j-right")){   /*j-right类暂时已删除，第一张图片默认不显示*/
+                           thisTop(right);
+                       }
+                       if(thisRight !== null){
+                           thisTop(thisRight);
+                       }
+                   },10);
                });
 
            }
@@ -347,12 +334,7 @@ require(['jquery'], function ($) {
        ScrollTop();
 
    }
-
-
-
 });
-
-
 require(['jquery'], function ($) {
     if($(".m-pg-yingdabuilding").length < 1) return false;
     $(document).ready(function () {
@@ -364,14 +346,6 @@ require(['jquery'], function ($) {
     });
 
 });
-
-
-
-
-
-
-
-
 require(['jquery'], function ($) {
     var marLeft
   if($('.fixed').length>0){

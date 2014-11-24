@@ -75,10 +75,10 @@
         .j-right{
           >div{
             right: -99%;
-            &:nth-child(1){
+            &:first-child{
               top:15px;
             }
-            &:nth-child(2){
+            &:first-child + div{
               top:250px;
             }
           }
