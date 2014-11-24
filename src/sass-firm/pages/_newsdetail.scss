@@ -28,12 +28,18 @@
   .article {
     width: 100%;
     padding-top: 22px;
-//    img {
+    img {
+      @media screen and (max-width: 992px){
+        width: 100% !important;
+      }
+      margin: 0 auto !important;
+      display: block !important;
 //      max-height: 368px;
-//      height: auto;
+      height: auto;
 //      max-width: 863px;
-//      width: 100%;
-//    }
+      max-width: 100% !important;
+      width: auto;
+    }
     p {
       color: #83654c;
       font-family: "宋体";
