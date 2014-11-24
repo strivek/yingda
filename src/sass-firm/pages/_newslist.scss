@@ -64,8 +64,17 @@
       font-size: 12px;
       text-decoration: none;
       @include letrSpacingMormal();
+      &:visited{
+        outline-width: 0;
+      }
       &:hover{
         color: #ab9885;
+      }
+      &:focus{
+        outline-width: 0;
+      }
+      &:active{
+        outline-width: 0;
       }
       @media screen and (max-width: 400px){
         margin-top:10px;
