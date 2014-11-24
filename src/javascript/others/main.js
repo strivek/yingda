@@ -28,7 +28,6 @@ require(['jquery'], function ($) {
     function changeSize() {
        $('.m-boutique-content').fadeIn('100');
        var shop_pic = $('.m-shop-pic .item').outerWidth(true);
-       console.log(shop_pic);
         var winClient = $(window).width();
         if (winClient > 1024) {
             var oWidth =Math.floor(shop_pic * 1.4);
