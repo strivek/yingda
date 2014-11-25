@@ -221,7 +221,6 @@
 
 <!--<script data-main="../javascript/main-firm" src="../javascript/require.js"></script>-->
 <script src="../javascript/lib/jquery.min.js"></script>
-<script src="../javascript/lib/bootstrap.js"></script>
 <script>
     $(function(){
         if($(".m-pg-yearbook").length < 1) return false;
@@ -238,6 +237,22 @@
                 cnt[this.index].style.display = "block";
             };
         }
+
+        $(".m-header").eq(0).css({"z-index":"999"});
+
+        var hdBtn = $(".m-header .menu-btn").eq(0);
+        var hdMenu = $(".mainMenu").eq(0);
+        var show = false;
+
+        hdBtn.on("click",function(){
+            if(!show){
+                hdMenu.css({"display":"block"});
+            }
+            if(show){
+                hdMenu.css({"display":"none"});
+            }
+            show = !show;
+        });
     });
 </script>
 </body>
