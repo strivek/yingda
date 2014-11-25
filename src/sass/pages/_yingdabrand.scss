@@ -6,18 +6,7 @@
     @media (max-width: 999px) {
           padding-bottom: 200px;
     }
-    .m-YD-main{
-      -webkit-user-select:none;
-      -ms-user-select:none;
-      -moz-user-select:none;
-      -o-user-select:none;
-      user-select:none;
-      position: relative;
-      height:574px;
-      .item{
-        float: left;
-        height: 574px;
-      }
+    @media (min-width: 1025px) {
       .viewport{
         height:574px;
         overflow: hidden;
@@ -52,6 +41,25 @@
           width: 14px;
         }
       }
+    }
+    .m-YD-main{
+      -webkit-user-select:none;
+      -ms-user-select:none;
+      -moz-user-select:none;
+      -o-user-select:none;
+      user-select:none;
+      position: relative;
+      height:574px;
+      @media (max-width: 1025px){
+        height:460px;
+        overflow: auto;
+      }
+      .item{
+        float: left;
+        height: 574px;
+      }
+
+
     }
 
     .brand-text{
