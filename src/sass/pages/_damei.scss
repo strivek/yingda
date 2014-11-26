@@ -81,7 +81,7 @@ $primaryColor: #f6d2b9;
       }
     }
     .m-product2 {
-      padding-top: 48px;
+      padding-top: 48px;position: relative;
       .m-lcon-2 {
         position: relative;
         .z-plus {
@@ -102,6 +102,7 @@ $primaryColor: #f6d2b9;
         padding-top: 13px;
         line-height: 1.8em;
       }
+    >.arrow_bootom{position:absolute;bottom:-50px;left: 40%; cursor: pointer;}
     }
   }
   .m-md-main{
