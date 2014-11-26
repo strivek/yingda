@@ -348,7 +348,7 @@ require(['jquery'], function ($) {
 
 });
 require(['jquery'], function ($) {
-    var marLeft
+    var marLeft;
   if($('.fixed').length>0){
       if($(window).width()>1169){
           marLeft=$('.container').css('marginLeft');
@@ -361,6 +361,21 @@ require(['jquery'], function ($) {
 
   }
 
+});
+
+
+
+
+//大美页面
+
+require(['jquery'], function ($) {
+
+
+   $('.arrow_bootom img').click(function(){
+       var main_hei=$('.main-item').height();
+       var winScroll=$(window).scrollTop();
+       $('body,html').animate({'scrollTop':winScroll+=main_hei},1000);
+   })
 });
 
 
