@@ -47,6 +47,9 @@
         font-family: "宋体";
         font-size: 14px;
         color:#83654c;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       @include propprefix(user-select,none);
     }
