@@ -1536,6 +1536,20 @@ a, a:hover {
 
 .m-pg-yingdabuilding > #myCarousel {
   margin-top: 20px; }
+  .m-pg-yingdabuilding > #myCarousel .carousel-indicators {
+    transform: translateY(-10px); }
+  .m-pg-yingdabuilding > #myCarousel .item .txt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 24px;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); }
+    .m-pg-yingdabuilding > #myCarousel .item .txt a {
+      color: #FFFFFF;
+      font-size: 14px; }
 .m-pg-yingdabuilding > .list .piclist {
   margin-bottom: 0; }
   @media screen and (max-width: 992px) {
