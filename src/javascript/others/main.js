@@ -369,11 +369,12 @@ require(['jquery'], function ($) {
 //大美页面
 
 require(['jquery'], function ($) {
-
-
+   var winScroll;
+    var main_hei=$('.main-item').height();
    $('.arrow_bootom img').click(function(){
-       var main_hei=$('.main-item').height();
-       var winScroll=$(window).scrollTop();
+
+       winScroll=$(window).scrollTop();
+       alert(winScroll);
        $('body,html').animate({'scrollTop':winScroll+=main_hei},1000);
    })
 });
