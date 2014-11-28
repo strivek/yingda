@@ -315,18 +315,18 @@ require(['jquery'], function ($) {
                }
 
                $(window).scroll(function(){
-                   if(timer !== null){
+/*                   if(timer !== null){
                        clearTimeout(timer);
-                   }
+                   }*/
 
-                   timer = setTimeout(function(){
+                   /*timer = setTimeout(function(){*/
                        if($(".m-yearInfo").hasClass("j-right")){   /*j-right类暂时已删除，第一张图片默认不显示*/
                            thisTop(right);
                        }
                        if(thisRight !== null){
                            thisTop(thisRight);
                        }
-                   },10);
+                   /*},10);*/
                });
 
            }

@@ -1502,7 +1502,10 @@ a, a:hover {
       text-align: center;
       font-family: "宋体";
       font-size: 14px;
-      color: #83654c; }
+      color: #83654c;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .m-pg-yingdaemploy .main .con {
     display: none; }
     .m-pg-yingdaemploy .main .con h4 {
@@ -1820,5 +1823,8 @@ a, a:hover {
         top: 250px; }
     .m-pg-publicintereset .m-left > div .j-right p {
       display: block !important; } }
+  @media screen and (max-width: 992px) {
+    .m-pg-publicintereset .m-left .con:nth-child(1) {
+      display: none; } }
 
 /*# sourceMappingURL=firm-main.css.map */
