@@ -2,6 +2,25 @@
 .m-pg-yingdabuilding {
   >#myCarousel{
     margin-top: 20px;
+    .carousel-indicators{
+      transform:translateY(-10px);
+    }
+    .item{
+      .txt{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        line-height: 24px;
+        width: 100%;
+        height: 24px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+        a{
+          color: #FFFFFF;
+          font-size: 14px;
+        }
+      }
+    }
   }
   >.list{
 //    margin-left: 60px;
