@@ -372,9 +372,7 @@ require(['jquery'], function ($) {
    var winScroll;
     var main_hei=$('.main-item').height();
    $('.arrow_bootom img').click(function(){
-
        winScroll=$(window).scrollTop();
-       alert(winScroll);
        $('body,html').animate({'scrollTop':winScroll+=main_hei},1000);
    })
 });
