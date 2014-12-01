@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.m-pgChuchuangxilie{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  .m-showImg{
+    margin-bottom: 1px;
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    img{
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
