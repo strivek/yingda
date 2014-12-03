@@ -26,17 +26,23 @@ require(['zepto'], function () {
 
 //手机端回到顶部
 require(['zepto'], function () {
-
+    var back='<a title="返回顶部" href="javascript:;" class="backTop"><img src="../images/arrow.png" width="100%" alt=""/></a>';
+    $('body').append(back);
     var backTop = $('.backTop');
     var scrollTop;
     var mobileHei = $(window).height();
+    console.log('手机高度'+mobileHei);
     if (backTop.length > 0) {
 //        $(window).scrollTop=300;
 //        alert($(window).scrollTop());
         $(window).scroll(function () {
             scrollTop = $(window).scrollTop();
-            if (scrollTop > mobileHei) {
-                backTop.show();
+
+            if (scrollTop > mobileHei){
+                if($('.backTop:hidden')){
+                    backTop.show();
+                }
+
 //                backTop.on('click',function(){
 ////                   $(this).hide();
 //                    alert(1);
@@ -71,7 +77,7 @@ require(['zepto'], function () {
         }, runEvery);
     }
     backTop.on('click',function(){
-        scroll('0', 2000);
+        scroll('0', 500);
     })
 
 });

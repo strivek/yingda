@@ -674,6 +674,23 @@ a, a:hover {
         line-height: 25px;
         font-size: 12px; } }
 
+.backTop {
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 20px;
+  width: 30px;
+  height: 42px;
+  z-index: 100000;
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+  @media (min-width: 992px) and (max-width: 1170px) {
+    .backTop {
+      bottom: 90px; } }
+  @media (min-width: 760px) and (max-width: 991px) {
+    .backTop {
+      bottom: 130px; } }
+
 .m-pg-bestemp .lists .list {
   border-bottom: 1px dotted #d1c8be;
   padding-top: 30px;

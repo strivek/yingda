@@ -119,5 +119,6 @@
   }
 }
 
-  .backTop{position: fixed;display:none;bottom:2rem;right:1rem;width: 3.2rem;height: 3.2rem;background: url(../images/backTop.gif) no-repeat ;;
+  .backTop{position: fixed;display:none;bottom:20px;right:10px;width: 2.5rem;height: 3.5rem;
+    @include opacity(0.8);
   }
