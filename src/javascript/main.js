@@ -13,32 +13,32 @@ require.config({
         tweenCss:"lib/greensock/plugins/CSSPlugin.min",
         flexslider:"lib/jquery.flexslider-min",
         range:"lib/range",
-        'async': 'lib/async'
+        'async':'lib/async'
     }
 });
 
 //home.html
-//require(['bkgroundtoggle']);
-//
-//require(['waterfall']);
-////looknews.html
-////productListWomen.html
-////productListMen.html
-//require(['lightbox']);
-//
-////productListMen.html
-////productListWomen.html
-//require(['lightbox2']);
-////register.html
-//require(['formselected']);
-//
-//require(['scrollbar']);
-//
-//require(['navdropdown']);
-//
-//require(['carousel']);
-//
-//require(['xscroll']);
+require(['bkgroundtoggle']);
+
+require(['waterfall']);
+//looknews.html
+//productListWomen.html
+//productListMen.html
+require(['lightbox']);
+
+//productListMen.html
+//productListWomen.html
+require(['lightbox2']);
+//register.html
+require(['formselected']);
+
+require(['scrollbar']);
+
+require(['navdropdown']);
+
+require(['carousel']);
+
+require(['xscroll']);
 
 require(['others']);
 
