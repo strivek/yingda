@@ -85,3 +85,14 @@
     }
   }
 }
+.backTop{position: fixed;display:none;bottom:50px;right:20px;width: 30px;height: 42px; z-index: 100000;
+  @include opacity(0.8);
+  @media (min-width: 992px)and (max-width: 1170px){
+    bottom:90px;
+
+  }
+  @media (min-width: 760px)and (max-width: 991px){
+    bottom:130px;
+
+  }
+}
