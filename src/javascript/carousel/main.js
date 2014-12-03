@@ -15,4 +15,8 @@ require(['jquery', 'bootstrap'], function ($) {
     $('.m-carousel-cy .carousel').carousel({
         interval: false
     });
+    $('.carousel-example-generic').carousel({
+        interval: 3000
+    });
+
 });
