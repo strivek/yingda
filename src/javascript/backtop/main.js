@@ -13,8 +13,7 @@ require(['jquery'], function ($) {
             back.fadeOut();
         }
     }
-    $(window).scroll(scroll
-    );
+    $(window).scroll(scroll);
 
     back.on('click',function(){
         $('html,body').animate({scrollTop: '0px'}, 800);

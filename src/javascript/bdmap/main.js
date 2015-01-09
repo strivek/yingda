@@ -68,10 +68,10 @@ require(['async!http://api.map.baidu.com/api?key=&v=1.1&services=true'], functio
         });
         _iw.addEventListener("open",function(){
         _marker.getLabel().hide();
-        })
+        });
         _iw.addEventListener("close",function(){
         _marker.getLabel().show();
-        })
+        });
         label.addEventListener("click",function(){
         _marker.openInfoWindow(_iw);
         })
@@ -90,7 +90,7 @@ require(['async!http://api.map.baidu.com/api?key=&v=1.1&services=true'], functio
         }
     //创建一个Icon
     function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)});
         return icon;
         }
 

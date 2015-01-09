@@ -13,4 +13,5 @@ require(['jquery', 'scrollto/jquery-scrollto'], function ($) {
             });
         }
     });
+
 });
