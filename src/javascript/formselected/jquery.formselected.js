@@ -33,7 +33,7 @@ define(['jquery'], function ($) {
 
         var That = this;
         oclick.click(function () {
-            var val = $(this).attr('val');
+            var val = $(this).data('val');
             var oText = $(this).text();
             for (var i = 0; i < aSelect.length; i++) {
                 aSelect.eq(i).removeAttr('selected');
