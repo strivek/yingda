@@ -154,6 +154,8 @@
   }
   .menu {
     display: none;
+    position: relative;
+    z-index: 40;
     li {
       height: 4.4rem;
       border-bottom: 1px solid $indexMenuBorder;
